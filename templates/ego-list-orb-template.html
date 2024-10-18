@@ -1,0 +1,21 @@
+<div class="ego-list-orb">
+    <img class="ego-image" src="">
+    <img class="ego-shine-overlay" src="./assets/OtherUIElements/EGO/EgoOrbOverlay.png">
+    <img class="ego-label-image" src="">
+    <img class="ego-orb-selected" src="./assets/OtherUIElements/EGO/EgoSelectedOverlay.png">
+    <svg class="loading-ring" viewBox="-25 -25 150 150">
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <circle class="loading-circle" cx="50" cy="50" r="45" style="filter:url(#glow)" />
+    </svg>
+    <div class="ego-label">
+        <div class="ego-label-icons"><img class="ego-risk-level-image"></div>
+        <div class="ego-name-value font-mikodacs text-shadow"></div>
+        <div class="ego-label-icons"><img class="ego-threadspin-image" src="./assets/Icons/Uptie4.png"></div>
+    </div>
+</div>

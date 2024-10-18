@@ -1,0 +1,57 @@
+<div class="id-card">
+    <img class="card-frame-overlay" src="">
+    <img class="portrait" src="">
+    <img class="id-hover-overlay" src="./assets/OtherUIElements/IdFrames/HoverOverlay.png">
+    <div class="id-selected-overlay">
+        <img class="id-selected-image" src="./assets/OtherUIElements/SinnerSelected.png">
+    </div>
+    <svg class="loading-ring" viewBox="0 0 100 100">
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <circle class="loading-circle" cx="50" cy="50" r="45" style="filter:url(#glow)" />
+    </svg>
+    <div class="identity-info-overlay">
+        <div class="identity-rarity"><img class="identity-rarity-image"></div>
+        <div class="info-overlay-bottom">
+            <div class="identity-level font-excelsior-sans">Lv. <span class="identity-level-value">?</span></div>
+            <div class="identity-name font-mikodacs"></div>
+        </div>
+    </div>
+    <div class="ego-overlay font-liberation-sans">
+        <div class="ego-overlay-slot risk0 no-ego">
+            <div><img class="risk-icon" src="./assets/Icons/RiskLevels/Risk0IconInactive.png"></div>
+            <div class="ego-name" style="display: none;"></div>
+            <div style="overflow: hidden; display: none;"><img class="ego-image"></div>
+            <div style="display: none;"><img class="threadspin-icon" src="./assets/Icons/Uptie4.png"></div>
+        </div>
+        <div class="ego-overlay-slot risk1 no-ego">
+            <div><img class="risk-icon" src="./assets/Icons/RiskLevels/Risk1IconInactive.png"></div>
+            <div class="ego-name" style="display: none;"></div>
+            <div style="overflow: hidden; display: none;"><img class="ego-image"></div>
+            <div style="display: none;"><img class="threadspin-icon" src="./assets/Icons/Uptie4.png"></div>
+        </div>
+        <div class="ego-overlay-slot risk2 no-ego">
+            <div><img class="risk-icon" src="./assets/Icons/RiskLevels/Risk2IconInactive.png"></div>
+            <div class="ego-name" style="display: none;"></div>
+            <div style="overflow: hidden; display: none;"><img class="ego-image"></div>
+            <div style="display: none;"><img class="threadspin-icon" src="./assets/Icons/Uptie4.png"></div>
+        </div>
+        <div class="ego-overlay-slot risk3 no-ego">
+            <div><img class="risk-icon" src="./assets/Icons/RiskLevels/Risk3IconInactive.png"></div>
+            <div class="ego-name" style="display: none;"></div>
+            <div style="overflow: hidden; display: none;"><img class="ego-image"></div>
+            <div style="display: none;"><img class="threadspin-icon" src="./assets/Icons/Uptie4.png"></div>
+        </div>
+        <div class="ego-overlay-slot risk4 no-ego">
+            <div><img class="risk-icon" src="./assets/Icons/RiskLevels/Risk4IconInactive.png"></div>
+            <div class="ego-name" style="display: none;"></div>
+            <div style="overflow: hidden; display: none;"><img class="ego-image"></div>
+            <div style="display: none;"><img class="threadspin-icon" src="./assets/Icons/Uptie4.png"></div>
+        </div>
+    </div>
+</div>

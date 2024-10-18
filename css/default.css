@@ -1,0 +1,1289 @@
+* {position:relative; box-sizing:border-box; margin:0; padding:0; 
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        cursor: url("../assets/OtherUIElements/mouse_off.png") 20 5, auto;
+}
+*:active{
+    cursor: url("../assets/OtherUIElements/mouse_on.png") 20 5, auto;
+}
+
+* {color: rgb(238, 205, 163); font-family: Pretendard-Regular; }
+
+*::-webkit-scrollbar {
+    display: none;
+}
+img {
+    user-drag: none; /* For Firefox */
+    -webkit-user-drag: none; /* For Chrome and Safari */
+    pointer-events: none; /* Prevents all click events */
+
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+}
+
+@font-face {
+    font-family: ExcelsiorSans;
+    src: url("../assets/Fonts/ExcelsiorSans.ttf");
+}
+@font-face {
+    font-family: Mikodacs;
+    src: url("../assets/Fonts/Mikodacs.ttf");
+}
+@font-face {
+    font-family: Pretendard-Regular;
+    src: url("../assets/Fonts/Pretendard-Regular.ttf");
+}
+@font-face {
+    font-family: Bebas-Kai;
+    src: url("../assets/Fonts/BebasKai.ttf");
+}
+@font-face {
+    font-family: LiberationSans;
+    src: url("../assets/Fonts/LiberationSans.ttf");
+}
+
+.font-excelsior-sans, .font-excelsior-sans * {
+    font-family: ExcelsiorSans;
+}
+.font-mikodacs, .font-mikodacs * {
+    font-family: Mikodacs;
+    letter-spacing: 0.05em;
+}
+.font-pretendard-regular, .font-pretendard-regular * {
+    font-family: Pretendard-Regular;
+}
+.font-bebas-kai, .font-bebas-kai * {
+    font-family: Bebas-Kai;
+}
+.font-liberation-sans, .font-liberation-sans * {
+    font-family: LiberationSans;
+}
+
+.text-shadow{
+    text-shadow: 0.05em 0.05em rgb(28, 28, 28);
+}
+
+.wrath-icon{
+    content:url("../assets/Icons/Resistances/WrathEndure.png");
+}
+.lust-icon{
+    content:url("../assets/Icons/Resistances/LustEndure.png");
+}
+.sloth-icon{
+    content:url("../assets/Icons/Resistances/SlothEndure.png");
+}
+.gluttony-icon{
+    content:url("../assets/Icons/Resistances/GluttonyEndure.png");
+}
+.gloom-icon{
+    content:url("../assets/Icons/Resistances/GloomEndure.png");
+}
+.pride-icon{
+    content:url("../assets/Icons/Resistances/PrideEndure.png");
+}
+.envy-icon{
+    content:url("../assets/Icons/Resistances/EnvyEndure.png");
+}
+
+.multiply-icon{
+    content:url("../assets/Icons/Multiply.png");
+}
+
+.portrait {
+    width: 100%;
+    height: 100%;
+}
+
+.id-hover-overlay {
+    display: none;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    z-index: 60;
+    object-fit: cover;
+}
+.id-card:hover .id-hover-overlay{
+    display: block;
+}
+.id-selected-overlay {
+    display: none;
+    position: absolute;  
+    top: -3%;
+    left: -4%;
+    width: 108%;
+    height: 106%;
+    z-index: 50;
+    object-fit: cover;
+    background-color: #1c1c1c79;
+}
+.id-selected-image {
+    position: absolute;
+    top: 40%;
+    left: -3%;
+    width: 106%;
+}
+
+.ego-list-orb .ego-image {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+body {
+    background-image: url("../assets/OtherUIElements/Team/New_MainUI_Formation_2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.card-frame-overlay {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    z-index: 20;
+    object-fit: cover;
+}
+
+/* --- MAIN SCREEN --- */
+
+#team-builder{
+    width: 75%;
+    margin: auto;
+    margin-top: 3%;
+    aspect-ratio: 2.0 / 1;
+}
+
+#team-builder .main-body{
+    width: 85%;
+    height: 100%;
+    float: left;
+}
+#team-builder .right-column{
+    display: none;
+    width: 15%;
+    height: 100%;
+    float: right;
+}
+
+#team-builder .main-body .top-row{
+    width: 100%;
+    height: 10%;
+    z-index: 20;
+}
+
+#copy-link {
+    background-image: url("../assets/OtherUIElements/TeamLinkBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    aspect-ratio: 701/118;
+    vertical-align: middle;
+    padding: 0.3% 2% 0% 2%;
+    font-size: 1.5cqw;
+    text-align: left;
+    float: left;
+    margin-left: 0.6%;
+}
+
+#team-builder-overlay-toggles {
+    background-image: url("../assets/OtherUIElements/OverlayToggleButton.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100%;
+    aspect-ratio: 490/136;
+    vertical-align: middle;
+    padding: 0.3% 2% 0% 2%;
+    font-size: 2cqw;
+    text-align: left;
+    float: right;
+    margin-right: 5%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#team-builder-overlay-toggles button{
+    width: 40%;
+}
+#team-builder-overlay-toggles .selected{
+    text-shadow: 0 0 25px rgb(254, 95, 0), 0 0 25px rgb(254, 119, 0), 0 0 45px rgb(255, 255, 255);
+    color: rgb(254, 199, 0);
+}
+
+.team-container {
+    background-image: url("../assets/OtherUIElements/Team/TeamPanelFront.png"), url("../assets/OtherUIElements/Team/TeamPanelRear.png");
+    background-size: 93%, 100%; /* Different sizes for each image */
+    background-position: center, center; /* Different positions for each image */
+    background-repeat: no-repeat, no-repeat; /* Prevents repeating for each image */
+
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4% 5.5%;
+    position: relative;
+    top: -8%;
+    gap: 0.8%;
+}
+
+.id-card, .id-card-container {
+    width: 15%;
+    aspect-ratio: 2/3;
+}
+.id-card-container>.id-card{
+    width: 100%;
+}
+
+.loading-ring {
+    pointer-events: none;
+    overflow: visible;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 500;
+    transform: translate(-50%, -50%) rotate(-90deg); /* Rotate the ring */
+    width: 50%; /* Adjust size as needed */
+    height: 50%; /* Adjust size as needed */
+}
+
+.loading-circle {
+    pointer-events: none;
+    fill: none;
+    box-shadow: 0 0 60px 30px #fc0f0f;  /* inner white */
+    stroke: #ffa200;
+    stroke-width: 12;
+    stroke-dasharray: 283; /* Circumference of the circle (2 * π * r) */
+    stroke-dashoffset: 283; /* Start with the circle not filled */
+    transition: stroke-dashoffset 0.5s linear; /* Animate the filling */
+}
+
+.status-icon {
+    vertical-align: middle;
+    max-height: 1em;
+    width: auto;
+}
+
+.identity-info-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
+    padding: 5%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.identity-rarity{
+    height: 12%;
+}
+.identity-rarity-image{
+    height: 100%;
+}
+.info-overlay-bottom{
+    justify-content: flex-end;
+}
+.identity-level{
+    width: 100%;
+    bottom: 0;
+    font-size: 1.3cqw;
+    text-align: right;
+}
+.info-overlay-bottom .identity-level-value{
+    font-size: 1.3cqw;
+}
+.identity-name{
+    width: 100%;
+    bottom: 0;
+    font-size: 1cqw;
+    text-align: right;
+    color: rgb(251, 197, 0);
+    line-height: 90%;
+}
+
+.ego-overlay {
+    display: none;
+    position: absolute;  
+    top: -3%;
+    left: -4%;
+    width: 108%;
+    height: 106%;
+    padding: 5%;
+    padding-top: 45%;
+    z-index: 50;
+    object-fit: cover;
+    background-color: #00000074;
+}
+
+.ego-overlay-slot {
+    height: 17%;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 1%;
+    display: flex;
+    /*border: 3px solid;*/
+    justify-content: space-around;
+}
+.ego-overlay-slot div{
+    width: 15%;
+    height: 100%;
+}
+.ego-overlay-slot div:nth-child(2){
+    width: 55%;
+    font-size: 1cqw;
+    letter-spacing: -0.08cqw;
+    display: flex;
+    align-items: center;
+}
+
+.ego-overlay-slot div img{
+    height: 100%;
+}
+
+.ego-overlay-slot .ego-image {
+    transform: scale(1.5);
+}
+.ego-overlay-slot.no-ego{
+    border-top: double 0.2cqw rgb(41, 36, 29);
+    border-bottom: double 0.2cqw rgb(41, 36, 29);
+}
+.ego-overlay-slot.wrath-ego{
+    border-top: double 0.2cqw rgb(185, 12, 12);
+    border-bottom: double 0.2cqw rgb(185, 12, 12);
+}
+.ego-overlay-slot.wrath-ego div{
+    color: rgb(185, 12, 12);
+}
+.ego-overlay-slot.lust-ego{
+    border-top: double 0.2cqw rgb(205, 88, 32);
+    border-bottom: double 0.2cqw rgb(205, 88, 32);
+}
+.ego-overlay-slot.lust-ego div{
+    color: rgb(205, 88, 32);
+}
+.ego-overlay-slot.sloth-ego{
+    border-top: double 0.2cqw rgb(208, 156, 52);
+    border-bottom: double 0.2cqw rgb(208, 156, 52);
+}
+.ego-overlay-slot.sloth-ego div{
+    color: rgb(208, 156, 52);
+}
+.ego-overlay-slot.gluttony-ego{
+    border-top: double 0.2cqw rgb(125, 180, 37);
+    border-bottom: double 0.2cqw rgb(125, 180, 37);
+}
+.ego-overlay-slot.gluttony-ego div{
+    color: rgb(125, 180, 37);
+}
+.ego-overlay-slot.gloom-ego{
+    border-top: double 0.2cqw rgb(19, 115, 137);
+    border-bottom: double 0.2cqw rgb(19, 115, 137);
+}
+.ego-overlay-slot.gloom-ego div{
+    color: rgb(19, 115, 137);
+}
+.ego-overlay-slot.pride-ego{
+    border-top: double 0.2cqw rgb(22, 68, 113);
+    border-bottom: double 0.2cqw rgb(22, 68, 113);
+}
+.ego-overlay-slot.pride-ego div{
+    color: rgb(22, 68, 113);
+}
+.ego-overlay-slot.envy-ego{
+    border-top: double 0.2cqw rgb(79, 1, 115);
+    border-bottom: double 0.2cqw rgb(79, 1, 115);
+}
+.ego-overlay-slot.envy-ego div{
+    color: rgb(79, 1, 115);
+}
+
+.ego-list-orb {
+    width: 23%;
+    aspect-ratio: 1;
+}
+
+.affinity-container {
+    width: 100%;
+    aspect-ratio: 1/2.5;
+
+    margin: auto;
+}
+
+.affinity-container .label{
+    width: 100%;
+    aspect-ratio: 3;
+}
+
+.affinity-field {
+    width: 85%;
+    aspect-ratio: 3;
+    margin: 2% 7.5%;
+}
+
+/* --- ID/EGO SELECT --- */
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+#close-equipable-select-button, #close-equipable-details-button {
+    background-image: url("../assets/OtherUIElements/BackButton.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 6%;
+    aspect-ratio: 247/169;
+    vertical-align: middle;
+    z-index: 100;
+}
+
+#equipable-select-modal {
+    z-index: 100;
+}
+#equipable-details-modal {
+    z-index: 200;
+    background-color: black;
+}
+
+#equipable-select-body{
+    padding-top: 5%;
+    width: 90%;
+    margin: auto;
+    aspect-ratio: 2.1 / 1;
+}
+
+#equipable-select-main-section{
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+#equipable-select-right-column{
+    width: 20%;
+    height: 100%;
+    float: right;
+}
+
+#equipable-list-toggles {
+    background-image: url("../assets/OtherUIElements/EquipableSelectToggleBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10%;
+    aspect-ratio: 539/128;
+    margin-left: 15%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.equipable-list-toggle {
+    width: 40%;
+    height: 100%;
+}
+
+#equipable-list-toggles .identity-view-button {
+    background-image: url("../assets/OtherUIElements/EquipableSelectToggleButton.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 581/248;
+    font-size: 1.3cqw;
+    padding-top: 2%;
+    letter-spacing: 0.05cqw;
+}
+
+#equipable-list-toggles .ego-view-button {
+    background-image: url("../assets/OtherUIElements/EquipableSelectToggleButton.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 581/248;
+    font-size: 2cqw;
+    padding-top: 5%;
+    letter-spacing: 0.1cqw;
+}
+
+.toggle-selected-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.equipable-container{
+    background-image: url("../assets/OtherUIElements/Team/TeamPanelFront.png"), url("../assets/OtherUIElements/Team/TeamPanelRear.png");
+    background-size: 93%, 100%;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    
+    display: flex;
+    height: 90%;
+    padding: 5% 7%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2%;
+    overflow-y: auto;
+    aspect-ratio: 1875/1011;
+}
+
+#equipable-select-id-tab {
+    width: 100%;
+    aspect-ratio: 1.5/1;
+}
+
+#equipable-select-ego-tab {
+    width: 100%;
+    aspect-ratio: 1/1.5;
+}
+
+#equipable-select-modal .ego-field {
+    width: 85%;
+    aspect-ratio: 5;
+    margin: 2% 7.5%;
+}
+
+.ego-shine-overlay {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    left: 0;
+}
+
+.ego-orb-selected {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 15;
+    left: 0;
+    top: 0px;
+}
+
+.ego-label-image {
+    position: absolute;
+    width: 72%;
+    z-index: 20;
+    object-fit: cover;
+    left: 14%;
+    bottom: -14%;
+}
+
+.ego-label{
+    position: absolute;
+    width: 64%;
+    height: 20%;
+    margin: auto;
+    z-index: 30;
+    left: 18%;
+    display: flex;
+    top: 91%
+}
+
+.ego-label-icons{
+    height: 100%;
+    width: 15%;
+}
+
+.ego-risk-level-image{
+    height: 50%;
+    transform: skew(0, 20deg);
+    top: 15%
+}
+
+.ego-name-value{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    line-height: 90%;
+    font-size: 1cqw;
+}
+
+.ego-threadspin-image{
+    height: 50%;
+    transform: skew(0, -20deg);
+    top: 15%
+}
+
+#equipable-select-right-column .label {
+    text-align: center;
+}
+
+#id-tab-label {
+    height: 20%;
+}
+
+#ego-tab-label {
+    height: 10%;
+}
+
+/* --- ID/EGO DETAILS --- */
+
+#equipable-details-portrait-container.shadow:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -moz-box-shadow: inset 0px 0px 2cqw 2cqw rgb(0, 0, 0);
+    -webkit-box-shadow: inset 0px 0px 2cqw 2cqw rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 2cqw 2cqw rgb(0, 0, 0);
+    z-index: 5;
+}
+
+#equipable-details-portrait {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#equipable-details-left-section {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#equipable-details-right-section {
+    width: 50%;
+    height: 100%;
+    float: right;
+
+    background-image: url("../assets/OtherUIElements/Identity/New_MainUI_PersonalityList_1.png");
+    background-size: 110%;
+    background-position-x: 100%;
+    background-repeat: no-repeat;  
+    background-position-y: -3vw;
+}
+
+#equipable-stats-list{
+    height: 20%;
+    padding-top: 2%;
+}
+.equipable-left-side-label{
+    width: 9vw;
+    text-align: center;
+    font-size: 1.3vw;
+    letter-spacing: 0.1vw;
+    aspect-ratio: 379/80;
+    padding-top: 1%;
+    margin-left: 1%;
+    color: rgb(252, 192, 106);
+    background-image: url("../assets/OtherUIElements/EquipableLeftSideLabel.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 3%;
+}
+#id-status-list{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.stat-container{   
+    display: flex;
+    justify-content: space-around;
+    height: 40%;
+}
+
+#id-status-list .equipable-stat span{
+    font-size: 3cqw;
+}
+#id-status-list .equipable-stat img{
+    height: 2.8cqw;
+    bottom: -0.2cqw;
+}
+
+#id-resistances-list{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+#id-resistances-list .equipable-stat img{
+    height: 2.8cqw;
+    bottom: -0.2cqw;
+}
+
+.resistance-values {
+    float: right;
+    text-align: center;
+}
+.resistance-values div {
+    font-size: 1.2cqw;
+}
+
+#ego-resistances-list img{
+    height: 2.8cqw;
+    bottom: -0.2cqw;
+    padding-left: 1.5%;
+    padding-right: 0.5%;
+}
+
+.fatal-resist {
+    color: rgb(255, 68, 68);
+}
+
+.endure-resist {
+    color: rgb(201, 201, 201);
+}
+
+.ineff-resist {
+    color: rgb(132, 132, 132);
+}
+
+#equipable-details-name-section{
+    width: 100%;  
+    aspect-ratio: 5/1;
+    padding: 5% 10% 0 5%;  
+    text-align: right;
+}
+
+#equipable-details-rarity{
+    width: 100%;
+    height: 50%;  
+    padding-top: 4%;
+}
+#equipable-details-rarity-image{
+    height: 100%;
+}
+
+#equipable-details-name{
+    font-size: 2.4cqw;
+    width: 100%;
+    height: 50%;
+    overflow: auto;
+}
+
+#equipable-details-other-info{
+    width: 100%;
+    aspect-ratio: 12/1;
+    padding: 0 10%;  
+    display: flex;
+    justify-content: flex-end;
+}
+#equipable-details-other-info > * {
+    height: 100%;
+    float: right;
+}
+
+#equipable-level {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 2%;
+}
+#equipable-level-tag{
+    font-size: 3cqw;
+    bottom: -15%;
+    padding-right: 10%;
+    color: rgb(159, 106, 58);
+}
+#equipable-level-value{
+    font-size: 4cqw;
+    bottom: -25%;
+}
+
+#ego-sanity-cost {
+    width: 40%;
+}
+
+#ego-sanity-cost #sanity-image{
+    height: 100%;
+}
+
+#ego-sanity-cost span:nth-of-type(1){
+    font-size: 1.5cqw;
+    bottom: 35%;
+    margin: 0 2%;
+    color: rgb(149, 179, 213);
+}
+#ego-sanity-cost span:nth-of-type(2),
+#ego-sanity-cost span:nth-of-type(3){
+    font-size: 3cqw;
+    bottom: 25%;
+    text-shadow: -0.15cqw -0.15cqw 0 rgb(0, 0, 0), 0.15cqw -0.15cqw 0 rgb(0, 0, 0), 
+                -0.15cqw 0.15cqw 0 rgb(0, 0, 0), 0.15cqw 0.15cqw 0 rgb(0, 0, 0);
+}
+
+#equipable-details-tabs{
+    width: 100%;
+    aspect-ratio: 7/1;
+}
+
+#equipable-details-skill-select{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(147, 123, 90);
+    width: 80%;
+    margin: 0 15% 0 5%;
+    aspect-ratio: 18/1;
+}
+#equipable-details-skill-select button{
+    width: 100%;
+    box-shadow: inset 0 0 0.5cqw 0.2cqw rgb(10, 7, 4);
+    font-size: 1cqw;
+}
+#equipable-details-skill-select .selected{
+    text-shadow: 0 0 5px rgb(254, 95, 0), 0 0 5px rgb(254, 119, 0);
+    color: rgb(254, 199, 0);
+}
+#equipable-details-skill-select .wrath{
+    background-color: rgb(108, 12, 9);
+}
+#equipable-details-skill-select .lust{
+    background-color: rgb(119, 53, 30);
+}
+#equipable-details-skill-select .sloth{
+    background-color: rgb(125, 93, 30);
+}
+#equipable-details-skill-select .gluttony{
+    background-color: rgb(73, 103, 20);
+}
+#equipable-details-skill-select .gloom{
+    background-color: rgb(20, 68, 82);
+}
+#equipable-details-skill-select .pride{
+    background-color: rgb(19, 43, 67);
+}
+#equipable-details-skill-select .envy{
+    background-color: rgb(52, 2, 69);
+}
+
+#equipable-details-skills-container{
+    display: flex;
+    width: 100%;
+    padding: 0% 10% 0% 5%;
+    aspect-ratio: 2.6/1;
+}
+
+#equipable-details-skills{
+    overflow-y: auto;
+    width: 100%;
+}
+
+#equipable-details-ego-cost{
+    flex: 0 0 10%;
+}
+#equipable-details-ego-cost img{
+    width: 50%;
+    padding-top: 10%;
+    padding-right: 5%;
+}
+#equipable-details-ego-cost span{
+    font-size: 2cqw;
+    line-height: 0;
+}
+
+.skill{
+    display: none;
+    overflow-x: auto;
+}
+
+.skill-stat-section{
+    margin-top: 3%;
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1%;
+}
+
+.skill-base-power{
+    padding-bottom: 1%;
+    width: 5%;
+    text-align: right;
+}
+.skill-base-power-value{
+    font-size: 2.5cqw;
+}
+
+.skill-icon-section{
+    width: 11%;
+    aspect-ratio: 1.1/1;
+}
+
+.skill-coin-power-container{
+    position: absolute;
+    width: 100%;
+    bottom: 98%;
+}
+.skill-coin-power-panel{
+    position: absolute;
+    width: 60%;
+    bottom: 0;
+    left: 15%;
+    z-index: 1;
+}
+.skill-coin-power-value{
+    text-align: right;
+    padding-right: 40%;
+    bottom: -0.2cqw;
+    z-index: 20;
+    font-size: 1.6cqw;
+    text-shadow: -1px -1px 0 rgb(29, 29, 29), 1px -1px 0 rgb(29, 29, 29),
+                         -1px 1px 0 rgb(29, 29, 29), 1px 1px 0 rgb(29, 29, 29);
+}
+
+.skill-icon-container{
+    height: 100%;
+}
+
+.skill-icon-container *{
+    position: absolute;
+}
+
+.skill-icon-frame{
+    position: absolute;
+    width: 105%;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+.skill-icon{
+    position: absolute;
+    width: 80%;
+    bottom: 10%;
+    left: 10%;
+    clip-path: polygon(50% 95%, 88% 78%, 97% 40%, 75% 5%, 25% 5%, 3% 40%, 12% 78%);
+    z-index: 2;
+}
+.skill-damage-type-icon{  
+    position: absolute;
+    width: 35%;
+    bottom: -10%;
+    left: 30%;
+    z-index: 3;
+}
+
+.skill-name-section{
+    width: 84%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.skill-coins{
+    height: 25%;
+    display: flex;
+}
+.skill-coins img{
+    height: 100%;
+}
+
+.skill-name-ribbon{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    margin-top: 0.5%;
+}
+.skill-name-ribbon-start{
+    height: 100%;
+}
+.skill-name-ribbon-middle{
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: repeat;
+}
+.skill-name-ribbon-end{
+    height: 100%;
+    width: 20%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.skill-name-ribbon-end .multiply-icon{
+    top: -0.5cqw;
+    left: 4cqw;
+    height: 1.1cqw;
+}
+.skill-name-ribbon-end span{
+    top: -0.5cqw;
+    left: 4cqw;
+    font-size: 1.9cqw;
+}
+
+.skill-name-value{
+    font-size: 1.3cqw;
+    letter-spacing: 0.1cqw;
+    left: 0.3cqw;
+    top: 0.15cqw;
+    z-index: 5;
+}
+
+.skill-name-bottom{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    padding-top: 1%;
+}
+.skill-name-bottom *{ 
+    vertical-align: top;
+}
+.skill-attack-icon{
+    height: 100%;
+}
+.skill-level{
+    width: 15%;
+}
+.skill-level-value{
+    font-size: 2.2cqw;
+}
+.skill-attack-weight{
+    height: 100%;
+    padding-top: 2%;
+    color: rgb(251, 197, 0);
+    font-size: 1cqw;
+}
+.skill-attack-weight-value{
+    color: rgb(251, 197, 0);
+}
+
+.skill-description, .skill-description *{
+    font-size: 1.2cqw;
+    line-height: 1.7cqw;
+}
+
+.description-part{
+    width: 100%;
+    display: flex;
+}
+
+.description-coin{
+    width: 7%;
+    float: left;
+    background-image: url("../assets/Icons/CoinEffectCoin.png");
+    background-size: 100%;
+    background-position: center;
+    background-position-y: 0.5cqw;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 1cqw;
+    font-size: 1.5cqw;  
+    padding-bottom: 0.6cqw;
+}
+
+.description-text{
+    width: 93%;
+    flex-grow: 1;
+    padding-top: 2%;
+    padding-left: 1%
+}
+
+.tooltip-container{
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.tooltip-box{
+    width: max-content;
+    min-width: 20vw;
+    max-width: 50vw;
+    background-color: rgb(8, 6, 5);
+    color: #dac590;
+    border: 1px solid;
+    border-color: rgb(101, 85, 65);
+    padding: 10px;
+    position: absolute;
+    z-index: 999;
+    bottom: 125%;
+    right: 0%;
+    margin-left: -100px;
+}
+.tooltip-box .status-icon{
+    max-height: 2em;
+}
+#tooltip-name{
+    font-size: 1.3vw;
+}
+#tooltip-description{
+    font-size: 1vw;
+}
+
+.buff{
+    color: #fac400;
+}
+.debuff{
+    color: #e20000;
+}
+.neutral{
+    color: #9f6a3a;
+}
+
+#tooltip{
+    display: none;
+    position: absolute; 
+    z-index: 1000;
+}
+
+.passive-category-label{
+    width: 12vw;
+    text-align: center;
+    font-size: 1.4vw;
+    letter-spacing: 0.1vw;
+    aspect-ratio: 379/80;
+    padding-top: 0.6cqw;
+    color: rgb(252, 192, 106);
+    background-image: url("../assets/OtherUIElements/EquipableLeftSideLabel.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 2vh;
+}
+
+.passive-name-ribbon{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.passive-name-ribbon-start{
+    height: 100%;
+}
+.passive-name-ribbon-middle{
+    height: 100%;
+    background-image: url('../assets/Icons/Skills/SkillNameRibbon/PassiveRibbonMiddle.png');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: repeat;
+}
+.passive-name-ribbon-end{
+    position:relative;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background-image: url('../assets/Icons/Skills/SkillNameRibbon/PassiveRibbonEnd.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.passive-name-value{
+    font-size: 1.2cqw;
+    top: 15%;
+    left: 0.8cqw;
+    z-index: 5;
+    letter-spacing: 0.05em;
+}
+.passive-description-value, .passive-description-value *{
+    font-size: 1.2cqw;
+    line-height: 1.7cqw;
+}
+.passive-description-value{
+    margin-bottom: 2cqw;
+}
+
+.passive-cost img{
+    height: 12%;
+}
+.passive-cost .multiply-icon{ 
+    height: 1.2em;
+    padding: 0 0.1em;
+}
+.passive-cost-value{
+    font-size: 2.5cqw;
+}
+.passive-cost-type{
+    font-size: 1.7cqw;
+    letter-spacing: 0.1em;
+}
+
+#alert-popup{ 
+    display: none;
+    z-index: 400;
+}
+
+#alert-popup-body{
+    padding-top: 5%;
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+    background-image: url("../assets/OtherUIElements/Popup.png");
+    background-size: 100%; /* Different sizes for each image */
+    background-position: center; /* Different positions for each image */
+    background-repeat: no-repeat; /* Prevents repeating for each image */
+    padding: 5%;
+    aspect-ratio: 1379/744;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#alert-popup-message{
+    font-size: 2cqw;
+    width: 100%;
+    height: 80%;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#alert-popup-buttons{
+    justify-content: flex-end;
+    width: 100%;
+    height: 20%;
+}
+
+#alert-popup-confirm-button {
+    background-image: url("../assets/OtherUIElements/PopupButton.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    aspect-ratio: 841/172;
+    font-size: 2cqw;
+    color: black;
+    padding-top: 1%;
+}
+
+.confirm-icon{
+    height: 60%;
+    margin-right: 3%;
+}
