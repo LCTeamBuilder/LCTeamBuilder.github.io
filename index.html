@@ -1,0 +1,220 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LC Team Builder</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="icon" type="image/x-icon" href="./assets/Icons/Statuses/Insight.png">
+</head>
+<body>
+    <div id="team-builder">
+        <div class="main-body">
+            <div class="top-row">
+                <button id="copy-link" class="font-mikodacs">COPY LINK TO TEAM</button>
+                <div id="team-builder-overlay-toggles" class="font-bebas-kai">
+                    <button class="identity-view-button selected">ID</button>
+                    <button class="ego-view-button">E.G.O</button>
+                </div>
+            </div>
+            <div class="team-container">
+                <div class="id-card-container" id="team-sinner-0" data-sinner-id=1></div>
+                <div class="id-card-container" id="team-sinner-1" data-sinner-id=2></div>
+                <div class="id-card-container" id="team-sinner-2" data-sinner-id=3></div>
+                <div class="id-card-container" id="team-sinner-3" data-sinner-id=4></div>
+                <div class="id-card-container" id="team-sinner-4" data-sinner-id=5></div>
+                <div class="id-card-container" id="team-sinner-5" data-sinner-id=6></div>
+                
+                <div class="id-card-container" id="team-sinner-6" data-sinner-id=6></div>
+                <div class="id-card-container" id="team-sinner-7" data-sinner-id=7></div>
+                <div class="id-card-container" id="team-sinner-8" data-sinner-id=8></div>
+                <div class="id-card-container" id="team-sinner-9" data-sinner-id=9></div>
+                <div class="id-card-container" id="team-sinner-10" data-sinner-id=10></div>
+                <div class="id-card-container" id="team-sinner-11" data-sinner-id=11></div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="affinity-container">
+                <div class="label">AFFINITIES</div>
+                <div class="affinity-field"><img class="wrath-icon">x<span id="wrath-owned-value">/<span id="wrath-cost-value"></span></div>
+                <div class="affinity-field"><img class="lust-icon">x<span id="lust-owned-value">/<span id="lust-cost-value"></span></div>
+                <div class="affinity-field"><img class="sloth-icon">x<span id="sloth-owned-value">/<span id="sloth-cost-value"></span></div>
+                <div class="affinity-field"><img class="gluttony-icon">x<span id="gluttony-owned-value">/<span id="gluttony-cost-value"></span></div>
+                <div class="affinity-field"><img class="gloom-icon">x<span id="gloom-owned-value">/<span id="gloom-cost-value"></span></div>
+                <div class="affinity-field"><img class="pride-icon">x<span id="pride-owned-value">/<span id="pride-cost-value"></span></div>
+                <div class="affinity-field"><img class="envy-icon">x<span id="envy-owned-value">/<span id="envy-cost-value"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="equipable-select-modal" class="modal">
+        <button id="close-equipable-select-button"></button>
+        <div id="equipable-select-body">
+            <div id="equipable-select-main-section">
+                <div id="equipable-list-toggles" class="font-mikodacs">
+                    <div class="equipable-list-toggle">
+                        <img class="toggle-selected-image" src="./assets/OtherUIElements/EquipableToggleActive.png">
+                        <button class="identity-view-button">Identities</button>
+                    </div>
+                    <div class="equipable-list-toggle">
+                        <img class="toggle-selected-image" src="./assets/OtherUIElements/EquipableToggleActive.png">
+                        <button class="ego-view-button">E.G.O</button>
+                    </div>
+                </div>
+                <div id="id-select-list" class="equipable-container"></div>
+                <div id="ego-select-list" class="equipable-container"></div>
+            </div>
+            <div id="equipable-select-right-column">
+                <div id="equipable-select-id-tab">
+                    <div class="label" id="id-tab-label"></div>
+                    <div class="id-image"></div>
+                </div>
+                <div id="equipable-select-ego-tab">
+                    <div class="label" id="ego-tab-label"></div>
+                    <div class="ego-field"></div>
+                    <div class="ego-field"></div>
+                    <div class="ego-field"></div>
+                    <div class="ego-field"></div>
+                    <div class="ego-field"></div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="equipable-details-modal" class="modal">    
+        <button id="close-equipable-details-button"></button>
+        <div id="equipable-details-body">
+            <div id="equipable-details-left-section">
+                <div id="equipable-details-portrait-container">
+                    <img id="equipable-details-portrait">
+                </div>
+                <div id="equipable-stats-list">
+                    <div id="id-status-list">
+                        <div class="equipable-left-side-label font-mikodacs">Status</div>
+                        <div class="stat-container">
+                            <div class="equipable-stat">
+                                <img id="health-icon" src="./assets/Icons/Stats/Health.png"><span id="id-health-value" class="font-excelsior-sans"></span>
+                            </div>
+                            <div class="equipable-stat">
+                                <img id="speed-icon" src="./assets/Icons/Stats/Speed.png"><span id="id-speed" class="font-excelsior-sans"></span>
+                            </div>
+                            <div class="equipable-stat">
+                                <img id="defense-icon" src="./assets/Icons/Stats/Defense.png"><span id="defense-value" class="font-excelsior-sans"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="id-resistances-list" class="">
+                        <div class="equipable-left-side-label font-mikodacs">Resistances</div>
+                        <div class="stat-container">
+                            <div class="equipable-stat">
+                                <img id="slash-icon" src="./assets/Icons/Stats/SlashResist.png">
+                                <div class="resistance-values">
+                                    <div id="slash-resistance-label-value"></div>
+                                    <div id="slash-resistance-number-value" class="font-excelsior-sans"></div>
+                                </div>
+                            </div>
+                            <div class="equipable-stat">
+                                <img id="pierce-icon" src="./assets/Icons/Stats/PierceResist.png">
+                                <div class="resistance-values">
+                                    <div id="pierce-resistance-label-value"></div>
+                                    <div id="pierce-resistance-number-value" class="font-excelsior-sans"></div>
+                                </div>
+                            </div>
+                            <div class="equipable-stat">
+                                <img id="blunt-icon" src="./assets/Icons/Stats/BluntResist.png">
+                                <div class="resistance-values">
+                                    <div id="blunt-resistance-label-value"></div>
+                                    <div id="blunt-resistance-number-value" class="font-excelsior-sans"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ego-resistances-list">
+                        <div class="equipable-left-side-label font-mikodacs">Resistances</div>
+                        <div class="stat-container">
+                            <img class="wrath-icon">
+                            <div class="resistance-values">
+                                <div id="wrath-resistance-label-value"></div>
+                                <div id="wrath-resistance-number-value" class="font-excelsior-sans"></div>
+                            </div>
+                            <img class="lust-icon">
+                            <div class="resistance-values">
+                                <div id="lust-resistance-label-value"></div>
+                                <div id="lust-resistance-number-value" class="font-excelsior-sans"></div>
+                            </div>
+                            <img class="sloth-icon">
+                            <div class="resistance-values">
+                                <div id="sloth-resistance-label-value"></div>
+                                <div id="sloth-resistance-number-value" class="font-excelsior-sans"></div>
+                            </div>
+                            <img class="gluttony-icon">
+                            <div class="resistance-values">
+                                <div id="gluttony-resistance-label-value"></div>
+                                <div id="gluttony-resistance-number-value" class="font-excelsior-sans"></div>
+                            </div>
+                            <img class="gloom-icon">
+                            <div class="resistance-values">
+                                <div id="gloom-resistance-label-value"></div>
+                                <div id="gloom-resistance-number-value" class="font-excelsior-sans"></div>
+                            </div>
+                            <img class="pride-icon">
+                            <div class="resistance-values">
+                                <div id="pride-resistance-label-value"></div>
+                                <div id="pride-resistance-number-value" class="font-excelsior-sans"></div>
+                            </div>
+                            <img class="envy-icon">
+                            <div class="resistance-values">
+                                <div id="envy-resistance-label-value"></div>
+                                <div id="envy-resistance-number-value" class="font-excelsior-sans"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="equipable-details-right-section">
+                <div id="equipable-details-name-section">
+                    <div id="equipable-details-rarity">
+                        <img id="equipable-details-rarity-image">
+                    </div>
+                    <div id="equipable-details-tags"></div>
+                    <div id="equipable-details-name" class="font-mikodacs text-shadow"></div>
+                </div>
+                <div id="equipable-details-other-info">
+                    <div id="equipable-level" class="font-excelsior-sans"><span id="equipable-level-tag">LV</span><span id="equipable-level-value">?</span></div>                  
+                    <div id="ego-sanity-cost"><img id="sanity-image" src="./assets/Icons/Stats/Public_Panic.png"><span class="font-mikodacs">Sanity cost</span> <span id="ego-awakening-cost-value" class="font-excelsior-sans"></span><span id="ego-corrosion-cost-value" class="font-excelsior-sans"></span></div>
+                    <img id="equipable-thread-tier-image" src="./assets/Icons/Uptie4.png">
+                </div>
+                <div id="equipable-details-tabs"></div>
+                <div id="equipable-details-skill-select" class="font-mikodacs"></div>             
+                <div id="equipable-details-skills-container">
+                    <div id="equipable-details-skills"></div>
+                    <div id="equipable-details-ego-cost" class="font-excelsior-sans">
+                        <img class="wrath-icon"><span>0</span>
+                        <img class="lust-icon"><span>0</span>
+                        <img class="sloth-icon"><span>0</span>
+                        <img class="gluttony-icon"><span>0</span>
+                        <img class="gloom-icon"><span>0</span>
+                        <img class="pride-icon"><span>0</span>
+                        <img class="envy-icon"><span>0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="alert-popup" class="modal">
+        <div id="alert-popup-body">
+            <div id="alert-popup-message">Copied link to clipboard!</div>  
+            <div id="alert-popup-buttons">
+                <button id="alert-popup-confirm-button" class="font-mikodacs"><img class="confirm-icon" src="./assets/OtherUIElements/PopupConfirm.png">OK</button>     
+            </div>
+        </div>
+    </div>
+
+    <div id="tooltip">
+        Tooltip text
+    </div>
+    
+</body>
+<script src="dist/out.js"></script>
+</html>

@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@types/jquery": "^3.5.30",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "build:esbuild": "npx esbuild src/Main.ts --bundle --minify --sourcemap --target=\"chrome58,firefox57,safari11,edge29\" --outfile=\"./dist/out.js\""
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
