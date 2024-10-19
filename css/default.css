@@ -1069,9 +1069,10 @@ body {
     width: 20%;
     background-size: auto 100%;
     background-repeat: no-repeat;
+    display:flex;
 }
 .skill-name-ribbon-end .multiply-icon{
-    top: -0.5cqw;
+    bottom: -0.2cqw;
     left: 4cqw;
     height: 1.1cqw;
     display: inline-block;
