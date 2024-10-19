@@ -223,6 +223,16 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
     "[Fanatic]": {Name: "Fanatic", Type: StatusTypeEnum.Buff, Description: 
         "Skill Power +1 against units with Nails.", 
         ImageLink: "./assets/Icons/Statuses/Fanatic.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
+    "[Blood-tinged Scissorblades]": {Name: "Blood-tinged Scissorblades", Type: StatusTypeEnum.Buff, Description:        
+        "- Max Value: 10<br>"+
+        "- Stage 1 Blood-tinged Scissorblades<br>"+
+        "- At 10+ Blood-tinged Scissorblades, converts to Blood-tinged Scissorblades II.<br>"+
+        "- At 20+ Blood-tinged Scissorblades, converts to Blood-tinged Scissorblades III.<br>"+
+        "- Reverts to previous Stage when the Stack drops below the requirements.<br>"+
+        "- Blood-tinged Scissorblades does not drop below 1.<br>"+
+        "- At Blood-tinged Scissorblades II, gain 1 Offense Level Up and 1 Defense Level Down based on the Stack<br>"+
+        "- At Blood-tinged Scissorblades III, gain 1 Offense Level Up based on the Stack", 
+        ImageLink: "./assets/Icons/Statuses/BloodTingedScissorblades.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
     "[Appetite]": {Name: "Appetite", Type: StatusTypeEnum.Buff, Description: 
         "Increases the healing provided by the Passive [Rustle Up]. Spent when the Passive activates.", 
         ImageLink: "./assets/Icons/Statuses/Appetite.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
@@ -478,6 +488,11 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
     "[Maggots]": {Name: "Maggots", Type: StatusTypeEnum.Debuff, Description: 
         "Turn End: Take Gluttony damage by the Count, then lower it by 1; Bleed Count +1.",
         ImageLink: "./assets/Icons/Statuses/Maggots.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
+    "[Sewing Target]": {Name: "Sewing Target", Type: StatusTypeEnum.Debuff, Description:  
+        "- Max Value: 10<br>"+
+        "- Take +0.5% more damage for every Bleed on self (max 10%)<br>"+
+        "- Turn End: reduced by 1",
+        ImageLink: "./assets/Icons/Statuses/LineCutting.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
     "[Tremor]": {Name: "Tremor", Type: StatusTypeEnum.Debuff, Description: 
         "When attacked by skills that burst Tremor, raise the Stagger threshold by the effect's Potency.<br>"+
         "At the end of the turn, reduce the Count by 1.",
@@ -549,6 +564,11 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
         "On hit, inflict Rupture by the Count; When hit, gain Rupture by the Count.<br>"+
         "Turn End: At 6+ Count, remove all Talisman and take fixed damage by its Count.",
         ImageLink: "./assets/Icons/Statuses/Talisman.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
+    "[Lasso]": {Name: "Lasso", Type: StatusTypeEnum.Debuff, Description: 
+        "- Max Value: 3<br>"+
+        "- Turn End: gain Rupture Potency equal to this unit's current Speed value (max 5), and gain 1 Bind next turn<br>"+
+        "- Turn End: reduced by 1",
+        ImageLink: "./assets/Icons/Statuses/Snare.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
     "[Sinking]": {Name: "Sinking", Type: StatusTypeEnum.Debuff, Description: 
         "When hit by an attack, take fixed SP damage by the effect's Potency. (Units with no Sanity take Gloom damage instead.)<br>"+
         "Then, reduce its Count by 1.", 
@@ -711,6 +731,17 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
         "· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)<br>"+
         "· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
         ImageLink: "./assets/Icons/Statuses/StrategicR&RMode.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
+    "[Bloodfeast]": {Name: "Bloodfeast", Type: StatusTypeEnum.Neutral, Description: 
+        "- Max Value: 999<br>"+
+        "- Stores all Bleed damage dealt in this zone<br>"+
+        "- Resets when moving to a different zone<br>"+
+        "- This value is shared by all characters<br>"+
+        "- If there is a higher Kindred among the allies who also consumes Bloodfeast, this unit cannot consume Bloodfeast until that ally consumes it first.",
+        ImageLink: "./assets/Icons/Statuses/Bloodfeast.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
+    "[Bloodfeast Consumed]": {Name: "Bloodfeast Consumed", Type: StatusTypeEnum.Neutral, Description: 
+        "- Max Value: 999<br>"+
+        "- Displays the total amount of Bloodfeast consumed in this Encounter",
+        ImageLink: "./assets/Icons/Statuses/TotalBloodfeastConsumed.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
     "[Final Augment]": {Name: "Final Augment", Type: StatusTypeEnum.Neutral, Description: 
         "Turn Start: Gain 3 Attack Power Up, Defense Power Up, and Haste; die when count reaches zero.",
         ImageLink: "./assets/Icons/Statuses/FinalAugment.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},

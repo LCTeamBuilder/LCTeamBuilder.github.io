@@ -20,6 +20,7 @@ import { EverlastingFaust } from "./Sinners/Faust/EGO/Everlasting/EverlastingFau
 import { FluidSacFaust } from "./Sinners/Faust/EGO/FluidSac/FluidSacFaust";
 import { HexNailFaust } from "./Sinners/Faust/EGO/HexNail/HexNailFaust";
 import { RepresentationEmitterFaust } from "./Sinners/Faust/EGO/RepresentationEmitter/RepresentationEmitterFaust";
+import { LassoFaust } from "./Sinners/Faust/EGO/Snare/LassoFaust";
 import { TelepoleFaust } from "./Sinners/Faust/EGO/Telepole/TelepoleFaust";
 import { BladeLineageSalsuFaust } from "./Sinners/Faust/Identities/BladeLineageSalsu/BladeLineageSalsuFaust";
 import { LCBSinnerFaust } from "./Sinners/Faust/Identities/LCBSinner/LCBSinnerFaust";
@@ -68,9 +69,11 @@ import { DimensionShredderHongLu } from "./Sinners/HongLu/EGO/DimensionShredder/
 import { EffervescentCorrosionHongLu } from "./Sinners/HongLu/EGO/EffervescentCorrosion/EffervescentCorrosionHongLu";
 import { LandOfIllusionHongLu } from "./Sinners/HongLu/EGO/LandOfIllusion/LandOfIllusionHongLu";
 import { RoseateDesireHongLu } from "./Sinners/HongLu/EGO/RoseataDesire/RoseateDesireHongLu";
+import { LassoHongLu } from "./Sinners/HongLu/EGO/Snare/LassoHongLu";
 import { SodaHongLu } from "./Sinners/HongLu/EGO/Soda/SodaHongLu";
 import { DieciAssocSouthSection4HongLu } from "./Sinners/HongLu/Identities/DieciAssociationSouthSection4/DieciAssocSouthSection4HongLu";
 import { District20YurodivyHongLu } from "./Sinners/HongLu/Identities/District20Yurodivy/District20YurodivyHongLu";
+import { FanghuntOfficeFixerHongLu } from "./Sinners/HongLu/Identities/FanghuntOfficeFixer/FanghuntOfficeFixerHongLu";
 import { HookOfficeFixerHongLu } from "./Sinners/HongLu/Identities/HookOfficeFixer/HookOfficeFixerHongLu";
 import { KCorpClass3ExcisionStaffHongLu } from "./Sinners/HongLu/Identities/KCorpClass3ExcisionStaff/KCorpClass3ExcisionStaffHongLu";
 import { KurokumoClanWakashuHongLu } from "./Sinners/HongLu/Identities/KurokumoClanWakashu/KurokumoClanWakashuHongLu";
@@ -126,6 +129,7 @@ import { LCBSinnerOutis } from "./Sinners/Outis/Identities/LCBSinner/LCBSinnerOu
 import { LobotomyEgoMagicBulletOutis } from "./Sinners/Outis/Identities/LobotomyEGOMagicBullet/LobotomyEgoMagicBulletOutis";
 import { MolarOfficeFixerOutis } from "./Sinners/Outis/Identities/MolarOfficeFixer/MolarOfficeFixerOutis";
 import { SevenAssocSouthSection6DirectorOutis } from "./Sinners/Outis/Identities/SevenAssociationSouthSection6Director/SevenAssocSouthSection6DirectorOutis";
+import { TheBarberOfLaManchalandOutis } from "./Sinners/Outis/Identities/TheBarberOfLaManchaland/TheBarberOfLaManchalandOutis";
 import { TheRingPointillistStudentOutis } from "./Sinners/Outis/Identities/TheRingPointillistStudent/TheRingPointillistStudentOutis";
 import { WCorpL3CleanupCaptainOutis } from "./Sinners/Outis/Identities/WCorpL3CleanupCaptain/WCorpL3CleanupCaptainOutis";
 import { WutheringHeightsChiefButlerOutis } from "./Sinners/Outis/Identities/WutheringHeightsChiefButler/WutheringHeightsChiefButlerOutis";
@@ -271,6 +275,7 @@ export const Identities: Array<IdentityBase> = [
     //Hong Lu
     new DieciAssocSouthSection4HongLu,
     new District20YurodivyHongLu,
+    new FanghuntOfficeFixerHongLu,
     new HookOfficeFixerHongLu,
     new KCorpClass3ExcisionStaffHongLu,
     new KurokumoClanWakashuHongLu,
@@ -335,6 +340,7 @@ export const Identities: Array<IdentityBase> = [
     new LobotomyEgoMagicBulletOutis,
     new MolarOfficeFixerOutis,
     new SevenAssocSouthSection6DirectorOutis,
+    new TheBarberOfLaManchalandOutis,
     new TheRingPointillistStudentOutis,
     new WCorpL3CleanupCaptainOutis,
     new WutheringHeightsChiefButlerOutis,
@@ -365,6 +371,7 @@ export const Egos: Array<EgoBase> = [
     new EverlastingFaust,
     new FluidSacFaust,
     new HexNailFaust,
+    new LassoFaust,
     new RepresentationEmitterFaust,
     new TelepoleFaust,
 
@@ -398,6 +405,7 @@ export const Egos: Array<EgoBase> = [
     new DimensionShredderHongLu,
     new EffervescentCorrosionHongLu,
     new LandOfIllusionHongLu,
+    new LassoHongLu,
     new RoseateDesireHongLu,
     new SodaHongLu,
 
@@ -453,36 +461,3 @@ export const Egos: Array<EgoBase> = [
     new SolemnLamentGregor,
     new SuddenlyOneDayGregor
 ]
-
-
-/*interface Ids {
-    readonly YiSang: Array<IdBase>;
-    readonly Faust: Array<IdBase>;
-    readonly DonQuixote: Array<IdBase>;
-    readonly Ryoshu: Array<IdBase>;
-    readonly Meursault: Array<IdBase>;
-    readonly HongLu: Array<IdBase>;
-    readonly Heathcliff: Array<IdBase>;
-    readonly Ishmael: Array<IdBase>;
-    readonly Rodion: Array<IdBase>;
-    readonly Sinclair: Array<IdBase>;
-    readonly Outis: Array<IdBase>;
-    readonly Gregor: Array<IdBase>;
-}*/
-
-/*export const Ids: Ids = {
-    YiSang: [new LCBSinnerYiSang,
-            new ThePequodFirstMateYiSang, 
-            new LobotomyEGOSolemnLamentYiSang],
-    Faust: [new LCBSinnerFaust],
-    DonQuixote: [new LCBSinnerDonQuixote],
-    Ryoshu: [new LCBSinnerRyoshu],
-    Meursault: [new LCBSinnerMeursault],
-    HongLu: [new LCBSinnerHongLu],
-    Heathcliff: [new LCBSinnerHeathcliff],
-    Ishmael: [new LCBSinnerIshmael],
-    Rodion: [new LCBSinnerRodion],
-    Sinclair: [new LCBSinnerSinclair],
-    Outis: [new LCBSinnerOutis],
-    Gregor: [new LCBSinnerGregor]
-}*/
