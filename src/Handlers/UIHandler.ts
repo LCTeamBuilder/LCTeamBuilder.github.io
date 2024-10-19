@@ -32,9 +32,9 @@ export function UpdateSinnerIdentityCard(sinnerId: number){
             if (ego.Name.length > 14) { egoOverlaySlot.find(".ego-name").css("font-size", "0.7cqw"); }
             if (ego.Name.length > 18) { egoOverlaySlot.find(".ego-name").css("font-size", "0.6cqw").css("letter-spacing", "-0.06cqw"); }
             if (ego.Name.length > 24) { egoOverlaySlot.find(".ego-name").css("font-size", "0.5cqw").css("letter-spacing", "-0.05cqw"); }
-            egoOverlaySlot.find(".ego-image").parent().css("display", "block");
+            egoOverlaySlot.find(".ego-image").parent().css("display", "flex");
             egoOverlaySlot.find(".ego-image").attr("src", ego.AwakeningSkill.SkillImageDir);
-            egoOverlaySlot.find(".threadspin-icon").parent().css("display", "block");
+            egoOverlaySlot.find(".threadspin-icon").parent().css("display", "flex");
         });
         $("#team-sinner-"+sinnerId).html(template.map(node => (node as HTMLElement).outerHTML).join(''));
         if (globalThis.TeamOverlay == OverlayEnum.Ego) { $('#team-builder .ego-overlay').show(); };
@@ -476,7 +476,7 @@ export function LoadEgoDetailsModal(ego: EgoBase){
         $("#equipable-details-skills").append(BuildPassiveDescriptions([ego.Passive]));
 
         ego.Cost.forEach((cost) => {
-            $("#equipable-details-ego-cost span:nth-of-type("+(cost.sin+1)+")").text(cost.amount);
+            $("#equipable-details-ego-cost .ego-cost-slot:nth-child("+(cost.sin+1)+")").find(".cost-value-container").text(cost.amount);
         });
 
         ShowSkill(1);
