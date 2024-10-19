@@ -1222,14 +1222,17 @@ body {
 }
 
 .passive-cost img{
-    height: 12%;
+    height: 2.2cqw;
+    object-fit: contain;
 }
 .passive-cost .multiply-icon{ 
-    height: 1.2em;
-    padding: 0 0.1em;
+    height: 1.3cqw;
+    bottom: -0.15cqw;
+    margin: 0 0.2cqw;
 }
 .passive-cost-value{
     font-size: 2.5cqw;
+    margin-right: 0.5cqw;
 }
 .passive-cost-type{
     font-size: 1.7cqw;

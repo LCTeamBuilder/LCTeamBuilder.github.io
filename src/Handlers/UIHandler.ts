@@ -515,8 +515,9 @@ function BuildPassiveDescriptions(passives: Array<Passive>): JQuery<HTMLElement>
 
             if (passive.Cost){
                 passive.Cost.forEach(cost => {
-                    $(template).find(".passive-cost").append('<img class="'+SinEnumToString(cost.sin).toLowerCase()+'-icon"><img class="multiply-icon"><span class="passive-cost-value font-excelsior-sans">'+cost.amount+'</span><span class="passive-cost-type font-mikodacs">'+(passive.CostType == PassiveCostTypeEnum.Owned ? ' Owned' : ' Res.')+'</span>')
+                    $(template).find(".passive-cost").append('<img class="'+SinEnumToString(cost.sin).toLowerCase()+'-icon"><img class="multiply-icon"><span class="passive-cost-value font-excelsior-sans">'+cost.amount+'</span>')
                 });
+                $(template).find(".passive-cost").append('<span class="passive-cost-type font-mikodacs">'+(passive.CostType == PassiveCostTypeEnum.Owned ? ' Owned' : ' Res.')+'</span>');
             }
             description.append(template);
         });
