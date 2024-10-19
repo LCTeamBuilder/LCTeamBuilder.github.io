@@ -1074,6 +1074,7 @@ body {
     top: -0.5cqw;
     left: 4cqw;
     height: 1.1cqw;
+    display: inline-block;
 }
 .skill-name-ribbon-end span{
     top: -0.5cqw;
@@ -1256,6 +1257,7 @@ body {
 .passive-cost img{
     height: 2.2cqw;
     object-fit: contain;
+    display: inline-block;
 }
 .passive-cost .multiply-icon{ 
     height: 1.3cqw;
