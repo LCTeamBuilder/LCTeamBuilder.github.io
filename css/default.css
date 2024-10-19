@@ -313,6 +313,7 @@ body {
 }
 .identity-rarity{
     height: 12%;
+    display: flex;
 }
 .identity-rarity-image{
     height: 100%;
@@ -362,6 +363,7 @@ body {
     justify-content: space-around;
 }
 .ego-overlay-slot div{
+    display: flex;
     width: 15%;
     height: 100%;
 }
@@ -529,6 +531,7 @@ body {
 .equipable-list-toggle {
     width: 40%;
     height: 100%;
+    display: flex;
 }
 
 #equipable-list-toggles .identity-view-button {
@@ -635,6 +638,7 @@ body {
 .ego-label-icons{
     height: 100%;
     width: 15%;
+    display:flex;
 }
 
 .ego-risk-level-image{
@@ -671,6 +675,14 @@ body {
 
 /* --- ID/EGO DETAILS --- */
 
+#equipable-details-body{
+    height: 100%;
+}
+
+#equipable-details-portrait-container {
+    height: 80%;
+}
+
 #equipable-details-portrait-container.shadow:before {
     display: block;
     content: '';
@@ -684,7 +696,7 @@ body {
 }
 
 #equipable-details-portrait {
-    height: 80%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
@@ -913,21 +925,39 @@ body {
 }
 
 #equipable-details-ego-cost{
-    flex: 0 0 10%;
+    width: 4cqw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
-#equipable-details-ego-cost img{
-    width: 50%;
-    padding-top: 10%;
-    padding-right: 5%;
+
+.ego-cost-slot{
+    height: 14%;
+    display: flex;
 }
-#equipable-details-ego-cost span{
+
+.cost-icon-container{
+    height: 100%;
+    width: 70%;
+}
+.cost-value-container{
+    height: 100%;
+    width: 30%;
     font-size: 2cqw;
-    line-height: 0;
+    padding-top: 0.8cqw;
+}
+
+.cost-icon-container img{
+    height: 100%;
+    padding-top: 10%;
+    margin: auto;
+    display: block;
 }
 
 .skill{
     display: none;
     overflow-x: auto;
+    height: 100%;
 }
 
 .skill-stat-section{
@@ -1057,6 +1087,7 @@ body {
     left: 0.3cqw;
     top: 0.15cqw;
     z-index: 5;
+    vertical-align: top;
 }
 
 .skill-name-bottom{
@@ -1181,7 +1212,7 @@ body {
 }
 
 .passive-name-ribbon{
-    height: 12%;
+    height: 2.5cqw;
     width: 100%;
     display: flex;
     margin-top: 2%;
@@ -1212,6 +1243,7 @@ body {
     left: 0.8cqw;
     z-index: 5;
     letter-spacing: 0.05em;
+    vertical-align: top;
 }
 .passive-description-value, .passive-description-value *{
     font-size: 1.2cqw;
