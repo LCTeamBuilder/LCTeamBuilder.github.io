@@ -74,25 +74,25 @@ button {
     text-shadow: 0.05em 0.05em rgb(28, 28, 28);
 }
 
-#team-builder .wrath-icon{
+#team-builder .wrath-icon, .passive-cost .wrath-icon{
     content:url("../assets/Icons/Resistances/WrathEndure.png");
 }
-#team-builder .lust-icon{
+#team-builder .lust-icon, .passive-cost .lust-icon{
     content:url("../assets/Icons/Resistances/LustEndure.png");
 }
-#team-builder .sloth-icon{
+#team-builder .sloth-icon, .passive-cost .sloth-icon{
     content:url("../assets/Icons/Resistances/SlothEndure.png");
 }
-#team-builder .gluttony-icon{
+#team-builder .gluttony-icon, .passive-cost .gluttony-icon{
     content:url("../assets/Icons/Resistances/GluttonyEndure.png");
 }
-#team-builder .gloom-icon{
+#team-builder .gloom-icon, .passive-cost .gloom-icon{
     content:url("../assets/Icons/Resistances/GloomEndure.png");
 }
-#team-builder .pride-icon{
+#team-builder .pride-icon, .passive-cost .pride-icon{
     content:url("../assets/Icons/Resistances/PrideEndure.png");
 }
-#team-builder .envy-icon{
+#team-builder .envy-icon, .passive-cost .envy-icon{
     content:url("../assets/Icons/Resistances/EnvyEndure.png");
 }
 
@@ -621,7 +621,7 @@ body {
     z-index: 20;
     object-fit: cover;
     left: 14%;
-    bottom: -14%;
+    bottom: -12%;
 }
 
 .ego-label{
