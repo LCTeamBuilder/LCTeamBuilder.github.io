@@ -135,6 +135,7 @@ import { WCorpL3CleanupCaptainOutis } from "./Sinners/Outis/Identities/WCorpL3Cl
 import { WutheringHeightsChiefButlerOutis } from "./Sinners/Outis/Identities/WutheringHeightsChiefButler/WutheringHeightsChiefButlerOutis";
 import { FourthMatchFlameRodion } from "./Sinners/Rodion/EGO/4thMatchFlame/FourthMatchFlameRodion";
 import { EffervescentCorrosionRodion } from "./Sinners/Rodion/EGO/EffervescentCorrosion/EffervescentCorrosionRodion";
+import { HexNailRodion } from "./Sinners/Rodion/EGO/HexNail/HexNailRodion";
 import { PursuanceRodion } from "./Sinners/Rodion/EGO/Pursuance/PursuanceRodion";
 import { RimeShankRodion } from "./Sinners/Rodion/EGO/RimeShank/RimeShankRodion";
 import { SanguineDesireRodion } from "./Sinners/Rodion/EGO/SanguineDesire/SanguineDesireRodion";
@@ -169,6 +170,7 @@ import { WCorpL3CleanupAgentRyoshu } from "./Sinners/Ryoshu/Identities/WCorpL3Cl
 import { NineTwoSinclair } from "./Sinners/Sinclair/EGO/92/NineTwoSinclair";
 import { BranchOfKnowledgeSinclair } from "./Sinners/Sinclair/EGO/BranchOfKnowledge/BranchOfKnowledgeSinclair";
 import { CavernousWailingSinclair } from "./Sinners/Sinclair/EGO/CavernousWailing/CavernousWailingSinclair";
+import { HexNailSinclair } from "./Sinners/Sinclair/EGO/HexNail/HexNailSinclair";
 import { ImpendingDaySinclair } from "./Sinners/Sinclair/EGO/ImpendingDay/ImpendingDaySinclair";
 import { LanternSinclair } from "./Sinners/Sinclair/EGO/Lantern/LanternSinclair";
 import { LifetimeStewSinclair } from "./Sinners/Sinclair/EGO/LifetimeStew/LifetimeStewSinclair";
@@ -430,12 +432,14 @@ export const Egos: Array<EgoBase> = [
     //Rodion
     new FourthMatchFlameRodion,
     new EffervescentCorrosionRodion,
+    new HexNailRodion,
     new PursuanceRodion,
     new RimeShankRodion,
     new SanguineDesireRodion,
     new WhatIsCastRodion,
 
     //Sinclair
+    new HexNailSinclair,
     new NineTwoSinclair,
     new BranchOfKnowledgeSinclair,
     new CavernousWailingSinclair,
