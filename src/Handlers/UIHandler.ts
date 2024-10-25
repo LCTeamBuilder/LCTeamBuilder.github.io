@@ -283,6 +283,31 @@ export function LoadIdentityDetailsModal(identity: IdentityBase){
     });
 }
 
+function SetSinResistanceAttributes(sin: SinEnum, value: number){
+    let sinName = SinEnumToString(sin);
+    switch (value){
+        case 0.5: {
+            $("#equipable-details-modal").find("."+sinName.toLowerCase()+"-icon").attr("src", "./assets/Icons/Resistances/"+sinName+"Ineff.png");
+            $("#"+sinName.toLowerCase()+"-resistance-label-value, #"+sinName.toLowerCase()+"-resistance-number-value").addClass("ineff-resist");
+            break;
+        }
+        case 0.75: {
+            $("#equipable-details-modal").find("."+sinName.toLowerCase()+"-icon").attr("src", "./assets/Icons/Resistances/"+sinName+"Endure.png");
+            $("#"+sinName.toLowerCase()+"-resistance-label-value, #"+sinName.toLowerCase()+"-resistance-number-value").addClass("endure-resist");
+            break;
+        }
+        case 1: {
+            $("#equipable-details-modal").find("."+sinName.toLowerCase()+"-icon").attr("src", "./assets/Icons/Resistances/"+sinName+"Normal.png");
+            break;
+        }
+        case 2: {
+            $("#equipable-details-modal").find("."+sinName.toLowerCase()+"-icon").attr("src", "./assets/Icons/Resistances/"+sinName+"Fatal.png");
+            $("#"+sinName.toLowerCase()+"-resistance-label-value, #"+sinName.toLowerCase()+"-resistance-number-value").addClass("fatal-resist");
+            break;
+        }
+    }
+}
+
 export function LoadEgoDetailsModal(ego: EgoBase){
     $("#equipable-details-modal #id-status-list").hide();
     $("#equipable-details-modal #id-resistances-list").hide();
@@ -299,47 +324,12 @@ export function LoadEgoDetailsModal(ego: EgoBase){
     $("#envy-resistance-label-value, #envy-resistance-number-value").removeClass("fatal-resist endure-resist ineff-resist");
 
     $("#wrath-resistance-label-value").text(ResistanceLabels.find(l => l.value == ego.Resistances.find(e => e.sin == SinEnum.Wrath)!.resistance)!.label);
-    switch (ego.Resistances.find(e => e.sin == SinEnum.Wrath)!.resistance){
-        case 0.5: $("#wrath-resistance-label-value, #wrath-resistance-number-value").addClass("ineff-resist");
-        case 0.75: $("#wrath-resistance-label-value, #wrath-resistance-number-value").addClass("endure-resist");
-        case 2: $("#wrath-resistance-label-value, #wrath-resistance-number-value").addClass("fatal-resist");
-    }
     $("#lust-resistance-label-value").text(ResistanceLabels.find(l => l.value == ego.Resistances.find(e => e.sin == SinEnum.Lust)!.resistance)!.label);
-    switch (ego.Resistances.find(e => e.sin == SinEnum.Lust)!.resistance){
-        case 0.5: $("#lust-resistance-label-value, #lust-resistance-number-value").addClass("ineff-resist");
-        case 0.75: $("#lust-resistance-label-value, #lust-resistance-number-value").addClass("endure-resist");
-        case 2: $("#lust-resistance-label-value, #lust-resistance-number-value").addClass("fatal-resist");
-    }
     $("#sloth-resistance-label-value").text(ResistanceLabels.find(l => l.value == ego.Resistances.find(e => e.sin == SinEnum.Sloth)!.resistance)!.label);
-    switch (ego.Resistances.find(e => e.sin == SinEnum.Sloth)!.resistance){
-        case 0.5: $("#sloth-resistance-label-value, #sloth-resistance-number-value").addClass("ineff-resist");
-        case 0.75: $("#sloth-resistance-label-value, #sloth-resistance-number-value").addClass("endure-resist");
-        case 2: $("#sloth-resistance-label-value, #sloth-resistance-number-value").addClass("fatal-resist");
-    }
     $("#gluttony-resistance-label-value").text(ResistanceLabels.find(l => l.value == ego.Resistances.find(e => e.sin == SinEnum.Gluttony)!.resistance)!.label);
-    switch (ego.Resistances.find(e => e.sin == SinEnum.Gluttony)!.resistance){
-        case 0.5: $("#gluttony-resistance-label-value, #gluttony-resistance-number-value").addClass("ineff-resist");
-        case 0.75: $("#gluttony-resistance-label-value, #gluttony-resistance-number-value").addClass("endure-resist");
-        case 2: $("#gluttony-resistance-label-value, #gluttony-resistance-number-value").addClass("fatal-resist");
-    }
     $("#gloom-resistance-label-value").text(ResistanceLabels.find(l => l.value == ego.Resistances.find(e => e.sin == SinEnum.Gloom)!.resistance)!.label);
-    switch (ego.Resistances.find(e => e.sin == SinEnum.Gloom)!.resistance){
-        case 0.5: $("#gloom-resistance-label-value, #gloom-resistance-number-value").addClass("ineff-resist");
-        case 0.75: $("#gloom-resistance-label-value, #gloom-resistance-number-value").addClass("endure-resist");
-        case 2: $("#gloom-resistance-label-value, #gloom-resistance-number-value").addClass("fatal-resist");
-    }
     $("#pride-resistance-label-value").text(ResistanceLabels.find(l => l.value == ego.Resistances.find(e => e.sin == SinEnum.Pride)!.resistance)!.label);
-    switch (ego.Resistances.find(e => e.sin == SinEnum.Pride)!.resistance){
-        case 0.5: $("#pride-resistance-label-value, #pride-resistance-number-value").addClass("ineff-resist");
-        case 0.75: $("#pride-resistance-label-value, #pride-resistance-number-value").addClass("endure-resist");
-        case 2: $("#pride-resistance-label-value, #pride-resistance-number-value").addClass("fatal-resist");
-    }
     $("#envy-resistance-label-value").text(ResistanceLabels.find(l => l.value == ego.Resistances.find(e => e.sin == SinEnum.Envy)!.resistance)!.label);
-    switch (ego.Resistances.find(e => e.sin == SinEnum.Envy)!.resistance){
-        case 0.5: $("#envy-resistance-label-value, #envy-resistance-number-value").addClass("ineff-resist");
-        case 0.75: $("#envy-resistance-label-value, #envy-resistance-number-value").addClass("endure-resist");
-        case 2: $("#envy-resistance-label-value, #envy-resistance-number-value").addClass("fatal-resist");
-    }
 
     $("#wrath-resistance-number-value").text('(x'+ego.Resistances.find(e => e.sin == SinEnum.Wrath)!.resistance+')');
     $("#lust-resistance-number-value").text('(x'+ego.Resistances.find(e => e.sin == SinEnum.Lust)!.resistance+')')!;
@@ -348,6 +338,14 @@ export function LoadEgoDetailsModal(ego: EgoBase){
     $("#gloom-resistance-number-value").text('(x'+ego.Resistances.find(e => e.sin == SinEnum.Gloom)!.resistance+')')!;
     $("#pride-resistance-number-value").text('(x'+ego.Resistances.find(e => e.sin == SinEnum.Pride)!.resistance+')')!;
     $("#envy-resistance-number-value").text('(x'+ego.Resistances.find(e => e.sin == SinEnum.Envy)!.resistance+')')!;
+
+    SetSinResistanceAttributes(SinEnum.Wrath, ego.Resistances.find(e => e.sin == SinEnum.Wrath)!.resistance);
+    SetSinResistanceAttributes(SinEnum.Lust, ego.Resistances.find(e => e.sin == SinEnum.Lust)!.resistance);
+    SetSinResistanceAttributes(SinEnum.Sloth, ego.Resistances.find(e => e.sin == SinEnum.Sloth)!.resistance);
+    SetSinResistanceAttributes(SinEnum.Gluttony, ego.Resistances.find(e => e.sin == SinEnum.Gluttony)!.resistance);
+    SetSinResistanceAttributes(SinEnum.Gloom, ego.Resistances.find(e => e.sin == SinEnum.Gloom)!.resistance);
+    SetSinResistanceAttributes(SinEnum.Pride, ego.Resistances.find(e => e.sin == SinEnum.Pride)!.resistance);
+    SetSinResistanceAttributes(SinEnum.Envy, ego.Resistances.find(e => e.sin == SinEnum.Envy)!.resistance);
 
     $("#equipable-details-name").text(ego.Name);
     $("#equipable-details-tabs").html('');
@@ -361,9 +359,11 @@ export function LoadEgoDetailsModal(ego: EgoBase){
     $("#ego-corrosion-cost-value").hide();
     $("#ego-corrosion-cost-value").text(ego.CorrosionSanityCost ?? '');
     $("#equipable-details-ego-cost").show();
-    $("#equipable-details-ego-cost span").each(function() { 
+    $("#equipable-details-ego-cost").find(".cost-value-container").each(function() { 
         $(this).text("0");
     });
+    $(".cost-value-container").addClass("no-cost");
+
     $.get('./templates/skill-detail-template.html', function (data){
         let template = $.parseHTML(data)!;
 
@@ -476,7 +476,7 @@ export function LoadEgoDetailsModal(ego: EgoBase){
         $("#equipable-details-skills").append(BuildPassiveDescriptions([ego.Passive]));
 
         ego.Cost.forEach((cost) => {
-            $("#equipable-details-ego-cost .ego-cost-slot:nth-child("+(cost.sin+1)+")").find(".cost-value-container").text(cost.amount);
+            $("#equipable-details-ego-cost .ego-cost-slot:nth-child("+(cost.sin+1)+")").find(".cost-value-container").text(cost.amount).removeClass("no-cost");
         });
 
         ShowSkill(1);
