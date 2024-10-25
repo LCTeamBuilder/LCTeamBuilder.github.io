@@ -26,7 +26,7 @@ export class BygoneDaysIshmaelCorrosion implements Skill{
             "[On Hit] Inflict 2 [Curse]<br>"+
             "[On Hit] For every 3 Gloom Reson., inflict 1 [Gloom Fragility] (max 2)<br>"+
             "[On Hit] Inflict 2 [The Uninvited]<br>"+
-            "[On Hit] Inflict 2 [Echoes of the Manor] next turn")];
+            "[On Hit] Inflict 2 [Echoes of the Manor] next turn", 1)];
     readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
     readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
     readonly SkillImageDir: string = "./assets/Sinners/Ishmael/EGO/BygoneDays/20807erosionprofile.png";

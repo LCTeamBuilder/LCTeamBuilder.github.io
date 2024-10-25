@@ -15,8 +15,9 @@ export class LaSangreDeSanchoDonQuixoteAwakening implements Skill{
     readonly CoinValue: number = +14;
     readonly AttackWeight: number = 1;
     readonly SkillLevel: number = +2;
-    readonly SkillDescription: SkillDescriptionPart[] = [new SkillDescriptionPart("[On Hit] Inflict 8 [Bleed]", 1),
-                                                        new SkillDescriptionPart("[On Hit] Heal by 50% of damage dealt", 1)];
+    readonly SkillDescription: SkillDescriptionPart[] = 
+        [new SkillDescriptionPart("[On Hit] Inflict 8 [Bleed]<br>"+
+            "[On Hit] Heal by 50% of damage dealt", 1)];
     readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
     readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
     readonly SkillImageDir: string = "./assets/Sinners/DonQuixote/EGO/LaSangreDeSancho/20301awakenprofile.png";
