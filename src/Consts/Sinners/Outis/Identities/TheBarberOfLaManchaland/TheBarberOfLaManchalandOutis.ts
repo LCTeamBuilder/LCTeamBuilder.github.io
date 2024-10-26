@@ -38,7 +38,7 @@ export class TheBarberOfLaManchalandOutis implements IdentityBase{
         new Passive("WRONG COSTUME!!!",
             PassiveTypeEnum.Combat,
             'In a Clash against [Sewing Target], Clash Power +1<br>'+
-            'On Hit, deal +1.5% more damage for every 10 Total [Bloodfeast Consumed] by self (max 30%)<br>'+
+            'On Hit, deal +1.5% more damage for every 10 [Bloodfeast Consumed] by self (max 30%)<br>'+
             'On Hit, deal +0.5% more damage for every [Bleed] on the target (max 10%)',
             [{sin: SinEnum.Lust, amount: 3 }],
             PassiveCostTypeEnum.Resonance),

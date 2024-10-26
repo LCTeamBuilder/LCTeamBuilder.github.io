@@ -16,7 +16,8 @@ export class TwinhookPiratesFirstMateGregorSkill1 implements Skill {
     readonly AttackWeight: number = 1;
     readonly SkillLevel: number = +2;
     readonly SkillDescription: SkillDescriptionPart[] = 
-        [new SkillDescriptionPart("[On Use] Gain 3 [Poise] If target has 7+ [Bleed], Coin Power +1"),
+        [new SkillDescriptionPart("[On Use] Gain 3 [Poise]<br>"+
+            "If target has 7+ [Bleed], Coin Power +1"),
         new SkillDescriptionPart("[On Hit] Gain +1 [Poise] Count<br>"+
             "[On Crit] Inflict 2 [Bleed]", 1),
         new SkillDescriptionPart("[On Crit] Inflict 2 Bleed", 2)];
