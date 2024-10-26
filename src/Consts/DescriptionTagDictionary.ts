@@ -488,6 +488,21 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
     "[Maggots]": {Name: "Maggots", Type: StatusTypeEnum.Debuff, Description: 
         "Turn End: Take Gluttony damage by the Count, then lower it by 1; Bleed Count +1.",
         ImageLink: "./assets/Icons/Statuses/Maggots.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
+    "[Rose Wedge]": {Name: "Rose Wedge", Type: StatusTypeEnum.Debuff, Description: 
+        "- Max Potency: 10<br>"+
+        "- Max Count: 4<br>"+
+        "- Gain 1 Potency every time this unit takes 10 Bleed damage<br>"+
+        "- When gaining Bleed or 'Unique Bleed' from getting hit, gain 2 Bleed and inflict 1 Bleed against the Attacker (5 times per turn)<br>"+
+        "· At 10 Potency, gain +1 Bleed Count as well when triggering the above effect<br>"+
+        "- Turn End: lose 1 Count<br>"+
+        "- Combat End: at 10 Potency or 1 Count, this effect expires, and this unit takes (Potency x 10) Lust damage.<br>"+
+        "- If the unit inflicted with this effect dies, or when this effect expires: increase Bloodfeast by (Potency x 10), and deal (Potency x 2) Lust damage against all of its allies (min 1)",
+        ImageLink: "./assets/Icons/Statuses/RoseWedge.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
+    "[Polydipsic Rose]": {Name: "Polydipsic Rose", Type: StatusTypeEnum.Debuff, Description: 
+        "- Max Value: 5<br>"+
+        "- Turn End: at 10+ Bleed Potency, take Lust damage equal to 1% of this unit's max HP. (max 30)<br>"+
+        "- Turn End: reduced by 1",
+        ImageLink: "./assets/Icons/Statuses/PolydipsicRose.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
     "[Sewing Target]": {Name: "Sewing Target", Type: StatusTypeEnum.Debuff, Description:  
         "- Max Value: 10<br>"+
         "- Take +0.5% more damage for every Bleed on self (max 10%)<br>"+
@@ -741,6 +756,9 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
     "[Bloodfeast Consumed]": {Name: "Bloodfeast Consumed", Type: StatusTypeEnum.Neutral, Description: 
         "- Max Value: 999<br>"+
         "- Displays the total amount of Bloodfeast consumed in this Encounter",
+        ImageLink: "./assets/Icons/Statuses/TotalBloodfeastConsumed.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
+    "[Bloodfeast Consumed (shared)]": {Name: "Bloodfeast Consumed (shared)", Type: StatusTypeEnum.Neutral, Description: 
+        "Total Bloodfeast consumed in this Encounter",
         ImageLink: "./assets/Icons/Statuses/TotalBloodfeastConsumed.png", get HtmlString(){ return CreateHtmlString(this.Name, this.Type, this.ImageLink); }},
     "[Final Augment]": {Name: "Final Augment", Type: StatusTypeEnum.Neutral, Description: 
         "Turn Start: Gain 3 Attack Power Up, Defense Power Up, and Haste; die when count reaches zero.",

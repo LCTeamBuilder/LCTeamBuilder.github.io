@@ -6,6 +6,7 @@ import { LaSangreDeSanchoDonQuixote } from "./Sinners/DonQuixote/EGO/LaSangreDeS
 import { LifetimeStewDonQuixote } from "./Sinners/DonQuixote/EGO/LifetimeStew/LifetimeStewDonQuixote";
 import { TelepoleDonQuixote } from "./Sinners/DonQuixote/EGO/Telepole/TelepoleDonQuixote";
 import { WishingCairnDonQuixote } from "./Sinners/DonQuixote/EGO/WishingCairn/WishingCairnDonQuixote";
+import { YearningMircallaDonQuixote } from "./Sinners/DonQuixote/EGO/YearningMircalla/YearningMircallaDonQuixote";
 import { BladeLineageSalsuDonQuixote } from "./Sinners/DonQuixote/Identities/BladeLineageSalsu/BladeLineageSalsuDonQuixote";
 import { CinqAssocSouthSection5DirectorDonQuixote } from "./Sinners/DonQuixote/Identities/CinqAssocSouthSection5Director/CinqAssocSouthSection5DirectorDonQuixote";
 import { LCBSinnerDonQuixote } from "./Sinners/DonQuixote/Identities/LCBSinner/LCBSinnerDonQuixote";
@@ -103,6 +104,7 @@ import { ChainsOfOthersMeursault } from "./Sinners/Meursault/EGO/ChainsOfOthers/
 import { ElectricScreamingMeursault } from "./Sinners/Meursault/EGO/ElectricScreaming/ElectricScreamingMeursault";
 import { PursuanceMeursault } from "./Sinners/Meursault/EGO/Pursuance/PursuanceMeursault";
 import { RegretMeursault } from "./Sinners/Meursault/EGO/Regret/RegretMeursault";
+import { YearningMircallaMeursault } from "./Sinners/Meursault/EGO/YearningMircalla/YearningMircallaMeursault";
 import { ScrewlooseWallopMeursault } from "./Sinners/Meursault/EGO/YouWantToGetBeatHurtily/ScrewlooseWallopMeursault";
 import { BladeLineageMentorMeursault } from "./Sinners/Meursault/Identities/BladeLineageMentor/BladeLineageMentorMeursault";
 import { CinqAssocWestSection3Meursault } from "./Sinners/Meursault/Identities/CinqAssocWestSection3/CinqAssocWestSection3Meursault";
@@ -383,6 +385,7 @@ export const Egos: Array<EgoBase> = [
     new LaSangreDeSanchoDonQuixote,
     new LifetimeStewDonQuixote,
     new TelepoleDonQuixote,
+    new YearningMircallaDonQuixote,
     new WishingCairnDonQuixote,
 
     //Ryoshu
@@ -401,6 +404,7 @@ export const Egos: Array<EgoBase> = [
     new PursuanceMeursault,
     new RegretMeursault,
     new ScrewlooseWallopMeursault,
+    new YearningMircallaMeursault,
 
     //Hong Lu
     new CavernousWailingHongLu,

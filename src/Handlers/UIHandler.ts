@@ -492,7 +492,7 @@ export function ShowSkill(index: number){
 }
 
 function AddTooltipsToTags(description: string): string{ 
-    return description.replace(/\[([\w-.&]+(?:[\s-&]+[\w-&]+)*)\]/g, (match, p1) => {
+    return description.replace(/\[([\w-.()&]+(?:[\s-&]+[\w-()&]+)*)\]/g, (match, p1) => {
         // Add brackets back to the key for the dictionary lookup
         const keyWithBrackets = `[${p1}]`;
         return DescriptionTagDictionary[keyWithBrackets] !== undefined ? DescriptionTagDictionary[keyWithBrackets].HtmlString : match;
