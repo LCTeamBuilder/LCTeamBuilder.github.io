@@ -566,21 +566,31 @@ body {
     z-index: 10;
 }
 
-.equipable-container{
-    background-image: url("../assets/OtherUIElements/Team/TeamPanelFront.png"), url("../assets/OtherUIElements/Team/TeamPanelRear.png");
-    background-size: 93%, 100%;
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
-    
-    display: flex;
+#equipable-select-list{
+    background-image: url("../assets/OtherUIElements/Team/EquipableSelectListPanel.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+       
     height: 90%;
-    padding: 5% 7%;
+    padding: 5% 6%;
+    aspect-ratio: 2048/1011;
+}
+
+.equipable-container{
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 2%;
     overflow-y: auto;
-    aspect-ratio: 1875/1011;
+}
+
+.equipable-container>div{
+    margin-bottom: 2%;
 }
 
 #equipable-select-id-tab {
@@ -632,7 +642,7 @@ body {
     z-index: 30;
     left: 18%;
     display: flex;
-    top: 91%
+    top: 89%
 }
 
 .ego-label-icons{
