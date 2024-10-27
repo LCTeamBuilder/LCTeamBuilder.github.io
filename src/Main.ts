@@ -1,16 +1,33 @@
 import { InitDefaultSinners } from "./Handlers/DataInitHandler";
 import $ from "jquery";
 import { Egos, Identities, MouseHoldTimeThreshhold, tooltipTemplate, MaxLevel } from "./Consts/OtherConstants";
-import { SinnerEnum } from "./Enums/SinnerEnum";
-import { EquipEgo, EquipId } from "./Handlers/EquipHandler";
-import { LoadEquipableListToModal, LoadIdentityDetailsModal, UpdateSinnerIdentityCard } from "./Handlers/UIHandler";
+import { EquipEgo, EquipIdentity } from "./Handlers/EquipHandler";
+import { LoadEquipableListToModal, LoadIdentityDetailsModal, UpdateSinnerIdentityCard, UpdateTeamSinDisplay } from "./Handlers/UIHandler";
 import { DescriptionTagDictionary } from "./Consts/DescriptionTagDictionary";
-import { OverlayEnum } from "./Enums/OverlayEnum";
+import { SinEnum, SinnerEnum, OverlayEnum } from "./Enums/Index";
 
 globalThis.TeamData = InitDefaultSinners();
+globalThis.TeamSins = {
+    [SinEnum.Wrath]: {Generated: 0, Used: 0},
+    [SinEnum.Lust]: {Generated: 0, Used: 0},
+    [SinEnum.Sloth]: {Generated: 0, Used: 0},
+    [SinEnum.Gluttony]: {Generated: 0, Used: 0},
+    [SinEnum.Gloom]: {Generated: 0, Used: 0},
+    [SinEnum.Pride]: {Generated: 0, Used: 0},
+    [SinEnum.Envy]: {Generated: 0, Used: 0},
+}
 globalThis.TeamOverlay = OverlayEnum.None;
-globalThis.TeamLink = window.location.href
-;
+globalThis.TeamLink = window.location.href;
+
+globalThis.TeamData.forEach(sinner => {
+    for (let i = 0; i < 3; i++){  //add new sins
+        globalThis.TeamSins[sinner.EquipedIdentity.Skills[i]!.Affinity].Generated += (3 - i);
+    }
+    sinner.EquipedEgos[0]?.Cost.forEach((cost) =>{
+        globalThis.TeamSins[cost.sin].Used += cost.amount;
+    });
+})
+UpdateTeamSinDisplay();
 
 $("#equipable-level-value").text(MaxLevel);
 
@@ -84,7 +101,7 @@ if (params.has('v1')) {
                     }
                     case 'i': {
                         let identityRegex = /([0-9]*)([A-Z])/g;
-                        EquipId(Identities.find(identity => identity.Sinner == sinnerEnumValue && (identity.Id % 100) == parseInt(paramValue.replace(/[^0-9]/g, ''), 10))!)
+                        EquipIdentity(Identities.find(identity => identity.Sinner == sinnerEnumValue && (identity.Id % 100) == parseInt(paramValue.replace(/[^0-9]/g, ''), 10))!)
                         
                         break;
                     }

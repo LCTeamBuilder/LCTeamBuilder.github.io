@@ -3,7 +3,7 @@ import { SinEnum } from "../Enums/SinEnum";
 import { EgoBase } from "../Models/EgoBase";
 import { IdentityBase } from "../Models/IdentityBase";
 import $ from "jquery";
-import { EquipEgo, EquipId } from "./EquipHandler";
+import { EquipEgo, EquipIdentity } from "./EquipHandler";
 import { DescriptionTagDictionary } from "../Consts/DescriptionTagDictionary";
 import { SkillTypeEnum } from "../Enums/SkillTypeEnum";
 import { Passive } from "../Models/Passive";
@@ -76,7 +76,7 @@ export function LoadEquipableListToModal(sinnerId: number){
                 resetLoadingRing();
                 clearTimeout(holdTimeout);
                 if (isHolding) {
-                    EquipId(identity);
+                    EquipIdentity(identity);
                     $("#id-select-list .id-selected-overlay").css("display", "none");
                     $(template).find(".id-selected-overlay").css("display", "block");
                 }
@@ -524,6 +524,30 @@ function BuildPassiveDescriptions(passives: Array<Passive>): JQuery<HTMLElement>
     });
     return description;
 }
+
+export function UpdateTeamSinDisplay(): void {
+    $("#wrath-generated-value").text(globalThis.TeamSins[SinEnum.Wrath].Generated);
+    $("#wrath-used-value").text(globalThis.TeamSins[SinEnum.Wrath].Used);
+    
+    $("#lust-generated-value").text(globalThis.TeamSins[SinEnum.Lust].Generated);
+    $("#lust-used-value").text(globalThis.TeamSins[SinEnum.Lust].Used);
+    
+    $("#sloth-generated-value").text(globalThis.TeamSins[SinEnum.Sloth].Generated);
+    $("#sloth-used-value").text(globalThis.TeamSins[SinEnum.Sloth].Used);
+    
+    $("#gluttony-generated-value").text(globalThis.TeamSins[SinEnum.Gluttony].Generated);
+    $("#gluttony-used-value").text(globalThis.TeamSins[SinEnum.Gluttony].Used);
+    
+    $("#gloom-generated-value").text(globalThis.TeamSins[SinEnum.Gloom].Generated);
+    $("#gloom-used-value").text(globalThis.TeamSins[SinEnum.Gloom].Used);
+    
+    $("#pride-generated-value").text(globalThis.TeamSins[SinEnum.Pride].Generated);
+    $("#pride-used-value").text(globalThis.TeamSins[SinEnum.Pride].Used);
+    
+    $("#envy-generated-value").text(globalThis.TeamSins[SinEnum.Envy].Generated);
+    $("#envy-used-value").text(globalThis.TeamSins[SinEnum.Envy].Used);  
+}
+
                                                 // REWRITE AS DICTIONARY        
 function SinEnumToString(sinEnum: SinEnum): string {
     switch (sinEnum) {
