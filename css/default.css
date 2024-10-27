@@ -180,15 +180,15 @@ body {
 }
 
 #team-builder .main-body{
-    width: 85%;
+    width: 84%;
     height: 100%;
     float: left;
 }
 #team-builder .right-column{
-    display: none;
-    width: 15%;
+    width: 16%;
     height: 100%;
     float: right;
+    padding-top: 1%;
 }
 
 #team-builder .main-body .top-row{
@@ -441,22 +441,65 @@ body {
     aspect-ratio: 1;
 }
 
-.affinity-container {
-    width: 100%;
-    aspect-ratio: 1/2.5;
+#affinity-container {
+    background-image: url("../assets/OtherUIElements/Team/AffinityPanel.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    width: 100%;
+    aspect-ratio: 380/845;
     margin: auto;
 }
 
-.affinity-container .label{
+#affinity-container .label{
     width: 100%;
     aspect-ratio: 3;
+    padding: 12% 0 0 7%;
+    font-size: 1.2cqw;
 }
 
-.affinity-field {
-    width: 85%;
-    aspect-ratio: 3;
-    margin: 2% 7.5%;
+.affinity-field {  
+    background-image: url("../assets/OtherUIElements/Team/AffinitySlot.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 78%;
+    margin: 0% 11%;
+    padding: 3%;
+    aspect-ratio: 291/96;
+    display: flex;
+}
+
+.affinity-field-icon-container{
+    height: 100%;
+    width: 30%;
+    margin-left: 5%;
+}
+
+.affinity-field-icon-container img{  
+    height: 95%;
+    margin: auto;
+    display: block;
+}
+
+.affinity-field-amounts-container{
+    height: 100%;
+    width: 70%;
+    text-align: right;
+    font-size: 2cqw;
+    padding-right: 10%;
+    line-height: 130%;
+    letter-spacing: 0.1cqw;
+}
+
+.affinity-field-amounts-container span:nth-of-type(1){
+    color: #9f6a3a;
+}
+
+.affinity-field-amounts-container span:nth-of-type(2){
+    font-size: 2.5cqw;
 }
 
 /* --- ID/EGO SELECT --- */
