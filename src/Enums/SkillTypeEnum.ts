@@ -1,4 +1,4 @@
-export enum SkillTypeEnum{
+export enum SkillTypeEnum {
     Attack,
     Defense
 }

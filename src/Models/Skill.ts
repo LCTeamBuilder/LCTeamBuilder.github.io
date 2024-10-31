@@ -5,7 +5,7 @@ import { SkillTierEnum } from "../Enums/SkillTierEnum";
 import { SkillTypeEnum } from "../Enums/SkillTypeEnum";
 import { SkillDescriptionPart } from "./SkillDescriptionPart";
 
-export abstract class Skill{
+export abstract class Skill {
     abstract readonly Name: string;
     abstract readonly SkillType: SkillTypeEnum;
     abstract readonly SkillTier: SkillTierEnum;

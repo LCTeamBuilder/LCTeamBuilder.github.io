@@ -1,4 +1,4 @@
-export enum RiskLevelEnum{
+export enum RiskLevelEnum {
     ZAYIN,
     TETH,
     HE,

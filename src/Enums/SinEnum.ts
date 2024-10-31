@@ -1,4 +1,4 @@
-export enum SinEnum{
+export enum SinEnum {
     Wrath,
     Lust,
     Sloth,

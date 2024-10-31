@@ -5,7 +5,7 @@ import { SinnerEnum } from "../Enums/SinnerEnum";
 import { Passive } from "./Passive";
 import { Skill } from "./Skill";
 
-export abstract class IdentityBase{
+export abstract class IdentityBase {
     abstract readonly Id: number;
     abstract readonly Name: string;
     abstract readonly Sinner: SinnerEnum;

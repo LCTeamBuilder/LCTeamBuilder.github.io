@@ -1,8 +1,7 @@
-export function UpdateLink(){
+export function UpdateLink() {
     let urlParams = "?v1=";
     globalThis.TeamData.filter(sinner => (sinner.EquipedIdentity.Id % 100 != 1) || sinner.EquipedEgos.length != 1 || (sinner.EquipedEgos[0]!.Id % 100 != 1))
         .forEach(sinner => {
-            console.log(sinner);
             urlParams += "s" + sinner.SinnerEnum;
             urlParams += "i" + sinner.EquipedIdentity.Id % 100;
             urlParams += "D";
@@ -11,8 +10,8 @@ export function UpdateLink(){
                 .forEach(ego => {
                     urlParams += ego.Id % 100;
                     urlParams += "D";
-            });
-    });
+                });
+        });
 
     globalThis.TeamLink = (window.location.href + urlParams);
 }

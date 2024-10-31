@@ -205,17 +205,17 @@ import { WCorpL3CleanupAgentYiSang } from "./Sinners/YiSang/Identities/WCorpL3Cl
 export const MaxLevel: number = 50;
 export const MouseHoldTimeThreshhold: number = 500;
 
-export const ResistanceLabels: {value: number, label: string}[] = [
-    {value: 0.5, label: "Ineff."},
-    {value: 0.75, label: "Endure"},
-    {value: 1, label: "Normal"},
-    {value: 2, label: "Fatal"},
+export const ResistanceLabels: { value: number, label: string }[] = [
+    { value: 0.5, label: "Ineff." },
+    { value: 0.75, label: "Endure" },
+    { value: 1, label: "Normal" },
+    { value: 2, label: "Fatal" },
 ]
 
-export const tooltipTemplate: string = "<span class='tooltip-box'>"+
-    "<img src='{ImageLink}' class='status-icon'><span id='tooltip-name' class='font-mikodacs'>{Name}</span><br>"+
-    "<span id='tooltip-description' class='font-pretendard-regular'>{Description}</span>"+
-"</span>";
+export const tooltipTemplate: string = "<span class='tooltip-box'>" +
+    "<img src='{ImageLink}' class='status-icon'><span id='tooltip-name' class='font-mikodacs'>{Name}</span><br>" +
+    "<span id='tooltip-description' class='font-pretendard-regular'>{Description}</span>" +
+    "</span>";
 
 export const Identities: Array<IdentityBase> = [
     //Yi Sang
