@@ -1,10 +1,10 @@
 * {position:relative; box-sizing:border-box; margin:0; padding:0; 
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
-        cursor: url("../assets/OtherUIElements/mouse_off.png") 20 5, auto;
+        cursor: url("../assets/OtherUIElements/mouse_off.png") 10 3, auto;
 }
 *:active{
-    cursor: url("../assets/OtherUIElements/mouse_on.png") 20 5, auto;
+    cursor: url("../assets/OtherUIElements/mouse_on.png") 10 3, auto;
 }
 
 * {color: rgb(238, 205, 163); font-family: Pretendard-Regular; }
@@ -100,6 +100,20 @@ button {
     content:url("../assets/Icons/Multiply.png");
 }
 
+#github-link {
+    background-image: url("../assets/OtherUIElements/Team/GitHubButton.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    width: 6%;
+    aspect-ratio: 1;
+    right: 0.5%;
+    top: 0.5%;
+    z-index: 1;
+}
+
 .portrait {
     width: 100%;
     height: 100%;
@@ -144,10 +158,16 @@ button {
 
 body {
     background-image: url("../assets/OtherUIElements/Team/New_MainUI_Formation_2.png");
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: center -27vw;
     background-repeat: no-repeat;
     background-color: black;
+    padding-top: 5%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 .background {
@@ -175,7 +195,6 @@ body {
 #team-builder{
     width: 75%;
     margin: auto;
-    margin-top: 3%;
     aspect-ratio: 2.0 / 1;
 }
 
