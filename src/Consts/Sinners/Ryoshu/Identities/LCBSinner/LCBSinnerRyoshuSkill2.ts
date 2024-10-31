@@ -15,7 +15,7 @@ export class LCBSinnerRyoshuSkill2 implements Skill {
     readonly CoinValue: number = +5;
     readonly AttackWeight: number = 1;
     readonly SkillLevel: number = +2;
-    readonly SkillDescription: SkillDescriptionPart[] = [new SkillDescriptionPart("If target previously took damage this turn, deal +30% damage", 2),
+    readonly SkillDescription: SkillDescriptionPart[] = [new SkillDescriptionPart("If target previously took damage this turn, deal +30% damage", 1),
                                                         new SkillDescriptionPart("If target previously took damage this turn, deal +30% damage", 2)];
     readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
     readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
