@@ -1,5 +1,5 @@
 export function UpdateLink() {
-    let urlParams = "?v1=";
+    let urlParams = "/?v1=";
     globalThis.TeamData.filter(sinner => (sinner.EquipedIdentity.Id % 100 != 1) || sinner.EquipedEgos.length != 1 || (sinner.EquipedEgos[0]!.Id % 100 != 1))
         .forEach(sinner => {
             urlParams += "s" + sinner.SinnerEnum;
@@ -13,5 +13,5 @@ export function UpdateLink() {
                 });
         });
 
-    globalThis.TeamLink = (window.location.href + urlParams);
+    globalThis.TeamLink = (window.location.origin + urlParams);
 }
