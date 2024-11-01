@@ -172,7 +172,7 @@ const $tooltip = $('#tooltip');
 
 $(document).on('mousemove', function (event) {
     $tooltip.css({
-        top: event.pageY - 50,
+        top: event.pageY - 5,
         left: event.pageX - 5
     });
 });

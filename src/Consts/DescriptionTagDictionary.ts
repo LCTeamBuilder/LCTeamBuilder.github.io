@@ -1120,7 +1120,22 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
     },
     "[Bloodied Hand]": {
         Name: "Bloodied Hand", Type: StatusTypeEnum.Neutral, Description:
-            "----------------",
+            "- Max Value: 30<br>" +
+            "- Stage 1 Bloodied Hand<br>" +
+            "- At 10+ Bloodied Hand, converts to Bloodied Hand II.<br>" +
+            "- At 20+ Bloodied Hand, converts to Bloodied Hand III.<br>" +
+            "- Reverts to previous Stage when the Stack drops below the requirements.<br>" +
+            "- At Bloodied Hand II, gain 1 Offense Level Up based on the Stack<br>" +
+            "- At Bloodied Hand III, gain 1 Offense Level Up based on the Stack, and additionally inflict 1 Rupture and 1 Bleed On Hit with Base Skills",
+        ImageLink: "./assets/Icons/Statuses/BloodiedHand.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
+    },
+    "[Ailing Heart]": {
+        Name: "Ailing Heart", Type: StatusTypeEnum.Neutral, Description:
+            "- Max Value: 10<br>" +
+            "- Turn End: gain 1 Stack<br>" +
+            "- Turn Start: gain 1 Defense Level Up for every 3 Stack<br>" +
+            "- At 50%- HP, gain 1 Defense Level for every 3 Stack<br>" +
+            "- At 40%- HP, On Hit with Base Skills, heal (Stack x 5)% of damage dealt On Hit as HP (min 1; rounded down; heal up to 30 HP per Skill)",
         ImageLink: "./assets/Icons/Statuses/BloodiedHand.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
     },
     "[Final Augment]": {
