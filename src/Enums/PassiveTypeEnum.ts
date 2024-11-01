@@ -1,4 +1,4 @@
-export enum PassiveTypeEnum{
+export enum PassiveTypeEnum {
     Combat,
     Support,
     Ego

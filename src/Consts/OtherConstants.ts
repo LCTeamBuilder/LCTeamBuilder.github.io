@@ -46,6 +46,7 @@ import { LCBSinnerGregor } from "./Sinners/Gregor/Identities/LCBSinner/LCBSinner
 import { LiuAssocSouthSection6Gregor } from "./Sinners/Gregor/Identities/LiuAssociationSouthSection6/LiuAssocSouthSection6Gregor";
 import { RBSouschefGregor } from "./Sinners/Gregor/Identities/RBSouschef/RBSouschefGregor";
 import { RosespannerWorkshopFixerGregor } from "./Sinners/Gregor/Identities/RosespannerWorkshopFixer/RosespannerWorkshopFixerGregor";
+import { ThePriestOfLaManchalandGregor } from "./Sinners/Gregor/Identities/ThePriestOfLaManchaland/ThePriestOfLaManchalandGregor";
 import { TwinhookPiratesFirstMateGregor } from "./Sinners/Gregor/Identities/TwinhookPiratesFirstMate/TwinhookPiratesFirstMateGregor";
 import { ZweiAssocSouthSection4Gregor } from "./Sinners/Gregor/Identities/ZweiAssociationSouthSection4/ZweiAssocSouthSection4Gregor";
 import { AEDDHeathcliff } from "./Sinners/Heathcliff/EGO/AEDD/AEDDHeathcliff";
@@ -205,17 +206,18 @@ import { WCorpL3CleanupAgentYiSang } from "./Sinners/YiSang/Identities/WCorpL3Cl
 export const MaxLevel: number = 50;
 export const MouseHoldTimeThreshhold: number = 500;
 
-export const ResistanceLabels: {value: number, label: string}[] = [
-    {value: 0.5, label: "Ineff."},
-    {value: 0.75, label: "Endure"},
-    {value: 1, label: "Normal"},
-    {value: 2, label: "Fatal"},
+export const ResistanceLabels: { value: number, label: string }[] = [
+    { value: 0.5, label: "Ineff." },
+    { value: 0.75, label: "Endure" },
+    { value: 1, label: "Normal" },
+    { value: 2, label: "Fatal" },
 ]
 
-export const tooltipTemplate: string = "<span class='tooltip-box'>"+
-    "<img src='{ImageLink}' class='status-icon'><span id='tooltip-name' class='font-mikodacs'>{Name}</span><br>"+
-    "<span id='tooltip-description' class='font-pretendard-regular'>{Description}</span>"+
-"</span>";
+export const tooltipTemplate: string =
+    "<span class='tooltip-box'>" +
+        "<img src='{ImageLink}' class='status-icon'><span id='tooltip-name' class='font-mikodacs'>{Name}</span><br>" +
+        "<span id='tooltip-description' class='font-pretendard-regular'>{Description}</span>" +
+    "</span>";
 
 export const Identities: Array<IdentityBase> = [
     //Yi Sang
@@ -357,6 +359,7 @@ export const Identities: Array<IdentityBase> = [
     new LiuAssocSouthSection6Gregor,
     new RBSouschefGregor,
     new RosespannerWorkshopFixerGregor,
+    new ThePriestOfLaManchalandGregor,
     new TwinhookPiratesFirstMateGregor,
     new ZweiAssocSouthSection4Gregor
 ]

@@ -1,4 +1,4 @@
-export enum SinnerEnum{
+export enum SinnerEnum {
     YiSang,
     Faust,
     DonQuixote,

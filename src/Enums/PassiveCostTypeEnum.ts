@@ -1,4 +1,4 @@
-export enum PassiveCostTypeEnum{
+export enum PassiveCostTypeEnum {
     Owned,
     Resonance
 }

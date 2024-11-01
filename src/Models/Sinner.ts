@@ -3,14 +3,14 @@ import { UpdateSinnerIdentityCard } from "../Handlers/UIHandler";
 import { EgoBase } from "./EgoBase";
 import { IdentityBase } from "./IdentityBase";
 
-export class Sinner{
+export class Sinner {
     public SinnerEnum: SinnerEnum;
     private _equipedIdentity: IdentityBase;
     public EquipedEgos: Array<EgoBase>;
     public AvailableIds?: Array<IdentityBase>;
     public AvailableEgos?: Array<EgoBase>;
 
-    constructor(sinnerEnum: SinnerEnum, equipedIdentity: IdentityBase, equipedEgos: Array<EgoBase>){
+    constructor(sinnerEnum: SinnerEnum, equipedIdentity: IdentityBase, equipedEgos: Array<EgoBase>) {
         this.SinnerEnum = sinnerEnum;
         this._equipedIdentity = equipedIdentity;
         this.EquipedEgos = equipedEgos;

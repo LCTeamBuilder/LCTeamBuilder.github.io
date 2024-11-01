@@ -1,4 +1,4 @@
-export enum DamageTypeEnum{
+export enum DamageTypeEnum {
     Slash,
     Pierce,
     Blunt

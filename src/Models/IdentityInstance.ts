@@ -5,7 +5,7 @@ export class IdentityInstance {
     public Level: number = 45;
     public Uptie: number = 4;
 
-    constructor(baseData: IdentityBase){
+    constructor(baseData: IdentityBase) {
         this.BaseData = baseData;
     }
 }

@@ -2,7 +2,7 @@ import { Egos, Identities } from "../Consts/OtherConstants";
 import { SinnerEnum } from "../Enums/SinnerEnum";
 import { Sinner } from "../Models/Sinner";
 
-export function InitDefaultSinners() : Array<Sinner>{
+export function InitDefaultSinners(): Array<Sinner> {
     return [new Sinner(SinnerEnum.YiSang, Identities.find(id => id.Id == 10101)!, [Egos.find(ego => ego.Id == 20101)!]),
             new Sinner(SinnerEnum.Faust, Identities.find(id => id.Id == 10201)!, [Egos.find(ego => ego.Id == 20201)!]),
             new Sinner(SinnerEnum.DonQuixote, Identities.find(id => id.Id == 10301)!, [Egos.find(ego => ego.Id == 20301)!]),

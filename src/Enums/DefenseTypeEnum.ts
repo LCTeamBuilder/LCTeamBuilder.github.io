@@ -1,4 +1,4 @@
-export enum DefenseTypeEnum{
+export enum DefenseTypeEnum {
     Guard,
     Evade,
     Counter,
