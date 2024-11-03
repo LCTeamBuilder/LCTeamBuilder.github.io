@@ -114,42 +114,6 @@ button {
     z-index: 1;
 }
 
-.portrait {
-    width: 100%;
-    height: 100%;
-}
-
-.id-hover-overlay {
-    display: none;
-    position: absolute;
-    top: -5%;
-    left: -5%;
-    width: 110%;
-    height: 110%;
-    z-index: 60;
-    object-fit: cover;
-}
-.id-card:hover .id-hover-overlay{
-    display: block;
-}
-.id-selected-overlay {
-    display: none;
-    position: absolute;  
-    top: -3%;
-    left: -4%;
-    width: 108%;
-    height: 106%;
-    z-index: 50;
-    object-fit: cover;
-    background-color: #1c1c1c79;
-}
-.id-selected-image {
-    position: absolute;
-    top: 40%;
-    left: -3%;
-    width: 106%;
-}
-
 .ego-list-orb .ego-image {
     width: 100%;
     height: 100%;
@@ -177,16 +141,6 @@ html, body {
     width: 100%;
     height: 100%;
     z-index: 0;
-    object-fit: cover;
-}
-
-.card-frame-overlay {
-    position: absolute;
-    top: -5%;
-    left: -5%;
-    width: 110%;
-    height: 110%;
-    z-index: 20;
     object-fit: cover;
 }
 
@@ -246,6 +200,7 @@ html, body {
     vertical-align: middle;
     padding: 0.3% 2% 0% 2%;
     font-size: 2cqw;
+    color: rgb(160, 107, 58);
     text-align: left;
     float: right;
     margin-right: 5%;
@@ -253,6 +208,9 @@ html, body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+#team-builder-overlay-toggles .font-mikodacs{
+    font-size: 1.5cqw;
 }
 #team-builder-overlay-toggles button{
     width: 40%;
@@ -316,6 +274,122 @@ html, body {
     vertical-align: middle;
     max-height: 1em;
     width: auto;
+}
+
+.card-frame-overlay {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    z-index: 20;
+    object-fit: cover;
+}
+
+.portrait {
+    width: 100%;
+    height: 100%;
+}
+
+.id-hover-overlay {
+    display: none;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    z-index: 100;
+    object-fit: cover;
+}
+.id-card:hover .id-hover-overlay{
+    display: block;
+}
+
+.id-hover-overlay-container{
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    z-index: 60;
+    object-fit: cover;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.id-hover-overlay-container div{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5cqw;
+}
+.id-hover-overlay-container div span{
+    text-shadow: 0 0 25px rgb(254, 95, 0), 0 0 25px rgb(254, 119, 0), 0 0 45px rgb(255, 255, 255);
+    color: rgb(254, 254, 0);
+}
+.id-hover-overlay-top{
+    height: 29%;
+}
+.id-hover-overlay-bottom{
+    height: 71%;
+    bottom: 0;
+}
+.id-hover-overlay-full{
+    height: 100%;
+}
+.hover-target *{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.hover-target:hover *{
+    opacity: 1;
+}
+.id-hover-overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.id-selected-overlay {
+    display: none;
+    position: absolute;  
+    top: -3%;
+    left: -5%;
+    width: 110%;
+    height: 106%;
+    z-index: 50;
+    object-fit: cover;
+    background-color: #1c1c1c79;
+}
+.id-deployment-order-value-container{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 17%;
+    text-align: center;
+}
+.id-deployment-order-value{
+    font-size: 3cqw;
+}
+.id-deployment-order-value.amber{
+    text-shadow: 0 0 4px rgb(254, 95, 0), 0 0 8px rgb(254, 95, 0);
+    color: rgb(255, 185, 0);
+}
+.id-deployment-order-value.teal{
+    text-shadow: 0 0 4px rgb(7, 104, 92), 0 0 4px rgb(7, 104, 92), 0 0 8px rgb(7, 104, 92);
+    color: rgb(34, 255, 227);
+}
+.deployment-banner {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: -3.5%;
+    width: 107%;
 }
 
 .identity-info-overlay {
@@ -460,7 +534,7 @@ html, body {
     aspect-ratio: 1;
 }
 
-#affinity-container {
+#affinity-panel {
     background-image: url("../assets/OtherUIElements/Team/AffinityPanel.png");
     background-size: cover;
     background-position: center;
@@ -471,7 +545,7 @@ html, body {
     margin: auto;
 }
 
-#affinity-container .label{
+#affinity-panel .label{
     width: 100%;
     aspect-ratio: 3;
     padding: 12% 0 0 7%;
@@ -519,6 +593,40 @@ html, body {
 
 .affinity-field-amounts-container span:nth-of-type(2){
     font-size: 2.5cqw;
+}
+
+#deployment-panel {
+    background-image: url("../assets/OtherUIElements/Team/DeploymentPanel.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    padding: 5%;
+    aspect-ratio: 377/141;
+    margin: auto;
+    display: flex;
+    margin-top: 12%;
+}
+#deployment-panel div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#deployment-label-container{
+    width: 50%;
+    font-size: 0.9cqw;
+}
+#deployment-value-container{
+    padding-top: 3%;
+    font-size: 2.5cqw;
+    width: 50%;
+    letter-spacing: 0.1cqw;
+}
+#deployed-max-value{
+    color: rgb(159, 106, 58)
 }
 
 /* --- ID/EGO SELECT --- */

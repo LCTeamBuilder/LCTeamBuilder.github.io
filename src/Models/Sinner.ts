@@ -9,6 +9,7 @@ export class Sinner {
     public EquipedEgos: Array<EgoBase>;
     public AvailableIds?: Array<IdentityBase>;
     public AvailableEgos?: Array<EgoBase>;
+    public DeploymentSlot: number | undefined;
 
     constructor(sinnerEnum: SinnerEnum, equipedIdentity: IdentityBase, equipedEgos: Array<EgoBase>) {
         this.SinnerEnum = sinnerEnum;
