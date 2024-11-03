@@ -12,10 +12,12 @@ import { PassiveCostTypeEnum } from "../Enums/PassiveCostTypeEnum";
 import { OverlayEnum } from "../Enums/OverlayEnum";
 import { DamageTypeEnum } from "../Enums/DamageTypeEnum";
 import { RomanNumerals } from "../Consts/RomanNumeralDictionary";
+import { UpdateLink } from "./URLHandler";
 
 export function UpdateSinnerIdentityCard(sinnerId: number) {
     $("#team-sinner-" + sinnerId).html("");
     let identity = globalThis.TeamData.find(sinner => sinner.SinnerEnum == sinnerId)!.EquipedIdentity;
+    let sinner = globalThis.TeamData.find(sinner => sinner.SinnerEnum == sinnerId)!;
     $.get("./templates/id-card-template.html", function (data) {
         let template = $.parseHTML(data)!;
         $(template).find(".card-frame-overlay").attr("src", "./assets/OtherUIElements/IdFrames/" + identity.Rarity + "StarUptie4.png");
@@ -39,7 +41,145 @@ export function UpdateSinnerIdentityCard(sinnerId: number) {
         });
         $("#team-sinner-" + sinnerId).html(template.map(node => (node as HTMLElement).outerHTML).join(''));
         if (globalThis.TeamOverlay == OverlayEnum.Ego) { $('#team-builder .ego-overlay').show(); };
+
+        if (sinner.DeploymentSlot){
+            $("#team-sinner-" + sinnerId).find(".id-selected-overlay").show();
+            $("#team-sinner-" + sinnerId).find(".id-deployment-order-value").css("display", "block").text(sinner.DeploymentSlot);
+            if (sinner.DeploymentSlot <= 6){
+                $("#team-sinner-" + sinnerId).find(".id-selected-image").css("display", "block");
+                $("#team-sinner-" + sinnerId).find(".id-deployment-order-value").addClass("amber").removeClass("teal");
+            }
+            else{
+                $("#team-sinner-" + sinnerId).find(".id-backup-image").css("display", "block");
+                $("#team-sinner-" + sinnerId).find(".id-deployment-order-value").addClass("teal").removeClass("amber");
+            }
+        }
+
+        if (globalThis.TeamOverlay == OverlayEnum.Deployment){
+            $("#team-sinner-" + sinnerId).find('.id-hover-overlay-full').hide();
+            $("#team-sinner-" + sinnerId).find('.id-hover-overlay-top').show();
+            $("#team-sinner-" + sinnerId).find('.id-hover-overlay-bottom').show();
+            $("#team-sinner-" + sinnerId).find('.id-hover-overlay-bottom').show();
+            $("#team-sinner-" + sinnerId).find(".id-selected-overlay").css("visibility", "visible");
+        }
+        else {
+            $("#team-sinner-" + sinnerId).find('.id-hover-overlay-full').show();
+            $("#team-sinner-" + sinnerId).find('.id-hover-overlay-top').hide();
+            $("#team-sinner-" + sinnerId).find('.id-hover-overlay-bottom').hide();
+            $("#team-sinner-" + sinnerId).find(".id-selected-overlay").css("visibility", "hidden");
+        }
+
+        var holdTimeout: number;
+        var isHolding: boolean = false;
+        
+        $("#team-sinner-" + sinnerId).find(".id-hover-overlay-top, .id-hover-overlay-bottom, .id-hover-overlay-full").on("mousedown", function () {
+            $("#team-sinner-" + sinnerId + " .loading-circle").css('transition', 'stroke-dashoffset 0.5s linear'); // Reapply transition
+            $("#team-sinner-" + sinnerId + " .loading-circle").css('strokeDashoffset', '0'); // Reapply transition
+            isHolding = true;
+            holdTimeout = setTimeout(function () {
+                resetLoadingRing(sinnerId);
+                isHolding = false;
+                LoadIdentityDetailsModal(identity);
+            }, MouseHoldTimeThreshhold);
+        });
+
+        $("#team-sinner-" + sinnerId).find(".id-hover-overlay-top, .id-hover-overlay-full").on("mouseup", function () {
+            resetLoadingRing(sinnerId);
+            clearTimeout(holdTimeout);
+            if (isHolding) {
+                LoadEquipableListToModal(sinnerId);
+                $('#equipable-select-modal').show();
+                $('#equipable-select-modal .toggle-selected-image').eq(0).show();
+                $('#equipable-select-modal .toggle-selected-image').eq(1).hide();
+            }
+            isHolding = false;
+        });
+
+        $("#team-sinner-" + sinnerId).find(".id-hover-overlay-bottom").on("mouseup", function () {
+            resetLoadingRing(sinnerId);
+            clearTimeout(holdTimeout);
+            if (isHolding) {
+                ToggleDeployment(sinnerId);
+            }
+            isHolding = false;
+        });
+
+        $("#team-sinner-" + sinnerId).find(".id-hover-overlay-top, .id-hover-overlay-full").on("mouseleave", function () {
+            resetLoadingRing(sinnerId);
+            clearTimeout(holdTimeout);
+            isHolding = false;
+        });
+
+        function resetLoadingRing(sinnerId: number) {
+            $("#team-sinner-" + sinnerId + " .loading-circle").css('transition', 'none');
+            $("#team-sinner-" + sinnerId + " .loading-circle").css('strokeDashoffset', '283');
+            setTimeout(() => {
+                $("#team-sinner-" + sinnerId + " .loading-circle").css('transition', 'stroke-dashoffset 0.5s linear');
+            }, 0);
+        }
     });
+}
+
+export function ToggleDeployment(sinnerId: number){
+    let sinner = globalThis.TeamData.find(sinner => sinner.SinnerEnum == sinnerId)!;
+
+    if (!sinner.DeploymentSlot){
+        sinner.DeploymentSlot = ++globalThis.DeployedAmount;
+        $("#team-sinner-" + sinnerId).find(".id-selected-overlay").css("display", "block");
+        $("#team-sinner-" + sinnerId).find(".id-deployment-order-value").css("display", "block").text(sinner.DeploymentSlot);
+        if (sinner.DeploymentSlot <= 6){
+            $("#team-sinner-" + sinnerId).find(".id-selected-image").css("display", "block");
+            $("#team-sinner-" + sinnerId).find(".id-deployment-order-value").addClass("amber").removeClass("teal");
+        }
+        else{
+            $("#team-sinner-" + sinnerId).find(".id-backup-image").css("display", "block");
+            $("#team-sinner-" + sinnerId).find(".id-deployment-order-value").addClass("teal").removeClass("amber");
+        }
+        $("#deployed-current-value").text(globalThis.DeployedAmount);
+
+        for (let i = 0; i < 3; i++) {  //add new sins
+            globalThis.DeployedTeamSins[sinner.EquipedIdentity.Skills[i]!.Affinity].Generated += (3 - i);
+        }
+
+        sinner.EquipedEgos.forEach(ego => {
+            ego.Cost.forEach((cost) => {
+                globalThis.TeamSins[cost.sin].Used += cost.amount;
+                if (sinner.DeploymentSlot){
+                    globalThis.DeployedTeamSins[cost.sin].Used += cost.amount;
+                }
+            });
+        });
+    }
+    else {
+        let slot = sinner.DeploymentSlot;
+        sinner.DeploymentSlot = undefined;
+        globalThis.DeployedAmount -= 1;
+        $("#team-sinner-" + sinnerId).find(".id-selected-overlay").css("display", "none");
+        $("#team-sinner-" + sinnerId).find(".deployment-banner").css("display", "none");
+        $("#deployed-current-value").text(globalThis.DeployedAmount);
+
+        globalThis.TeamData.filter(teamSinner => teamSinner.DeploymentSlot != undefined && teamSinner.DeploymentSlot > slot).forEach(teamSinner => {
+            if (teamSinner.DeploymentSlot == 7){
+                $("#team-sinner-" + teamSinner.SinnerEnum).find(".id-selected-image").show();
+                $("#team-sinner-" + teamSinner.SinnerEnum).find(".id-backup-image").hide();
+                $("#team-sinner-" + teamSinner.SinnerEnum).find(".id-deployment-order-value").addClass("amber").removeClass("teal");
+            }
+            $("#team-sinner-" + teamSinner.SinnerEnum).find(".id-deployment-order-value").css("display", "block").text(--teamSinner.DeploymentSlot!);
+        });
+
+        for (let i = 0; i < 3; i++) {  //deduct sins generated from team total
+            let skill = sinner.EquipedIdentity.Skills[i]!;
+            globalThis.DeployedTeamSins[skill.Affinity].Generated -= (3 - i);
+        }
+
+        sinner.EquipedEgos.forEach(ego => {
+            ego.Cost.forEach((cost) => {
+                globalThis.DeployedTeamSins[cost.sin].Used -= cost.amount;
+            });
+        });
+    }
+    UpdateLink();
+    UpdateTeamSinDisplay(true);
 }
 
 export function LoadEquipableListToModal(sinnerId: number) {
@@ -56,6 +196,7 @@ export function LoadEquipableListToModal(sinnerId: number) {
 
             if (identity.Id == equipedId.Id) {
                 $(template).find(".id-selected-overlay").css("display", "block");
+                $(template).find(".id-selected-image").css("display", "block");
             }
 
             var holdTimeout: number;
@@ -80,15 +221,20 @@ export function LoadEquipableListToModal(sinnerId: number) {
                     EquipIdentity(identity);
                     $("#id-select-list .id-selected-overlay").css("display", "none");
                     $(template).find(".id-selected-overlay").css("display", "block");
+                    $(template).find(".id-selected-image").css("display", "block");
                 }
                 isHolding = false;
             });
 
             $(template).on("mouseleave", function () {
-                resetLoadingRing()
+                resetLoadingRing();
                 clearTimeout(holdTimeout);
                 isHolding = false;
             });
+        
+            $(template).find('.id-hover-overlay-full').hide();
+            $(template).find('.id-hover-overlay-top').hide();
+            $(template).find('.id-hover-overlay-bottom').hide();
 
             function resetLoadingRing() {
                 $loadingCircle.css('transition', 'none');
@@ -526,25 +672,26 @@ function BuildPassiveDescriptions(passives: Array<Passive>): JQuery<HTMLElement>
     return description;
 }
 
-export function UpdateTeamSinDisplay(): void {
-    $("#wrath-generated-value").text(globalThis.TeamSins[SinEnum.Wrath].Generated);
-    $("#wrath-used-value").text(globalThis.TeamSins[SinEnum.Wrath].Used);
+export function UpdateTeamSinDisplay(deployedOnly: boolean = false): void {
+    let sinList = deployedOnly ? globalThis.DeployedTeamSins : globalThis.TeamSins;
+    $("#wrath-generated-value").text(sinList[SinEnum.Wrath].Generated);
+    $("#wrath-used-value").text(sinList[SinEnum.Wrath].Used);
 
-    $("#lust-generated-value").text(globalThis.TeamSins[SinEnum.Lust].Generated);
-    $("#lust-used-value").text(globalThis.TeamSins[SinEnum.Lust].Used);
+    $("#lust-generated-value").text(sinList[SinEnum.Lust].Generated);
+    $("#lust-used-value").text(sinList[SinEnum.Lust].Used);
 
-    $("#sloth-generated-value").text(globalThis.TeamSins[SinEnum.Sloth].Generated);
-    $("#sloth-used-value").text(globalThis.TeamSins[SinEnum.Sloth].Used);
+    $("#sloth-generated-value").text(sinList[SinEnum.Sloth].Generated);
+    $("#sloth-used-value").text(sinList[SinEnum.Sloth].Used);
 
-    $("#gluttony-generated-value").text(globalThis.TeamSins[SinEnum.Gluttony].Generated);
-    $("#gluttony-used-value").text(globalThis.TeamSins[SinEnum.Gluttony].Used);
+    $("#gluttony-generated-value").text(sinList[SinEnum.Gluttony].Generated);
+    $("#gluttony-used-value").text(sinList[SinEnum.Gluttony].Used);
 
-    $("#gloom-generated-value").text(globalThis.TeamSins[SinEnum.Gloom].Generated);
-    $("#gloom-used-value").text(globalThis.TeamSins[SinEnum.Gloom].Used);
+    $("#gloom-generated-value").text(sinList[SinEnum.Gloom].Generated);
+    $("#gloom-used-value").text(sinList[SinEnum.Gloom].Used);
 
-    $("#pride-generated-value").text(globalThis.TeamSins[SinEnum.Pride].Generated);
-    $("#pride-used-value").text(globalThis.TeamSins[SinEnum.Pride].Used);
+    $("#pride-generated-value").text(sinList[SinEnum.Pride].Generated);
+    $("#pride-used-value").text(sinList[SinEnum.Pride].Used);
 
-    $("#envy-generated-value").text(globalThis.TeamSins[SinEnum.Envy].Generated);
-    $("#envy-used-value").text(globalThis.TeamSins[SinEnum.Envy].Used);
+    $("#envy-generated-value").text(sinList[SinEnum.Envy].Generated);
+    $("#envy-used-value").text(sinList[SinEnum.Envy].Used);
 }

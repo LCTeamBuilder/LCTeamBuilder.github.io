@@ -2,7 +2,7 @@ import { InitDefaultSinners } from "./Handlers/DataInitHandler";
 import $ from "jquery";
 import { Egos, Identities, MouseHoldTimeThreshhold, tooltipTemplate, MaxLevel } from "./Consts/OtherConstants";
 import { EquipEgo, EquipIdentity } from "./Handlers/EquipHandler";
-import { LoadEquipableListToModal, LoadIdentityDetailsModal, UpdateSinnerIdentityCard, UpdateTeamSinDisplay } from "./Handlers/UIHandler";
+import { LoadEquipableListToModal, LoadIdentityDetailsModal, ToggleDeployment, UpdateSinnerIdentityCard, UpdateTeamSinDisplay } from "./Handlers/UIHandler";
 import { DescriptionTagDictionary } from "./Consts/DescriptionTagDictionary";
 import { SinEnum, SinnerEnum, OverlayEnum } from "./Enums/Index";
 
@@ -16,8 +16,18 @@ globalThis.TeamSins = {
     [SinEnum.Pride]: { Generated: 0, Used: 0 },
     [SinEnum.Envy]: { Generated: 0, Used: 0 },
 }
+globalThis.DeployedTeamSins = {
+    [SinEnum.Wrath]: { Generated: 0, Used: 0 },
+    [SinEnum.Lust]: { Generated: 0, Used: 0 },
+    [SinEnum.Sloth]: { Generated: 0, Used: 0 },
+    [SinEnum.Gluttony]: { Generated: 0, Used: 0 },
+    [SinEnum.Gloom]: { Generated: 0, Used: 0 },
+    [SinEnum.Pride]: { Generated: 0, Used: 0 },
+    [SinEnum.Envy]: { Generated: 0, Used: 0 },
+}
 globalThis.TeamOverlay = OverlayEnum.None;
 globalThis.TeamLink = window.location.href;
+globalThis.DeployedAmount = 0;
 
 globalThis.TeamData.forEach(sinner => {
     for (let i = 0; i < 3; i++) {  //add new sins
@@ -27,9 +37,10 @@ globalThis.TeamData.forEach(sinner => {
         globalThis.TeamSins[cost.sin].Used += cost.amount;
     });
 })
-UpdateTeamSinDisplay();
+UpdateTeamSinDisplay(false);
 
 $("#equipable-level-value").text(MaxLevel);
+$("#deployment-panel").hide();
 
 $('#close-equipable-select-button').on("click", function () {
     $('#equipable-select-modal').hide();
@@ -39,18 +50,52 @@ $('#close-equipable-details-button').on("click", function () {
     $('#equipable-details-modal').hide();
 });
 
+$('#team-builder .deploy-view-button').on("click", function () {
+    globalThis.TeamOverlay = OverlayEnum.Deployment;
+    UpdateTeamSinDisplay(true);
+    $('.ego-overlay').hide();
+    $("#team-builder .id-selected-overlay").css("visibility", "visible");
+    $("#deployment-panel").show();
+
+    $('#team-builder .deploy-view-button').addClass("selected");
+    $('#team-builder .identity-view-button').removeClass("selected");
+    $('#team-builder .ego-view-button').removeClass("selected");
+
+    $("#team-builder .id-hover-overlay-full").hide();
+    $("#team-builder .id-hover-overlay-top").show();
+    $("#team-builder .id-hover-overlay-bottom").show();
+});
+
 $('#team-builder .identity-view-button').on("click", function () {
     globalThis.TeamOverlay = OverlayEnum.None;
+    UpdateTeamSinDisplay(false);
     $('.ego-overlay').hide();
+    $("#team-builder .id-selected-overlay").css("visibility", "hidden");
+    $("#deployment-panel").hide();
+
+    $('#team-builder .deploy-view-button').removeClass("selected");
     $('#team-builder .identity-view-button').addClass("selected");
     $('#team-builder .ego-view-button').removeClass("selected");
+
+    $("#team-builder .id-hover-overlay-full").show();
+    $("#team-builder .id-hover-overlay-top").hide();
+    $("#team-builder .id-hover-overlay-bottom").hide();
 });
 
 $('#team-builder .ego-view-button').on("click", function () {
     globalThis.TeamOverlay = OverlayEnum.Ego;
+    UpdateTeamSinDisplay(false);
     $('.ego-overlay').show();
+    $("#team-builder .id-selected-overlay").css("visibility", "hidden");
+    $("#deployment-panel").hide();
+    
+    $('#team-builder .deploy-view-button').removeClass("selected");
     $('#team-builder .identity-view-button').removeClass("selected");
     $('#team-builder .ego-view-button').addClass("selected");
+
+    $("#team-builder .id-hover-overlay-full").show();
+    $("#team-builder .id-hover-overlay-top").hide();
+    $("#team-builder .id-hover-overlay-bottom").hide();
 });
 
 $('#equipable-select-modal .identity-view-button').on("click", function () {
@@ -85,10 +130,12 @@ if (params.has('v1')) {
     try {
         let regex = /([a-z])([0-9A-Z]*)/g;
         let urlData = params.get('v1')!.split(/(?=s)/g);
+        let deploymentUsed = false;
+        let deploymentOrder: Array<{sinner: SinnerEnum, order: number}> = [];
 
         urlData.forEach(sinnerUrlData => {
             let match;
-            let sinnerEnumValue: SinnerEnum;
+            let sinnerEnumValue: SinnerEnum | undefined = undefined;
 
             while ((match = regex.exec(sinnerUrlData)) !== null) {
                 let paramName = match[1]; // The letter (parameter name)
@@ -99,8 +146,15 @@ if (params.has('v1')) {
                         sinnerEnumValue = parseInt(paramValue, 10);
                         break;
                     }
+                    case 'o': {
+                        if (sinnerEnumValue != undefined) {
+                            deploymentOrder.push({sinner: sinnerEnumValue, order: parseInt(paramValue, 10)});
+                            deploymentUsed = true;
+                        };
+                        break;
+                    }
                     case 'i': {
-                        let identityRegex = /([0-9]*)([A-Z])/g;
+                        //let identityRegex = /([0-9]*)([A-Z])/g;
                         EquipIdentity(Identities.find(identity => identity.Sinner == sinnerEnumValue && (identity.Id % 100) == parseInt(paramValue.replace(/[^0-9]/g, ''), 10))!)
 
                         break;
@@ -118,55 +172,22 @@ if (params.has('v1')) {
                 }
             }
         });
+        
+        if (deploymentUsed){
+            deploymentOrder.sort(function (a, b) { return a.order - b.order; }).forEach(entry => {            
+                ToggleDeployment(entry.sinner);
+            })
+            $('#team-builder .deploy-view-button').trigger("click");
+        }
     }
     catch {
         console.log("Error processing url params");
     }
 }
 
-var holdTimeout: number;
-var isHolding: boolean = false;
-
 globalThis.TeamData.forEach(sinner => {
     UpdateSinnerIdentityCard(sinner.SinnerEnum);
-
-    $("#team-sinner-" + sinner.SinnerEnum).on("mousedown", function () {
-        $("#team-sinner-" + sinner.SinnerEnum + " .loading-circle").css('transition', 'stroke-dashoffset 0.5s linear'); // Reapply transition
-        $("#team-sinner-" + sinner.SinnerEnum + " .loading-circle").css('strokeDashoffset', '0'); // Reapply transition
-        isHolding = true;
-        holdTimeout = setTimeout(function () {
-            resetLoadingRing(sinner.SinnerEnum);
-            isHolding = false;
-            LoadIdentityDetailsModal(sinner.EquipedIdentity);
-        }, MouseHoldTimeThreshhold);
-    });
-
-    $("#team-sinner-" + sinner.SinnerEnum).on("mouseup", function () {
-        resetLoadingRing(sinner.SinnerEnum);
-        clearTimeout(holdTimeout);
-        if (isHolding) {
-            LoadEquipableListToModal(sinner.SinnerEnum);
-            $('#equipable-select-modal').show();
-            $('#equipable-select-modal .toggle-selected-image').eq(0).show();
-            $('#equipable-select-modal .toggle-selected-image').eq(1).hide();
-        }
-        isHolding = false;
-    });
-
-    $("#team-sinner-" + sinner.SinnerEnum).on("mouseleave", function () {
-        resetLoadingRing(sinner.SinnerEnum);
-        clearTimeout(holdTimeout);
-        isHolding = false;
-    });
 });
-
-function resetLoadingRing(sinnerId: number) {
-    $("#team-sinner-" + sinnerId + " .loading-circle").css('transition', 'none');
-    $("#team-sinner-" + sinnerId + " .loading-circle").css('strokeDashoffset', '283');
-    setTimeout(() => {
-        $("#team-sinner-" + sinnerId + " .loading-circle").css('transition', 'stroke-dashoffset 0.5s linear');
-    }, 0);
-}
 
 const $tooltip = $('#tooltip');
 

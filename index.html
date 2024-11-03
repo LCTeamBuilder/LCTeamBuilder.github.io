@@ -20,9 +20,10 @@
         <div class="main-body">
             <div class="top-row">
                 <button id="copy-link" class="font-mikodacs">COPY LINK TO TEAM</button>
-                <div id="team-builder-overlay-toggles" class="font-bebas-kai">
-                    <button class="identity-view-button selected">ID</button>
-                    <button class="ego-view-button">E.G.O</button>
+                <div id="team-builder-overlay-toggles">
+                    <button class="deploy-view-button font-mikodacs">Deploy</button>
+                    <button class="identity-view-button font-bebas-kai selected">ID</button>
+                    <button class="ego-view-button font-bebas-kai">E.G.O</button>
                 </div>
             </div>
             <div class="team-container">
@@ -42,7 +43,7 @@
             </div>
         </div>
         <div class="right-column">
-            <div id="affinity-container">
+            <div id="affinity-panel">
                 <div class="label font-mikodacs text-shadow">AFFINITIES</div>
                 <div class="affinity-field font-excelsior-sans">
                     <div class="affinity-field-icon-container"><img class="wrath-icon"></div>
@@ -85,6 +86,14 @@
                     <div class="affinity-field-amounts-container">
                         <span class="affinity-amount-multiply">X</span><span id="envy-generated-value">0</span>/<span id="envy-used-value">0</span>
                     </div>
+                </div>
+            </div>
+            <div id="deployment-panel">
+                <div id="deployment-label-container" class="font-mikodacs">
+                    <span id="deployment-panel-label">Total Participants</span>
+                </div>
+                <div id="deployment-value-container" class="font-excelsior-sans">
+                    <span id="deployed-current-value" class="text-shadow">0</span><span id="deployed-max-value" class="text-shadow">/12</span>
                 </div>
             </div>
         </div>
