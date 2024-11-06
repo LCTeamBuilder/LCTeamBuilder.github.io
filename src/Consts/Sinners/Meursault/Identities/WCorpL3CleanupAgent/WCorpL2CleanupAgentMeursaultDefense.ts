@@ -19,5 +19,5 @@ export class WCorpL2CleanupAgentMeursaultDefense implements Skill {
         [new SkillDescriptionPart("[Combat Start] Gain +2 [Charge] Count")];
     readonly DamageType?: DamageTypeEnum | undefined = undefined;
     readonly DefenseType?: DefenseTypeEnum | undefined = DefenseTypeEnum.Guard;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Meursault/WCorpCleanupCrew/GuardUT4.png";
+    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Meursault/WCorpL3CleanupAgent/GuardUT4.png";
 }

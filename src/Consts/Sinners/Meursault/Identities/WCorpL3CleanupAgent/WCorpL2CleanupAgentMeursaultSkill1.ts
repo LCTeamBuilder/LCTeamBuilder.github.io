@@ -21,5 +21,5 @@ export class WCorpL2CleanupAgentMeursaultSkill1 implements Skill {
         new SkillDescriptionPart("[On Hit] Gain +3 [Charge] Count", 1)];
     readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
     readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Meursault/WCorpCleanupCrew/Rip.png";
+    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Meursault/WCorpL3CleanupAgent/Rip.png";
 }
