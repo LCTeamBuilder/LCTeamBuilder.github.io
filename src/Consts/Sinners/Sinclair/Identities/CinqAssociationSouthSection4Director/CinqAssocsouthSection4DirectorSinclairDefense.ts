@@ -19,5 +19,5 @@ export class CinqAssocsouthSection4DirectorSinclairDefense implements Skill {
         [];
     readonly DamageType?: DamageTypeEnum | undefined = undefined;
     readonly DefenseType?: DefenseTypeEnum | undefined = DefenseTypeEnum.Evade;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Sinclair/CinqAssociationSouthSection4Director/DefensiveUT4.png";
+    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Sinclair/CinqAssocSouthSection4Director/DefensiveUT4.png";
 }

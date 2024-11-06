@@ -22,5 +22,5 @@ export class CinqAssocsouthSection4DirectorSinclairSkill2 implements Skill {
         new SkillDescriptionPart("[On Hit] Gain +1 [Poise] Count", 2)];
     readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
     readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Sinclair/CinqAssociationSouthSection4Director/Engagement.png";
+    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Sinclair/CinqAssocSouthSection4Director/Engagement.png";
 }

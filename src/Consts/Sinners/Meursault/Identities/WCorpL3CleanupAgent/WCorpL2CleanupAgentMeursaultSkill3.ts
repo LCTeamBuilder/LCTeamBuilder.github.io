@@ -23,5 +23,5 @@ export class WCorpL2CleanupAgentMeursaultSkill3 implements Skill {
         new SkillDescriptionPart("[On Hit] Spend 2 [Charge] Count to inflict 2 [Defense Level Down]", 4)];
     readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
     readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Meursault/WCorpCleanupCrew/EnergyCurrent.png";
+    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Meursault/WCorpL3CleanupAgent/EnergyCurrent.png";
 }

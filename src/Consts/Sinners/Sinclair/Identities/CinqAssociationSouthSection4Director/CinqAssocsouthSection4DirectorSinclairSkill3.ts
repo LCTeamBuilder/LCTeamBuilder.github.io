@@ -23,5 +23,5 @@ export class CinqAssocsouthSection4DirectorSinclairSkill3 implements Skill {
         new SkillDescriptionPart("[On Crit] +50% Damage on Critical Hit", 3)];
     readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
     readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Sinclair/CinqAssociationSouthSection4Director/ContreAttaque.png";
+    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Sinclair/CinqAssocSouthSection4Director/ContreAttaque.png";
 }
