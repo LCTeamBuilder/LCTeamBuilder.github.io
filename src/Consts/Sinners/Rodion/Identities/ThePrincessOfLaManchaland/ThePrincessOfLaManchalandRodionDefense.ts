@@ -19,7 +19,7 @@ export class ThePrincessOfLaManchalandRodionDefense implements Skill {
         [new SkillDescriptionPart("[Clashable Counter]<br>"+
             "[On Use] Reduce [Bleed] Count by 3 for 2 other allies with the highest ([Bleed] Potency x Count) value, and increase [Bloodfeast] by (pre-reduction [Bleed] Potency x Count reduced)<br>"+
             "- If this effect reduced [Bleed] Count to 0, [Bleed] expires<br>"+
-            "- If the affected ally is a <Bloodfiend>, reduce their [Bleed] Count by 2 more<br>"+
+            "- If the affected ally is a &lt;Bloodfiend&gt;, reduce their [Bleed] Count by 2 more<br>"+
             "[Clash Win] Gain 4 [Blooming Thorn]"),
         new SkillDescriptionPart("[On Hit] Inflict 2 [Bleed]", 1),
         new SkillDescriptionPart("[On Hit] Inflict +1 [Bleed] Count", 2)];
