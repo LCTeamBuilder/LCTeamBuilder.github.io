@@ -345,6 +345,26 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- At Blood-tinged Scissorblades III, gain 1 Offense Level Up based on the Stack",
         ImageLink: "./assets/Icons/Statuses/BloodTingedScissorblades.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
     },
+    "[Festive Fever]": {
+        Name: "Festive Fever", Type: StatusTypeEnum.Buff, Description:
+            "- Max Value: 10<br>" +
+            "- Expires at Turn End<br>" +
+            "- Againts targets with Bleed: deal +1.5% more damage for every Stack<br>" +
+            "- Skills that consume or gain Bloodfeast deal +3% more damage for every Stack instead",
+        ImageLink: "./assets/Icons/Statuses/FestiveFever.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
+    },
+    "[Blooming Thorn]": {
+        Name: "Blooming Thorn", Type: StatusTypeEnum.Buff, Description:
+            "- Max Value: 10<br>" +
+            "- Stage 1 Blooming Thorn<br>" +
+            "- Gain 1 Defense Level for every 2 Stack (max 5)<br>" +
+            "- When hit, inflict 1 Bleed againts the attacker and lose 1 Stack<br>" +
+            "- [The Princess of La Manchaland Rodion Only]<br>" +
+            " · At max Stack, convert to the next Stage of this effect.<br>" +
+            " · Inflict +(Stage - 1) more Bleed and Rupture with this unit's Base Attack Skill Coin effects.<br>" +
+            " · Reverts to previous Stage when the Stack drops below the requirements.",
+        ImageLink: "./assets/Icons/Statuses/BloomingThorns.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
+    },
     "[Appetite]": {
         Name: "Appetite", Type: StatusTypeEnum.Buff, Description:
             "Increases the healing provided by the Passive [Rustle Up]. Spent when the Passive activates.",
@@ -1189,7 +1209,9 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
     "[Heads Hit After Clash Win]": { Name: "[Heads Hit After Clash Win]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); } },
     "[Reuse - Heads Hit]": { Name: "[Reuse - Heads Hit]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); } },
     "[On Kill]": { Name: "[On Kill]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); } },
+    "[On Ally Kill]": { Name: "[On Ally Kill]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); } },
     "[Failed Kill]": { Name: "[Failed Kill]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); } },
+    "[On Ally Kill Fail]": { Name: "[On Ally Kill Fail]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); } },
     "[After Attack]": { Name: "[After Attack]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); } },
     "[Skill End]": { Name: "[Skill End]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); } },
 

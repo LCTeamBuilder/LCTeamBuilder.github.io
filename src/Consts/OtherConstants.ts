@@ -152,6 +152,7 @@ import { LiuAssocSouthSection4DirectorRodion } from "./Sinners/Rodion/Identities
 import { NCorpMittelhammerRodion } from "./Sinners/Rodion/Identities/NCorpMittelhammer/NCorpMittelhammerRodion";
 import { RosespannerWorkshopRepRodion } from "./Sinners/Rodion/Identities/RosespannerWorkshopRep/RosespannerWorkshopRepRodion";
 import { TCorpClass2CollectionStaffRodion } from "./Sinners/Rodion/Identities/TCorpClass2CollectionStaff/TCorpClass2CollectionStaffRodion";
+import { ThePrincessOfLaManchalandRodion } from "./Sinners/Rodion/Identities/ThePrincessOfLaManchaland/ThePrincessOfLaManchalandRodion";
 import { ZweiAssocSouthSection5Rodion } from "./Sinners/Rodion/Identities/ZweiAssociationSouthSection5/ZweiAssocSouthSection5Rodion";
 import { FourthMatchFlameRyoshu } from "./Sinners/Ryoshu/EGO/4thMatchFlame/FourthMatchFlameRyoshu";
 import { BlindObsessionRyoshu } from "./Sinners/Ryoshu/EGO/BlindObsession/BlindObsessionRyoshu";
@@ -191,6 +192,7 @@ import { FourthMatchFlameYiSang } from "./Sinners/YiSang/EGO/4thMatchFlame/Fourt
 import { BygoneDaysYiSang } from "./Sinners/YiSang/EGO/BygoneDays/BygoneDaysYiSang";
 import { CrowsEyeViewYisang } from "./Sinners/YiSang/EGO/CrowsEyeView/CrowsEyeViewYiSang";
 import { DimensionShredderYiSang } from "./Sinners/YiSang/EGO/DimensionShredder/DimensionShredderYiSang";
+import { FellBulletYiSang } from "./Sinners/YiSang/EGO/FellBullet/FellBulletYiSang";
 import { SunshowerYiSang } from "./Sinners/YiSang/EGO/Sunshower/SunshowerYiSang";
 import { WishingCairnYiSang } from "./Sinners/YiSang/EGO/WishingCairn/WishingCairnYiSang";
 import { BladeLineageSalsuYiSang } from "./Sinners/YiSang/Identities/BladeLineageSalsu/BladeLineageSalsuYiSang";
@@ -324,6 +326,7 @@ export const Identities: Array<IdentityBase> = [
     new NCorpMittelhammerRodion,
     new RosespannerWorkshopRepRodion,
     new TCorpClass2CollectionStaffRodion,
+    new ThePrincessOfLaManchalandRodion,
     new ZweiAssocSouthSection5Rodion,
 
     //Sinclair
@@ -366,6 +369,7 @@ export const Identities: Array<IdentityBase> = [
 
 export const Egos: Array<EgoBase> = [
     //Yi Sang
+    new FellBulletYiSang,
     new FourthMatchFlameYiSang,
     new BygoneDaysYiSang,
     new CrowsEyeViewYisang,
