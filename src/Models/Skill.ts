@@ -1,8 +1,10 @@
-import { DamageTypeEnum } from "../Enums/DamageTypeEnum";
-import { DefenseTypeEnum } from "../Enums/DefenseTypeEnum";
-import { SinEnum } from "../Enums/SinEnum";
-import { SkillTierEnum } from "../Enums/SkillTierEnum";
-import { SkillTypeEnum } from "../Enums/SkillTypeEnum";
+import {
+    DamageTypeEnum,
+    DefenseTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../Enums/Index";
 import { SkillDescriptionPart } from "./SkillDescriptionPart";
 
 export abstract class Skill {

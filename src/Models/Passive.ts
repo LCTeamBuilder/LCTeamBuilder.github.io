@@ -1,6 +1,4 @@
-import { PassiveCostTypeEnum } from "../Enums/PassiveCostTypeEnum";
-import { PassiveTypeEnum } from "../Enums/PassiveTypeEnum";
-import { SinEnum } from "../Enums/SinEnum";
+import { PassiveCostTypeEnum, PassiveTypeEnum, SinEnum } from "../Enums/Index";
 
 export class Passive {
     public Name: string;
