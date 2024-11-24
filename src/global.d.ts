@@ -1,6 +1,5 @@
-import { OverlayEnum } from './Enums/OverlayEnum';
-import { SinEnum } from './Enums/SinEnum';
-import { Sinner } from './Models/Sinner';
+import { OverlayEnum, SinEnum } from './Enums/Index';
+import { Sinner } from './Models/Index';
 
 declare global {
     var TeamData: Array<Sinner>;

@@ -1,18 +1,127 @@
-import { Egos, Identities, MaxLevel, MouseHoldTimeThreshhold, ResistanceLabels } from "../Consts/OtherConstants";
-import { SinEnum } from "../Enums/SinEnum";
-import { EgoBase } from "../Models/EgoBase";
-import { IdentityBase } from "../Models/IdentityBase";
 import $ from "jquery";
+import { MaxLevel, MouseHoldTimeThreshhold } from "../Constants/ConfigVariables";
+import { DescriptionTagDictionary } from "../Constants/DescriptionTagDictionary";
+import { Egos, Identities } from "../Constants/Equipables";
+import { ResistanceLabels } from "../Constants/ResistanceLabelDictionary";
+import { RomanNumerals } from "../Constants/RomanNumeralDictionary";
+import {
+    DamageTypeEnum,
+    OverlayEnum,
+    PassiveCostTypeEnum,
+    PassiveTypeEnum,
+    SinEnum,
+    SkillTypeEnum
+} from "../Enums/Index";
+import { Ego, Identity, Passive } from "../Models/Index";
 import { EquipEgo, EquipIdentity } from "./EquipHandler";
-import { DescriptionTagDictionary } from "../Consts/DescriptionTagDictionary";
-import { SkillTypeEnum } from "../Enums/SkillTypeEnum";
-import { Passive } from "../Models/Passive";
-import { PassiveTypeEnum } from "../Enums/PassiveTypeEnum";
-import { PassiveCostTypeEnum } from "../Enums/PassiveCostTypeEnum";
-import { OverlayEnum } from "../Enums/OverlayEnum";
-import { DamageTypeEnum } from "../Enums/DamageTypeEnum";
-import { RomanNumerals } from "../Consts/RomanNumeralDictionary";
 import { UpdateLink } from "./URLHandler";
+
+export function AddEventHandlers() {
+    $('#close-equipable-select-button').on("click", function () {
+        $('#equipable-select-modal').hide();
+    });
+    
+    $('#close-equipable-details-button').on("click", function () {
+        $('#equipable-details-modal').hide();
+    });
+    
+    $('#team-builder .deploy-view-button').on("click", function () {
+        globalThis.TeamOverlay = OverlayEnum.Deployment;
+        UpdateTeamSinDisplay(true);
+        $('.ego-overlay').hide();
+        $("#team-builder .id-selected-overlay").css("visibility", "visible");
+        $("#deployment-panel").show();
+    
+        $('#team-builder .deploy-view-button').addClass("selected");
+        $('#team-builder .identity-view-button').removeClass("selected");
+        $('#team-builder .ego-view-button').removeClass("selected");
+    
+        $("#team-builder .id-hover-overlay-full").hide();
+        $("#team-builder .id-hover-overlay-top").show();
+        $("#team-builder .id-hover-overlay-bottom").show();
+    });
+    
+    $('#team-builder .identity-view-button').on("click", function () {
+        globalThis.TeamOverlay = OverlayEnum.None;
+        UpdateTeamSinDisplay(false);
+        $('.ego-overlay').hide();
+        $("#team-builder .id-selected-overlay").css("visibility", "hidden");
+        $("#deployment-panel").hide();
+    
+        $('#team-builder .deploy-view-button').removeClass("selected");
+        $('#team-builder .identity-view-button').addClass("selected");
+        $('#team-builder .ego-view-button').removeClass("selected");
+    
+        $("#team-builder .id-hover-overlay-full").show();
+        $("#team-builder .id-hover-overlay-top").hide();
+        $("#team-builder .id-hover-overlay-bottom").hide();
+    });
+    
+    $('#team-builder .ego-view-button').on("click", function () {
+        globalThis.TeamOverlay = OverlayEnum.Ego;
+        UpdateTeamSinDisplay(false);
+        $('.ego-overlay').show();
+        $("#team-builder .id-selected-overlay").css("visibility", "hidden");
+        $("#deployment-panel").hide();
+        
+        $('#team-builder .deploy-view-button').removeClass("selected");
+        $('#team-builder .identity-view-button').removeClass("selected");
+        $('#team-builder .ego-view-button').addClass("selected");
+    
+        $("#team-builder .id-hover-overlay-full").show();
+        $("#team-builder .id-hover-overlay-top").hide();
+        $("#team-builder .id-hover-overlay-bottom").hide();
+    });
+    
+    $('#equipable-select-modal .identity-view-button').on("click", function () {
+        $('#id-select-list').show();
+        $('#ego-select-list').hide();
+        $('#equipable-select-modal .toggle-selected-image').eq(0).show();
+        $('#equipable-select-modal .toggle-selected-image').eq(1).hide();
+    });
+    
+    $('#equipable-select-modal .ego-view-button').on("click", function () {
+        $('#id-select-list').hide();
+        $('#ego-select-list').show();
+        $('#equipable-select-modal .toggle-selected-image').eq(0).hide();
+        $('#equipable-select-modal .toggle-selected-image').eq(1).show();
+    });
+    
+    $('#close-equipable-select-button').on("click", function () {
+        $('#equipable-select-modal').hide();
+    });
+    
+    $('#copy-link').on("click", function () {
+        navigator.clipboard.writeText(globalThis.TeamLink);
+        $('#alert-popup').show();
+    });
+    
+    $('#alert-popup-confirm-button').on("click", function () {
+        $('#alert-popup').hide();
+    });
+
+    const $tooltip = $('#tooltip');
+
+    $(document).on('mousemove', function (event) {
+        $tooltip.css({
+            top: event.pageY - 5,
+            left: event.pageX - 5
+        });
+    });
+
+    $(document).on('mouseenter', '.tooltip-container', function () {
+        var statusInfo = DescriptionTagDictionary['[' + $(this).data('status') + ']']!;
+        $tooltip.html(
+            "<span class='tooltip-box'>" +
+                "<img src='"+statusInfo.ImageLink+"' class='status-icon'><span id='tooltip-name' class='font-mikodacs'>"+statusInfo.Name+"</span><br>" +
+                "<span id='tooltip-description' class='font-pretendard-regular'>"+statusInfo.Description+"</span>" +
+            "</span>").show();
+    });
+
+    $(document).on('mouseleave', '.tooltip-container', function () {
+        $tooltip.hide();
+    });
+}
 
 export function UpdateSinnerIdentityCard(sinnerId: number) {
     $("#team-sinner-" + sinnerId).html("");
@@ -29,14 +138,12 @@ export function UpdateSinnerIdentityCard(sinnerId: number) {
             let egoOverlaySlot = $(template).find(".risk" + ego.RiskLevel);
             egoOverlaySlot.removeClass("no-ego").addClass(SinEnum[ego.AwakeningSkill.Affinity].toLowerCase() + "-ego");
             egoOverlaySlot.find(".risk-icon").attr("src", "./assets/Icons/RiskLevels/Risk" + ego.RiskLevel + "IconActive.png");
-            egoOverlaySlot.find(".ego-name").css("display", "flex");
-            egoOverlaySlot.find(".ego-name").text(ego.Name);
+            egoOverlaySlot.find(".ego-name").css("display", "flex").text(ego.Name);
             if (ego.Name.length > 10) { egoOverlaySlot.find(".ego-name").css("font-size", "0.8cqw"); }
             if (ego.Name.length > 14) { egoOverlaySlot.find(".ego-name").css("font-size", "0.7cqw"); }
             if (ego.Name.length > 18) { egoOverlaySlot.find(".ego-name").css("font-size", "0.6cqw").css("letter-spacing", "-0.06cqw"); }
             if (ego.Name.length > 24) { egoOverlaySlot.find(".ego-name").css("font-size", "0.5cqw").css("letter-spacing", "-0.05cqw"); }
-            egoOverlaySlot.find(".ego-image").parent().css("display", "flex");
-            egoOverlaySlot.find(".ego-image").attr("src", ego.AwakeningSkill.SkillImageDir);
+            egoOverlaySlot.find(".ego-image").parent().css("display", "flex").attr("src", ego.AwakeningSkill.SkillImageDir);
             egoOverlaySlot.find(".threadspin-icon").parent().css("display", "flex");
         });
         $("#team-sinner-" + sinnerId).html(template.map(node => (node as HTMLElement).outerHTML).join(''));
@@ -59,7 +166,6 @@ export function UpdateSinnerIdentityCard(sinnerId: number) {
             $("#team-sinner-" + sinnerId).find('.id-hover-overlay-full').hide();
             $("#team-sinner-" + sinnerId).find('.id-hover-overlay-top').show();
             $("#team-sinner-" + sinnerId).find('.id-hover-overlay-bottom').show();
-            $("#team-sinner-" + sinnerId).find('.id-hover-overlay-bottom').show();
             $("#team-sinner-" + sinnerId).find(".id-selected-overlay").css("visibility", "visible");
         }
         else {
@@ -73,8 +179,7 @@ export function UpdateSinnerIdentityCard(sinnerId: number) {
         var isHolding: boolean = false;
         
         $("#team-sinner-" + sinnerId).find(".id-hover-overlay-top, .id-hover-overlay-bottom, .id-hover-overlay-full").on("mousedown", function () {
-            $("#team-sinner-" + sinnerId + " .loading-circle").css('transition', 'stroke-dashoffset 0.5s linear'); // Reapply transition
-            $("#team-sinner-" + sinnerId + " .loading-circle").css('strokeDashoffset', '0'); // Reapply transition
+            $("#team-sinner-" + sinnerId + " .loading-circle").css('transition', 'stroke-dashoffset 0.5s linear').css('strokeDashoffset', '0'); // Reapply transition
             isHolding = true;
             holdTimeout = setTimeout(function () {
                 resetLoadingRing(sinnerId);
@@ -111,8 +216,7 @@ export function UpdateSinnerIdentityCard(sinnerId: number) {
         });
 
         function resetLoadingRing(sinnerId: number) {
-            $("#team-sinner-" + sinnerId + " .loading-circle").css('transition', 'none');
-            $("#team-sinner-" + sinnerId + " .loading-circle").css('strokeDashoffset', '283');
+            $("#team-sinner-" + sinnerId + " .loading-circle").css('transition', 'none').css('strokeDashoffset', '283');
             setTimeout(() => {
                 $("#team-sinner-" + sinnerId + " .loading-circle").css('transition', 'stroke-dashoffset 0.5s linear');
             }, 0);
@@ -182,7 +286,7 @@ export function ToggleDeployment(sinnerId: number){
     UpdateTeamSinDisplay(true);
 }
 
-export function LoadEquipableListToModal(sinnerId: number) {
+function LoadEquipableListToModal(sinnerId: number) {
     $("#id-select-list").html('');
     let equipedId = globalThis.TeamData.find(sinner => sinner.SinnerEnum == sinnerId)!.EquipedIdentity;
     $.get('./templates/id-card-template.html', function (data) {
@@ -313,7 +417,7 @@ export function LoadEquipableListToModal(sinnerId: number) {
     $("#ego-select-list").hide();
 }
 
-export function LoadIdentityDetailsModal(identity: IdentityBase) {
+function LoadIdentityDetailsModal(identity: Identity) {
     $("#equipable-details-modal #id-status-list").show();
     $("#equipable-details-modal #id-resistances-list").show();
     $("#equipable-details-modal #ego-resistances-list").hide();
@@ -423,39 +527,13 @@ export function LoadIdentityDetailsModal(identity: IdentityBase) {
         $("#equipable-details-skill-select").append(tab);
         $("#equipable-details-skills").append(BuildPassiveDescriptions(identity.Passives));
 
-        $("#equipable-details-skill-select button").removeClass();
-        $("#equipable-details-skill-select button").eq(0).addClass("selected").addClass(SinEnum[identity.Skills[0]!.Affinity].toLowerCase());
+        $("#equipable-details-skill-select button").removeClass().eq(0).addClass("selected").addClass(SinEnum[identity.Skills[0]!.Affinity].toLowerCase());
         ShowSkill(1);
         $("#equipable-details-modal").show();
     });
 }
 
-function SetSinResistanceAttributes(sin: SinEnum, value: number) {
-    let sinName = SinEnum[sin];
-    switch (value) {
-        case 0.5: {
-            $("#equipable-details-modal").find("." + sinName.toLowerCase() + "-icon").attr("src", "./assets/Icons/Resistances/" + sinName + "Ineff.png");
-            $("#" + sinName.toLowerCase() + "-resistance-label-value, #" + sinName.toLowerCase() + "-resistance-number-value").addClass("ineff-resist");
-            break;
-        }
-        case 0.75: {
-            $("#equipable-details-modal").find("." + sinName.toLowerCase() + "-icon").attr("src", "./assets/Icons/Resistances/" + sinName + "Endure.png");
-            $("#" + sinName.toLowerCase() + "-resistance-label-value, #" + sinName.toLowerCase() + "-resistance-number-value").addClass("endure-resist");
-            break;
-        }
-        case 1: {
-            $("#equipable-details-modal").find("." + sinName.toLowerCase() + "-icon").attr("src", "./assets/Icons/Resistances/" + sinName + "Normal.png");
-            break;
-        }
-        case 2: {
-            $("#equipable-details-modal").find("." + sinName.toLowerCase() + "-icon").attr("src", "./assets/Icons/Resistances/" + sinName + "Fatal.png");
-            $("#" + sinName.toLowerCase() + "-resistance-label-value, #" + sinName.toLowerCase() + "-resistance-number-value").addClass("fatal-resist");
-            break;
-        }
-    }
-}
-
-export function LoadEgoDetailsModal(ego: EgoBase) {
+function LoadEgoDetailsModal(ego: Ego) {
     $("#equipable-details-modal #id-status-list").hide();
     $("#equipable-details-modal #id-resistances-list").hide();
     $("#equipable-details-modal #ego-resistances-list").show();
@@ -501,12 +579,9 @@ export function LoadEgoDetailsModal(ego: EgoBase) {
     $("#equipable-details-portrait").attr("src", ego.FullImageDir);
     $("#equipable-details-portrait-container").removeClass("shadow");
     $("#ego-sanity-cost").show();
-    $("#ego-awakening-cost-value").show();
-    $("#ego-awakening-cost-value").text(ego.AwakeningSanityCost);
-    $("#ego-corrosion-cost-value").hide();
-    $("#ego-corrosion-cost-value").text(ego.CorrosionSanityCost ?? '');
-    $("#equipable-details-ego-cost").show();
-    $("#equipable-details-ego-cost").find(".cost-value-container").each(function () {
+    $("#ego-awakening-cost-value").show().text(ego.AwakeningSanityCost);
+    $("#ego-corrosion-cost-value").hide().text(ego.CorrosionSanityCost ?? '');
+    $("#equipable-details-ego-cost").show().find(".cost-value-container").each(function () {
         $(this).text("0");
     });
     $(".cost-value-container").addClass("no-cost");
@@ -627,13 +702,37 @@ export function LoadEgoDetailsModal(ego: EgoBase) {
         });
 
         ShowSkill(1);
-        $("#equipable-details-skill-select button").removeClass();
-        $("#equipable-details-skill-select button").eq(0).addClass("selected").addClass(SinEnum[ego.AwakeningSkill.Affinity].toLowerCase());
+        $("#equipable-details-skill-select button").removeClass().eq(0).addClass("selected").addClass(SinEnum[ego.AwakeningSkill.Affinity].toLowerCase());
         $("#equipable-details-modal").show();
     });
 }
 
-export function ShowSkill(index: number) {
+function SetSinResistanceAttributes(sin: SinEnum, value: number) {
+    let sinName = SinEnum[sin];
+    switch (value) {
+        case 0.5: {
+            $("#equipable-details-modal").find("." + sinName.toLowerCase() + "-icon").attr("src", "./assets/Icons/Resistances/" + sinName + "Ineff.png");
+            $("#" + sinName.toLowerCase() + "-resistance-label-value, #" + sinName.toLowerCase() + "-resistance-number-value").addClass("ineff-resist");
+            break;
+        }
+        case 0.75: {
+            $("#equipable-details-modal").find("." + sinName.toLowerCase() + "-icon").attr("src", "./assets/Icons/Resistances/" + sinName + "Endure.png");
+            $("#" + sinName.toLowerCase() + "-resistance-label-value, #" + sinName.toLowerCase() + "-resistance-number-value").addClass("endure-resist");
+            break;
+        }
+        case 1: {
+            $("#equipable-details-modal").find("." + sinName.toLowerCase() + "-icon").attr("src", "./assets/Icons/Resistances/" + sinName + "Normal.png");
+            break;
+        }
+        case 2: {
+            $("#equipable-details-modal").find("." + sinName.toLowerCase() + "-icon").attr("src", "./assets/Icons/Resistances/" + sinName + "Fatal.png");
+            $("#" + sinName.toLowerCase() + "-resistance-label-value, #" + sinName.toLowerCase() + "-resistance-number-value").addClass("fatal-resist");
+            break;
+        }
+    }
+}
+
+function ShowSkill(index: number) {
     $(".skill").hide();
     $("#skill" + index).show();
 }
