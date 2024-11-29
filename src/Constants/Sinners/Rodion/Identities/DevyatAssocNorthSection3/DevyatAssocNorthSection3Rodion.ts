@@ -34,15 +34,15 @@ export class DevyatAssocNorthSection3Rodion implements Identity{
     readonly Passives: Passive[] = [
         new Passive("Lemme go and I swear I'll make it in time!",
             PassiveTypeEnum.Combat,
-            "<For Chain Battles> When, after Retreating with '[Strategic R&R Mode]', if this unit rejoins the battle, halve the [Courier Trunk] value (once per Encounter, rounded up)"),
+            "&lt;For Chain Battles&gt; When, after Retreating with '[Strategic R&R Mode]', if this unit rejoins the battle, halve the [Courier Trunk - Rodion] - Rodion value (once per Encounter, rounded up)"),
 
         new Passive("Speedy Delivery",
             PassiveTypeEnum.Combat,
             "Turn Start: At 6+ Speed, or if this unit has [Haste],<br>"+
-            "gain ([Courier Trunk])% of this unit's max HP as Shield (max 20%)<br><br>"+
+            "gain ([Courier Trunk - Rodion])% of this unit's max HP as Shield (max 20%)<br><br>"+
 
             "Upon Retreat, apply 1 [Clash Power Up] to 2 allies next turn (prioritizes Substituted units first, then in Deployment order)<br>"+
-            "- Lasts for 1 additional turn for every 15 [Courier Trunk] on self (2 more turns max)",
+            "- Lasts for 1 additional turn for every 15 [Courier Trunk - Rodion] on self (2 more turns max)",
             [{sin: SinEnum.Gluttony, amount: 4 }],
             PassiveCostTypeEnum.Owned),
 

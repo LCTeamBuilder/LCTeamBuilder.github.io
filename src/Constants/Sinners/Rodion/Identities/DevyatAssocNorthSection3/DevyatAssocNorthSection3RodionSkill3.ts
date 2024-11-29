@@ -16,14 +16,14 @@ export class DevyatAssocNorthSection3RodionSkill3 implements Skill {
     readonly AttackWeight: number = 1;
     readonly SkillLevel: number = +4;
     readonly SkillDescription: SkillDescriptionPart[] = 
-        [new SkillDescriptionPart("Deal +4% more damage for every [Courier Trunk] on self (max 80%)<br>"+
-            "Coin Power +1 for every 10 [Courier Trunk] on self or for every 6 [Rupture] on the target (max 2)<br>"+
+        [new SkillDescriptionPart("Deal +4% more damage for every [Courier Trunk - Rodion] on self (max 80%)<br>"+
+            "Coin Power +1 for every 10 [Courier Trunk - Rodion] on self or for every 6 [Rupture] on the target (max 2)<br>"+
             "[On Use] If the target has 15+ [Rupture] and 3+ [Rupture] Count: this Skill does not inflict [Rupture] Count with its On Hit effects; instead, Reuse its last Coin"),
         new SkillDescriptionPart("[On Hit] Inflict +3 [Rupture] Count (once per turn)<br>"+
-            "- Inflict +1 more [Rupture] Count for every 10 [Courier Trunk] (max 2)", 2),
-        new SkillDescriptionPart(" [On Hit] At 15+ [Courier Trunk], deal +25% more damage<br>"+
+            "- Inflict +1 more [Rupture] Count for every 10 [Courier Trunk - Rodion] (max 2)", 2),
+        new SkillDescriptionPart(" [On Hit] At 15+ [Courier Trunk - Rodion], deal +25% more damage<br>"+
             "[After Attack] If the target is Staggered or defeated, gain 2 [Haste] next turn (once per turn)", 3)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
+    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
     readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
     readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/ITrustYaPolu.png";
 }

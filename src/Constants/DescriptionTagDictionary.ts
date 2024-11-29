@@ -860,6 +860,15 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "(Interacts the same way as normal Tremor does to effects that raises or reduces Tremor Potency/Count)",
         ImageLink: "./assets/Icons/Statuses/TremorChain.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
     },
+    "[Tremor - Clockwinding]": {
+        Name: "Tremor - Clockwinding", Type: StatusTypeEnum.Debuff, Description:
+            "- Max Speed +2<br>" +
+            "- Consume Tremor Count on self to inflict 1 more Tremor Potency or Count when inflicting them with this unit's Skill or Coin Effects<br>" +
+            "- When Hit by Skills that trigger Tremor Burst, raise the Stagger Threshold by the effect's Potency <br>" +
+            "- Turn End: reduce the Count by 1<br>" +
+            "(Interacts the same way as normal Tremor does to effects that raises or reduces Tremor Potency/Count)",
+        ImageLink: "./assets/Icons/Statuses/TremorClockwinding.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
+    },
     "[Time Moratorium]": {
         Name: "Time Moratorium", Type: StatusTypeEnum.Debuff, Description:
             "- Does not take any damage as long as this effect is active; store all damage received instead<br>" +
@@ -1098,13 +1107,26 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "At 4+ Count, this unit dies",
         ImageLink: "./assets/Icons/Statuses/KCorpAmpule.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
     },
-    "[Courier Trunk]": {
-        Name: "Courier Trunk", Type: StatusTypeEnum.Neutral, Description:
+    "[Courier Trunk - Rodion]": {
+        Name: "Courier Trunk - Rodion", Type: StatusTypeEnum.Neutral, Description:
             "- Base Value: 0<br>" +
             "- Turn Start: gain 3 Stack<br>" +
             "- Stack does not expire upon Retreat; it is stored instead<br>" +
             "- At 10+ Stack: raise Min & Max Speed values by 1<br>" +
             "- At 20+ Stack: Gain 1 Clash Power Up and 1 Slash DMG Up<br>" +
+            "- At 30+ Stack:<br>" +
+            "· On Skill Use, take (Stack/3)% HP damage and (Stack/3) SP damage<br>" +
+            "· On Turn End, take (Stack/2)% HP damage and (Stack/2) SP damage<br>" +
+            "(applies before Retreat)",
+        ImageLink: "./assets/Icons/Statuses/CourierTrunk.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
+    },
+    "[Courier Trunk - Sinclair]": {
+        Name: "Courier Trunk - Sinclair", Type: StatusTypeEnum.Neutral, Description:
+            "- Base Value: 0<br>" +
+            "- Turn Start: gain 3 Stack<br>" +
+            "- Stack does not expire upon Retreat; it is stored instead<br>" +
+            "- At 10+ Stack: raise Min & Max Speed values by 1<br>" +
+            "- At 20+ Stack: Gain 1 Clash Power Up and 1 Blunt DMG Up<br>" +
             "- At 30+ Stack:<br>" +
             "· On Skill Use, take (Stack/3)% HP damage and (Stack/3) SP damage<br>" +
             "· On Turn End, take (Stack/2)% HP damage and (Stack/2) SP damage<br>" +
