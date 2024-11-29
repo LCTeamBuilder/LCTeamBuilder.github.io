@@ -16,10 +16,10 @@ export class DevyatAssocNorthSection3RodionDefense implements Skill {
     readonly AttackWeight: number = 1;
     readonly SkillLevel: number = +3;
     readonly SkillDescription: SkillDescriptionPart[] = 
-        [new SkillDescriptionPart("[Combat Start] At 15+ [Courier Trunk], activate 'Just… a Strategic Time Off!' instead (once per turn)<br>"+
-            "[Combat Start] If this Skill is to be activated, gain ([Courier Trunk])% of this unit's max HP as Shield (max 25%, once per turn)<br>"+
-            "[On Use] Gain 2 [Courier Trunk] (once per turn)<br>"+
-            "- At less than 15 [Courier Trunk], gain 1 additional [Courier Trunk]")];
+        [new SkillDescriptionPart("[Combat Start] At 15+ [Courier Trunk - Rodion], activate 'Just… a Strategic Time Off!' instead (once per turn)<br>"+
+            "[Combat Start] If this Skill is to be activated, gain ([Courier Trunk - Rodion])% of this unit's max HP as Shield (max 25%, once per turn)<br>"+
+            "[On Use] Gain 2 [Courier Trunk - Rodion] (once per turn)<br>"+
+            "- At less than 15 [Courier Trunk - Rodion], gain 1 additional [Courier Trunk - Rodion]")];
     readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
     readonly DefenseType?: DefenseTypeEnum | undefined = DefenseTypeEnum.Counter;
     readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/CourierSupportControlSequence.png";

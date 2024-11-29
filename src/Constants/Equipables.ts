@@ -49,6 +49,7 @@ import { ThePriestOfLaManchalandGregor } from "./Sinners/Gregor/Identities/ThePr
 import { TwinhookPiratesFirstMateGregor } from "./Sinners/Gregor/Identities/TwinhookPiratesFirstMate/TwinhookPiratesFirstMateGregor";
 import { ZweiAssocSouthSection4Gregor } from "./Sinners/Gregor/Identities/ZweiAssociationSouthSection4/ZweiAssocSouthSection4Gregor";
 import { AEDDHeathcliff } from "./Sinners/Heathcliff/EGO/AEDD/AEDDHeathcliff";
+import { AsymmetricalInertiaHeathcliff } from "./Sinners/Heathcliff/EGO/AsymmetricalInertia/AsymmetricalInertiaHeathcliff";
 import { BindsHeathcliff } from "./Sinners/Heathcliff/EGO/Binds/BindsHeathcliff";
 import { BodysackHeathcliff } from "./Sinners/Heathcliff/EGO/Bodysack/BodysackHeathcliff";
 import { FellBulletHeathcliff } from "./Sinners/Heathcliff/EGO/FellBullet/FellBulletHeathcliff";
@@ -180,6 +181,7 @@ import { LifetimeStewSinclair } from "./Sinners/Sinclair/EGO/LifetimeStew/Lifeti
 import { BladeLineageSalsuSinclair } from "./Sinners/Sinclair/Identities/BladeLineageSalsu/BladeLineageSalsuSinclair";
 import { CinqAssocsouthSection4DirectorSinclair } from "./Sinners/Sinclair/Identities/CinqAssociationSouthSection4Director/CinqAssocsouthSection4DirectorSinclair";
 import { DawnOfficeFixerSinclair } from "./Sinners/Sinclair/Identities/DawnOfficeFixer/DawnOfficeFixerSinclair";
+import { DevyatAssocNorthSection3Sinclair } from "./Sinners/Sinclair/Identities/DevyatAssocNorthSection3/DevyatAssocNorthSection3Sinclair";
 import { LosMariachisJefeSinclair } from "./Sinners/Sinclair/Identities/JefeDeLosMariachis/LosMariachisJefeSinclair";
 import { LCBSinnerSinclair } from "./Sinners/Sinclair/Identities/LCBSinner/LCBSinnerSinclair";
 import { LobotomyEgoRedSheetSinclair } from "./Sinners/Sinclair/Identities/LobotomyEGORedSheet/LobotomyEgoRedSheetSinclair";
@@ -316,6 +318,7 @@ export const Identities: Array<Identity> = [
     new BladeLineageSalsuSinclair,
     new CinqAssocsouthSection4DirectorSinclair,
     new DawnOfficeFixerSinclair,
+    new DevyatAssocNorthSection3Sinclair,
     new LosMariachisJefeSinclair,
     new LCBSinnerSinclair,
     new LobotomyEgoRedSheetSinclair,
@@ -407,6 +410,7 @@ export const Egos: Array<Ego> = [
 
     //Heathcliff
     new AEDDHeathcliff,
+    new AsymmetricalInertiaHeathcliff,
     new BindsHeathcliff,
     new BodysackHeathcliff,
     new FellBulletHeathcliff,
