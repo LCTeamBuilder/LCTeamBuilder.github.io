@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum,
-        SkillTierEnum,
-        SkillTypeEnum } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class TelepoleDonQuixoteAwakening implements Skill{
-    readonly Name: string = "Telepole";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Envy;
-    readonly BaseValue: number = 18;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +8;
-    readonly AttackWeight: number = 3;
-    readonly SkillLevel: number = 0;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const TelepoleDonQuixoteAwakening: Skill = {
+    Name: "Telepole",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Envy,
+    BaseValue: 18,
+    Coins: 1,
+    CoinValue: +8,
+    AttackWeight: 3,
+    SkillLevel: 0,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Hit] Gain +10 [Charge] Count<br>"+
-            "[After Attack] Give [Charge] Count to all ", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "./assets/Sinners/DonQuixote/EGO/Telepole/20303awakenprofile.png";
+            "[After Attack] Give [Charge] Count to all ", 1)],
+    DamageType: DamageTypeEnum.Pierce,
+    DefenseType: undefined,
+    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/Telepole/20303awakenprofile.png"
 }

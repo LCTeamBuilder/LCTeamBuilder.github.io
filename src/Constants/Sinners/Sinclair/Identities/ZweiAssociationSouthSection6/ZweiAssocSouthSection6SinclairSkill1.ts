@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class ZweiAssocSouthSection6SinclairSkill1 implements Skill {
-    readonly Name: string = "Baton";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Gloom;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +6;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = -2;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const ZweiAssocSouthSection6SinclairSkill1: Skill = {
+    Name: "Baton",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Gloom,
+    BaseValue: 4,
+    Coins: 1,
+    CoinValue: +6,
+    AttackWeight: 1,
+    SkillLevel: -2,
+    SkillDescription: 
         [new SkillDescriptionPart("[Clash Lose] Gain 2 [Protection]"),
-        new SkillDescriptionPart("[On Hit] Inflict 2 [Tremor]", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Sinclair/ZweiAssociationSouthSection6/Baton.png";
+        new SkillDescriptionPart("[On Hit] Inflict 2 [Tremor]", 1)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/ZweiAssociationSouthSection6/Baton.png"
 }

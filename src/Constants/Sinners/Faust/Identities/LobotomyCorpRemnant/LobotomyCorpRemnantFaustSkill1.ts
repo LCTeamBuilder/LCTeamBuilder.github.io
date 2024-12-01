@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LobotomyCorpRemnantFaustSkill1 implements Skill {
-    readonly Name: string = "Sole Strike";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Lust;
-    readonly BaseValue: number = 3;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +8;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +3;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const LobotomyCorpRemnantFaustSkill1: Skill = {
+    Name: "Sole Strike",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Lust,
+    BaseValue: 3,
+    Coins: 1,
+    CoinValue: +8,
+    AttackWeight: 1,
+    SkillLevel: +3,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] Gain +2 [Poise] Count"),
-        new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/SoleStrike.png";
+        new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]", 1)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/SoleStrike.png"
 }

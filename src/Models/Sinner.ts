@@ -4,11 +4,9 @@ import { Ego } from "./Ego";
 import { Identity } from "./Identity";
 
 export class Sinner {
-    public SinnerEnum: SinnerEnum;
     private _equipedIdentity: Identity;
+    public SinnerEnum: SinnerEnum;
     public EquipedEgos: Array<Ego>;
-    public AvailableIds?: Array<Identity>;
-    public AvailableEgos?: Array<Ego>;
     public DeploymentSlot: number | undefined;
 
     constructor(sinnerEnum: SinnerEnum, equipedIdentity: Identity, equipedEgos: Array<Ego>) {

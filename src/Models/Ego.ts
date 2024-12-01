@@ -12,9 +12,9 @@ export abstract class Ego {
     abstract readonly CorrosionSkill?: Skill;
     abstract readonly CorrosionSanityCost?: number;
     abstract readonly Passive: Passive;
-    abstract readonly Resistances: Array<{ sin: SinEnum, resistance: number }>;
-    abstract readonly Cost: Array<{ sin: SinEnum, amount: number }>;
-    abstract readonly Keywords: Array<KeywordEnum>;
+    abstract readonly Resistances: ReadonlyArray<{ sin: SinEnum, resistance: number }>;
+    abstract readonly Cost: ReadonlyArray<{ sin: SinEnum, amount: number }>;
+    abstract readonly Keywords: ReadonlyArray<KeywordEnum>;
 
     abstract readonly FullImageDir: string;
 }

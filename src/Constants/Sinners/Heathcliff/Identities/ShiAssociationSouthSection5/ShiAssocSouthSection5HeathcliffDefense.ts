@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DefenseTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class ShiAssocSouthSection5HeathcliffDefense implements Skill {
-    readonly Name: string = "Counter";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Defense;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Wrath;
-    readonly BaseValue: number = 8;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +5;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +1;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const ShiAssocSouthSection5HeathcliffDefense: Skill = {
+    Name: "Counter",
+    SkillType: SkillTypeEnum.Defense,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Wrath,
+    BaseValue: 8,
+    Coins: 1,
+    CoinValue: +5,
+    AttackWeight: 1,
+    SkillLevel: +1,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] Lose 5 HP<br>"+
-            "At 3+ [Poise] Count, Damage +50%")];
-    readonly DamageType?: DamageTypeEnum | undefined = undefined;
-    readonly DefenseType?: DefenseTypeEnum | undefined = DefenseTypeEnum.Counter;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/Counter.png";
+            "At 3+ [Poise] Count, Damage +50%")],
+    DamageType: undefined,
+    DefenseType: DefenseTypeEnum.Counter,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/Counter.png"
 }

@@ -1,52 +1,54 @@
-import { FactionEnum, 
-        KeywordEnum, 
-        PassiveCostTypeEnum, 
-        PassiveTypeEnum, 
-        RarityEnum, 
-        SinEnum, 
-        SinnerEnum } from "../../../../../Enums/Index";
-import { Identity, Passive, Skill } from "../../../../../Models/Index";
+import {
+    FactionEnum,
+    KeywordEnum,
+    PassiveCostTypeEnum,
+    PassiveTypeEnum,
+    RarityEnum,
+    SinEnum,
+    SinnerEnum
+} from "../../../../../Enums/Index";
+import { Identity, Passive } from "../../../../../Models/Index";
+import { LccbAssistantManagerRyoshuDefense } from "./LccbAssistantManagerRyoshuDefense";
 import { LccbAssistantManagerRyoshuSkill1 } from "./LccbAssistantManagerRyoshuSkill1";
 import { LccbAssistantManagerRyoshuSkill2 } from "./LccbAssistantManagerRyoshuSkill2";
 import { LccbAssistantManagerRyoshuSkill3 } from "./LccbAssistantManagerRyoshuSkill3";
-import { LccbAssistantManagerRyoshuDefense } from "./LccbAssistantManagerRyoshuDefense";
 
-export class LccbAssistantManagerRyoshu implements Identity{
-    readonly Id: number = 10406;
-    readonly Name: string = "LCCB Assistant Manager";
-    readonly Sinner: SinnerEnum = SinnerEnum.Ryoshu;
-    readonly Rarity: RarityEnum = RarityEnum.TwoStar;
-    readonly BaseHealth: number = 76;
-    readonly HealthPerLevel: number = 2.6;
-    readonly SpeedMin: number = 4;
-    readonly SpeedMax: number = 7;
-    readonly StaggerHpPercentThresholds: number[] = [65, 35];
-    readonly DefenseLevel: number = 0;
-    readonly SlashResist: number = 1;
-    readonly PierceResist: number = 0.5;
-    readonly BluntResist: number = 2;
-    readonly Skills: Skill[] = [new LccbAssistantManagerRyoshuSkill1, 
-                                new LccbAssistantManagerRyoshuSkill2, 
-                                new LccbAssistantManagerRyoshuSkill3, 
-                                new LccbAssistantManagerRyoshuDefense];
-    readonly Passives: Passive[] = [
+export const LccbAssistantManagerRyoshu: Identity = {
+    Id: 10406,
+    Name: "LCCB Assistant Manager",
+    Sinner: SinnerEnum.Ryoshu,
+    Rarity: RarityEnum.TwoStar,
+    BaseHealth: 76,
+    HealthPerLevel: 2.6,
+    SpeedMin: 4,
+    SpeedMax: 7,
+    StaggerHpPercentThresholds: [65, 35],
+    DefenseLevel: 0,
+    SlashResist: 1,
+    PierceResist: 0.5,
+    BluntResist: 2,
+    Skills: [LccbAssistantManagerRyoshuSkill1, 
+            LccbAssistantManagerRyoshuSkill2, 
+            LccbAssistantManagerRyoshuSkill3, 
+            LccbAssistantManagerRyoshuDefense],
+    Passives: [
         new Passive("A S.B.",
             PassiveTypeEnum.Combat,
             "- Always Active: Begin encounters with 7 [Ammo]<br>"+
             "- If this unit has 7+ [Poise] at Turn End, heal 8 SP.<br>"+
             "- If this unit already has max SP upon meeting the above condition, gain 1 [Poise] next turn",
-            [{sin: SinEnum.Gluttony, amount: 2 }],
+            [{ sin: SinEnum.Gluttony, amount: 2 }],
             PassiveCostTypeEnum.Owned),
 
         new Passive("The Lucky Cig",
             PassiveTypeEnum.Support,
-            "- If 1 ally with the least [Ammo] uses a Skill that spends [Ammo], gain 3 [Poise]. (once per turn; does not apply to allies without Ammo)<br>"+
+            "- If 1 ally with the least [Ammo] uses a Skill that spends [Ammo], gain 3 [Poise]. (once per turn, does not apply to allies without Ammo)<br>"+
             "- If 1 ally with the least [Ammo] uses up their last [Ammo] with a Coin, after the Coin's attack ends, deal 50% of the damage dealt by that Coin against each target as bonus damage against each individual target. (rounded up)",
-            [{sin: SinEnum.Pride, amount: 4 }],
+            [{ sin: SinEnum.Pride, amount: 4 }],
             PassiveCostTypeEnum.Owned)
-    ];
-    readonly Keywords: KeywordEnum[] = new Array<KeywordEnum>;
-    readonly Factions: FactionEnum[] = new Array<FactionEnum>;
-    readonly FullImageDir: string = "./assets/Sinners/Ryoshu/Identities/LCCBAssistantManager/10406gacksung.png";
-    readonly PortraitImageDir: string = "./assets/Sinners/Ryoshu/Identities/LCCBAssistantManager/10406gacksunginfo.png";
+    ],
+    Keywords: new Array<KeywordEnum>,
+    Factions: new Array<FactionEnum>,
+    FullImageDir: "./assets/Sinners/Ryoshu/Identities/LCCBAssistantManager/10406gacksung.png",
+    PortraitImageDir: "./assets/Sinners/Ryoshu/Identities/LCCBAssistantManager/10406gacksunginfo.png"
 }

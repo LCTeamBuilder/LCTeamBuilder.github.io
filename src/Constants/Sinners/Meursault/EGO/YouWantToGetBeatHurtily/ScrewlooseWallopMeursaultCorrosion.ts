@@ -1,27 +1,28 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum,
-        SkillTierEnum,
-        SkillTypeEnum } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class ScrewlooseWallopMeursaultCorrosion implements Skill{
-    readonly Name: string = "Screwloose Wallop";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Envy;
-    readonly BaseValue: number = 21;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +8;
-    readonly AttackWeight: number = 2;
-    readonly SkillLevel: number = +5;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const ScrewlooseWallopMeursaultCorrosion: Skill = {
+    Name: "Screwloose Wallop",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Envy,
+    BaseValue: 21,
+    Coins: 1,
+    CoinValue: +8,
+    AttackWeight: 2,
+    SkillLevel: +5,
+    SkillDescription: 
         [new SkillDescriptionPart("[Indiscriminate]<br>"+
             "Targets randomly<br>"+
             "[After Attack] Gain 2 [Surgery] next turn"),
         new SkillDescriptionPart("[Heads Hit] Inflict 3 [Paralyze]<br>"+
-            "Raise Stagger Threshold by 30% of damage dealt", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "./assets/Sinners/Meursault/EGO/YouWantToGetBeatHurtily/20502erosionprofile.png";
+            "Raise Stagger Threshold by 30% of damage dealt", 1)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "./assets/Sinners/Meursault/EGO/YouWantToGetBeatHurtily/20502erosionprofile.png"
 }

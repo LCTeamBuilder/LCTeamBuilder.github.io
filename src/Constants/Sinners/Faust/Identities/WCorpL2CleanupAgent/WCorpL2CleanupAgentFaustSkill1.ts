@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class WCorpL2CleanupAgentFaustSkill1 implements Skill {
-    readonly Name: string = "Energy Cycle";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Envy;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +8;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = -1;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const WCorpL2CleanupAgentFaustSkill1: Skill = {
+    Name: "Energy Cycle",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Envy,
+    BaseValue: 4,
+    Coins: 1,
+    CoinValue: +8,
+    AttackWeight: 1,
+    SkillLevel: -1,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] Gain +2 [Charge] Count"),
-        new SkillDescriptionPart("[On Hit] Gain +2 [Charge] Count", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Faust/WCorpL2CleanupAgent/EnergyCycle.png";
+        new SkillDescriptionPart("[On Hit] Gain +2 [Charge] Count", 1)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/WCorpL2CleanupAgent/EnergyCycle.png"
 }

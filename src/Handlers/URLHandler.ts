@@ -1,3 +1,4 @@
+import $ from "jquery";
 import { Egos, Identities } from "../Constants/Equipables";
 import { SinnerEnum } from "../Enums/Index";
 import { EquipEgo, EquipIdentity } from "./EquipHandler";
@@ -59,8 +60,9 @@ export function ProcessURL() {
                 $('#team-builder .deploy-view-button').trigger("click");
             }
         }
-        catch {
-            console.log("Error processing url params");
+        catch (e) {
+            console.log("Error processing url params:");
+            console.log(e);
         }
     }
 }

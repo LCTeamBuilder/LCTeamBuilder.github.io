@@ -143,7 +143,7 @@ export function UpdateSinnerIdentityCard(sinnerId: number) {
             if (ego.Name.length > 14) { egoOverlaySlot.find(".ego-name").css("font-size", "0.7cqw"); }
             if (ego.Name.length > 18) { egoOverlaySlot.find(".ego-name").css("font-size", "0.6cqw").css("letter-spacing", "-0.06cqw"); }
             if (ego.Name.length > 24) { egoOverlaySlot.find(".ego-name").css("font-size", "0.5cqw").css("letter-spacing", "-0.05cqw"); }
-            egoOverlaySlot.find(".ego-image").parent().css("display", "flex").attr("src", ego.AwakeningSkill.SkillImageDir);
+            egoOverlaySlot.find(".ego-image").attr("src", ego.AwakeningSkill.SkillImageDir).parent().css("display", "flex");
             egoOverlaySlot.find(".threadspin-icon").parent().css("display", "flex");
         });
         $("#team-sinner-" + sinnerId).html(template.map(node => (node as HTMLElement).outerHTML).join(''));
@@ -745,7 +745,7 @@ function AddTooltipsToTags(description: string): string {
     });
 }
 
-function BuildPassiveDescriptions(passives: Array<Passive>): JQuery<HTMLElement> {
+function BuildPassiveDescriptions(passives: ReadonlyArray<Passive>): JQuery<HTMLElement> {
     let description = $('<div id="skill10" class="skill"></div>');
     if (passives.length > 1) {
         description.append($('<div class="passive-category-label font-mikodacs">Passives</div>'))

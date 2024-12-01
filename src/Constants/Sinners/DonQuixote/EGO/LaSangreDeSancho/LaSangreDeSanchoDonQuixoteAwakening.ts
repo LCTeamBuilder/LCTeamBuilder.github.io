@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-    DefenseTypeEnum, 
+import {
+    DamageTypeEnum,
     SinEnum,
     SkillTierEnum,
-    SkillTypeEnum } from "../../../../../Enums/Index";
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LaSangreDeSanchoDonQuixoteAwakening implements Skill{
-    readonly Name: string = "La Sangre de Sancho";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Lust;
-    readonly BaseValue: number = 12;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +14;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +2;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const LaSangreDeSanchoDonQuixoteAwakening: Skill = {
+    Name: "La Sangre de Sancho",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Lust,
+    BaseValue: 12,
+    Coins: 1,
+    CoinValue: +14,
+    AttackWeight: 1,
+    SkillLevel: +2,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Hit] Inflict 8 [Bleed]<br>"+
-            "[On Hit] Heal by 50% of damage dealt", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "./assets/Sinners/DonQuixote/EGO/LaSangreDeSancho/20301awakenprofile.png";
+            "[On Hit] Heal by 50% of damage dealt", 1)],
+    DamageType: DamageTypeEnum.Pierce,
+    DefenseType: undefined,
+    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/LaSangreDeSancho/20301awakenprofile.png"
 }

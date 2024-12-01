@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum,
-        SkillTierEnum,
-        SkillTypeEnum } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LassoHongLuCorrosion implements Skill{
-    readonly Name: string = "Lasso";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Gluttony;
-    readonly BaseValue: number = 5;
-    readonly Coins: number = 3;
-    readonly CoinValue: number = +3;
-    readonly AttackWeight: number = 2;
-    readonly SkillLevel: number = +2;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const LassoHongLuCorrosion: Skill = {
+    Name: "Lasso",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Gluttony,
+    BaseValue: 5,
+    Coins: 3,
+    CoinValue: +3,
+    AttackWeight: 2,
+    SkillLevel: +2,
+    SkillDescription: 
         [new SkillDescriptionPart("[Indiscriminate]<br>"+
             "Targets the unit with the highest Speed<br>"+
             "If the sum of this unit and the target's Speed is 6 or greater, Coin Power +1<br>"+
@@ -27,8 +28,8 @@ export class LassoHongLuCorrosion implements Skill{
             "[On Hit] Inflict +2 [Bleed] Count<br>"+
             "[On Hit] Inflict +2 [Rupture] Count", 2),
         new SkillDescriptionPart("[On Hit] Deal +1% more damage for every [Bleed] on the target (max 30%)<br>"+
-            "[On Hit] Deal +1% more damage for every [Rupture] on the target (max 30%)", 3)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "./assets/Sinners/HongLu/EGO/Snare/20607erosionprofile.png";
+            "[On Hit] Deal +1% more damage for every [Rupture] on the target (max 30%)", 3)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "./assets/Sinners/HongLu/EGO/Snare/20607erosionprofile.png"
 }

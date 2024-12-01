@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LobotomyCorpRemnantFaustSkill3 implements Skill {
-    readonly Name: string = "Opportunistic Slash";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Envy;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +8;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +3;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const LobotomyCorpRemnantFaustSkill3: Skill = {
+    Name: "Opportunistic Slash",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Envy,
+    BaseValue: 4,
+    Coins: 2,
+    CoinValue: +8,
+    AttackWeight: 1,
+    SkillLevel: +3,
+    SkillDescription: 
         [new SkillDescriptionPart("If user took no damage last turn, Coin Power +3"),
-        new SkillDescriptionPart("[Heads Hit] Inflict 5 [Rupture]", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/OpportunisticSlash.png";
+        new SkillDescriptionPart("[Heads Hit] Inflict 5 [Rupture]", 2)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/OpportunisticSlash.png"
 }

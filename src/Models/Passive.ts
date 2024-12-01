@@ -1,13 +1,13 @@
 import { PassiveCostTypeEnum, PassiveTypeEnum, SinEnum } from "../Enums/Index";
 
 export class Passive {
-    public Name: string;
-    public Type: PassiveTypeEnum;
-    public Cost?: { sin: SinEnum, amount: number }[];
-    public CostType?: PassiveCostTypeEnum;
-    public Description: string;
+    public readonly Name: string;
+    public readonly Type: PassiveTypeEnum;
+    public readonly Cost?: ReadonlyArray<{ sin: SinEnum, amount: number }>;
+    public readonly CostType?: PassiveCostTypeEnum;
+    public readonly Description: string;
 
-    constructor(name: string, type: PassiveTypeEnum, description: string, cost?: { sin: SinEnum, amount: number }[], costType?: PassiveCostTypeEnum) {
+    constructor(name: string, type: PassiveTypeEnum, description: string, cost?: ReadonlyArray<{ sin: SinEnum, amount: number }>, costType?: PassiveCostTypeEnum) {
         this.Name = name;
         this.Type = type;
         this.Cost = cost;

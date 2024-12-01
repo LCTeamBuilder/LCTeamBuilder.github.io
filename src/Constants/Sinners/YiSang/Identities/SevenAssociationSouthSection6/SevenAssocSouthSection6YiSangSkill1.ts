@@ -1,23 +1,24 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class SevenAssocSouthSection6YiSangSkill1 implements Skill {
-    readonly Name: string = "Flèche";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Gloom;
-    readonly BaseValue: number = 5;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +7;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = 0;
-    readonly SkillDescription: SkillDescriptionPart[] = 
-        [new SkillDescriptionPart("[Heads Hit] Inflict 2 [Rupture]", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/YiSang/SevenAssociationSouthSection6/Fleche.png";
+export const SevenAssocSouthSection6YiSangSkill1: Skill = {
+    Name: "Flèche",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Gloom,
+    BaseValue: 5,
+    Coins: 1,
+    CoinValue: +7,
+    AttackWeight: 1,
+    SkillLevel: 0,
+    SkillDescription: 
+        [new SkillDescriptionPart("[Heads Hit] Inflict 2 [Rupture]", 1)],
+    DamageType: DamageTypeEnum.Pierce,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/SevenAssociationSouthSection6/Fleche.png"
 }

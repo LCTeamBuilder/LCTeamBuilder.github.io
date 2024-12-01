@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum,
-        SkillTierEnum,
-        SkillTypeEnum } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class HexNailSinclairCorrosion implements Skill{
-    readonly Name: string = "Hex Nail";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Envy;
-    readonly BaseValue: number = 25;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = -6;
-    readonly AttackWeight: number = 3;
-    readonly SkillLevel: number = +2;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const HexNailSinclairCorrosion: Skill = {
+    Name: "Hex Nail",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Envy,
+    BaseValue: 25,
+    Coins: 2,
+    CoinValue: -6,
+    AttackWeight: 3,
+    SkillLevel: +2,
+    SkillDescription: 
         [new SkillDescriptionPart("[Indiscriminate]<br>"+
             "Targets randomly<br>"+
             "[After Attack] If the target has [Curse], immediately activate it twice and reduce it by 2"),
@@ -24,8 +25,8 @@ export class HexNailSinclairCorrosion implements Skill{
             "[On Hit] Inflict 3 [Nails]<br>"+
             "[On Hit] At 4+ Envy Reson. including this Skill, inflict 1 [Clash Power Down] (once per turn)<br>"+
             "[Tails Hit] Inflict 2 [Bind] next turn (once per turn)<br>"+
-            "[Tails Hit] Inflict 2 [Defense Level Down] next turn (once per turn)", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "./assets/Sinners/Sinclair/EGO/HexNail/21007erosionprofile.png";
+            "[Tails Hit] Inflict 2 [Defense Level Down] next turn (once per turn)", 2)],
+    DamageType: DamageTypeEnum.Pierce,
+    DefenseType: undefined,
+    SkillImageDir: "./assets/Sinners/Sinclair/EGO/HexNail/21007erosionprofile.png"
 }

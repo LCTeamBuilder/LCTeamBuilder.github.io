@@ -1,23 +1,24 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DefenseTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class TheRingPointillistStudentYiSangDefense implements Skill {
-    readonly Name: string = "Beat the Brush";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Defense;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Lust;
-    readonly BaseValue: number = 10;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +1;
-    readonly SkillDescription: SkillDescriptionPart[] = 
-        [new SkillDescriptionPart("Base Power +1 for every 1 [Bleed] on target (max 10)")];
-    readonly DamageType?: DamageTypeEnum | undefined = undefined;
-    readonly DefenseType?: DefenseTypeEnum | undefined = DefenseTypeEnum.Guard;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/YiSang/TheRingPointillistStudent/BeatTheBrushUT4.png";
+export const TheRingPointillistStudentYiSangDefense: Skill = {
+    Name: "Beat the Brush",
+    SkillType: SkillTypeEnum.Defense,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Lust,
+    BaseValue: 10,
+    Coins: 1,
+    CoinValue: +4,
+    AttackWeight: 1,
+    SkillLevel: +1,
+    SkillDescription: 
+        [new SkillDescriptionPart("Base Power +1 for every 1 [Bleed] on target (max 10)")],
+    DamageType: undefined,
+    DefenseType: DefenseTypeEnum.Guard,
+    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/TheRingPointillistStudent/BeatTheBrushUT4.png"
 }

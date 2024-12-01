@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum,
-        SkillTierEnum,
-        SkillTypeEnum } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class BygoneDaysIshmaelCorrosion implements Skill{
-    readonly Name: string = "Bygone Days";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Gloom;
-    readonly BaseValue: number = 28;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = -10;
-    readonly AttackWeight: number = 3;
-    readonly SkillLevel: number = -3;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const BygoneDaysIshmaelCorrosion: Skill = {
+    Name: "Bygone Days",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Gloom,
+    BaseValue: 28,
+    Coins: 1,
+    CoinValue: -10,
+    AttackWeight: 3,
+    SkillLevel: -3,
+    SkillDescription: 
         [new SkillDescriptionPart("[Indiscriminate]<br>"+
             "Prioritizes targets with the most [Sinking]<br>"+
             "[Before Attack] Lose HP by 10% of Max HP (does not get Staggered due to this effect)<br>"+
@@ -26,8 +27,8 @@ export class BygoneDaysIshmaelCorrosion implements Skill{
             "[On Hit] Inflict 2 [Curse]<br>"+
             "[On Hit] For every 3 Gloom Reson., inflict 1 [Gloom Fragility] (max 2)<br>"+
             "[On Hit] Inflict 2 [The Uninvited]<br>"+
-            "[On Hit] Inflict 2 [Echoes of the Manor] next turn", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "./assets/Sinners/Ishmael/EGO/BygoneDays/20807erosionprofile.png";
+            "[On Hit] Inflict 2 [Echoes of the Manor] next turn", 1)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "./assets/Sinners/Ishmael/EGO/BygoneDays/20807erosionprofile.png"
 }

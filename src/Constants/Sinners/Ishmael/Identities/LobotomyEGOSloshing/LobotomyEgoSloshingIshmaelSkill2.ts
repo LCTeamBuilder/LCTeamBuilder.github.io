@@ -1,26 +1,27 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LobotomyEgoSloshingIshmaelSkill2 implements Skill {
-    readonly Name: string = "It's Churning...!";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill2;
-    readonly Affinity: SinEnum = SinEnum.Wrath;
-    readonly BaseValue: number = 5;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = -1;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const LobotomyEgoSloshingIshmaelSkill2: Skill = {
+    Name: "It's Churning...!",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill2,
+    Affinity: SinEnum.Wrath,
+    BaseValue: 5,
+    Coins: 2,
+    CoinValue: +4,
+    AttackWeight: 1,
+    SkillLevel: -1,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] Gain +4 [Aggro] to this Skill Slot next turn<br>"+
             "[Clash Lose] Inflict 3 [Tremor] and 3 [Rupture]"),
         new SkillDescriptionPart("[On Hit] Inflict 1 [Tremor]", 1),
-        new SkillDescriptionPart("[On Hit] Inflict 2 [Tremor]", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Ishmael/LobotomyEGOSloshing/ItsChurning.png";
+        new SkillDescriptionPart("[On Hit] Inflict 2 [Tremor]", 2)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LobotomyEGOSloshing/ItsChurning.png"
 }

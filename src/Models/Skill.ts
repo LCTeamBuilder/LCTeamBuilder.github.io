@@ -17,7 +17,7 @@ export abstract class Skill {
     abstract readonly CoinValue: number;
     abstract readonly AttackWeight: number;
     abstract readonly SkillLevel: number;
-    abstract readonly SkillDescription: Array<SkillDescriptionPart>;
+    abstract readonly SkillDescription: ReadonlyArray<SkillDescriptionPart>;
     abstract readonly DamageType?: DamageTypeEnum;
     abstract readonly DefenseType?: DefenseTypeEnum;
     abstract readonly SkillImageDir: string;

@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum,
-        SkillTierEnum,
-        SkillTypeEnum } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class FellBulletYiSangCorrosion implements Skill{
-    readonly Name: string = "Fell Bullet";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Pride;
-    readonly BaseValue: number = 30;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = -8;
-    readonly AttackWeight: number = 7;
-    readonly SkillLevel: number = +5;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const FellBulletYiSangCorrosion: Skill = {
+    Name: "Fell Bullet",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Pride,
+    BaseValue: 30,
+    Coins: 2,
+    CoinValue: -8,
+    AttackWeight: 7,
+    SkillLevel: +5,
+    SkillDescription: 
         [new SkillDescriptionPart("[Indiscriminate]<br>"+
             "Targets the ally with the least HP<br>"+
             "[Before Attack] Gain (highest Reson. + 1) [Torn Memory] (max 7)<br>"+
@@ -34,8 +35,8 @@ export class FellBulletYiSangCorrosion implements Skill{
         new SkillDescriptionPart("This Coin deals damage only against the sub-targets<br>"+
             "- If the first Coin failed to kill the ally, 1 random sub-target takes damage<br>"+
             "+4% Damage on Critical Hit for every [Torn Memory] (max 28%)<br>"+
-            "[On Crit] Inflict 5 [Bleed]", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "./assets/Sinners/YiSang/EGO/FellBullet/20107erosionprofile.png";
+            "[On Crit] Inflict 5 [Bleed]", 2)],
+    DamageType: DamageTypeEnum.Pierce,
+    DefenseType: undefined,
+    SkillImageDir: "./assets/Sinners/YiSang/EGO/FellBullet/20107erosionprofile.png"
 }

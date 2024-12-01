@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LobotomyEgoRedEyesPenitenceRyoshuSkill4 implements Skill {
-    readonly Name: string = "Serious Skullbuster";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Lust;
-    readonly BaseValue: number = 5;
-    readonly Coins: number = 3;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +5;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const LobotomyEgoRedEyesPenitenceRyoshuSkill4: Skill = {
+    Name: "Serious Skullbuster",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Lust,
+    BaseValue: 5,
+    Coins: 3,
+    CoinValue: +4,
+    AttackWeight: 1,
+    SkillLevel: +5,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] Consume all [Red Eyes] and [Penitence] on self<br>"+
             "- Coin Power +1 for every 5 [Red Eyes] consumed (max 4)<br>"+
             "- Base Power +1 for every 5 [Penitence] consumed (max 4)<br>"+
@@ -26,8 +27,8 @@ export class LobotomyEgoRedEyesPenitenceRyoshuSkill4 implements Skill {
             "- Heal 1 additional ally for every 2 highest Reson. (max 2 more allies)<br>"+
             "[On Hit] Heal self and 1 ally with the least SP by ([Penitence] consumed - 5) SP<br>"+
             "- Heal 1 additional ally for every 2 highest Reson. (max 2 more allies)<br>"+
-            "[On Hit] Inflict 3 [Bind] and 2 [Attack Power Down] next turn (once per turn)", 3)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041005.png";
+            "[On Hit] Inflict 3 [Bind] and 2 [Attack Power Down] next turn (once per turn)", 3)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041005.png"
 }

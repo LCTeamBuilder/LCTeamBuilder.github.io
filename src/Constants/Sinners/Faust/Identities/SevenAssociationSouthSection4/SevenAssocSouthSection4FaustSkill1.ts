@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class SevenAssocSouthSection4FaustSkill1 implements Skill {
-    readonly Name: string = "Predictive Analysis";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Envy;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +3;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +3;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const SevenAssocSouthSection4FaustSkill1: Skill = {
+    Name: "Predictive Analysis",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Envy,
+    BaseValue: 4,
+    Coins: 2,
+    CoinValue: +3,
+    AttackWeight: 1,
+    SkillLevel: +3,
+    SkillDescription: 
         [new SkillDescriptionPart("Coin Power +1 for every 3 Rupture on target (Max 2)"),
-        new SkillDescriptionPart("[On Hit] Inflict 3 Rupture", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Faust/SevenAssociationSouthSection4/PredictiveAnalysis.png";
+        new SkillDescriptionPart("[On Hit] Inflict 3 Rupture", 2)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/SevenAssociationSouthSection4/PredictiveAnalysis.png"
 }

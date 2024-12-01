@@ -1,25 +1,26 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DefenseTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class TheMiddleLittleBrotherMeursaultDefense implements Skill {
-    readonly Name: string = "Multifold Retribution";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Defense;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Envy;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +3;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const TheMiddleLittleBrotherMeursaultDefense: Skill = {
+    Name: "Multifold Retribution",
+    SkillType: SkillTypeEnum.Defense,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Envy,
+    BaseValue: 4,
+    Coins: 2,
+    CoinValue: +4,
+    AttackWeight: 1,
+    SkillLevel: +3,
+    SkillDescription: 
         [new SkillDescriptionPart("At 4+ Envy Reson., Coin Power +1"),
             new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 1),
-            new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = undefined;
-    readonly DefenseType?: DefenseTypeEnum | undefined = DefenseTypeEnum.Counter;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Meursault/TheMiddleLittleBrother/MultifoldRetribution.png";
+            new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 2)],
+    DamageType: undefined,
+    DefenseType: DefenseTypeEnum.Counter,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/TheMiddleLittleBrother/MultifoldRetribution.png"
 }

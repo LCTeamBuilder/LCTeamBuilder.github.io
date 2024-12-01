@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class BladeLineageSalsuOutisSkill1 implements Skill {
-    readonly Name: string = "Draw of the Sword";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Wrath;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +6;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +1;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const BladeLineageSalsuOutisSkill1: Skill = {
+    Name: "Draw of the Sword",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Wrath,
+    BaseValue: 4,
+    Coins: 1,
+    CoinValue: +6,
+    AttackWeight: 1,
+    SkillLevel: +1,
+    SkillDescription: 
         [new SkillDescriptionPart("At 5+ [Poise], Coin Power +1"),
-            new SkillDescriptionPart("[On Hit] Gain 4 [Poise]", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Outis/BladeLineageCutthroat/DrawOfTheSword.png";
+            new SkillDescriptionPart("[On Hit] Gain 4 [Poise]", 1)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/BladeLineageCutthroat/DrawOfTheSword.png"
 }

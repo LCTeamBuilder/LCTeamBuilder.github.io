@@ -1,25 +1,26 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class RosespannerWorkshopFixerGregorSkill2 implements Skill {
-    readonly Name: string = "Grease Chains";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill2;
-    readonly Affinity: SinEnum = SinEnum.Envy;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +12;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +1;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const RosespannerWorkshopFixerGregorSkill2: Skill = {
+    Name: "Grease Chains",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill2,
+    Affinity: SinEnum.Envy,
+    BaseValue: 4,
+    Coins: 1,
+    CoinValue: +12,
+    AttackWeight: 1,
+    SkillLevel: +1,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] Gain +3 [Charge] Count"),
         new SkillDescriptionPart("[On Hit] Inflict +2 [Tremor] Count<br>"+
-            "[On Hit] Inflict +2 [Rupture] Count", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Gregor/RosespannerWorkshopFixer/GreaseChains.png";
+            "[On Hit] Inflict +2 [Rupture] Count", 1)],
+    DamageType: DamageTypeEnum.Pierce,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/RosespannerWorkshopFixer/GreaseChains.png"
 }

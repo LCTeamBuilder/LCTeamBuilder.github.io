@@ -1,25 +1,26 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum,
-        SkillTierEnum,
-        SkillTypeEnum } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class YaSunyataTadRupamOutisAwakening implements Skill{
-    readonly Name: string = "Ya Śūnyatā Tad Rūpam";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Lust;
-    readonly BaseValue: number = 19;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 2;
-    readonly SkillLevel: number = -2;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const YaSunyataTadRupamOutisAwakening: Skill = {
+    Name: "Ya Śūnyatā Tad Rūpam",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Lust,
+    BaseValue: 19,
+    Coins: 1,
+    CoinValue: +4,
+    AttackWeight: 2,
+    SkillLevel: -2,
+    SkillDescription: 
         [new SkillDescriptionPart("[After Attack] Heal 18 SP<br>"+
             "[After Attack] Apply 1 [Attack Power Up] to 2 random other allies"),
-        new SkillDescriptionPart("[On Hit] Inflict 2 [Lust Fragility]", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "./assets/Sinners/Outis/EGO/YaSunyataTadRupam/21103awakenprofile.png";
+        new SkillDescriptionPart("[On Hit] Inflict 2 [Lust Fragility]", 1)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "./assets/Sinners/Outis/EGO/YaSunyataTadRupam/21103awakenprofile.png"
 }

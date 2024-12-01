@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class WutheringHeightsChiefButlerOutisSkill1 implements Skill {
-    readonly Name: string = "Knocking";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Pride;
-    readonly BaseValue: number = 3;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +2;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const WutheringHeightsChiefButlerOutisSkill1: Skill = {
+    Name: "Knocking",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Pride,
+    BaseValue: 3,
+    Coins: 2,
+    CoinValue: +4,
+    AttackWeight: 1,
+    SkillLevel: +2,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] If target has 5+ [Sinking], Coin Power +1"),
-        new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Outis/WutheringHeightsChiefButler/Knocking.png";
+        new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 2)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/WutheringHeightsChiefButler/Knocking.png"
 }

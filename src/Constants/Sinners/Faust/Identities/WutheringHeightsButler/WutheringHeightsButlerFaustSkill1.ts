@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class WutheringHeightsButlerFaustSkill1 implements Skill {
-    readonly Name: string = "Confiscation";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Gloom;
-    readonly BaseValue: number = 3;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +1;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const WutheringHeightsButlerFaustSkill1: Skill = {
+    Name: "Confiscation",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Gloom,
+    BaseValue: 3,
+    Coins: 2,
+    CoinValue: +4,
+    AttackWeight: 1,
+    SkillLevel: +1,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] If the target has 6+ [Sinking], Coin Power +1"),
-        new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Faust/WutheringHeightsButler/Confiscation.png";
+        new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 2)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/WutheringHeightsButler/Confiscation.png"
 }

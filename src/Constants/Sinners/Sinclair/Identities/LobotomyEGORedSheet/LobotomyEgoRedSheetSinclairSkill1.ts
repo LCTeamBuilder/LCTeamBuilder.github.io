@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LobotomyEgoRedSheetSinclairSkill1 implements Skill {
-    readonly Name: string = "Magnify Wound";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Gluttony;
-    readonly BaseValue: number = 5;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +5;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = 0;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const LobotomyEgoRedSheetSinclairSkill1: Skill = {
+    Name: "Magnify Wound",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Gluttony,
+    BaseValue: 5,
+    Coins: 1,
+    CoinValue: +5,
+    AttackWeight: 1,
+    SkillLevel: 0,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]<br>"+
-        "[On Hit] If target has 5+ [Rupture], gain 1 [Talisman]", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Sinclair/LobotomyEGORedSheet/MagnifyWound.png";
+        "[On Hit] If target has 5+ [Rupture], gain 1 [Talisman]", 1)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/LobotomyEGORedSheet/MagnifyWound.png"
 }
