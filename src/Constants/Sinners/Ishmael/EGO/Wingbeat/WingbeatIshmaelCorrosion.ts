@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum,
-        SkillTierEnum,
-        SkillTypeEnum } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class WingbeatIshmaelCorrosion implements Skill{
-    readonly Name: string = "Wingbeat";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Gluttony;
-    readonly BaseValue: number = 39;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = -24;
-    readonly AttackWeight: number = 3;
-    readonly SkillLevel: number = 0;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const WingbeatIshmaelCorrosion: Skill = {
+    Name: "Wingbeat",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Gluttony,
+    BaseValue: 39,
+    Coins: 1,
+    CoinValue: -24,
+    AttackWeight: 3,
+    SkillLevel: 0,
+    SkillDescription: 
         [new SkillDescriptionPart("[Indiscriminate]<br>"+
             "Targets the unit with the least Core HP<br>"+
             "[Before Attack] Gain (of highest Reson. - 2) +1 Atk Weight (Max. 2)<br>"+
@@ -26,8 +27,8 @@ export class WingbeatIshmaelCorrosion implements Skill{
             "[After Attack] If this Skill's healing exceeds this unit's max HP, gain (excess heal/max HP) x 10 [Offense Level Up] next turn. (max 6 per turn)"),
         new SkillDescriptionPart("[Tails Hit] Heal self by 20% of damage dealt<br>"+
             "[Tails Hit] Inflict 3~6 [Bleed]<br>"+
-            "[On Kill] Gain 1 [Attack Power Up] next turn (max 3)", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "./assets/Sinners/Ishmael/EGO/Wingbeat/20806erosionprofile.png";
+            "[On Kill] Gain 1 [Attack Power Up] next turn (max 3)", 1)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "./assets/Sinners/Ishmael/EGO/Wingbeat/20806erosionprofile.png"
 }

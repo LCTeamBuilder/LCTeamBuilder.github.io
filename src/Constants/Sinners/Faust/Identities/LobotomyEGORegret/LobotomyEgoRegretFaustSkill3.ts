@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LobotomyEgoRegretFaustSkill3 implements Skill {
-    readonly Name: string = "Unleashed Violence";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Wrath;
-    readonly BaseValue: number = 3;
-    readonly Coins: number = 3;
-    readonly CoinValue: number = +5;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +3;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const LobotomyEgoRegretFaustSkill3: Skill = {
+    Name: "Unleashed Violence",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Wrath,
+    BaseValue: 3,
+    Coins: 3,
+    CoinValue: +5,
+    AttackWeight: 1,
+    SkillLevel: +3,
+    SkillDescription: 
         [new SkillDescriptionPart("[Combat Start] Spend 5 [Tremor] Count and gain +1 Atk Weight for this Skill (Max +2)<br>"+
             "[Clash Lose] Lose 20 SP<br>"+
             "Deal 6% more Damage for every type of negative effect on target (Max 30%)<br>"+
@@ -26,8 +27,8 @@ export class LobotomyEgoRegretFaustSkill3 implements Skill {
             "Then deal Wrath Damage by 30% of the final Stagger Threshold Raised by [Tremor Burst]. (Max 20)", 2),
         new SkillDescriptionPart("[On Hit] Trigger [Tremor Burst],<br>"+
             "Then deal Wrath Damage by 30% of the final Stagger Threshold Raised by [Tremor Burst]. (Max 20)<br>"+
-            "Reduce [Tremor] Count by 3", 3)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Faust/LobotomyEGORegret/UnleashedViolence.png";
+            "Reduce [Tremor] Count by 3", 3)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LobotomyEGORegret/UnleashedViolence.png"
 }

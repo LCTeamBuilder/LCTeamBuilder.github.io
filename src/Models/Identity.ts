@@ -11,15 +11,15 @@ export abstract class Identity {
     abstract readonly HealthPerLevel: number;
     abstract readonly SpeedMin: number;
     abstract readonly SpeedMax: number;
-    abstract readonly StaggerHpPercentThresholds: number[];
+    abstract readonly StaggerHpPercentThresholds: ReadonlyArray<number>;
     abstract readonly DefenseLevel: number;
     abstract readonly SlashResist: number;
     abstract readonly PierceResist: number;
     abstract readonly BluntResist: number;
-    abstract readonly Skills: Array<Skill>
-    abstract readonly Passives: Array<Passive>
-    abstract readonly Keywords: Array<KeywordEnum>;
-    abstract readonly Factions: Array<FactionEnum>;
+    abstract readonly Skills: ReadonlyArray<Skill>
+    abstract readonly Passives: ReadonlyArray<Passive>
+    abstract readonly Keywords: ReadonlyArray<KeywordEnum>;
+    abstract readonly Factions: ReadonlyArray<FactionEnum>;
     abstract readonly FullImageDir: string;
     abstract readonly PortraitImageDir: string;
 }

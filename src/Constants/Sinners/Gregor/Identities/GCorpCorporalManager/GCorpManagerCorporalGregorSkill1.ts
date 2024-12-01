@@ -1,25 +1,26 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class GCorpManagerCorporalGregorSkill1 implements Skill {
-    readonly Name: string = "Hack";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Gluttony;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +3;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +5;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const GCorpManagerCorporalGregorSkill1: Skill = {
+    Name: "Hack",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Gluttony,
+    BaseValue: 4,
+    Coins: 2,
+    CoinValue: +3,
+    AttackWeight: 1,
+    SkillLevel: +5,
+    SkillDescription: 
         [new SkillDescriptionPart("[Clash Win] Damage +40%<br>"+
             "If target has 5+ [Rupture], Coin Power +1"),
-        new SkillDescriptionPart("[On Hit] Heal by 50% of damage dealt", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Gregor/GCorpManagerCorporal/Hack.png";
+        new SkillDescriptionPart("[On Hit] Heal by 50% of damage dealt", 1)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/GCorpManagerCorporal/Hack.png"
 }

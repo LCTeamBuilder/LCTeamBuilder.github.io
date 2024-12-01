@@ -1,25 +1,26 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class MulticrackOfficeFixerHeathcliffSkill1 implements Skill {
-    readonly Name: string = "4OS-2 Activation";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Wrath;
-    readonly BaseValue: number = 3;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = 0;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const MulticrackOfficeFixerHeathcliffSkill1: Skill = {
+    Name: "4OS-2 Activation",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Wrath,
+    BaseValue: 3,
+    Coins: 2,
+    CoinValue: +4,
+    AttackWeight: 1,
+    SkillLevel: 0,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] Consume 5 [Charge] Count to gain Coin Power +1"),
         new SkillDescriptionPart("[On Hit] Gain +2 [Charge] Count", 1),
-        new SkillDescriptionPart("[On Hit] Gain +2 [Charge] Count", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Heathcliff/MultiCrackOfficeFixer/40S2Activation.png";
+        new SkillDescriptionPart("[On Hit] Gain +2 [Charge] Count", 2)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/MultiCrackOfficeFixer/40S2Activation.png"
 }

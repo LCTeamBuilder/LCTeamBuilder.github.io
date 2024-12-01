@@ -1,24 +1,23 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LCBSinnerHongLuSkill2 implements Skill {
-    readonly Name: string = "Dual Strike";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill2;
-    readonly Affinity: SinEnum = SinEnum.Sloth;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +2;
-    readonly SkillDescription: SkillDescriptionPart[] = [new SkillDescriptionPart("If user took no damage last turn, Coin Power +1"),
-                                                        new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 1),
-                                                        new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/HongLu/LCBSinner/DualStrike.png"; 
+export const LCBSinnerHongLuSkill2: Skill = {
+    Name: "Dual Strike",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill2,
+    Affinity: SinEnum.Sloth,
+    BaseValue: 4,
+    Coins: 2,
+    CoinValue: +4,
+    AttackWeight: 1,
+    SkillLevel: +2,
+    SkillDescription: [new SkillDescriptionPart("If user took no damage last turn, Coin Power +1"),            new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 1),            new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]", 2)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/LCBSinner/DualStrike.png", 
 }

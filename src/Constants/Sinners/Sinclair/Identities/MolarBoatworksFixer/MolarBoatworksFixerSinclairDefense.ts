@@ -1,23 +1,24 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DefenseTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class MolarBoatworksFixerSinclairDefense implements Skill {
-    readonly Name: string = "Crab Bastards...!";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Defense;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Gloom;
-    readonly BaseValue: number = 8;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +8;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = -2;
-    readonly SkillDescription: SkillDescriptionPart[] = 
-        [new SkillDescriptionPart("[On Use] Gain +1 [Rupture Protection] (3 times per turn)")];
-    readonly DamageType?: DamageTypeEnum | undefined = undefined;
-    readonly DefenseType?: DefenseTypeEnum | undefined = DefenseTypeEnum.Guard;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Sinclair/MolarBoatworksFixer/CrabBastardsUT4.png";
+export const MolarBoatworksFixerSinclairDefense: Skill = {
+    Name: "Crab Bastards...!",
+    SkillType: SkillTypeEnum.Defense,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Gloom,
+    BaseValue: 8,
+    Coins: 1,
+    CoinValue: +8,
+    AttackWeight: 1,
+    SkillLevel: -2,
+    SkillDescription: 
+        [new SkillDescriptionPart("[On Use] Gain +1 [Rupture Protection] (3 times per turn)")],
+    DamageType: undefined,
+    DefenseType: DefenseTypeEnum.Guard,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/MolarBoatworksFixer/CrabBastardsUT4.png"
 }

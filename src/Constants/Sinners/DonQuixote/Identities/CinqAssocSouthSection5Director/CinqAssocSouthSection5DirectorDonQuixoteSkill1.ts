@@ -1,25 +1,26 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class CinqAssocSouthSection5DirectorDonQuixoteSkill1 implements Skill {
-    readonly Name: string = "Remise";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Lust;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +3;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +4;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const CinqAssocSouthSection5DirectorDonQuixoteSkill1: Skill = {
+    Name: "Remise",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Lust,
+    BaseValue: 4,
+    Coins: 2,
+    CoinValue: +3,
+    AttackWeight: 1,
+    SkillLevel: +4,
+    SkillDescription: 
         [new SkillDescriptionPart("At 7+ Speed, Coin Power +2<br>"+
             "[Clash Win] Gain 1 [Haste] next turn"),
-        new SkillDescriptionPart("[Hit After Clash Win] Inflict 1 [Bind] next turn", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/DonQuixote/CinqAssociationSouthSection5Director/Remise.png";
+        new SkillDescriptionPart("[Hit After Clash Win] Inflict 1 [Bind] next turn", 2)],
+    DamageType: DamageTypeEnum.Pierce,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/CinqAssociationSouthSection5Director/Remise.png"
 }

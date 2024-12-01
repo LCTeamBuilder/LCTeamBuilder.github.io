@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class DawnOfficeFixerSinclairSkill4 implements Skill {
-    readonly Name: string = "Blazing Strike";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Wrath;
-    readonly BaseValue: number = 13;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +15;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +5;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const DawnOfficeFixerSinclairSkill4: Skill = {
+    Name: "Blazing Strike",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Wrath,
+    BaseValue: 13,
+    Coins: 1,
+    CoinValue: +15,
+    AttackWeight: 1,
+    SkillLevel: +5,
+    SkillDescription: 
         [new SkillDescriptionPart("Coin Power +2 for every 4 (sum of [Burn] Potency on all enemies) (max 8)<br>"+
             "[Clash Win] Heal 10 SP<br>"+
             "[Clash Lose] Lose 30 SP<br>"+
@@ -26,8 +27,8 @@ export class DawnOfficeFixerSinclairSkill4 implements Skill {
             "[On Hit] If the target has 10+ [Burn], inflict 2 [Burn] against (number of highest Reson.) random enemies<br>"+
             "- If the above Reson. was a Wrath Reson., inflict +1 [Burn] Count as well<br>"+
             "[On Hit] Inflict 10 [Burn]<br>"+
-            "[On Kill] Randomly inflict ([Burn] Potency of the defeated target between all enemies (max 10. In Focused Encounters, between all Parts)", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/Stigmatize2.png";
+            "[On Kill] Randomly inflict ([Burn] Potency of the defeated target between all enemies (max 10. In Focused Encounters, between all Parts)", 1)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/Stigmatize2.png"
 }

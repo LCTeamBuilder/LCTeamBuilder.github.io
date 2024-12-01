@@ -1,26 +1,27 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class ZweiAssocSouthSection5RodionSkill2 implements Skill {
-    readonly Name: string = "Focused Defense";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill2;
-    readonly Affinity: SinEnum = SinEnum.Sloth;
-    readonly BaseValue: number = 6;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = -2;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const ZweiAssocSouthSection5RodionSkill2: Skill = {
+    Name: "Focused Defense",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill2,
+    Affinity: SinEnum.Sloth,
+    BaseValue: 6,
+    Coins: 2,
+    CoinValue: +4,
+    AttackWeight: 1,
+    SkillLevel: -2,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] At 15+ shield, gain +2 [Poise] Count<br>"+
             "[On Use] Gain +4 [Aggro] to this Skill Slot next turn<br>"+
             "[On Use] Gain +2 [Poise] Count"),
-        new SkillDescriptionPart("[On Hit] Gain +2 [Poise] Count", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Rodion/ZweiAssociationSouthSection5/FocusedDefense.png";
+        new SkillDescriptionPart("[On Hit] Gain +2 [Poise] Count", 1)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/ZweiAssociationSouthSection5/FocusedDefense.png"
 }

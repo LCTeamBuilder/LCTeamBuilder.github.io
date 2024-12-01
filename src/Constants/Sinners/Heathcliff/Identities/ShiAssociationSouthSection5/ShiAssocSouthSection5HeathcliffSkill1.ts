@@ -1,24 +1,25 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class ShiAssocSouthSection5HeathcliffSkill1 implements Skill {
-    readonly Name: string = "Extreme Edge";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Lust;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +6;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +1;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const ShiAssocSouthSection5HeathcliffSkill1: Skill = {
+    Name: "Extreme Edge",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Lust,
+    BaseValue: 4,
+    Coins: 1,
+    CoinValue: +6,
+    AttackWeight: 1,
+    SkillLevel: +1,
+    SkillDescription: 
         [new SkillDescriptionPart("At less than 50% HP, Skill Power +2<br>"+
-            "[On Use] Gain +3 [Poise] Count")];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/ExtremeEdge.png";
+            "[On Use] Gain +3 [Poise] Count")],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/ExtremeEdge.png"
 }

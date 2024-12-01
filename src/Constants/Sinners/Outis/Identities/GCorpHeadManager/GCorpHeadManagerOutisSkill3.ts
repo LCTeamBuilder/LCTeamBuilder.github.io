@@ -1,25 +1,26 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class GCorpHeadManagerOutisSkill3 implements Skill {
-    readonly Name: string = "Focus";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Gloom;
-    readonly BaseValue: number = 6;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +16;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = -1;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const GCorpHeadManagerOutisSkill3: Skill = {
+    Name: "Focus",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Gloom,
+    BaseValue: 6,
+    Coins: 1,
+    CoinValue: +16,
+    AttackWeight: 1,
+    SkillLevel: -1,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Hit] Inflict 5 [Sinking]<br>"+
             "[On Hit] Inflict 2 [Attack Power Down]<br>"+
-            "[Heads Hit] Inflict 4 [Sinking]", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Outis/GCorpHeadManager/Focus.png";
+            "[Heads Hit] Inflict 4 [Sinking]", 1)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/GCorpHeadManager/Focus.png"
 }

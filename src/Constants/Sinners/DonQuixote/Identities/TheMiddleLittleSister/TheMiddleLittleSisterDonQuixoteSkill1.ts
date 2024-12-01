@@ -1,25 +1,26 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class TheMiddleLittleSisterDonQuixoteSkill1 implements Skill {
-    readonly Name: string = "Checking the Book";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Wrath;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +3;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +2;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const TheMiddleLittleSisterDonQuixoteSkill1: Skill = {
+    Name: "Checking the Book",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Wrath,
+    BaseValue: 4,
+    Coins: 2,
+    CoinValue: +3,
+    AttackWeight: 1,
+    SkillLevel: +2,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] Heal 5 SP"),
         new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 1),
-        new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/DonQuixote/TheMiddleLittleSister/CheckingTheBook.png";
+        new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 2)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheMiddleLittleSister/CheckingTheBook.png"
 }

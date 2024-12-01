@@ -1,23 +1,24 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
-import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
+import {
+    DefenseTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
+import { Skill } from "../../../../../Models/Index";
 
-export class LccbAssistantManagerRyoshuDefense implements Skill {
-    readonly Name: string = "Guard";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Defense;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Gluttony;
-    readonly BaseValue: number = 8;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +8;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +3;
-    readonly SkillDescription: SkillDescriptionPart[] = 
-        [];
-    readonly DamageType?: DamageTypeEnum | undefined = undefined;
-    readonly DefenseType?: DefenseTypeEnum | undefined = DefenseTypeEnum.Guard;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Ryoshu/LCCBAssistantManager/GuardUT4.png";
+export const LccbAssistantManagerRyoshuDefense: Skill = {
+    Name: "Guard",
+    SkillType: SkillTypeEnum.Defense,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Gluttony,
+    BaseValue: 8,
+    Coins: 1,
+    CoinValue: +8,
+    AttackWeight: 1,
+    SkillLevel: +3,
+    SkillDescription: 
+        [],
+    DamageType: undefined,
+    DefenseType: DefenseTypeEnum.Guard,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LCCBAssistantManager/GuardUT4.png"
 }

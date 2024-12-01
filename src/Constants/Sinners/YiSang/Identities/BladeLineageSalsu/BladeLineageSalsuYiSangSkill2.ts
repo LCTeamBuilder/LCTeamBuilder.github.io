@@ -1,23 +1,24 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class BladeLineageSalsuYiSangSkill2 implements Skill {
-    readonly Name: string = "Heel Turn";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill2;
-    readonly Affinity: SinEnum = SinEnum.Wrath;
-    readonly BaseValue: number = 7;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +2;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +5;
-    readonly SkillDescription: SkillDescriptionPart[] = 
-        [new SkillDescriptionPart("[Clash Win] Gain +2 [Poise] Count next turn")];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/YiSang/BladeLineageSalsu/HeelTurn.png";
+export const BladeLineageSalsuYiSangSkill2: Skill = {
+    Name: "Heel Turn",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill2,
+    Affinity: SinEnum.Wrath,
+    BaseValue: 7,
+    Coins: 2,
+    CoinValue: +2,
+    AttackWeight: 1,
+    SkillLevel: +5,
+    SkillDescription: 
+        [new SkillDescriptionPart("[Clash Win] Gain +2 [Poise] Count next turn")],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/BladeLineageSalsu/HeelTurn.png"
 }

@@ -1,26 +1,27 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class DieciAssocSouthSection4HongLuSkill1 implements Skill {
-    readonly Name: string = "Expend Knowledge";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Wrath;
-    readonly BaseValue: number = 5;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +5;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +2;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const DieciAssocSouthSection4HongLuSkill1: Skill = {
+    Name: "Expend Knowledge",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Wrath,
+    BaseValue: 5,
+    Coins: 1,
+    CoinValue: +5,
+    AttackWeight: 1,
+    SkillLevel: +2,
+    SkillDescription: 
         [new SkillDescriptionPart("[On Use] [Discard] 1 Skill of the highest rank in all of this unit's Skill Slots<br>"+
             "[On Use] Clash Power +([Insight] - 1)"),
         new SkillDescriptionPart("[Heads Hit] Inflict +1 [Sinking] Count<br>"+
-            "[On Hit] Reuse Coin ([Insight] - 1) times", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/HongLu/DieciAssociationSouthSection4/ExpendKnowledge.png";
+            "[On Hit] Reuse Coin ([Insight] - 1) times", 1)],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/DieciAssociationSouthSection4/ExpendKnowledge.png"
 }

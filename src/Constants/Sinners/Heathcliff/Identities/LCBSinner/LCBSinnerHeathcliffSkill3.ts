@@ -1,23 +1,23 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LCBSinnerHeathcliffSkill3 implements Skill {
-    readonly Name: string = "Upheaval";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Lust;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +8;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +0;
-    readonly SkillDescription: SkillDescriptionPart[] = [new SkillDescriptionPart("[Heads Hit] Next Coin has +2 Power", 1),
-                                                        new SkillDescriptionPart("[On Hit] Trigger [Tremor Burst]", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Heathcliff/LCBSinner/Upheaval.png"; 
+export const LCBSinnerHeathcliffSkill3: Skill = {
+    Name: "Upheaval",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Lust,
+    BaseValue: 4,
+    Coins: 2,
+    CoinValue: +8,
+    AttackWeight: 1,
+    SkillLevel: +0,
+    SkillDescription: [new SkillDescriptionPart("[Heads Hit] Next Coin has +2 Power", 1),            new SkillDescriptionPart("[On Hit] Trigger [Tremor Burst]", 2)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/LCBSinner/Upheaval.png", 
 }

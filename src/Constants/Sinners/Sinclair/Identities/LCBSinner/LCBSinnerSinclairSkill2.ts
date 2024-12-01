@@ -1,22 +1,23 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LCBSinnerSinclairSkill2 implements Skill {
-    readonly Name: string = "Halberd Combo";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill2;
-    readonly Affinity: SinEnum = SinEnum.Wrath;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 3;
-    readonly CoinValue: number = +2;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +3;
-    readonly SkillDescription: SkillDescriptionPart[] = [new SkillDescriptionPart("[Clash Win] +30% damage")];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Sinclair/LCBSinner/RavagingCut.png";
+export const LCBSinnerSinclairSkill2: Skill = {
+    Name: "Halberd Combo",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill2,
+    Affinity: SinEnum.Wrath,
+    BaseValue: 4,
+    Coins: 3,
+    CoinValue: +2,
+    AttackWeight: 1,
+    SkillLevel: +3,
+    SkillDescription: [new SkillDescriptionPart("[Clash Win] +30% damage")],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/LCBSinner/RavagingCut.png"
 }

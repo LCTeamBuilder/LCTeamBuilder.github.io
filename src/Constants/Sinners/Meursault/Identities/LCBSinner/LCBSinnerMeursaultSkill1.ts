@@ -1,23 +1,23 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class LCBSinnerMeursaultSkill1 implements Skill {
-    readonly Name: string = "Un, Deux";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Sloth;
-    readonly BaseValue: number = 3;
-    readonly Coins: number = 3;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = -3;
-    readonly SkillDescription: SkillDescriptionPart[] = [new SkillDescriptionPart("[On Hit] Inflict 1 [Tremor]", 1),
-                                                        new SkillDescriptionPart("[On Hit] Inflict 1 [Tremor]", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Meursault/LCBSinner/UnDeux.png";
+export const LCBSinnerMeursaultSkill1: Skill = {
+    Name: "Un, Deux",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Sloth,
+    BaseValue: 3,
+    Coins: 3,
+    CoinValue: +4,
+    AttackWeight: 1,
+    SkillLevel: -3,
+    SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 1 [Tremor]", 1),            new SkillDescriptionPart("[On Hit] Inflict 1 [Tremor]", 2)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/LCBSinner/UnDeux.png"
 }

@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum,
-        SkillTierEnum,
-        SkillTypeEnum } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class FellBulletHeathcliffCorrosion implements Skill{
-    readonly Name: string = "Fell Bullet";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Pride;
-    readonly BaseValue: number = 30;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = -12;
-    readonly AttackWeight: number = 2;
-    readonly SkillLevel: number = 0;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const FellBulletHeathcliffCorrosion: Skill = {
+    Name: "Fell Bullet",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Pride,
+    BaseValue: 30,
+    Coins: 1,
+    CoinValue: -12,
+    AttackWeight: 2,
+    SkillLevel: 0,
+    SkillDescription: 
         [new SkillDescriptionPart("[Indiscriminate]<br>"+
             "Targets randomly<br>"+
             "[Before Attack] Gain (highest Reson. + 1) [Torn Memory] (max 7)<br>"+
@@ -26,8 +27,8 @@ export class FellBulletHeathcliffCorrosion implements Skill{
             "[Before Attack] Deal +5% more damage for every 5 [Poise] on self (max 25%)<br>"+
             "[Before Attack] Consume 5 [Poise] on self<br>"+
             "[After Attack] Lose every [Torn Memory]"),
-        new SkillDescriptionPart("[On Hit] Inflict 3 [Bleed] and 3 [Sinking]", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "./assets/Sinners/Heathcliff/EGO/FellBullet/20707erosionprofile.png";
+        new SkillDescriptionPart("[On Hit] Inflict 3 [Bleed] and 3 [Sinking]", 1)],
+    DamageType: DamageTypeEnum.Pierce,
+    DefenseType: undefined,
+    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/FellBullet/20707erosionprofile.png"
 }

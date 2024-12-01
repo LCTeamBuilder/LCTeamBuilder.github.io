@@ -1,22 +1,23 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
-import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
+import { Skill } from "../../../../../Models/Index";
 
-export class LCBSinnerRodionDefense implements Skill {
-    readonly Name: string = "Counter";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Defense;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill1;
-    readonly Affinity: SinEnum = SinEnum.Wrath;
-    readonly BaseValue: number = 7;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +4;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +0;
-    readonly SkillDescription: SkillDescriptionPart[] = [];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Slash;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Rodion/LCBSinner/Counter.png";
+export const LCBSinnerRodionDefense: Skill = {
+    Name: "Counter",
+    SkillType: SkillTypeEnum.Defense,
+    SkillTier: SkillTierEnum.Skill1,
+    Affinity: SinEnum.Wrath,
+    BaseValue: 7,
+    Coins: 1,
+    CoinValue: +4,
+    AttackWeight: 1,
+    SkillLevel: +0,
+    SkillDescription: [],
+    DamageType: DamageTypeEnum.Slash,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LCBSinner/Counter.png"
 }

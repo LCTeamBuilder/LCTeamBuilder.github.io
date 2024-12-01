@@ -1,25 +1,26 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class SevenAssocSouthSection4HeathcliffSkill2 implements Skill {
-    readonly Name: string = "The Wrap—Up";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill2;
-    readonly Affinity: SinEnum = SinEnum.Envy;
-    readonly BaseValue: number = 6;
-    readonly Coins: number = 1;
-    readonly CoinValue: number = +10;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +1;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const SevenAssocSouthSection4HeathcliffSkill2: Skill = {
+    Name: "The Wrap—Up",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill2,
+    Affinity: SinEnum.Envy,
+    BaseValue: 6,
+    Coins: 1,
+    CoinValue: +10,
+    AttackWeight: 1,
+    SkillLevel: +1,
+    SkillDescription: 
         [new SkillDescriptionPart("[Clash Win] Inflict +1 [Rupture] Count"),
         new SkillDescriptionPart("[On Hit] Inflict 3 [Defense Level Down] next turn<br>"+
-        "[On Hit] Inflict +2 [Rupture] Count", 1)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Heathcliff/SevenAssociationSouthSection4/TheWrapup.png";
+        "[On Hit] Inflict +2 [Rupture] Count", 1)],
+    DamageType: DamageTypeEnum.Pierce,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/SevenAssociationSouthSection4/TheWrapup.png"
 }

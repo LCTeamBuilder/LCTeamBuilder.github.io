@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class WildHuntHeathcliffSkill3 implements Skill {
-    readonly Name: string = "Requiem";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Gloom;
-    readonly BaseValue: number = 6;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +6;
-    readonly AttackWeight: number = 1;
-    readonly SkillLevel: number = +5;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const WildHuntHeathcliffSkill3: Skill = {
+    Name: "Requiem",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Gloom,
+    BaseValue: 6,
+    Coins: 2,
+    CoinValue: +6,
+    AttackWeight: 1,
+    SkillLevel: +5,
+    SkillDescription: 
         [new SkillDescriptionPart("[Clash Win] Heal 10 SP<br>"+
             "[Before Use] If this unit has [Dullahan], activate 'Lament, Mourn, and Despair' instead<br>"+
             "[On Use] Coin Power +1 for every 3 [Sinking] on the target (max 4)<br>"+
@@ -25,8 +26,8 @@ export class WildHuntHeathcliffSkill3 implements Skill {
         new SkillDescriptionPart("[On Hit] Inflict +4 [Sinking] Count<br>"+
             "[On Hit] If the target has [Impending Ruin], inflict +2 [Sinking] Count", 1),
         new SkillDescriptionPart("[On Hit] Inflict 3 [Sinking]<br>"+
-            "[On Kill] Inflict ([Sinking] on killed target/2) [Sinking] on 2 random enemies (max 5)", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Blunt;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Heathcliff/WildHunt/Requiem.png";
+            "[On Kill] Inflict ([Sinking] on killed target/2) [Sinking] on 2 random enemies (max 5)", 2)],
+    DamageType: DamageTypeEnum.Blunt,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/WildHunt/Requiem.png"
 }

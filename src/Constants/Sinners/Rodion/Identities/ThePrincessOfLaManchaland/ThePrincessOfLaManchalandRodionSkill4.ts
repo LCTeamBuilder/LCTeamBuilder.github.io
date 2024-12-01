@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum, 
-        SkillTypeEnum, 
-        SkillTierEnum  } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class ThePrincessOfLaManchalandRodionSkill4 implements Skill {
-    readonly Name: string = "Ascendant Don Quixote Hardblood Arts - The Finale";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Lust;
-    readonly BaseValue: number = 4;
-    readonly Coins: number = 3;
-    readonly CoinValue: number = +5;
-    readonly AttackWeight: number = 3;
-    readonly SkillLevel: number = +5;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const ThePrincessOfLaManchalandRodionSkill4: Skill = {
+    Name: "Ascendant Don Quixote Hardblood Arts - The Finale",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Lust,
+    BaseValue: 4,
+    Coins: 3,
+    CoinValue: +5,
+    AttackWeight: 3,
+    SkillLevel: +5,
+    SkillDescription: 
         [new SkillDescriptionPart("On Use] If the target has 6+ [Bleed], Coin Power +1<br>"+
             "[On Use] To self and (highest Reson.) allies: apply (5 + (1 for every 50 [Bloodfeast Consumed] by this unit)) [Festive Fever] this turn and next turn (max 10)<br>"+
             "[On Use] To self and (highest Reson.) allies: apply 5 [Blooming Thorn]<br>"+
@@ -26,8 +27,8 @@ export class ThePrincessOfLaManchalandRodionSkill4 implements Skill {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]<br>"+
             "[On Hit] Inflict 2 [Bleed]", 2),
         new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]<br>"+
-            "[On Hit] Inflict 2 [Bleed]", 3)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/AscendantDonQuixoteHardbloodArtsTheFinale.png";
+            "[On Hit] Inflict 2 [Bleed]", 3)],
+    DamageType: DamageTypeEnum.Pierce,
+    DefenseType: undefined,
+    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/AscendantDonQuixoteHardbloodArtsTheFinale.png"
 }

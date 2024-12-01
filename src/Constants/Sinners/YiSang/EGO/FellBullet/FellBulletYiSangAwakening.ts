@@ -1,21 +1,22 @@
-import { DamageTypeEnum, 
-        DefenseTypeEnum, 
-        SinEnum,
-        SkillTierEnum,
-        SkillTypeEnum } from "../../../../../Enums/Index";
+import {
+    DamageTypeEnum,
+    SinEnum,
+    SkillTierEnum,
+    SkillTypeEnum
+} from "../../../../../Enums/Index";
 import { Skill, SkillDescriptionPart } from "../../../../../Models/Index";
 
-export class FellBulletYiSangAwakening implements Skill{
-    readonly Name: string = "Fell Bullet";
-    readonly SkillType: SkillTypeEnum = SkillTypeEnum.Attack;
-    readonly SkillTier: SkillTierEnum = SkillTierEnum.Skill3;
-    readonly Affinity: SinEnum = SinEnum.Pride;
-    readonly BaseValue: number = 18;
-    readonly Coins: number = 2;
-    readonly CoinValue: number = +6;
-    readonly AttackWeight: number = 7;
-    readonly SkillLevel: number = +5;
-    readonly SkillDescription: SkillDescriptionPart[] = 
+export const FellBulletYiSangAwakening: Skill = {
+    Name: "Fell Bullet",
+    SkillType: SkillTypeEnum.Attack,
+    SkillTier: SkillTierEnum.Skill3,
+    Affinity: SinEnum.Pride,
+    BaseValue: 18,
+    Coins: 2,
+    CoinValue: +6,
+    AttackWeight: 7,
+    SkillLevel: +5,
+    SkillDescription: 
         [new SkillDescriptionPart("Targets the ally with the least HP<br>"+
             "[Before Attack] Gain (highest Reson. + 1) [Torn Memory] (max 7)<br>"+
             "- If the said Reson. was a Pride Reson., gain (highest Reson. x 2) [Torn Memory] instead (max 7)<br>"+
@@ -29,8 +30,8 @@ export class FellBulletYiSangAwakening implements Skill{
         new SkillDescriptionPart("This Coin only deals damage against the sub-targets<br>"+
             "- If the first Coin failed to kill the ally, 1 random sub-target takes damage<br>"+
             "+9% Damage on Critical Hit for every [Torn Memory] (max 63%)<br>"+
-            "[On Crit] Inflict 3 [Bleed]", 2)];
-    readonly DamageType?: DamageTypeEnum | undefined = DamageTypeEnum.Pierce;
-    readonly DefenseType?: DefenseTypeEnum | undefined = undefined;
-    readonly SkillImageDir: string = "./assets/Sinners/YiSang/EGO/FellBullet/20107awakenprofile.png";
+            "[On Crit] Inflict 3 [Bleed]", 2)],
+    DamageType: DamageTypeEnum.Pierce,
+    DefenseType: undefined,
+    SkillImageDir: "./assets/Sinners/YiSang/EGO/FellBullet/20107awakenprofile.png"
 }
