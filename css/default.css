@@ -1137,15 +1137,19 @@ html, body {
     display: block;
 }
 
-.skill{
+.skill-container{
     display: none;
     overflow-x: auto;
     height: 100%;
 }
 
+.skill{
+    width: 100%;
+}
+
 .skill-stat-section{
     margin-top: 3%;
-    height: 30%;
+    height: 6cqw;
     display: flex;
     align-items: flex-end;
     margin-bottom: 1%;

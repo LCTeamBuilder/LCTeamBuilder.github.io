@@ -462,17 +462,19 @@ function LoadIdentityDetailsModal(identity: Identity) {
     $.get('./templates/skill-detail-template.html', function (data) {
         identity.Skills.forEach((skill, index) => {
             let template = $.parseHTML(data)!;
+            let skillTierExists = ($("#skill-" + skill.SkillTier + "-container").length > 0 && skill.SkillType == SkillTypeEnum.Attack) || 
+                ($("#skill-4-container").length > 0 && skill.SkillType == SkillTypeEnum.Defense);
+            let skillTabIndex = skill.SkillType == SkillTypeEnum.Attack ? skill.SkillTier : 4
 
-            var tab = skill.SkillType == SkillTypeEnum.Attack ? $('<button>Skill ' + (index + 1) + '</button>') : $('<button>Defense</button>');
-            tab.on("click", function () {
-                $("#equipable-details-skill-select button").removeClass();
-                tab.addClass("selected").addClass(SinEnum[skill.Affinity].toLowerCase());
-                ShowSkill(index + 1);
-            });
-            $("#equipable-details-skill-select").append(tab);
-
-            $(template).attr('id', 'skill' + (index + 1));
-
+            if (!skillTierExists) {
+                let tab = skill.SkillType == SkillTypeEnum.Attack ? $('<button>Skill ' + skillTabIndex + '</button>') : $('<button>Defense</button>');
+                tab.on("click", function () {
+                    $("#equipable-details-skill-select button").removeClass();
+                    tab.addClass("selected").addClass(SinEnum[skill.Affinity].toLowerCase());
+                    ShowSkill(skillTabIndex);
+                });
+                $("#equipable-details-skill-select").append(tab);
+            }
             $(template).find(".skill-coin-power-panel").attr("src", "./assets/Icons/Skills/" + SinEnum[skill.Affinity] + "CoinPowerPanel.png");
             $(template).find(".skill-icon-frame").attr("src", "./assets/Icons/Skills/" + SinEnum[skill.Affinity] + "Skill" + skill.SkillTier + ".png");
             if (skill.DamageType != undefined) { $(template).find(".skill-damage-type-icon").attr("src", "./assets/Icons/Skills/SkillDamageTypeBadge/" + SinEnum[skill.Affinity] + DamageTypeEnum[skill.DamageType!] + ".png"); }
@@ -494,7 +496,6 @@ function LoadIdentityDetailsModal(identity: Identity) {
             $(template).find(".skill-name-value").text(skill.Name);
             if (skill.SkillType == SkillTypeEnum.Defense) {
                 $(template).find(".skill-attack-icon").attr("src", "./assets/Icons/Stats/DefensePower.png");
-
             }
             $(template).find(".skill-level-value").text((MaxLevel + skill.SkillLevel));
 
@@ -515,10 +516,16 @@ function LoadIdentityDetailsModal(identity: Identity) {
                 $(template).find(".skill-description").append(div);
             })
 
-            $("#equipable-details-skills").append(template);
+            if (skillTierExists) {
+                $("#skill-" + skillTabIndex + "-container").append('<br>').append(template);
+            }
+            else {
+                let container = $('<div id="skill-' + skillTabIndex + '-container" class="skill-container"></div>');
+                container.append(template).appendTo($("#equipable-details-skills"));
+            }
         });
 
-        var tab = $('<button>Passive</button>');
+        let tab = $('<button>Passive</button>');
         tab.on("click", function () {
             $("#equipable-details-skill-select button").removeClass();
             tab.addClass("selected").addClass("sloth");
@@ -733,8 +740,8 @@ function SetSinResistanceAttributes(sin: SinEnum, value: number) {
 }
 
 function ShowSkill(index: number) {
-    $(".skill").hide();
-    $("#skill" + index).show();
+    $(".skill-container").hide();
+    $("#skill-" + index + "-container").show();
 }
 
 function AddTooltipsToTags(description: string): string {
@@ -746,6 +753,7 @@ function AddTooltipsToTags(description: string): string {
 }
 
 function BuildPassiveDescriptions(passives: ReadonlyArray<Passive>): JQuery<HTMLElement> {
+    let descriptionContainer = $('<div id="skill-10-container" class="skill-container"></div>');
     let description = $('<div id="skill10" class="skill"></div>');
     if (passives.length > 1) {
         description.append($('<div class="passive-category-label font-mikodacs">Passives</div>'))
@@ -765,10 +773,10 @@ function BuildPassiveDescriptions(passives: ReadonlyArray<Passive>): JQuery<HTML
                 });
                 $(template).find(".passive-cost").append('<span class="passive-cost-type font-mikodacs">' + (passive.CostType == PassiveCostTypeEnum.Owned ? ' Owned' : ' Res.') + '</span>');
             }
-            description.append(template);
+            description.append(template).appendTo(descriptionContainer);
         });
     });
-    return description;
+    return descriptionContainer;
 }
 
 export function UpdateTeamSinDisplay(deployedOnly: boolean = false): void {
