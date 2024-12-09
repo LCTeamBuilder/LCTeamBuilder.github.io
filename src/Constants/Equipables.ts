@@ -204,6 +204,7 @@ import { LobotomyEGOSolemnLamentYiSang } from "./Sinners/YiSang/Identities/Lobot
 import { MolarOfficeFixerYiSang } from "./Sinners/YiSang/Identities/MolarOfficeFixer/MolarOfficeFixerYiSang";
 import { SevenAssocSouthSection6YiSang } from "./Sinners/YiSang/Identities/SevenAssociationSouthSection6/SevenAssocSouthSection6YiSang";
 import { ThePequodFirstMateYiSang } from "./Sinners/YiSang/Identities/ThePequodFirstMate/ThePequodFirstMateYiSang";
+import { TheRingPointillistStudentYiSang } from "./Sinners/YiSang/Identities/TheRingPointillistStudent/TheRingPointillistStudentYiSang";
 import { WCorpL3CleanupAgentYiSang } from "./Sinners/YiSang/Identities/WCorpL3CleanupAgent/WCorpL3CleanupAgentYiSang";
 
 export const Identities: ReadonlyArray<Identity> = [
@@ -216,6 +217,7 @@ export const Identities: ReadonlyArray<Identity> = [
     MolarOfficeFixerYiSang,
     SevenAssocSouthSection6YiSang,
     ThePequodFirstMateYiSang,
+    TheRingPointillistStudentYiSang,
     WCorpL3CleanupAgentYiSang,
 
     //Faust
