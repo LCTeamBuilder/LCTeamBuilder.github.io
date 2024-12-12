@@ -29,7 +29,7 @@ export function InitDefaultData(): void {
 
     globalThis.TeamData.forEach(sinner => {
         for (let i = 0; i < 3; i++) {  //add new sins
-            globalThis.TeamSins[sinner.EquipedIdentity.Skills[i]!.Affinity].Generated += (3 - i);
+            globalThis.TeamSins[sinner.EquipedIdentity.Skills.find(skill => skill.SkillTier == i + 1)!.Affinity].Generated += (3 - i);
         }
         sinner.EquipedEgos[0]?.Cost.forEach((cost) => {
             globalThis.TeamSins[cost.sin].Used += cost.amount;

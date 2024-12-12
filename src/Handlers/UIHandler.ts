@@ -242,7 +242,7 @@ export function ToggleDeployment(sinnerId: number){
         $("#deployed-current-value").text(globalThis.DeployedAmount);
 
         for (let i = 0; i < 3; i++) {  //add new sins
-            globalThis.DeployedTeamSins[sinner.EquipedIdentity.Skills[i]!.Affinity].Generated += (3 - i);
+            globalThis.DeployedTeamSins[sinner.EquipedIdentity.Skills.find(skill => skill.SkillTier == i + 1)!.Affinity].Generated += (3 - i);
         }
 
         sinner.EquipedEgos.forEach(ego => {
@@ -272,7 +272,7 @@ export function ToggleDeployment(sinnerId: number){
         });
 
         for (let i = 0; i < 3; i++) {  //deduct sins generated from team total
-            let skill = sinner.EquipedIdentity.Skills[i]!;
+            let skill = sinner.EquipedIdentity.Skills.find(skill => skill.SkillTier == i + 1)!;
             globalThis.DeployedTeamSins[skill.Affinity].Generated -= (3 - i);
         }
 
@@ -460,6 +460,7 @@ function LoadIdentityDetailsModal(identity: Identity) {
     $("#equipable-details-ego-cost").hide();
 
     $.get('./templates/skill-detail-template.html', function (data) {
+        let skillAmount = 3;
         identity.Skills.forEach((skill, index) => {
             let template = $.parseHTML(data)!;
             let skillTierExists = ($("#skill-" + skill.SkillTier + "-container").length > 0 && skill.SkillType == SkillTypeEnum.Attack) || 
@@ -483,8 +484,11 @@ function LoadIdentityDetailsModal(identity: Identity) {
             $(template).find(".skill-name-ribbon-middle").css("background-image", "URL('./assets/Icons/Skills/SkillNameRibbon/" + SinEnum[skill.Affinity] + "RibbonMiddle.png')");
             $(template).find(".skill-name-ribbon-end").css("background-image", "URL('./assets/Icons/Skills/SkillNameRibbon/" + SinEnum[skill.Affinity] + "RibbonEnd.png')");
 
-            if (index < 3) {
-                $(template).find(".skill-name-ribbon-end span").text(3 - index);
+            if (skillAmount > 0 && !skillTierExists) {
+                $(template).find(".skill-name-ribbon-end span").text(skillAmount--);
+            }
+            else if (skillTierExists && skill.SkillType != SkillTypeEnum.Defense){
+                $(template).find(".skill-name-ribbon-end span").text('0');
             }
             else {
                 $(template).find(".skill-name-ribbon-end .multiply-icon").hide();
