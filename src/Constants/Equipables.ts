@@ -13,6 +13,7 @@ import { LobotomyEgoLanternDonQuixote } from "./Sinners/DonQuixote/Identities/Lo
 import { NCorpMittelhammerDonQuixote } from "./Sinners/DonQuixote/Identities/NCorpMittelhammer/NCorpMittelhammerDonQuixote";
 import { ShiAssocSouthSection5DirectorDonQuixote } from "./Sinners/DonQuixote/Identities/ShiAssocSouthSection5Director/ShiAssocSouthSection5DirectorDonQuixote";
 import { TCorpClass3CollectionStaffDonQuixote } from "./Sinners/DonQuixote/Identities/TCorpClass3CollectionStaff/TCorpClass3CollectionStaffDonQuixote";
+import { TheManagerOfLaManchalandDonQuixote } from "./Sinners/DonQuixote/Identities/TheManagerOfLaManchaland/TheManagerOfLaManchalandDonQuixote";
 import { TheMiddleLittleSisterDonQuixote } from "./Sinners/DonQuixote/Identities/TheMiddleLittleSister/TheMiddleLittleSisterDonQuixote";
 import { WCorpL3CleanupAgentDonQuixote } from "./Sinners/DonQuixote/Identities/WCorpL3CleanupAgent/WCorpL3CleanupAgentDonQuixote";
 import { NineTwoFaust } from "./Sinners/Faust/EGO/92/NineTwoFaust";
@@ -239,6 +240,7 @@ export const Identities: ReadonlyArray<Identity> = [
     NCorpMittelhammerDonQuixote,
     ShiAssocSouthSection5DirectorDonQuixote,
     TCorpClass3CollectionStaffDonQuixote,
+    TheManagerOfLaManchalandDonQuixote,
     TheMiddleLittleSisterDonQuixote,
     WCorpL3CleanupAgentDonQuixote,
 

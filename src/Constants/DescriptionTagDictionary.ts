@@ -353,6 +353,27 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- Skills that consume or gain Bloodfeast deal +3% more damage for every Stack instead",
         ImageLink: "./assets/Icons/Statuses/FestiveFever.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
     },
+    "[Hardblood]": {
+        Name: "Hardblood", Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 10<br>" +
+            "- Stage 1 Hardblood<br>" +
+            "- At 10+ Hardblood, converts to Hardblood II.<br>" +
+            "- At 20+ Hardblood, converts to Hardblood III.<br>" +
+            "- Reverts to the previous Stage when the Stack drops below the requirements.<br>" +
+            "- Hardblood does not drop below 1.<br>" +
+            "- Raise Min & Max Speed values by 1 for every 10 Hardblood<br>" +
+            "- At Hardblood II, gain 1 Offense Level Up based on the Stack (1 / 5 Stack)<br>" +
+            "- At Hardblood III, gain 1 Offense Level Up and 1 Defense Level Up based on the Stack (1 / 5 Stack)",
+        ImageLink: "./assets/Icons/Statuses/Hardblood.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
+    },
+    "[Shimmering (Bloodfiend)]": {
+        Name: "Shimmering [Bloodfiend]", Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 50<br>" +
+            "- As long as this effect exists, all Bleed damage taken by the Shield HP is converted to Bloodfeast.<br>" +
+            "- Gain Shield HP equal to the Stack at the moment of its application<br>" +
+            "- Expires at Turn End",
+        ImageLink: "./assets/Icons/Statuses/Shimmering.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
+    },
     "[Blooming Thorn]": {
         Name: "Blooming Thorn", Type: StatusTypeEnum.Buff, Description:
             "- Max Value: 10<br>" +
@@ -1179,6 +1200,14 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- At 50%- HP, gain 1 Defense Level for every 3 Stack<br>" +
             "- At 40%- HP, On Hit with Base Skills, heal (Stack x 5)% of damage dealt On Hit as HP (min 1; rounded down; heal up to 30 HP per Skill)",
         ImageLink: "./assets/Icons/Statuses/BloodiedHand.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
+    },
+    "[Responsibility]": {
+        Name: "Responsibility", Type: StatusTypeEnum.Neutral, Description:
+            "- Max Value: 1<br>" +
+            "- Clash Power +1<br>" +
+            "- Deal +20% more damage<br>" +
+            "- Take +20% more damage",
+        ImageLink: "./assets/Icons/Statuses/Responsibility.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink); }
     },
     "[Final Augment]": {
         Name: "Final Augment", Type: StatusTypeEnum.Neutral, Description:
