@@ -646,7 +646,7 @@ function LoadEgoDetailsModal(ego: Ego) {
             $(template).find(".skill-description").append(div);
         });
 
-        $("#equipable-details-skills").append(template);
+        $('<div id="skill-1-container" class="skill-container"></div>').append(template).appendTo($("#equipable-details-skills"));
 
         if (ego.CorrosionSkill) {
             let template = $.parseHTML(data)!;
@@ -696,7 +696,7 @@ function LoadEgoDetailsModal(ego: Ego) {
                 $(template).find(".skill-description").append(div);
             })
 
-            $("#equipable-details-skills").append(template);
+            $('<div id="skill-2-container" class="skill-container"></div>').append(template).appendTo($("#equipable-details-skills"));
         }
 
         var tab3 = $('<button>Passive</button>');
