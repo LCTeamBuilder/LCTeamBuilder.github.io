@@ -34,6 +34,7 @@ import { WutheringHeightsButlerFaust } from "./Sinners/Faust/Identities/Wutherin
 import { ZweiAssocSouthSection4Faust } from "./Sinners/Faust/Identities/ZweiAssociationSouthSection4/ZweiAssocSouthSection4Faust";
 import { AEDDGregor } from "./Sinners/Gregor/EGO/AEDD/AEDDGregor";
 import { BygoneDaysGregor } from "./Sinners/Gregor/EGO/BygoneDays/BygoneDaysGregor";
+import { ChristmasNightmareGregor } from "./Sinners/Gregor/EGO/ChristmasNightmare/ChristmasNightmareGregor";
 import { GardenOfThornsGregor } from "./Sinners/Gregor/EGO/GardenOfThorns/GardenOfThornsGregor";
 import { LanternGregor } from "./Sinners/Gregor/EGO/Lantern/LanternGregor";
 import { LegerdemainGregor } from "./Sinners/Gregor/EGO/Legerdemain/LegerdemainGregor";
@@ -88,6 +89,7 @@ import { ArdorBlossomStarIshmael } from "./Sinners/Ishmael/EGO/ArdorBlossomStar/
 import { BlindObsessionIshmael } from "./Sinners/Ishmael/EGO/BlindObsession/BlindObsessionIshmael";
 import { BygoneDaysIshmael } from "./Sinners/Ishmael/EGO/BygoneDays/BygoneDaysIshmael";
 import { CapoteIshmael } from "./Sinners/Ishmael/EGO/Capote/CapoteIshmael";
+import { ChristmasNightmareIshmael } from "./Sinners/Ishmael/EGO/ChristmasNightmare/ChristmasNightmareIshmael";
 import { RoseateDesireIshmael } from "./Sinners/Ishmael/EGO/RoseataDesire/RoseateDesireIshmael";
 import { SnagharpoonIshmael } from "./Sinners/Ishmael/EGO/Snagharpoon/SnagharpoonIshmael";
 import { WingbeatIshmael } from "./Sinners/Ishmael/EGO/Wingbeat/WingbeatIshmael";
@@ -427,6 +429,7 @@ export const Egos: ReadonlyArray<Ego> = [
     BlindObsessionIshmael,
     BygoneDaysIshmael,
     CapoteIshmael,
+    ChristmasNightmareIshmael,
     RoseateDesireIshmael,
     SnagharpoonIshmael,
     WingbeatIshmael,
@@ -461,6 +464,7 @@ export const Egos: ReadonlyArray<Ego> = [
     //Gregor
     AEDDGregor,
     BygoneDaysGregor,
+    ChristmasNightmareGregor,
     GardenOfThornsGregor,
     LanternGregor,
     LegerdemainGregor,
