@@ -209,6 +209,9 @@ import { SevenAssocSouthSection6YiSang } from "./Sinners/YiSang/Identities/Seven
 import { ThePequodFirstMateYiSang } from "./Sinners/YiSang/Identities/ThePequodFirstMateYiSang";
 import { TheRingPointillistStudentYiSang } from "./Sinners/YiSang/Identities/TheRingPointillistStudentYiSang";
 import { WCorpL3CleanupAgentYiSang } from "./Sinners/YiSang/Identities/WCorpL3CleanupAgentYiSang";
+import { FullStopOfficeRepHongLu } from "./Sinners/HongLu/Identities/FullStopOfficeRepHongLu";
+import { FullStopOfficeFixerHeathcliff } from "./Sinners/Heathcliff/Identities/FullStopOfficeFixerHeathcliff";
+import { MagicBulletOutis } from "./Sinners/Outis/EGO/MagicBulletOutis";
 
 export const Identities: ReadonlyArray<Identity> = [
     //Yi Sang
@@ -275,6 +278,7 @@ export const Identities: ReadonlyArray<Identity> = [
     DieciAssocSouthSection4HongLu,
     District20YurodivyHongLu,
     FanghuntOfficeFixerHongLu,
+    FullStopOfficeRepHongLu,
     HookOfficeFixerHongLu,
     KCorpClass3ExcisionStaffHongLu,
     KurokumoClanWakashuHongLu,
@@ -284,6 +288,7 @@ export const Identities: ReadonlyArray<Identity> = [
     WCorpL2CleanupAgentHongLu,
 
     //Heathcliff
+    FullStopOfficeFixerHeathcliff,
     LCBSinnerHeathcliff,
     LobotomyEgoSunshowerHeathcliff,
     MulticrackOfficeFixerHeathcliff,
@@ -457,6 +462,7 @@ export const Egos: ReadonlyArray<Ego> = [
     DimensionShredderOutis,
     EbonyStemOutis,
     HolidayOutis,
+    MagicBulletOutis,
     SunshowerOutis,
     ToPathosMathosOutis,
     YaSunyataTadRupamOutis,
