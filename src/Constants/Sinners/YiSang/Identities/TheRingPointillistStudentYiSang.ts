@@ -99,7 +99,7 @@ export const TheRingPointillistStudentYiSang: Identity = {
     Name: "The Ring Pointillist Student",
     Sinner: SinnerEnum.YiSang,
     Rarity: RarityEnum.ThreeStar,
-    BaseHealth: 190,
+    BaseHealth: 70,
     HealthPerLevel: 2.4,
     SpeedMin: 3,
     SpeedMax: 7,

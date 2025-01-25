@@ -212,6 +212,9 @@ import { WCorpL3CleanupAgentYiSang } from "./Sinners/YiSang/Identities/WCorpL3Cl
 import { FullStopOfficeRepHongLu } from "./Sinners/HongLu/Identities/FullStopOfficeRepHongLu";
 import { FullStopOfficeFixerHeathcliff } from "./Sinners/Heathcliff/Identities/FullStopOfficeFixerHeathcliff";
 import { MagicBulletOutis } from "./Sinners/Outis/EGO/MagicBulletOutis";
+import { ThoracalgiaRyoshu } from "./Sinners/Ryoshu/EGO/ThoracalgiaRyoshu";
+import { LCEEGOLanternYiSang } from "./Sinners/YiSang/Identities/LCEEGOLanternYiSang";
+import { LCEEGOArdorBlossomStarFaust } from "./Sinners/Faust/Identities/LCEEGOArdorBlossomStarFaust";
 
 export const Identities: ReadonlyArray<Identity> = [
     //Yi Sang
@@ -219,6 +222,7 @@ export const Identities: ReadonlyArray<Identity> = [
     DieciAssocSouthSection4YiSang,
     EfflorescedEgospicebushYiSang,
     LCBSinnerYiSang,
+    LCEEGOLanternYiSang,
     LobotomyEGOSolemnLamentYiSang,
     MolarOfficeFixerYiSang,
     SevenAssocSouthSection6YiSang,
@@ -229,6 +233,7 @@ export const Identities: ReadonlyArray<Identity> = [
     //Faust
     BladeLineageSalsuFaust,
     LCBSinnerFaust,
+    LCEEGOArdorBlossomStarFaust,
     LobotomyEgoRegretFaust,
     MulticrackOfficeRepFaust,
     SevenAssocSouthSection4Faust,
@@ -400,6 +405,7 @@ export const Egos: ReadonlyArray<Ego> = [
     RedEyesRyoshu,
     RedEyesOpenRyoshu,
     SodaRyoshu,
+    ThoracalgiaRyoshu,
 
     //Meursault
     CapoteMeursault,

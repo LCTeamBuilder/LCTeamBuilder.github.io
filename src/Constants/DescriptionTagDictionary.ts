@@ -258,6 +258,21 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "On hit, gain a Potency-based chance to deal critical damage, reducing the Count by 1 if successful. At the end of the turn, reduce the Count by 1. Critical hits deal 1.2x damage.",
         ImageLink: "./assets/Icons/Statuses/Poise.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+
+    
+    "[Deep Breath]": {
+        Name: "Deep Breath", Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 20<br>" +
+            "- On Crit: at 15+ Poise Potency and 5+ Poise Count, consume (Poise Potency on self / 5) Poise Potency to deal +(Poise Potency consumed x 4)% more Damage on Critical Hit and lose 1 Stack",
+        ImageLink: "./assets/Icons/Statuses/DeepBreath.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    "[Nebulizer Beta]": {
+        Name: "Nebulizer β", Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 5<br>" +
+            "- This effect persists throughout the Encounter<br>" +
+            "- When activating Pride A-Reson.: on Combat Start, apply 3 Poise and +3 Poise Count on self and (Stack) allies (prioritizes allies that gain or use Poise or Poise Count; among them, prioritize allies with the least Poise Potency)",
+        ImageLink: "./assets/Icons/Statuses/NebulizerBeta.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Nebulizer Beta"); }
+    },
     "[Charge]": {
         Name: "Charge", Type: StatusTypeEnum.Buff, Description:
             "Resource used by certain skills for additional effects. Its Count can go up to 20. Count lowers by 1 at the end of each turn.",
@@ -1106,6 +1121,17 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "When hit, the attacker gains +1 Charge Count; when hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1",
         ImageLink: "./assets/Icons/Statuses/SparkDischarge.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    "[Fairy Lure]": {
+        Name: "Fairy Lure", Type: StatusTypeEnum.Debuff, Description:
+            "- Max Stack: 5<br>" +
+            "- Turn Start: leftmost Slot on the Dashboard gains +10 Aggro<br>" +
+            "- Take +50% more damage<br>" +
+            "- When hit, inflict 1 Rupture against the attacker (3 times per target's Skill)<br>" +
+            "· At less than 50% HP, inflict 1 additional Rupture<br>" +
+            "· If the target has 15+ Rupture, this effect does not inflict Rupture<br>" +
+            "- Reduced by 1 at Turn End",
+        ImageLink: "./assets/Icons/Statuses/GlowingLantern.png", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
 
     "[Aggro]": {
         Name: "Aggro", Type: StatusTypeEnum.Neutral, Description:
@@ -1356,6 +1382,7 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
     "[Reuse - Heads Hit]": { Name: "[Reuse - Heads Hit]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     "[On Kill]": { Name: "[On Kill]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     "[On Ally Kill]": { Name: "[On Ally Kill]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
+    "[On Target Kill]": { Name: "[On Target Kill]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     "[Failed Kill]": { Name: "[Failed Kill]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     "[On Ally Kill Fail]": { Name: "[On Ally Kill Fail]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     "[After Attack]": { Name: "[After Attack]", Type: StatusTypeEnum.ActivationKeyword, Description: "", ImageLink: "RGB(146, 239, 61)", get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
