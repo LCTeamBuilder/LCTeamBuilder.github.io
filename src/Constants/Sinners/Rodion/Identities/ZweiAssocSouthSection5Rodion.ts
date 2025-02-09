@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ZweiAssocSouthSection5RodionDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const ZweiAssocSouthSection5RodionDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain +5 [Aggro] to this Skill Slot next turn")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/ZweiAssociationSouthSection5/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/ZweiAssociationSouthSection5/GuardUT4.png'
 }
 
 const ZweiAssocSouthSection5RodionSkill1: Skill = {
@@ -47,7 +47,7 @@ const ZweiAssocSouthSection5RodionSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +1 [Poise] Count", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/ZweiAssociationSouthSection5/CarefulObstruction.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/ZweiAssociationSouthSection5/CarefulObstruction.png'
 }
 
 const ZweiAssocSouthSection5RodionSkill2: Skill = {
@@ -67,7 +67,7 @@ const ZweiAssocSouthSection5RodionSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +2 [Poise] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/ZweiAssociationSouthSection5/FocusedDefense.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/ZweiAssociationSouthSection5/FocusedDefense.png'
 }
 
 const ZweiAssocSouthSection5RodionSkill3: Skill = {
@@ -85,7 +85,7 @@ const ZweiAssocSouthSection5RodionSkill3: Skill = {
         new SkillDescriptionPart("[On Crit] Inflict 1 [Fragile] next turn", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/ZweiAssociationSouthSection5/SubdueThreat.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/ZweiAssociationSouthSection5/SubdueThreat.png'
 }
 
 export const ZweiAssocSouthSection5Rodion: Identity = {
@@ -121,6 +121,6 @@ export const ZweiAssocSouthSection5Rodion: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Rodion/Identities/ZweiAssociationSouthSection5/10906gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Rodion/Identities/ZweiAssociationSouthSection5/10906gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Rodion/Identities/ZweiAssociationSouthSection5/10906gacksung.png',
+    PortraitImageDir: './assets/Sinners/Rodion/Identities/ZweiAssociationSouthSection5/10906gacksunginfo.png'
 }

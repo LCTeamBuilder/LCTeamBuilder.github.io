@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const HexNailFaustAwakening: Skill = {
     Name: "Hex Nail",
@@ -27,7 +27,7 @@ const HexNailFaustAwakening: Skill = {
             "[On Hit] If target has [Curse], +50% Damage", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/HexNail/20203awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/HexNail/20203awakenprofile.png'
 }
 
 const HexNailFaustCorrosion: Skill = {
@@ -50,7 +50,7 @@ const HexNailFaustCorrosion: Skill = {
             "[On Hit] If target has [Curse] , +50% Damage", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/HexNail/20203erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/HexNail/20203erosionprofile.png'
 }
 
 export const HexNailFaust: Ego = {
@@ -72,5 +72,5 @@ export const HexNailFaust: Ego = {
                 { sin: SinEnum.Envy, resistance: 0.5 }],
     Cost: [{ sin: SinEnum.Envy, amount: 6 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Faust/EGO/HexNail/20203cg.png"
+    FullImageDir: './assets/Sinners/Faust/EGO/HexNail/20203cg.png'
 }

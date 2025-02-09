@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ShiAssocSouthSection5HeathcliffDefense: Skill = {
     Name: "Counter",
@@ -28,7 +28,7 @@ const ShiAssocSouthSection5HeathcliffDefense: Skill = {
             "At 3+ [Poise] Count, Damage +50%")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/Counter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/Counter.png'
 }
 
 const ShiAssocSouthSection5HeathcliffSkill1: Skill = {
@@ -46,7 +46,7 @@ const ShiAssocSouthSection5HeathcliffSkill1: Skill = {
             "[On Use] Gain +3 [Poise] Count")],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/ExtremeEdge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/ExtremeEdge.png'
 }
 
 const ShiAssocSouthSection5HeathcliffSkill2: Skill = {
@@ -64,7 +64,7 @@ const ShiAssocSouthSection5HeathcliffSkill2: Skill = {
             "[On Use] Gain 3 [Poise]")],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/FlyingSword.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/FlyingSword.png'
 }
 
 const ShiAssocSouthSection5HeathcliffSkill3: Skill = {
@@ -84,7 +84,7 @@ const ShiAssocSouthSection5HeathcliffSkill3: Skill = {
         new SkillDescriptionPart("[Before Attack] Lose 5 HP, +50% Skill Damage for this Coin", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/FlashingStrike.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/ShiAssociationSouthSection5/FlashingStrike.png'
 }
 
 export const ShiAssocSouthSection5Heathcliff: Identity = {
@@ -120,6 +120,6 @@ export const ShiAssocSouthSection5Heathcliff: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Heathcliff/Identities/ShiAssociationSouthSection5/10702gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Heathcliff/Identities/ShiAssociationSouthSection5/10702gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Heathcliff/Identities/ShiAssociationSouthSection5/10702gacksung.png',
+    PortraitImageDir: './assets/Sinners/Heathcliff/Identities/ShiAssociationSouthSection5/10702gacksunginfo.png'
 }

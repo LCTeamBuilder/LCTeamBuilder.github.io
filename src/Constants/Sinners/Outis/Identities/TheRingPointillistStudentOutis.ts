@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TheRingPointillistStudentOutisDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const TheRingPointillistStudentOutisDefense: Skill = {
         [new SkillDescriptionPart("[On Use] If the target has 10+ [Bleed], Coin Power +7")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/TheRingPointillistStudent/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/TheRingPointillistStudent/GuardUT4.png'
 }
 
 const TheRingPointillistStudentOutisSkill1: Skill = {
@@ -47,7 +47,7 @@ const TheRingPointillistStudentOutisSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/TheRingPointillistStudent/Dotting.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/TheRingPointillistStudent/Dotting.png'
 }
 
 const TheRingPointillistStudentOutisSkill2: Skill = {
@@ -67,7 +67,7 @@ const TheRingPointillistStudentOutisSkill2: Skill = {
             "When Reusing Coin with this unit's Coin effects, inflict +1 more [Bleed] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/TheRingPointillistStudent/SanguinePainting.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/TheRingPointillistStudent/SanguinePainting.png'
 }
 
 const TheRingPointillistStudentOutisSkill3: Skill = {
@@ -90,7 +90,7 @@ const TheRingPointillistStudentOutisSkill3: Skill = {
             "If the affected ally is a member of the Ring, apply 1 [Pierce Power Up] as well", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/TheRingPointillistStudent/ArtworkInspection.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/TheRingPointillistStudent/ArtworkInspection.png'
 }
 
 export const TheRingPointillistStudentOutis: Identity = {
@@ -132,6 +132,6 @@ export const TheRingPointillistStudentOutis: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Outis/Identities/TheRingPointillistStudent/11109gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Outis/Identities/TheRingPointillistStudent/11109gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Outis/Identities/TheRingPointillistStudent/11109gacksung.png',
+    PortraitImageDir: './assets/Sinners/Outis/Identities/TheRingPointillistStudent/11109gacksunginfo.png'
 }

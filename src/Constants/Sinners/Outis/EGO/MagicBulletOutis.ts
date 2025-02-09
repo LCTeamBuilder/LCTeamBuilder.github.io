@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const MagicBulletOutisAwakening: Skill = {
     Name: "Magic Bullet",
@@ -36,7 +36,7 @@ const MagicBulletOutisAwakening: Skill = {
             "[On Hit] Inflict [Dark Flame] equal to [Magic Bullet] (once per turn for each unit)", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/MagicBullet/21108awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/MagicBullet/21108awakenprofile.png'
 }
 
 const MagicBulletOutisCorrosion: Skill = {
@@ -69,7 +69,7 @@ const MagicBulletOutisCorrosion: Skill = {
             "[On Hit] Inflict [Dark Flame] equal to [Magic Bullet] (once per turn for each unit)", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/MagicBullet/21108erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/MagicBullet/21108erosionprofile.png'
 }
 
 export const MagicBulletOutis: Ego = {
@@ -95,5 +95,5 @@ export const MagicBulletOutis: Ego = {
             { sin: SinEnum.Lust, amount: 2 },
             { sin: SinEnum.Pride, amount: 4 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Outis/EGO/MagicBullet/21108cg.png"
+    FullImageDir: './assets/Sinners/Outis/EGO/MagicBullet/21108cg.png'
 }

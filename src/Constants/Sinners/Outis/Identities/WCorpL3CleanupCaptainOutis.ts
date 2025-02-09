@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WCorpL3CleanupCaptainOutisDefense: Skill = {
     Name: "Deploy Plasma",
@@ -28,7 +28,7 @@ const WCorpL3CleanupCaptainOutisDefense: Skill = {
             "[On Use] Gain +2 [Charge] Count (3 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/WCorpL3CleanupCaptain/DeployPlasmaUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/WCorpL3CleanupCaptain/DeployPlasmaUT4.png'
 }
 
 const WCorpL3CleanupCaptainOutisSkill1: Skill = {
@@ -48,7 +48,7 @@ const WCorpL3CleanupCaptainOutisSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +2 [Charge] Count", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/WCorpL3CleanupCaptain/Ripple.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/WCorpL3CleanupCaptain/Ripple.png'
 }
 
 const WCorpL3CleanupCaptainOutisSkill2: Skill = {
@@ -72,7 +72,7 @@ const WCorpL3CleanupCaptainOutisSkill2: Skill = {
             "[On Hit] If this Skill consumed [Charge] Count on use, inflict 2 [Bind] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/WCorpL3CleanupCaptain/ChargedLeap.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/WCorpL3CleanupCaptain/ChargedLeap.png'
 }
 
 const WCorpL3CleanupCaptainOutisSkill3: Skill = {
@@ -97,7 +97,7 @@ const WCorpL3CleanupCaptainOutisSkill3: Skill = {
             "[On Hit] Gain (5 - [Charge]) [Charge] Count (Min 0)", 4)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/WCorpL3CleanupCaptain/RipDimension.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/WCorpL3CleanupCaptain/RipDimension.png'
 }
 
 export const WCorpL3CleanupCaptainOutis: Identity = {
@@ -134,6 +134,6 @@ export const WCorpL3CleanupCaptainOutis: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Outis/Identities/WCorpL3CleanupCaptain/11110gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Outis/Identities/WCorpL3CleanupCaptain/11110gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Outis/Identities/WCorpL3CleanupCaptain/11110gacksung.png',
+    PortraitImageDir: './assets/Sinners/Outis/Identities/WCorpL3CleanupCaptain/11110gacksunginfo.png'
 }

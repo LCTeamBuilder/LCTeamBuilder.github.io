@@ -1,7 +1,7 @@
-import { SinnerEnum } from "../Enums/SinnerEnum";
-import { UpdateSinnerIdentityCard } from "../Handlers/UIHandler";
-import { Ego } from "./Ego";
-import { Identity } from "./Identity";
+import { SinnerEnum } from '../Enums/SinnerEnum';
+import { UpdateSinnerIdentityCard } from '../Handlers/UIHandler';
+import { Ego } from './Ego';
+import { Identity } from './Identity';
 
 export class Sinner {
     private _equipedIdentity: Identity;

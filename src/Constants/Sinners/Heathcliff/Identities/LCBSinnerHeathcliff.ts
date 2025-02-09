@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerHeathcliffDefense: Skill = {
     Name: "Counter",
@@ -26,7 +26,7 @@ const LCBSinnerHeathcliffDefense: Skill = {
     SkillDescription: [],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/LCBSinner/Counter.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/LCBSinner/Counter.png', 
 }
 
 const LCBSinnerHeathcliffSkill1: Skill = {
@@ -42,7 +42,7 @@ const LCBSinnerHeathcliffSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 3 [Tremor]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/LCBSinner/BatBash.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/LCBSinner/BatBash.png', 
 }
 
 const LCBSinnerHeathcliffSkill2: Skill = {
@@ -58,7 +58,7 @@ const LCBSinnerHeathcliffSkill2: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Use] Gain 1 [Attack Power Up] and [Damage Up] next turn"),            new SkillDescriptionPart("[Heads Hit] Inflict 2 [Tremor]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/LCBSinner/Smackdown.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/LCBSinner/Smackdown.png', 
 }
 
 const LCBSinnerHeathcliffSkill3: Skill = {
@@ -74,7 +74,7 @@ const LCBSinnerHeathcliffSkill3: Skill = {
     SkillDescription: [new SkillDescriptionPart("[Heads Hit] Next Coin has +2 Power", 1),            new SkillDescriptionPart("[On Hit] Trigger [Tremor Burst]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/LCBSinner/Upheaval.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/LCBSinner/Upheaval.png', 
 }
 
 export const LCBSinnerHeathcliff: Identity = {
@@ -110,6 +110,6 @@ export const LCBSinnerHeathcliff: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Heathcliff/Identities/LCBSinner/10701normal.png",
-    PortraitImageDir: "./assets/Sinners/Heathcliff/Identities/LCBSinner/10701normalinfo.png"
+    FullImageDir: './assets/Sinners/Heathcliff/Identities/LCBSinner/10701normal.png',
+    PortraitImageDir: './assets/Sinners/Heathcliff/Identities/LCBSinner/10701normalinfo.png'
 }

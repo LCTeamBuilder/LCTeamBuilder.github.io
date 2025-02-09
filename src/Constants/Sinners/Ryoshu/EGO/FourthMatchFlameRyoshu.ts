@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const FourthMatchFlameRyoshuAwakening: Skill = {
     Name: "4th Match Flame",
@@ -26,7 +26,7 @@ const FourthMatchFlameRyoshuAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 4 [Burn]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/4thMatchFlame/20402awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/4thMatchFlame/20402awakenprofile.png'
 }
 
 const FourthMatchFlameRyoshuCorrosion: Skill = {
@@ -49,7 +49,7 @@ const FourthMatchFlameRyoshuCorrosion: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 4 [Burn]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/4thMatchFlame/20402erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/4thMatchFlame/20402erosionprofile.png'
 }
 
 export const FourthMatchFlameRyoshu: Ego = {
@@ -72,5 +72,5 @@ export const FourthMatchFlameRyoshu: Ego = {
     Cost: [{ sin: SinEnum.Wrath, amount: 4 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ryoshu/EGO/4thMatchFlame/20402cg.png"
+    FullImageDir: './assets/Sinners/Ryoshu/EGO/4thMatchFlame/20402cg.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const CavernousWailingHongLuAwakening: Skill = {
     Name: "Cavernous Wailing",
@@ -27,7 +27,7 @@ const CavernousWailingHongLuAwakening: Skill = {
             "[On Hit] Trigger [Tremor Burst], then, reduce target's [Tremor] Count by 1", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/CavernousWailing/20606awakenprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/CavernousWailing/20606awakenprofile.png'
 }
 
 const CavernousWailingHongLuCorrosion: Skill = {
@@ -51,7 +51,7 @@ const CavernousWailingHongLuCorrosion: Skill = {
             "[On Hit] Trigger [Tremor Burst], then, reduce target's [Tremor] Count by 1", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/CavernousWailing/20606erosionprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/CavernousWailing/20606erosionprofile.png'
 }
 
 export const CavernousWailingHongLu: Ego = {
@@ -75,5 +75,5 @@ export const CavernousWailingHongLu: Ego = {
             { sin: SinEnum.Gloom, amount: 3 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/HongLu/EGO/CavernousWailing/20606cg.png"
+    FullImageDir: './assets/Sinners/HongLu/EGO/CavernousWailing/20606cg.png'
 }

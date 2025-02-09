@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LobotomyEgoSunshowerHeathcliffDefense: Skill = {
     Name: "Warning",
@@ -30,7 +30,7 @@ const LobotomyEgoSunshowerHeathcliffDefense: Skill = {
             "[On Hit] Inflict 5 [Rupture]", 2)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/LobotomyEGOSunshower/Warning.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/LobotomyEGOSunshower/Warning.png'
 }
 
 const LobotomyEgoSunshowerHeathcliffSkill1: Skill = {
@@ -50,7 +50,7 @@ const LobotomyEgoSunshowerHeathcliffSkill1: Skill = {
             "[Tails Hit] Inflict +2 [Sinking] Count", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/LobotomyEGOSunshower/UmbrellaThwack.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/LobotomyEGOSunshower/UmbrellaThwack.png'
 }
 
 const LobotomyEgoSunshowerHeathcliffSkill2: Skill = {
@@ -72,7 +72,7 @@ const LobotomyEgoSunshowerHeathcliffSkill2: Skill = {
             "[Tails Hit] Trigger [Tremor Burst]", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/LobotomyEGOSunshower/PuddleStomp.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/LobotomyEGOSunshower/PuddleStomp.png'
 }
 
 const LobotomyEgoSunshowerHeathcliffSkill3: Skill = {
@@ -92,7 +92,7 @@ const LobotomyEgoSunshowerHeathcliffSkill3: Skill = {
             "[Tails Hit] Inflict 1 [Fragile] next turn", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/LobotomyEGOSunshower/SpreadOut.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/LobotomyEGOSunshower/SpreadOut.png'
 }
 
 export const LobotomyEgoSunshowerHeathcliff: Identity = {
@@ -130,6 +130,6 @@ export const LobotomyEgoSunshowerHeathcliff: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Heathcliff/Identities/LobotomyEGOSunshower/10705gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Heathcliff/Identities/LobotomyEGOSunshower/10705gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Heathcliff/Identities/LobotomyEGOSunshower/10705gacksung.png',
+    PortraitImageDir: './assets/Sinners/Heathcliff/Identities/LobotomyEGOSunshower/10705gacksunginfo.png'
 }

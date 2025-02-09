@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const KCorpClass3ExcisionStaffHongLuDefense: Skill = {
     Name: "Ampule Injection",
@@ -28,7 +28,7 @@ const KCorpClass3ExcisionStaffHongLuDefense: Skill = {
             "[On Use] Gain +5 [Aggro] to this Skill Slot next turn")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/KCorpClass3ExcisionStaff/AmpuleInjectionUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/KCorpClass3ExcisionStaff/AmpuleInjectionUT4.png'
 }
 
 const KCorpClass3ExcisionStaffHongLuSkill1: Skill = {
@@ -46,7 +46,7 @@ const KCorpClass3ExcisionStaffHongLuSkill1: Skill = {
             "[On Use] Gain +5 [Aggro] to this Skill Slot next turn")],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/KCorpClass3ExcisionStaff/ImpedeTheIntruder.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/KCorpClass3ExcisionStaff/ImpedeTheIntruder.png'
 }
 
 const KCorpClass3ExcisionStaffHongLuSkill2: Skill = {
@@ -67,7 +67,7 @@ const KCorpClass3ExcisionStaffHongLuSkill2: Skill = {
             "[On Hit] If target has 10+ [Rupture] , heal by 50% of damage dealt", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/KCorpClass3ExcisionStaff/DecayBlade.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/KCorpClass3ExcisionStaff/DecayBlade.png'
 }
 
 const KCorpClass3ExcisionStaffHongLuSkill3: Skill = {
@@ -86,7 +86,7 @@ const KCorpClass3ExcisionStaffHongLuSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict [Rupture] Count by the amount of [K Corp Ampule], Deal +5% damage per [K Corp Ampule]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/KCorpClass3ExcisionStaff/ExciseTarget.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/KCorpClass3ExcisionStaff/ExciseTarget.png'
 }
 
 export const KCorpClass3ExcisionStaffHongLu: Identity = {
@@ -123,6 +123,6 @@ export const KCorpClass3ExcisionStaffHongLu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/HongLu/Identities/KCorpClass3ExcisionStaff/10605gacksung.png",
-    PortraitImageDir: "./assets/Sinners/HongLu/Identities/KCorpClass3ExcisionStaff/10605gacksunginfo.png"
+    FullImageDir: './assets/Sinners/HongLu/Identities/KCorpClass3ExcisionStaff/10605gacksung.png',
+    PortraitImageDir: './assets/Sinners/HongLu/Identities/KCorpClass3ExcisionStaff/10605gacksunginfo.png'
 }

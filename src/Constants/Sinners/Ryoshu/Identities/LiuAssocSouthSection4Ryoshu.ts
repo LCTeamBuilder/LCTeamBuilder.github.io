@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LiuAssocSouthSection4RyoshuDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const LiuAssocSouthSection4RyoshuDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LiuAssociationSouthSection4/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LiuAssociationSouthSection4/GuardUT4.png'
 }
 
 const LiuAssocSouthSection4RyoshuSkill1: Skill = {
@@ -48,7 +48,7 @@ const LiuAssocSouthSection4RyoshuSkill1: Skill = {
             "[On Hit] Inflict 1 [Burn]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LiuAssociationSouthSection4/AlloutWar.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LiuAssociationSouthSection4/AlloutWar.png'
 }
 
 const LiuAssocSouthSection4RyoshuSkill2: Skill = {
@@ -68,7 +68,7 @@ const LiuAssocSouthSection4RyoshuSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] If the target has 6+ [Burn], deal +50% damage", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LiuAssociationSouthSection4/FieryKnifehand.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LiuAssociationSouthSection4/FieryKnifehand.png'
 }
 
 const LiuAssocSouthSection4RyoshuSkill3: Skill = {
@@ -90,7 +90,7 @@ const LiuAssocSouthSection4RyoshuSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] If the target has 10+ [Burn], deal +40% damage", 4)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LiuAssociationSouthSection4/FlameCleave.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LiuAssociationSouthSection4/FlameCleave.png'
 }
 
 export const LiuAssocSouthSection4Ryoshu: Identity = {
@@ -128,6 +128,6 @@ export const LiuAssocSouthSection4Ryoshu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ryoshu/Identities/LiuAssociationSouthSection4/10407gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ryoshu/Identities/LiuAssociationSouthSection4/10407gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ryoshu/Identities/LiuAssociationSouthSection4/10407gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ryoshu/Identities/LiuAssociationSouthSection4/10407gacksunginfo.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BodysackHeathcliffAwakening: Skill = {
     Name: "Bodysack",
@@ -25,7 +25,7 @@ const BodysackHeathcliffAwakening: Skill = {
             "[On Kill] Gain 2 [Attack Power Up] next turn", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/Bodysack/20701awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/Bodysack/20701awakenprofile.png'
 }
 
 export const BodysackHeathcliff: Ego = {
@@ -48,5 +48,5 @@ export const BodysackHeathcliff: Ego = {
     Cost: [{ sin: SinEnum.Lust, amount: 2 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Heathcliff/EGO/Bodysack/20701cg.png"
+    FullImageDir: './assets/Sinners/Heathcliff/EGO/Bodysack/20701cg.png'
 }

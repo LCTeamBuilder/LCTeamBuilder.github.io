@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RedEyesOpenRyoshuAwakening: Skill = {
     Name: "Red Eyes (Open)",
@@ -25,7 +25,7 @@ const RedEyesOpenRyoshuAwakening: Skill = {
             "[On Hit] If this skill staggers or defeats a target, heal user and the ally with the least HP by 10% of Max HP", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/RedEyesOpen/20404awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/RedEyesOpen/20404awakenprofile.png'
 }
 
 const RedEyesOpenRyoshuCorrosion: Skill = {
@@ -46,7 +46,7 @@ const RedEyesOpenRyoshuCorrosion: Skill = {
             "[On Hit] If this skill staggers or defeats a target, heal user and the ally with the least HP by 10% of Max HP", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/RedEyesOpen/20404erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/RedEyesOpen/20404erosionprofile.png'
 }
 
 export const RedEyesOpenRyoshu: Ego = {
@@ -70,5 +70,5 @@ export const RedEyesOpenRyoshu: Ego = {
             { sin: SinEnum.Lust, amount: 2 },
             { sin: SinEnum.Envy, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ryoshu/EGO/RedEyesOpen/20404cg.png"
+    FullImageDir: './assets/Sinners/Ryoshu/EGO/RedEyesOpen/20404cg.png'
 }

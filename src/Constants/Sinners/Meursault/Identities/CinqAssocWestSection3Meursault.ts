@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const CinqAssocWestSection3MeursaultDefense: Skill = {
     Name: "Défensive",
@@ -27,7 +27,7 @@ const CinqAssocWestSection3MeursaultDefense: Skill = {
         [new SkillDescriptionPart("[On Use] If this unit's Speed is faster than the target's by 3 or more, Coin Power +2")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/CinqAssocWestSection3/Defensive.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/CinqAssocWestSection3/Defensive.png'
 }
 
 const CinqAssocWestSection3MeursaultSkill1: Skill = {
@@ -49,7 +49,7 @@ const CinqAssocWestSection3MeursaultSkill1: Skill = {
             "[On Hit] If this unit's Speed is faster than the target's, inflict [Rupture] equal to their Speed difference (max 3)", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/CinqAssocWestSection3/Allez.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/CinqAssocWestSection3/Allez.png'
 }
 
 const CinqAssocWestSection3MeursaultSkill2: Skill = {
@@ -73,7 +73,7 @@ const CinqAssocWestSection3MeursaultSkill2: Skill = {
             "[On Hit] At 7+ Speed, inflict +2 [Rupture] Count", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/CinqAssocWestSection3/Fente.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/CinqAssocWestSection3/Fente.png'
 }
 
 const CinqAssocWestSection3MeursaultSkill3: Skill = {
@@ -99,7 +99,7 @@ const CinqAssocWestSection3MeursaultSkill3: Skill = {
             "[After Attack] If this Skill defeated the target or destroyed a Part, Reuse this Skill against a random target (does not activate on Reuse)", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/CinqAssocWestSection3/Salut.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/CinqAssocWestSection3/Salut.png'
 }
 
 export const CinqAssocWestSection3Meursault: Identity = {
@@ -138,6 +138,6 @@ export const CinqAssocWestSection3Meursault: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Meursault/Identities/CinqAssocWestSection3/10511gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Meursault/Identities/CinqAssocWestSection3/10511gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Meursault/Identities/CinqAssocWestSection3/10511gacksung.png',
+    PortraitImageDir: './assets/Sinners/Meursault/Identities/CinqAssocWestSection3/10511gacksunginfo.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LiuAssocSouthSection4IshmaelDefense: Skill = {
     Name: "Counter",
@@ -27,7 +27,7 @@ const LiuAssocSouthSection4IshmaelDefense: Skill = {
         [new SkillDescriptionPart("[On Hit] Inflict +1 [Burn] Count", 1)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LiuAssociationSouthSection4/Counter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LiuAssociationSouthSection4/Counter.png'
 }
 
 const LiuAssocSouthSection4IshmaelSkill1: Skill = {
@@ -46,7 +46,7 @@ const LiuAssocSouthSection4IshmaelSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Burn]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LiuAssociationSouthSection4/RedKick.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LiuAssociationSouthSection4/RedKick.png'
 }
 
 const LiuAssocSouthSection4IshmaelSkill2: Skill = {
@@ -66,7 +66,7 @@ const LiuAssocSouthSection4IshmaelSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] If target has 6+ [Burn], inflict +2 [Burn] Count", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LiuAssociationSouthSection4/FrontalAssault.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LiuAssociationSouthSection4/FrontalAssault.png'
 }
 
 const LiuAssocSouthSection4IshmaelSkill3: Skill = {
@@ -87,7 +87,7 @@ const LiuAssocSouthSection4IshmaelSkill3: Skill = {
             new SkillDescriptionPart("[After Attack] If target is Staggered or defeated, gain 1 [Plus Coin Boost] next turn", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LiuAssociationSouthSection4/InnerGateElbowStrike.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LiuAssociationSouthSection4/InnerGateElbowStrike.png'
 }
 
 export const LiuAssocSouthSection4Ishmael: Identity = {
@@ -123,6 +123,6 @@ export const LiuAssocSouthSection4Ishmael: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ishmael/Identities/LiuAssociationSouthSection4/10806gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ishmael/Identities/LiuAssociationSouthSection4/10806gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ishmael/Identities/LiuAssociationSouthSection4/10806gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ishmael/Identities/LiuAssociationSouthSection4/10806gacksunginfo.png'
 }

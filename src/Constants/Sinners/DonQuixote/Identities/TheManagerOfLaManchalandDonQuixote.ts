@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TheManagerOfLaManchalandDonQuixoteDefense: Skill = {
     Name: "Laughters Will Subside",
@@ -31,7 +31,7 @@ const TheManagerOfLaManchalandDonQuixoteDefense: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Bleed] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: DefenseTypeEnum.UniqueCounter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/LaugthersWillSubside.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/LaugthersWillSubside.png'
 }
 
 const TheManagerOfLaManchalandDonQuixoteDefense2: Skill = {
@@ -51,7 +51,7 @@ const TheManagerOfLaManchalandDonQuixoteDefense2: Skill = {
             "[On Hit] Inflict +3 [Bleed] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: DefenseTypeEnum.UniqueCounter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/VariantSanchoHardbloodArts15BuildupToFinale.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/VariantSanchoHardbloodArts15BuildupToFinale.png'
 }
 
 const TheManagerOfLaManchalandDonQuixoteSkill11: Skill = {
@@ -73,7 +73,7 @@ const TheManagerOfLaManchalandDonQuixoteSkill11: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/EnoughIsEnough.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/EnoughIsEnough.png'
 }
 
 const TheManagerOfLaManchalandDonQuixoteSkill12: Skill = {
@@ -99,7 +99,7 @@ const TheManagerOfLaManchalandDonQuixoteSkill12: Skill = {
             "[On Hit] Activate [Bleed] on the target once (target loses 1 [Bleed] Count)", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/VariantSanchoHardbloodArts9Whip.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/VariantSanchoHardbloodArts9Whip.png'
 }
 
 const TheManagerOfLaManchalandDonQuixoteSkill21: Skill = {
@@ -123,7 +123,7 @@ const TheManagerOfLaManchalandDonQuixoteSkill21: Skill = {
             "Deal +15% more damage for every 100 [Bloodfeast Consumed] by self (max 75%)", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/LetAllBlossomFree.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/LetAllBlossomFree.png'
 }
 
 const TheManagerOfLaManchalandDonQuixoteSkill22: Skill = {
@@ -148,7 +148,7 @@ const TheManagerOfLaManchalandDonQuixoteSkill22: Skill = {
             "Deal +15% more damage for every 100 [Bloodfeast Consumed] (shared) (max 75%)", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/VariantSanchoHardbloodArts8SplitApart.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/VariantSanchoHardbloodArts8SplitApart.png'
 }
 
 const TheManagerOfLaManchalandDonQuixoteSkill31: Skill = {
@@ -173,7 +173,7 @@ const TheManagerOfLaManchalandDonQuixoteSkill31: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 [Bleed]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/IShallImpale.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/IShallImpale.png'
 }
 
 const TheManagerOfLaManchalandDonQuixoteSkill32: Skill = {
@@ -202,7 +202,7 @@ const TheManagerOfLaManchalandDonQuixoteSkill32: Skill = {
             "[After Attack] If the target is defeated, inflict 5 [Bleed] and +1 [Bleed] Count against all enemies", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/AscendantSanchoHardbloodArtsLaSangre.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheManagerOfLaManchaland/AscendantSanchoHardbloodArtsLaSangre.png'
 }
 
 export const TheManagerOfLaManchalandDonQuixote: Identity = {
@@ -271,6 +271,6 @@ export const TheManagerOfLaManchalandDonQuixote: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/DonQuixote/Identities/TheManagerOfLaManchaland/10310gacksung.png",
-    PortraitImageDir: "./assets/Sinners/DonQuixote/Identities/TheManagerOfLaManchaland/10310gacksunginfo.png"
+    FullImageDir: './assets/Sinners/DonQuixote/Identities/TheManagerOfLaManchaland/10310gacksung.png',
+    PortraitImageDir: './assets/Sinners/DonQuixote/Identities/TheManagerOfLaManchaland/10310gacksunginfo.png'
 }

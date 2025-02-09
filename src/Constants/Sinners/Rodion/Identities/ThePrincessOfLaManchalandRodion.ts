@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ThePrincessOfLaManchalandRodionDefense: Skill = {
     Name: "Don Quixote Hardblood Arts 15: Parasol",
@@ -33,7 +33,7 @@ const ThePrincessOfLaManchalandRodionDefense: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +1 [Bleed] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: DefenseTypeEnum.UniqueCounter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/DonQuixoteHardbloodArts15Parasol.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/DonQuixoteHardbloodArts15Parasol.png'
 }
 
 const ThePrincessOfLaManchalandRodionSkill1: Skill = {
@@ -56,7 +56,7 @@ const ThePrincessOfLaManchalandRodionSkill1: Skill = {
             "[On Hit] Inflict 1 [Rupture]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/Begone.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/Begone.png'
 }
 
 const ThePrincessOfLaManchalandRodionSkill2: Skill = {
@@ -81,7 +81,7 @@ const ThePrincessOfLaManchalandRodionSkill2: Skill = {
             "[On Hit] Inflict 1 [Bleed]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/InFinelyGroundMistfall.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/InFinelyGroundMistfall.png'
 }
 
 const ThePrincessOfLaManchalandRodionSkill3: Skill = {
@@ -107,7 +107,7 @@ const ThePrincessOfLaManchalandRodionSkill3: Skill = {
             "[On Hit] Inflict 1 [Bleed]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/TheFestivalWillEnd.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/TheFestivalWillEnd.png'
 }
 
 const ThePrincessOfLaManchalandRodionSkill4: Skill = {
@@ -134,7 +134,7 @@ const ThePrincessOfLaManchalandRodionSkill4: Skill = {
             "[On Hit] Inflict 2 [Bleed]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/AscendantDonQuixoteHardbloodArtsTheFinale.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/ThePrincessOfLaManchaland/AscendantDonQuixoteHardbloodArtsTheFinale.png'
 }
 
 export const ThePrincessOfLaManchalandRodion: Identity = {
@@ -180,6 +180,6 @@ export const ThePrincessOfLaManchalandRodion: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Rodion/Identities/ThePrincessOfLaManchaland/10911gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Rodion/Identities/ThePrincessOfLaManchaland/10911gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Rodion/Identities/ThePrincessOfLaManchaland/10911gacksung.png',
+    PortraitImageDir: './assets/Sinners/Rodion/Identities/ThePrincessOfLaManchaland/10911gacksunginfo.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const MulticrackOfficeFixerHeathcliffDefense: Skill = {
     Name: "Charge",
@@ -27,7 +27,7 @@ const MulticrackOfficeFixerHeathcliffDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain +3 [Charge] Count (2 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/MultiCrackOfficeFixer/ChargeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/MultiCrackOfficeFixer/ChargeUT4.png'
 }
 
 const MulticrackOfficeFixerHeathcliffSkill1: Skill = {
@@ -46,7 +46,7 @@ const MulticrackOfficeFixerHeathcliffSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +2 [Charge] Count", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/MultiCrackOfficeFixer/40S2Activation.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/MultiCrackOfficeFixer/40S2Activation.png'
 }
 
 const MulticrackOfficeFixerHeathcliffSkill2: Skill = {
@@ -68,7 +68,7 @@ const MulticrackOfficeFixerHeathcliffSkill2: Skill = {
             "[On Hit] Inflict [Photoelectricity] equal to [Charge] (max 3)", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/MultiCrackOfficeFixer/PhotoelectricMark.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/MultiCrackOfficeFixer/PhotoelectricMark.png'
 }
 
 const MulticrackOfficeFixerHeathcliffSkill3: Skill = {
@@ -89,7 +89,7 @@ const MulticrackOfficeFixerHeathcliffSkill3: Skill = {
             "[On Hit] Inflict 1 [Blunt Fragility] for every 2 [Charge] (max 2)", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/MultiCrackOfficeFixer/PhotoelectricHarpoon.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/MultiCrackOfficeFixer/PhotoelectricHarpoon.png'
 }
 
 export const MulticrackOfficeFixerHeathcliff: Identity = {
@@ -128,6 +128,6 @@ export const MulticrackOfficeFixerHeathcliff: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Heathcliff/Identities/MultiCrackOfficeFixer/10709gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Heathcliff/Identities/MultiCrackOfficeFixer/10709gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Heathcliff/Identities/MultiCrackOfficeFixer/10709gacksung.png',
+    PortraitImageDir: './assets/Sinners/Heathcliff/Identities/MultiCrackOfficeFixer/10709gacksunginfo.png'
 }

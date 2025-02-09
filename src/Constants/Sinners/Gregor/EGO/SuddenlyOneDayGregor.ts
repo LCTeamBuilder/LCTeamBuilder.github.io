@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SuddenlyOneDayGregorAwakening: Skill = {
     Name: "Suddenly, One Day Gregor",
@@ -22,7 +22,7 @@ const SuddenlyOneDayGregorAwakening: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 10 of a random status, chosen from [Burn], [Bleed], [Tremor], [Rupture], and [Sinking]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/SuddenlyOneDay/21201awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/SuddenlyOneDay/21201awakenprofile.png'
 }
 
 export const SuddenlyOneDayGregor: Ego = {
@@ -45,5 +45,5 @@ export const SuddenlyOneDayGregor: Ego = {
     Cost: [{ sin: SinEnum.Lust, amount: 3},
             { sin: SinEnum.Gloom, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Gregor/EGO/SuddenlyOneDay/21201cg.png"
+    FullImageDir: './assets/Sinners/Gregor/EGO/SuddenlyOneDay/21201cg.png'
 }

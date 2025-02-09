@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const YaSunyataTadRupamOutisAwakening: Skill = {
     Name: "Ya Śūnyatā Tad Rūpam",
@@ -25,7 +25,7 @@ const YaSunyataTadRupamOutisAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Lust Fragility]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/YaSunyataTadRupam/21103awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/YaSunyataTadRupam/21103awakenprofile.png'
 }
 
 const YaSunyataTadRupamOutisCorrosion: Skill = {
@@ -47,7 +47,7 @@ const YaSunyataTadRupamOutisCorrosion: Skill = {
             "[Tails Hit] Gain 2 [Fragile]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/YaSunyataTadRupam/21103awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/YaSunyataTadRupam/21103awakenprofile.png'
 }
 
 export const YaSunyataTadRupamOutis: Ego = {
@@ -72,5 +72,5 @@ export const YaSunyataTadRupamOutis: Ego = {
             { sin: SinEnum.Sloth, amount: 2 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Outis/EGO/YaSunyataTadRupam/21103cg.png"
+    FullImageDir: './assets/Sinners/Outis/EGO/YaSunyataTadRupam/21103cg.png'
 }

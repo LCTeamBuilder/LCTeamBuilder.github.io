@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RegretMeursaultAwakening: Skill = {
     Name: "Regret",
@@ -25,7 +25,7 @@ const RegretMeursaultAwakening: Skill = {
             "[On Hit] Trigger [Tremor Burst] If the target does not have a Stagger Threshold upon [Tremor Burst], Deal Wrath Damage by (12 + 3x(Wrath A-Reson.))% of the final Stagger Threshold raised.", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/Regret/20505awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/Regret/20505awakenprofile.png'
 }
 
 const RegretMeursaultCorrosion: Skill = {
@@ -50,7 +50,7 @@ const RegretMeursaultCorrosion: Skill = {
             "[After Attack] Gain 3 [Bind] and 1 [Blunt Power Up] next turn.")],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/Regret/20505erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/Regret/20505erosionprofile.png'
 }
 
 export const RegretMeursault: Ego = {
@@ -74,5 +74,5 @@ export const RegretMeursault: Ego = {
     Cost: [{ sin: SinEnum.Wrath, amount: 3 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Meursault/EGO/Regret/20505cg.png"
+    FullImageDir: './assets/Sinners/Meursault/EGO/Regret/20505cg.png'
 }

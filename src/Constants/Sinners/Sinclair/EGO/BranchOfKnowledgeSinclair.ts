@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BranchOfKnowledgeSinclairAwakening: Skill = {
     Name: "Branch of Knowledge",
@@ -25,7 +25,7 @@ const BranchOfKnowledgeSinclairAwakening: Skill = {
         "[Tails Hit] Gain 10 SP. Gain 1 [Protection] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/BranchOfKnowledge/21001awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/BranchOfKnowledge/21001awakenprofile.png'
 }
 
 export const BranchOfKnowledgeSinclair: Ego = {
@@ -48,5 +48,5 @@ export const BranchOfKnowledgeSinclair: Ego = {
     Cost: [{ sin: SinEnum.Wrath, amount: 1 },
             { sin: SinEnum.Gluttony, amount: 3}],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Sinclair/EGO/BranchOfKnowledge/21001cg.png"
+    FullImageDir: './assets/Sinners/Sinclair/EGO/BranchOfKnowledge/21001cg.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LifetimeStewSinclairAwakening: Skill = {
     Name: "Lifetime Stew",
@@ -27,7 +27,7 @@ const LifetimeStewSinclairAwakening: Skill = {
             "[Tails Hit] Inflict 7 [Burn], if target is an ally, give 2 [Haste] and 1 [E.G.O Resourse Amp] next turn", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/LifetimeStew/21003awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/LifetimeStew/21003awakenprofile.png'
 }
 
 const LifetimeStewSinclairCorrosion: Skill = {
@@ -47,7 +47,7 @@ const LifetimeStewSinclairCorrosion: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Burn] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/LifetimeStew/21003erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/LifetimeStew/21003erosionprofile.png'
 }
 
 export const LifetimeStewSinclair: Ego = {
@@ -71,5 +71,5 @@ export const LifetimeStewSinclair: Ego = {
             { sin: SinEnum.Lust, amount: 2 },
             { sin: SinEnum.Gluttony, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Sinclair/EGO/LifetimeStew/21003cg.png"
+    FullImageDir: './assets/Sinners/Sinclair/EGO/LifetimeStew/21003cg.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const PursuanceMeursaultAwakening: Skill = {
     Name: "Pursuance",
@@ -24,7 +24,7 @@ const PursuanceMeursaultAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] Trigger [Tremor Burst]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/Pursuance/20503awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/Pursuance/20503awakenprofile.png'
 }
 
 const PursuanceMeursaultCorrosion: Skill = {
@@ -44,7 +44,7 @@ const PursuanceMeursaultCorrosion: Skill = {
         new SkillDescriptionPart("[On Hit] Trigger [Tremor Burst]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/Pursuance/20503awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/Pursuance/20503awakenprofile.png'
 }
 
 export const PursuanceMeursault: Ego = {
@@ -68,5 +68,5 @@ export const PursuanceMeursault: Ego = {
             { sin: SinEnum.Gloom, amount: 1 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Meursault/EGO/Pursuance/20503cg.png"
+    FullImageDir: './assets/Sinners/Meursault/EGO/Pursuance/20503cg.png'
 }

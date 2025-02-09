@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const YaSunyataTadRupamHeathcliffAwakening: Skill = {
     Name: "Ya Śūnyatā Tad Rūpam",
@@ -25,7 +25,7 @@ const YaSunyataTadRupamHeathcliffAwakening: Skill = {
             "[After Attack] Heal 25 SP for 4 other allies with the least SP", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/YaSunyataTadRupam/20704awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/YaSunyataTadRupam/20704awakenprofile.png'
 }
 
 const YaSunyataTadRupamHeathcliffCorrosion: Skill = {
@@ -49,7 +49,7 @@ const YaSunyataTadRupamHeathcliffCorrosion: Skill = {
             "[Tails Hit] Inflict 1 [Fragile]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/YaSunyataTadRupam/20704erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/YaSunyataTadRupam/20704erosionprofile.png'
 }
 
 export const YaSunyataTadRupamHeathcliff: Ego = {
@@ -76,5 +76,5 @@ export const YaSunyataTadRupamHeathcliff: Ego = {
             { sin: SinEnum.Sloth, amount: 2 },
             { sin: SinEnum.Gloom, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Heathcliff/EGO/YaSunyataTadRupam/20704cg.png"
+    FullImageDir: './assets/Sinners/Heathcliff/EGO/YaSunyataTadRupam/20704cg.png'
 }

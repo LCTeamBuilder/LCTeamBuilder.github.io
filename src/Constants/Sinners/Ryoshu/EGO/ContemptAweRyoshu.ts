@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ContemptAweRyoshuAwakening: Skill = {
     Name: "Contempt, Awe",
@@ -27,7 +27,7 @@ const ContemptAweRyoshuAwakening: Skill = {
         new SkillDescriptionPart("[After Attack] Evenly inflict 15 [Bleed] between all targets", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/ContemptAwe/20407awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/ContemptAwe/20407awakenprofile.png'
 }
 
 const ContemptAweRyoshuCorrosion: Skill = {
@@ -50,7 +50,7 @@ const ContemptAweRyoshuCorrosion: Skill = {
             "[On Hit] Inflict +5 [Bleed] Count", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/ContemptAwe/20407erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/ContemptAwe/20407erosionprofile.png'
 }
 
 export const ContemptAweRyoshu: Ego = {
@@ -75,5 +75,5 @@ export const ContemptAweRyoshu: Ego = {
             { sin: SinEnum.Pride, amount: 4 },
             { sin: SinEnum.Envy, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ryoshu/EGO/ContemptAwe/20407cg.png"
+    FullImageDir: './assets/Sinners/Ryoshu/EGO/ContemptAwe/20407cg.png'
 }

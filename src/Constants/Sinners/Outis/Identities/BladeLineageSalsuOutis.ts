@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BladeLineageSalsuOutisDefense: Skill = {
     Name: "Evade",
@@ -27,7 +27,7 @@ const BladeLineageSalsuOutisDefense: Skill = {
         [new SkillDescriptionPart("At 6+ [Poise], Coin Power +3")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/BladeLineageCutthroat/Evade.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/BladeLineageCutthroat/Evade.png'
 }
 
 const BladeLineageSalsuOutisSkill1: Skill = {
@@ -45,7 +45,7 @@ const BladeLineageSalsuOutisSkill1: Skill = {
             new SkillDescriptionPart("[On Hit] Gain 4 [Poise]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/BladeLineageCutthroat/DrawOfTheSword.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/BladeLineageCutthroat/DrawOfTheSword.png'
 }
 
 const BladeLineageSalsuOutisSkill2: Skill = {
@@ -63,7 +63,7 @@ const BladeLineageSalsuOutisSkill2: Skill = {
         new SkillDescriptionPart("[Heads Hit] Gain 2 [Slash DMG Up] next turn", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/BladeLineageCutthroat/Acupuncture.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/BladeLineageCutthroat/Acupuncture.png'
 }
 
 const BladeLineageSalsuOutisSkill3: Skill = {
@@ -81,7 +81,7 @@ const BladeLineageSalsuOutisSkill3: Skill = {
         new SkillDescriptionPart("[On Crit] Raise first Stagger Threshold by 20% of damage dealt", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/BladeLineageCutthroat/DecisiveDive.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/BladeLineageCutthroat/DecisiveDive.png'
 }
 
 export const BladeLineageSalsuOutis: Identity = {
@@ -117,6 +117,6 @@ export const BladeLineageSalsuOutis: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Outis/Identities/BladeLineageCutthroat/11102gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Outis/Identities/BladeLineageCutthroat/11102gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Outis/Identities/BladeLineageCutthroat/11102gacksung.png',
+    PortraitImageDir: './assets/Sinners/Outis/Identities/BladeLineageCutthroat/11102gacksunginfo.png'
 }

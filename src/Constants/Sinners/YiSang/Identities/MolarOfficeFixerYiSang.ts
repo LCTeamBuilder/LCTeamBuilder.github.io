@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const MolarOfficeFixerYiSangDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const MolarOfficeFixerYiSangDefense: Skill = {
         [new SkillDescriptionPart("[On Use] [Discard] 1 Skill of lowest rank in all of this unit's Skill Slots")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/MolarOfficeFixer/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/MolarOfficeFixer/GuardUT4.png'
 }
 
 const MolarOfficeFixerYiSangSkill1: Skill = {
@@ -47,7 +47,7 @@ const MolarOfficeFixerYiSangSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Tremor] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/MolarOfficeFixer/StayCalm.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/MolarOfficeFixer/StayCalm.png'
 }
 
 const MolarOfficeFixerYiSangSkill2: Skill = {
@@ -67,7 +67,7 @@ const MolarOfficeFixerYiSangSkill2: Skill = {
             "[On Hit] At 5+ [Tremor] Count, trigger [Tremor Burst]. Reduce target's [Tremor] Count by 2", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/MolarOfficeFixer/Gamble.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/MolarOfficeFixer/Gamble.png'
 }
 
 const MolarOfficeFixerYiSangSkill3: Skill = {
@@ -89,7 +89,7 @@ const MolarOfficeFixerYiSangSkill3: Skill = {
             "If the Skill spent [Tremor] Count, trigger [Tremor Burst]", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/MolarOfficeFixer/GrindingTheMolars.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/MolarOfficeFixer/GrindingTheMolars.png'
 }
 
 export const MolarOfficeFixerYiSang: Identity = {
@@ -125,6 +125,6 @@ export const MolarOfficeFixerYiSang: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/YiSang/Identities/MolarOfficeFixer/10105gacksung.png",
-    PortraitImageDir: "./assets/Sinners/YiSang/Identities/MolarOfficeFixer/10105gacksunginfo.png"
+    FullImageDir: './assets/Sinners/YiSang/Identities/MolarOfficeFixer/10105gacksung.png',
+    PortraitImageDir: './assets/Sinners/YiSang/Identities/MolarOfficeFixer/10105gacksunginfo.png'
 }

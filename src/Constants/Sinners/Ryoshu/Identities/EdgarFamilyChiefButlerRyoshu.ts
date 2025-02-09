@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const EdgarFamilyChiefButlerRyoshuDefense: Skill = {
     Name: "Mediocre",
@@ -28,7 +28,7 @@ const EdgarFamilyChiefButlerRyoshuDefense: Skill = {
             "[On Evade] Gain +1 [Poise] Count (5 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/EdgarFamilyChiefButler/MediocreUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/EdgarFamilyChiefButler/MediocreUT4.png'
 }
 
 const EdgarFamilyChiefButlerRyoshuSkill1: Skill = {
@@ -48,7 +48,7 @@ const EdgarFamilyChiefButlerRyoshuSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [B.M.]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/EdgarFamilyChiefButler/ReceivingArts1TheHunt.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/EdgarFamilyChiefButler/ReceivingArts1TheHunt.png'
 }
 
 const EdgarFamilyChiefButlerRyoshuSkill2: Skill = {
@@ -69,7 +69,7 @@ const EdgarFamilyChiefButlerRyoshuSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [B.M.]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/EdgarFamilyChiefButler/ReceivingArts7Capture.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/EdgarFamilyChiefButler/ReceivingArts7Capture.png'
 }
 
 const EdgarFamilyChiefButlerRyoshuSkill3: Skill = {
@@ -95,7 +95,7 @@ const EdgarFamilyChiefButlerRyoshuSkill3: Skill = {
             "[On Kill] (Does not activate on Reuse. Does not activate when there are no remaining targets with [B.M.])")],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/EdgarFamilyChiefButler/ReceivingArts2SYNC.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/EdgarFamilyChiefButler/ReceivingArts2SYNC.png'
 }
 
 export const EdgarFamilyChiefButlerRyoshu: Identity = {
@@ -132,6 +132,6 @@ export const EdgarFamilyChiefButlerRyoshu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ryoshu/Identities/EdgarFamilyChiefButler/10408gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ryoshu/Identities/EdgarFamilyChiefButler/10408gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ryoshu/Identities/EdgarFamilyChiefButler/10408gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ryoshu/Identities/EdgarFamilyChiefButler/10408gacksunginfo.png'
 }

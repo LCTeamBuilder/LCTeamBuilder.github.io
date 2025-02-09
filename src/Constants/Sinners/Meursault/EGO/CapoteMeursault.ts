@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const CapoteMeursaultAwakening: Skill = {
     Name: "Capote",
@@ -27,7 +27,7 @@ const CapoteMeursaultAwakening: Skill = {
             "[On Hit] Trigger [Tremor Burst], then reduce [Tremor] Count by 2, If the [Tremor Burst] Staggered the target, inflict +3 [Burn] Count on 5 random enemies", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/Capote/20504awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/Capote/20504awakenprofile.png'
 }
 
 const CapoteMeursaultCorrosion: Skill = {
@@ -50,7 +50,7 @@ const CapoteMeursaultCorrosion: Skill = {
             "[On Hit] Trigger [Tremor Burst], then reduce [Tremor] Count by 2, If the [Tremor Burst] Staggered the target, inflict +4 [Burn] Count on 5 random units", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/Capote/20504erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/Capote/20504erosionprofile.png'
 }
 
 export const CapoteMeursault: Ego = {
@@ -74,5 +74,5 @@ export const CapoteMeursault: Ego = {
             { sin: SinEnum.Lust, amount: 1 },
             { sin: SinEnum.Sloth, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Meursault/EGO/Capote/20504cg.png"
+    FullImageDir: './assets/Sinners/Meursault/EGO/Capote/20504cg.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const FellBulletHeathcliffAwakening: Skill = {
     Name: "Fell Bullet",
@@ -31,7 +31,7 @@ const FellBulletHeathcliffAwakening: Skill = {
             "[On Crit Kill] If this unit has the Ammo effect, gain 1 Ammo (3 times per Encounter)", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/FellBullet/20707awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/FellBullet/20707awakenprofile.png'
 }
 
 const FellBulletHeathcliffCorrosion: Skill = {
@@ -58,7 +58,7 @@ const FellBulletHeathcliffCorrosion: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 [Bleed] and 3 [Sinking]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/FellBullet/20707erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/FellBullet/20707erosionprofile.png'
 }
 
 export const FellBulletHeathcliff: Ego = {
@@ -82,5 +82,5 @@ export const FellBulletHeathcliff: Ego = {
             { sin: SinEnum.Pride, amount: 3 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Heathcliff/EGO/FellBullet/20707cg.png"
+    FullImageDir: './assets/Sinners/Heathcliff/EGO/FellBullet/20707cg.png'
 }

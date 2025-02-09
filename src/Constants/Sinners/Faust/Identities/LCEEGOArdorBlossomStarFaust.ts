@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCEEGOArdorBlossomStarFaustDefense: Skill = {
     Name: "Resonating by raising A.B.S. Attunement.",
@@ -29,7 +29,7 @@ const LCEEGOArdorBlossomStarFaustDefense: Skill = {
             "[On Evade] Lose 5 [Burn] (once per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LCEEGOArdorBlossomStar/ResonatingByRaisingABSAttunementUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LCEEGOArdorBlossomStar/ResonatingByRaisingABSAttunementUT4.png'
 }
 
 const LCEEGOArdorBlossomStarFaustSkill1: Skill = {
@@ -53,7 +53,7 @@ const LCEEGOArdorBlossomStarFaustSkill1: Skill = {
             "[On Hit] Gain 2 [Burn]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LCEEGOArdorBlossomStar/Ignition.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LCEEGOArdorBlossomStar/Ignition.png'
 }
 
 const LCEEGOArdorBlossomStarFaustSkill2: Skill = {
@@ -77,7 +77,7 @@ const LCEEGOArdorBlossomStarFaustSkill2: Skill = {
             "[On Hit] If the target has 15+ [Burn], inflict +2 [Burn] Count on target", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LCEEGOArdorBlossomStar/EGOABSActivation.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LCEEGOArdorBlossomStar/EGOABSActivation.png'
 }
 
 const LCEEGOArdorBlossomStarFaustSkill31: Skill = {
@@ -100,7 +100,7 @@ const LCEEGOArdorBlossomStarFaustSkill31: Skill = {
             new SkillDescriptionPart("[On Hit] Inflict 3 [Burn]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LCEEGOArdorBlossomStar/DrawnByFlame.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LCEEGOArdorBlossomStar/DrawnByFlame.png'
 }
 
 const LCEEGOArdorBlossomStarFaustSkill32: Skill = {
@@ -128,7 +128,7 @@ const LCEEGOArdorBlossomStarFaustSkill32: Skill = {
             "[On Hit] Deal +10% more damage for every 20% missing HP on self (max 30%)", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LCEEGOArdorBlossomStar/ABSMaxAttunementDegradedCorrosion.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LCEEGOArdorBlossomStar/ABSMaxAttunementDegradedCorrosion.png'
 }
 
 export const LCEEGOArdorBlossomStarFaust: Identity = {
@@ -181,6 +181,6 @@ export const LCEEGOArdorBlossomStarFaust: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Faust/Identities/LCEEGOArdorBlossomStar/10211gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Faust/Identities/LCEEGOArdorBlossomStar/10211gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Faust/Identities/LCEEGOArdorBlossomStar/10211gacksung.png',
+    PortraitImageDir: './assets/Sinners/Faust/Identities/LCEEGOArdorBlossomStar/10211gacksunginfo.png'
 }

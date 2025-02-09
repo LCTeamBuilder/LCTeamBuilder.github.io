@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const FluidSacDonQuixoteAwakening: Skill = {
     Name: "Fluid Sac",
@@ -26,7 +26,7 @@ const FluidSacDonQuixoteAwakening: Skill = {
             "[On Hit] Inflict 2 [Sinking]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/FluidSac/20302awakenprofile.png"
+    SkillImageDir: './assets/Sinners/DonQuixote/EGO/FluidSac/20302awakenprofile.png'
 }
 
 const FluidSacDonQuixoteCorrosion: Skill = {
@@ -47,7 +47,7 @@ const FluidSacDonQuixoteCorrosion: Skill = {
         "If target is NOT Staggered, in Low Morale, nor in Panic, deal 50% of damage dealt as bonus damage", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/FluidSac/20302erosionprofile.png"
+    SkillImageDir: './assets/Sinners/DonQuixote/EGO/FluidSac/20302erosionprofile.png'
 }
 
 export const FluidSacDonQuixote: Ego = {
@@ -73,5 +73,5 @@ export const FluidSacDonQuixote: Ego = {
             { sin: SinEnum.Gloom, amount: 4 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/DonQuixote/EGO/FluidSac/20302cg.png"
+    FullImageDir: './assets/Sinners/DonQuixote/EGO/FluidSac/20302cg.png'
 }

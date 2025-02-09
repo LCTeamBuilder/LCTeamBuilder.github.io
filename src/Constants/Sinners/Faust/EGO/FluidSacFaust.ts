@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const FluidSacFaustAwakening: Skill = {
     Name: "Fluid Sac",
@@ -25,7 +25,7 @@ const FluidSacFaustAwakening: Skill = {
             "[Heads Attack End] Heal 10 SP for all allies", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/FluidSac/20202awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/FluidSac/20202awakenprofile.png'
 }
 
 const FluidSacFaustCorrosion: Skill = {
@@ -46,7 +46,7 @@ const FluidSacFaustCorrosion: Skill = {
             "[On Hit] Inflict 2 [Attack Power Down] next turn", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/FluidSac/20202erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/FluidSac/20202erosionprofile.png'
 }
 
 export const FluidSacFaust: Ego = {
@@ -70,5 +70,5 @@ export const FluidSacFaust: Ego = {
             { sin: SinEnum.Gloom, amount: 4 },
             { sin: SinEnum.Envy, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Faust/EGO/FluidSac/20202cg.png"
+    FullImageDir: './assets/Sinners/Faust/EGO/FluidSac/20202cg.png'
 }

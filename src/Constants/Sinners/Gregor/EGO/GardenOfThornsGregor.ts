@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const GardenOfThornsGregorAwakening: Skill = {
     Name: "Garden of Thorns",
@@ -29,7 +29,7 @@ const GardenOfThornsGregorAwakening: Skill = {
             "- Heal (highest Count of Reson. - 2) more allies (Max 3)", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/GardenOfThorns/21205awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/GardenOfThorns/21205awakenprofile.png'
 }
 
 const GardenOfThornsGregorCorrosion: Skill = {
@@ -53,7 +53,7 @@ const GardenOfThornsGregorCorrosion: Skill = {
             "- At 6+ Corresponding A-Reson, apply the above effects next turn as well", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/GardenOfThorns/21205awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/GardenOfThorns/21205awakenprofile.png'
 }
 
 export const GardenOfThornsGregor: Ego = {
@@ -82,5 +82,5 @@ export const GardenOfThornsGregor: Ego = {
             { sin: SinEnum.Pride, amount: 2 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Gregor/EGO/GardenOfThorns/21205cg.png"
+    FullImageDir: './assets/Sinners/Gregor/EGO/GardenOfThorns/21205cg.png'
 }

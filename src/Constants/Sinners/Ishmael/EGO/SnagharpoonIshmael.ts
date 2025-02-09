@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SnagharpoonIshmaelAwakening: Skill = {
     Name: "Snagharpoon",
@@ -26,7 +26,7 @@ const SnagharpoonIshmaelAwakening: Skill = {
             "[On Hit] Trigger [Tremor Burst]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/Snagharpoon/20801awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/Snagharpoon/20801awakenprofile.png'
 }
 
 export const SnagharpoonIshmael: Ego = {
@@ -49,5 +49,5 @@ export const SnagharpoonIshmael: Ego = {
     Cost: [{ sin: SinEnum.Wrath, amount: 2 },
             { sin: SinEnum.Gloom, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ishmael/EGO/Snagharpoon/20801cg.png"
+    FullImageDir: './assets/Sinners/Ishmael/EGO/Snagharpoon/20801cg.png'
 }

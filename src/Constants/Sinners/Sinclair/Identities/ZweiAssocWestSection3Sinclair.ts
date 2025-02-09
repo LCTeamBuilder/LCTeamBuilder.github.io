@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ZweiAssocWestSection3SinclairDefense: Skill = {
     Name: "Zwei Knight's Greatsword Form - Guard",
@@ -31,7 +31,7 @@ const ZweiAssocWestSection3SinclairDefense: Skill = {
         new SkillDescriptionPart("[Unbreakable Coin]", 1)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/ZweiAssocWestSection3/ZweiKnightsGreatswordFormGuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/ZweiAssocWestSection3/ZweiKnightsGreatswordFormGuardUT4.png'
 }
 
 const ZweiAssocWestSection3SinclairSkill1: Skill = {
@@ -53,7 +53,7 @@ const ZweiAssocWestSection3SinclairSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 2 [Defense Level Up] next turn", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/ZweiAssocWestSection3/Suppressing.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/ZweiAssocWestSection3/Suppressing.png'
 }
 
 const ZweiAssocWestSection3SinclairSkill2: Skill = {
@@ -75,7 +75,7 @@ const ZweiAssocWestSection3SinclairSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] On 2 other allies with [Defense Level Up], apply (([Defense Level Up] on the ally)/2) [Offense Level Up] next turn (once per turn, max 3)", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/ZweiAssocWestSection3/CombatPreparation.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/ZweiAssocWestSection3/CombatPreparation.png'
 }
 
 const ZweiAssocWestSection3SinclairSkill3: Skill = {
@@ -96,7 +96,7 @@ const ZweiAssocWestSection3SinclairSkill3: Skill = {
             "[On Hit] Trigger [Tremor Burst], then, reduce target's [Tremor] Count by 1", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/ZweiAssocWestSection3/Fence.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/ZweiAssocWestSection3/Fence.png'
 }
 
 export const ZweiAssocWestSection3Sinclair: Identity = {
@@ -132,6 +132,6 @@ export const ZweiAssocWestSection3Sinclair: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Sinclair/Identities/ZweiAssocWestSection3/11010gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Sinclair/Identities/ZweiAssocWestSection3/11010gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Sinclair/Identities/ZweiAssocWestSection3/11010gacksung.png',
+    PortraitImageDir: './assets/Sinners/Sinclair/Identities/ZweiAssocWestSection3/11010gacksunginfo.png'
 }

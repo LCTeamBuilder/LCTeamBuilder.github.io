@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const DieciAssocSouthSection4DirectorMeursaultDefense: Skill = {
     Name: "Fixated Study",
@@ -28,7 +28,7 @@ const DieciAssocSouthSection4DirectorMeursaultDefense: Skill = {
             "[On Use] Gain +6 [Aggro] to this Skill Slot next turn")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/DieciAssocSouthSection4Director/FixatedStudyUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/DieciAssocSouthSection4Director/FixatedStudyUT4.png'
 }
 
 const DieciAssocSouthSection4DirectorMeursaultSkill1: Skill = {
@@ -49,7 +49,7 @@ const DieciAssocSouthSection4DirectorMeursaultSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Sinking] Count", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/DieciAssocSouthSection4Director/StudiousDedication.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/DieciAssocSouthSection4Director/StudiousDedication.png'
 }
 
 const DieciAssocSouthSection4DirectorMeursaultSkill2: Skill = {
@@ -70,7 +70,7 @@ const DieciAssocSouthSection4DirectorMeursaultSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict [Sinking] equal to ([Insight] x 2)", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/DieciAssocSouthSection4Director/MomentOfErudition.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/DieciAssocSouthSection4Director/MomentOfErudition.png'
 }
 
 const DieciAssocSouthSection4DirectorMeursaultSkill3: Skill = {
@@ -91,7 +91,7 @@ const DieciAssocSouthSection4DirectorMeursaultSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict [Sinking] Potency/Count equal to [Insight] against the target (how much of that [Sinking] is Potency or Count is randomly determined)", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/DieciAssocSouthSection4Director/ScorchKnowledge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/DieciAssocSouthSection4Director/ScorchKnowledge.png'
 }
 
 export const DieciAssocSouthSection4DirectorMeursault: Identity = {
@@ -129,6 +129,6 @@ export const DieciAssocSouthSection4DirectorMeursault: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Meursault/Identities/DieciAssocSouthSection4Director/10510gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Meursault/Identities/DieciAssocSouthSection4Director/10510gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Meursault/Identities/DieciAssocSouthSection4Director/10510gacksung.png',
+    PortraitImageDir: './assets/Sinners/Meursault/Identities/DieciAssocSouthSection4Director/10510gacksunginfo.png'
 }

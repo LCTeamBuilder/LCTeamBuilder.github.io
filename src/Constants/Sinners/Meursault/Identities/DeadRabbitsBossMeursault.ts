@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const DeadRabbitsBossMeursaultDefense: Skill = {
     Name: "Counter",
@@ -27,7 +27,7 @@ const DeadRabbitsBossMeursaultDefense: Skill = {
         [new SkillDescriptionPart("[On Hit] Inflict 1 [Rupture]")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/DeadRabbitsBoss/Counter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/DeadRabbitsBoss/Counter.png'
 }
 
 const DeadRabbitsBossMeursaultSkill1: Skill = {
@@ -45,7 +45,7 @@ const DeadRabbitsBossMeursaultSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/DeadRabbitsBoss/BatStrike.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/DeadRabbitsBoss/BatStrike.png'
 }
 
 const DeadRabbitsBossMeursaultSkill2: Skill = {
@@ -65,7 +65,7 @@ const DeadRabbitsBossMeursaultSkill2: Skill = {
             "[On Hit] If target has 4+ [Rupture], inflict 2 [Offense Level Down]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/DeadRabbitsBoss/Smackdown.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/DeadRabbitsBoss/Smackdown.png'
 }
 
 const DeadRabbitsBossMeursaultSkill3: Skill = {
@@ -86,7 +86,7 @@ const DeadRabbitsBossMeursaultSkill3: Skill = {
             "[On Hit] If target has 4+ [Rupture], inflict 2 [Offense Level Down] next turn", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/DeadRabbitsBoss/Relentless.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/DeadRabbitsBoss/Relentless.png'
 }
 
 export const DeadRabbitsBossMeursault: Identity = {
@@ -123,6 +123,6 @@ export const DeadRabbitsBossMeursault: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Meursault/Identities/DeadRabbitsBoss/10509gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Meursault/Identities/DeadRabbitsBoss/10509gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Meursault/Identities/DeadRabbitsBoss/10509gacksung.png',
+    PortraitImageDir: './assets/Sinners/Meursault/Identities/DeadRabbitsBoss/10509gacksunginfo.png'
 }

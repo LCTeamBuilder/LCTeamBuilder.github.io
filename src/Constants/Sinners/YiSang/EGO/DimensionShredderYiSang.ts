@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const DimensionShredderYiSangAwakening: Skill = {
     Name: "Dimension Shredder",
@@ -26,7 +26,7 @@ const DimensionShredderYiSangAwakening: Skill = {
             "[On Hit] Deal bonus Pride damage by (Target's [Rupture] x 10)% of the damage dealt, and reduce [Rupture] Count by 5 (Max 100%)", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/YiSang/EGO/DimensionShredder/20104awakenprofile.png"
+    SkillImageDir: './assets/Sinners/YiSang/EGO/DimensionShredder/20104awakenprofile.png'
 }
 
 const DimensionShredderYiSangCorrosion: Skill = {
@@ -48,7 +48,7 @@ const DimensionShredderYiSangCorrosion: Skill = {
             "[On Hit] Deal bonus Pride damage by (Target's [Rupture] x 10)% of the damage dealt, and reduce [Rupture] Count by 5 (Max 100%)", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/YiSang/EGO/DimensionShredder/20104erosionprofile.png"
+    SkillImageDir: './assets/Sinners/YiSang/EGO/DimensionShredder/20104erosionprofile.png'
 }
 
 export const DimensionShredderYiSang: Ego = {
@@ -71,5 +71,5 @@ export const DimensionShredderYiSang: Ego = {
     Cost: [{ sin: SinEnum.Sloth, amount: 3 },
             { sin: SinEnum.Gluttony, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/YiSang/EGO/DimensionShredder/20104cg.png"
+    FullImageDir: './assets/Sinners/YiSang/EGO/DimensionShredder/20104cg.png'
 }

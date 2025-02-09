@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ShiAssocSouthSection5IshmaelDefense: Skill = {
     Name: "Counter",
@@ -28,7 +28,7 @@ const ShiAssocSouthSection5IshmaelDefense: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +1 [Poise] Count", 1)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ShiAssociationSouthSection5/Counter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ShiAssociationSouthSection5/Counter.png'
 }
 
 const ShiAssocSouthSection5IshmaelSkill1: Skill = {
@@ -46,7 +46,7 @@ const ShiAssocSouthSection5IshmaelSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 2 [Poise]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ShiAssociationSouthSection5/FlyingSword.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ShiAssociationSouthSection5/FlyingSword.png'
 }
 
 const ShiAssocSouthSection5IshmaelSkill2: Skill = {
@@ -65,7 +65,7 @@ const ShiAssocSouthSection5IshmaelSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +2 [Poise] Count", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ShiAssociationSouthSection5/FlashingStrike.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ShiAssociationSouthSection5/FlashingStrike.png'
 }
 
 const ShiAssocSouthSection5IshmaelSkill3: Skill = {
@@ -84,7 +84,7 @@ const ShiAssocSouthSection5IshmaelSkill3: Skill = {
         new SkillDescriptionPart("[On Crit] At less than 25% HP, heal 100% of damage dealt", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ShiAssociationSouthSection5/CatchBreath.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ShiAssociationSouthSection5/CatchBreath.png'
 }
 
 export const ShiAssocSouthSection5Ishmael: Identity = {
@@ -120,6 +120,6 @@ export const ShiAssocSouthSection5Ishmael: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ishmael/Identities/ShiAssociationSouthSection5/10803gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ishmael/Identities/ShiAssociationSouthSection5/10803gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ishmael/Identities/ShiAssociationSouthSection5/10803gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ishmael/Identities/ShiAssociationSouthSection5/10803gacksunginfo.png'
 }

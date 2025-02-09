@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TelepoleFaustAwakening: Skill = {
     Name: "Telepole",
@@ -25,7 +25,7 @@ const TelepoleFaustAwakening: Skill = {
             "[Heads Attack End] Apply 1 [Envy Power Up] and 1 [Haste] to 2 random allies next turn, and this unit gains +3 [Charge] Count", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/Telepole/20204awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/Telepole/20204awakenprofile.png'
 }
 
 const TelepoleFaustCorrosion: Skill = {
@@ -46,7 +46,7 @@ const TelepoleFaustCorrosion: Skill = {
             "[Tails Attack End] Inflict 2 [Paralyze] and 2 [Bind] on 2 random units next turn, gain +3 [Charge] Count", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/Telepole/20204erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/Telepole/20204erosionprofile.png'
 }
 
 export const TelepoleFaust: Ego = {
@@ -71,5 +71,5 @@ export const TelepoleFaust: Ego = {
             { sin: SinEnum.Lust, amount: 3 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Faust/EGO/Telepole/20204cg.png"
+    FullImageDir: './assets/Sinners/Faust/EGO/Telepole/20204cg.png'
 }

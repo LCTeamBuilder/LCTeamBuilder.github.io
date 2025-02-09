@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LandOfIllusionHongLuAwakening: Skill = {
     Name: "Land of Illusion",
@@ -25,7 +25,7 @@ const LandOfIllusionHongLuAwakening: Skill = {
             "[After Attack] Next turn: -2 [SP Loss Efficiency] to all allies, -2 to amount of SP lost from E.G.O use", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/LandOfIllusion/20601awakenprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/LandOfIllusion/20601awakenprofile.png'
 }
 
 export const LandOfIllusionHongLu: Ego = {
@@ -48,5 +48,5 @@ export const LandOfIllusionHongLu: Ego = {
     Cost: [{ sin: SinEnum.Lust, amount: 1 },
             { sin: SinEnum.Gloom, amount: 5 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/HongLu/EGO/LandOfIllusion/20601cg.png"
+    FullImageDir: './assets/Sinners/HongLu/EGO/LandOfIllusion/20601cg.png'
 }

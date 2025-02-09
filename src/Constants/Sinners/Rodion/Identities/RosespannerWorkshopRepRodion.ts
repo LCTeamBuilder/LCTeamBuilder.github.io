@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RosespannerWorkshopRepRodionDefense: Skill = {
     Name: "Preheat",
@@ -27,7 +27,7 @@ const RosespannerWorkshopRepRodionDefense: Skill = {
         [new SkillDescriptionPart("[Combat Start] Gain +2 [Charge] Count")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/RosespannerWorkshopRep/PreheatUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/RosespannerWorkshopRep/PreheatUT4.png'
 }
 
 const RosespannerWorkshopRepRodionSkill1: Skill = {
@@ -47,7 +47,7 @@ const RosespannerWorkshopRepRodionSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +1 [Tremor] Count", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/RosespannerWorkshopRep/RevUp.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/RosespannerWorkshopRep/RevUp.png'
 }
 
 const RosespannerWorkshopRepRodionSkill2: Skill = {
@@ -70,7 +70,7 @@ const RosespannerWorkshopRepRodionSkill2: Skill = {
             "After bursting [Tremor], reduce [Tremor] Count by 1", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/RosespannerWorkshopRep/VibrationCompression.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/RosespannerWorkshopRep/VibrationCompression.png'
 }
 
 const RosespannerWorkshopRepRodionSkill3: Skill = {
@@ -94,7 +94,7 @@ const RosespannerWorkshopRepRodionSkill3: Skill = {
             "[On Hit] If target is Staggered, deal 25% of damage dealt as bonus damage")],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/RosespannerWorkshopRep/LetsRackUpSomeScores.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/RosespannerWorkshopRep/LetsRackUpSomeScores.png'
 }
 
 export const RosespannerWorkshopRepRodion: Identity = {
@@ -130,6 +130,6 @@ export const RosespannerWorkshopRepRodion: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Rodion/Identities/RosespannerWorkshopRep/10905gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Rodion/Identities/RosespannerWorkshopRep/10905gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Rodion/Identities/RosespannerWorkshopRep/10905gacksung.png',
+    PortraitImageDir: './assets/Sinners/Rodion/Identities/RosespannerWorkshopRep/10905gacksunginfo.png'
 }

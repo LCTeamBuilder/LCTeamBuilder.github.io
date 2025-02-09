@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ZweiAssocWestSection3IshmaelDefense: Skill = {
     Name: "Your Shield",
@@ -31,7 +31,7 @@ const ZweiAssocWestSection3IshmaelDefense: Skill = {
             new SkillDescriptionPart("[Unbreakable Coin]", 1)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ZweiAssocWestSection3/YourShieldUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ZweiAssocWestSection3/YourShieldUT4.png'
 }
 
 const ZweiAssocWestSection3IshmaelSkill1: Skill = {
@@ -54,7 +54,7 @@ const ZweiAssocWestSection3IshmaelSkill1: Skill = {
             "[On Hit] Gain 2 [Defense Level Up] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ZweiAssocWestSection3/ZweiKnightsGreatswordForm.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ZweiAssocWestSection3/ZweiKnightsGreatswordForm.png'
 }
 
 const ZweiAssocWestSection3IshmaelSkill2: Skill = {
@@ -78,7 +78,7 @@ const ZweiAssocWestSection3IshmaelSkill2: Skill = {
             "[On Hit] At 8+ [Defense Level Up], inflict 1 [Attack Power Down]", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ZweiAssocWestSection3/CantLetYouThrough.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ZweiAssocWestSection3/CantLetYouThrough.png'
 }
 
 const ZweiAssocWestSection3IshmaelSkill3: Skill = {
@@ -105,7 +105,7 @@ const ZweiAssocWestSection3IshmaelSkill3: Skill = {
             "[On Hit] If this unit is in [Defensive Stance], trigger [Tremor Burst], then, reduce the target's [Tremor] Count by 1", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ZweiAssocWestSection3/Ward.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ZweiAssocWestSection3/Ward.png'
 }
 
 export const ZweiAssocWestSection3Ishmael: Identity = {
@@ -142,6 +142,6 @@ export const ZweiAssocWestSection3Ishmael: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ishmael/Identities/ZweiAssocWestSection3/10810gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ishmael/Identities/ZweiAssocWestSection3/10810gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ishmael/Identities/ZweiAssocWestSection3/10810gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ishmael/Identities/ZweiAssocWestSection3/10810gacksunginfo.png'
 }

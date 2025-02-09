@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ForestForTheFlamesRyoshuAwakening: Skill = {
     Name: "Forest for the Flames",
@@ -25,7 +25,7 @@ const ForestForTheFlamesRyoshuAwakening: Skill = {
             "[Heads Hit] Inflict 1 [Fragile] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/ForestForTheFlames/20401awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/ForestForTheFlames/20401awakenprofile.png'
 }
 
 export const ForestForTheFlamesRyoshu: Ego = {
@@ -48,5 +48,5 @@ export const ForestForTheFlamesRyoshu: Ego = {
     Cost: [{ sin: SinEnum.Wrath, amount: 2 },
             { sin: SinEnum.Lust, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ryoshu/EGO/ForestForTheFlames/20401cg.png"
+    FullImageDir: './assets/Sinners/Ryoshu/EGO/ForestForTheFlames/20401cg.png'
 }

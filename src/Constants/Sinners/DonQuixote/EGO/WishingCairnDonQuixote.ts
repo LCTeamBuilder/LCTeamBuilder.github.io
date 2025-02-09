@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WishingCairnDonQuixoteAwakening: Skill = {
     Name: "Wishing Cairn",
@@ -25,7 +25,7 @@ const WishingCairnDonQuixoteAwakening: Skill = {
             "[Heads Hit] Inflict 2 [Paralyze]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/WishingCairn/20305awakenprofile.png"
+    SkillImageDir: './assets/Sinners/DonQuixote/EGO/WishingCairn/20305awakenprofile.png'
 }
 
 const WishingCairnDonQuixoteCorrosion: Skill = {
@@ -47,7 +47,7 @@ const WishingCairnDonQuixoteCorrosion: Skill = {
             "[On Hit] Trigger [Tremor Burst], then, reduce target's [Tremor] Count by 2", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/WishingCairn/20305erosionprofile.png"
+    SkillImageDir: './assets/Sinners/DonQuixote/EGO/WishingCairn/20305erosionprofile.png'
 }
 
 export const WishingCairnDonQuixote: Ego = {
@@ -71,5 +71,5 @@ export const WishingCairnDonQuixote: Ego = {
             { sin: SinEnum.Sloth, amount: 2 },
             { sin: SinEnum.Pride, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/DonQuixote/EGO/WishingCairn/20305cg.png"
+    FullImageDir: './assets/Sinners/DonQuixote/EGO/WishingCairn/20305cg.png'
 }

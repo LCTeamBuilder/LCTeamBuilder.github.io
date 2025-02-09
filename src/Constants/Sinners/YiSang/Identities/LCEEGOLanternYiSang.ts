@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCEEGOLanternYiSangDefense: Skill = {
     Name: "Yet, the degree to which that attunement and synchronization are achieved may resultantly allow the user to be devoured",
@@ -30,7 +30,7 @@ const LCEEGOLanternYiSangDefense: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Rupture] Count", 1)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LCEEGOLantern/YetTheDegreeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LCEEGOLantern/YetTheDegreeUT4.png'
 }
 
 const LCEEGOLanternYiSangSkill1: Skill = {
@@ -54,7 +54,7 @@ const LCEEGOLanternYiSangSkill1: Skill = {
             "[On Hit] Inflict 1 [Rupture]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LCEEGOLantern/ThoughItMust.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LCEEGOLantern/ThoughItMust.png'
 }
 
 const LCEEGOLanternYiSangSkill2: Skill = {
@@ -76,7 +76,7 @@ const LCEEGOLanternYiSangSkill2: Skill = {
             "[On Hit] Inflict +2 [Rupture] Count", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LCEEGOLantern/WhenJuxtaposedWith.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LCEEGOLantern/WhenJuxtaposedWith.png'
 }
 
 const LCEEGOLanternYiSangSkill3: Skill = {
@@ -102,7 +102,7 @@ const LCEEGOLanternYiSangSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Rupture]", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LCEEGOLantern/TheIdiosyncrasiesOf.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LCEEGOLantern/TheIdiosyncrasiesOf.png'
 }
 
 export const LCEEGOLanternYiSang: Identity = {
@@ -140,6 +140,6 @@ export const LCEEGOLanternYiSang: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/YiSang/Identities/LCEEGOLantern/10111gacksung.png",
-    PortraitImageDir: "./assets/Sinners/YiSang/Identities/LCEEGOLantern/10111gacksunginfo.png"
+    FullImageDir: './assets/Sinners/YiSang/Identities/LCEEGOLantern/10111gacksung.png',
+    PortraitImageDir: './assets/Sinners/YiSang/Identities/LCEEGOLantern/10111gacksunginfo.png'
 }

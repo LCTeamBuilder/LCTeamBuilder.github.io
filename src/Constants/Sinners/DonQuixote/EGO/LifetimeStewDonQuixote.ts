@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LifetimeStewDonQuixoteAwakening: Skill = {
     Name: "Lifetime Stew",
@@ -24,7 +24,7 @@ const LifetimeStewDonQuixoteAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +3 [Burn] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/LifetimeStew/20304awakenprofile.png"
+    SkillImageDir: './assets/Sinners/DonQuixote/EGO/LifetimeStew/20304awakenprofile.png'
 }
 
 const LifetimeStewDonQuixoteCorrosion: Skill = {
@@ -45,7 +45,7 @@ const LifetimeStewDonQuixoteCorrosion: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +4 [Burn] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/LifetimeStew/20304erosionprofile.png"
+    SkillImageDir: './assets/Sinners/DonQuixote/EGO/LifetimeStew/20304erosionprofile.png'
 }
 
 export const LifetimeStewDonQuixote: Ego = {
@@ -67,5 +67,5 @@ export const LifetimeStewDonQuixote: Ego = {
                 { sin: SinEnum.Envy, resistance: 1 }],
     Cost: [{ sin: SinEnum.Lust, amount: 5 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/DonQuixote/EGO/LifetimeStew/20304cg.png"
+    FullImageDir: './assets/Sinners/DonQuixote/EGO/LifetimeStew/20304cg.png'
 }

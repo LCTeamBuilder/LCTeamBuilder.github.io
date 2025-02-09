@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const DawnOfficeFixerSinclairDefense: Skill = {
     Name: "Rue",
@@ -27,7 +27,7 @@ const DawnOfficeFixerSinclairDefense: Skill = {
         [new SkillDescriptionPart("When in a Volatile E.G.O state, Base Power +1 for every 2 [Burn] on target (max 20)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/RueUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/RueUT4.png'
 }
 
 const DawnOfficeFixerSinclairSkill1: Skill = {
@@ -45,7 +45,7 @@ const DawnOfficeFixerSinclairSkill1: Skill = {
             "[Heads Hit] When in a Volatile E.G.O state, Reuse Coin (once per Skill)", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/FierceCharge1.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/FierceCharge1.png'
 }
 
 const DawnOfficeFixerSinclairSkill2: Skill = {
@@ -69,7 +69,7 @@ const DawnOfficeFixerSinclairSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Burn] Count", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/SunsetBlade1.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/SunsetBlade1.png'
 }
 
 const DawnOfficeFixerSinclairSkill3: Skill = {
@@ -91,7 +91,7 @@ const DawnOfficeFixerSinclairSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 [Burn]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/Stigmatize1.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/Stigmatize1.png'
 }
 
 const DawnOfficeFixerSinclairSkill4: Skill = {
@@ -118,7 +118,7 @@ const DawnOfficeFixerSinclairSkill4: Skill = {
             "[On Kill] Randomly inflict ([Burn] Potency of the defeated target between all enemies (max 10. In Focused Encounters, between all Parts)", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/Stigmatize2.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/DawnOfficeFixer/Stigmatize2.png'
 }
 
 export const DawnOfficeFixerSinclair: Identity = {
@@ -167,6 +167,6 @@ export const DawnOfficeFixerSinclair: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Sinclair/Identities/DawnOfficeFixer/11009gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Sinclair/Identities/DawnOfficeFixer/11009gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Sinclair/Identities/DawnOfficeFixer/11009gacksung.png',
+    PortraitImageDir: './assets/Sinners/Sinclair/Identities/DawnOfficeFixer/11009gacksunginfo.png'
 }

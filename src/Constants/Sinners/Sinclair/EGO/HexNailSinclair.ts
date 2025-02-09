@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const HexNailSinclairAwakening: Skill = {
     Name: "Hex Nail",
@@ -30,7 +30,7 @@ const HexNailSinclairAwakening: Skill = {
             "[Heads Hit] Inflict 2 [Bind] next turn (once per turn)", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/HexNail/21007awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/HexNail/21007awakenprofile.png'
 }
 
 const HexNailSinclairCorrosion: Skill = {
@@ -55,7 +55,7 @@ const HexNailSinclairCorrosion: Skill = {
             "[Tails Hit] Inflict 2 [Defense Level Down] next turn (once per turn)", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/HexNail/21007erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/HexNail/21007erosionprofile.png'
 }
 
 export const HexNailSinclair: Ego = {
@@ -80,5 +80,5 @@ export const HexNailSinclair: Ego = {
             { sin: SinEnum.Pride, amount: 2 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Sinclair/EGO/HexNail/21007cg.png"
+    FullImageDir: './assets/Sinners/Sinclair/EGO/HexNail/21007cg.png'
 }

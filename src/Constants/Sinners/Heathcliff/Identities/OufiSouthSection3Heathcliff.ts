@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const OufiSouthSection3HeathcliffDefense: Skill = {
     Name: "Do Not Obstruct",
@@ -27,7 +27,7 @@ const OufiSouthSection3HeathcliffDefense: Skill = {
         [new SkillDescriptionPart("When attacked while this unit has Shield, inflict +1 [Tremor] Count on the attacker (this Skill's effect does not stack with multiple uses)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/OufiAssocSouthSection3/DoNotObstructUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/OufiAssocSouthSection3/DoNotObstructUT4.png'
 }
 
 const OufiSouthSection3HeathcliffSkill1: Skill = {
@@ -45,7 +45,7 @@ const OufiSouthSection3HeathcliffSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Tremor] Count", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/OufiAssocSouthSection3/ExecutionAdvised.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/OufiAssocSouthSection3/ExecutionAdvised.png'
 }
 
 const OufiSouthSection3HeathcliffSkill2: Skill = {
@@ -64,7 +64,7 @@ const OufiSouthSection3HeathcliffSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Tremor]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/OufiAssocSouthSection3/FinalWarning.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/OufiAssocSouthSection3/FinalWarning.png'
 }
 
 const OufiSouthSection3HeathcliffSkill3: Skill = {
@@ -84,7 +84,7 @@ const OufiSouthSection3HeathcliffSkill3: Skill = {
             new SkillDescriptionPart("[On Hit] If the sum of the target's [Tremor] Potency + Count is 20 or higher, trigger [Amplitude Conversion] on target, converting [Tremor] to [Tremor - Decay]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/OufiAssocSouthSection3/ExecutionSentencing.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/OufiAssocSouthSection3/ExecutionSentencing.png'
 }
 
 export const OufiSouthSection3Heathcliff: Identity = {
@@ -121,6 +121,6 @@ export const OufiSouthSection3Heathcliff: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Heathcliff/Identities/OufiAssociationSouthSection3/10708gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Heathcliff/Identities/OufiAssociationSouthSection3/10708gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Heathcliff/Identities/OufiAssociationSouthSection3/10708gacksung.png',
+    PortraitImageDir: './assets/Sinners/Heathcliff/Identities/OufiAssociationSouthSection3/10708gacksunginfo.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ChainsOfOthersMeursaultAwakening: Skill = {
     Name: "Chains of Others",
@@ -27,7 +27,7 @@ const ChainsOfOthersMeursaultAwakening: Skill = {
         "[On Hit] Gain 2 [Protection] next turn", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/ChainsOfOthers/20501awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/ChainsOfOthers/20501awakenprofile.png'
 }
 
 export const ChainsOfOthersMeursault: Ego = {
@@ -51,5 +51,5 @@ export const ChainsOfOthersMeursault: Ego = {
             { sin: SinEnum.Gloom, amount: 1 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Meursault/EGO/ChainsOfOthers/20501cg.png"
+    FullImageDir: './assets/Sinners/Meursault/EGO/ChainsOfOthers/20501cg.png'
 }

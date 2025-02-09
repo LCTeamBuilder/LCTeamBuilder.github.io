@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const NCorpKleinhammerHeathcliffDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const NCorpKleinhammerHeathcliffDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/NCorpKleinhammer/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/NCorpKleinhammer/GuardUT4.png'
 }
 
 const NCorpKleinhammerHeathcliffSkill1: Skill = {
@@ -47,7 +47,7 @@ const NCorpKleinhammerHeathcliffSkill1: Skill = {
             "[On Hit] Inflict 1 [Nails]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/NCorpKleinhammer/GawkyNailing.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/NCorpKleinhammer/GawkyNailing.png'
 }
 
 const NCorpKleinhammerHeathcliffSkill2: Skill = {
@@ -65,7 +65,7 @@ const NCorpKleinhammerHeathcliffSkill2: Skill = {
         new SkillDescriptionPart("[Heads Hit] Inflict 2 [Plus Coin Drop] next turn", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/NCorpKleinhammer/Purify.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/NCorpKleinhammer/Purify.png'
 }
 
 const NCorpKleinhammerHeathcliffSkill3: Skill = {
@@ -84,7 +84,7 @@ const NCorpKleinhammerHeathcliffSkill3: Skill = {
         new SkillDescriptionPart("[Heads Hit] Deal bonus damage by 10% of damage dealt", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/NCorpKleinhammer/InfirmRetribution.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/NCorpKleinhammer/InfirmRetribution.png'
 }
 
 export const NCorpKleinhammerHeathcliff: Identity = {
@@ -121,6 +121,6 @@ export const NCorpKleinhammerHeathcliff: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Heathcliff/Identities/NCorpKleinhammer/10704gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Heathcliff/Identities/NCorpKleinhammer/10704gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Heathcliff/Identities/NCorpKleinhammer/10704gacksung.png',
+    PortraitImageDir: './assets/Sinners/Heathcliff/Identities/NCorpKleinhammer/10704gacksunginfo.png'
 }

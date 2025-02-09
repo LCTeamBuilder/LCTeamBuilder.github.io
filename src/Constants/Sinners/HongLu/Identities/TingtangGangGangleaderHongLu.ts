@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TingtangGangGangleaderHongLuDefense: Skill = {
     Name: "Evade",
@@ -28,7 +28,7 @@ const TingtangGangGangleaderHongLuDefense: Skill = {
             "[On Evade] Heal 3 SP")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/TingtangGangGangleader/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/TingtangGangGangleader/EvadeUT4.png'
 }
 
 const TingtangGangGangleaderHongLuSkill1: Skill = {
@@ -45,7 +45,7 @@ const TingtangGangGangleaderHongLuSkill1: Skill = {
         [new SkillDescriptionPart("[Heads Hit] Inflict 4 [Bleed]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/TingtangGangGangleader/ThroatSlit.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/TingtangGangGangleader/ThroatSlit.png'
 }
 
 const TingtangGangGangleaderHongLuSkill2: Skill = {
@@ -67,7 +67,7 @@ const TingtangGangGangleaderHongLuSkill2: Skill = {
             "[Reuse - Heads Hit] +50% Damage for this Coin", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/TingtangGangGangleader/Shank.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/TingtangGangGangleader/Shank.png'
 }
 
 const TingtangGangGangleaderHongLuSkill3: Skill = {
@@ -87,7 +87,7 @@ const TingtangGangGangleaderHongLuSkill3: Skill = {
             "[Reuse - Heads Hit] If target has 10+ [Bleed], deal +50% damage", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/TingtangGangGangleader/Mutilate.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/TingtangGangGangleader/Mutilate.png'
 }
 
 export const TingtangGangGangleaderHongLu: Identity = {
@@ -123,6 +123,6 @@ export const TingtangGangGangleaderHongLu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/HongLu/Identities/TingtangGangGangleader/10603gacksung.png",
-    PortraitImageDir: "./assets/Sinners/HongLu/Identities/TingtangGangGangleader/10603gacksunginfo.png"
+    FullImageDir: './assets/Sinners/HongLu/Identities/TingtangGangGangleader/10603gacksung.png',
+    PortraitImageDir: './assets/Sinners/HongLu/Identities/TingtangGangGangleader/10603gacksunginfo.png'
 }

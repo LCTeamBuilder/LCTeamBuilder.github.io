@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RBSouschefGregorDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const RBSouschefGregorDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/RBSouschef/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/RBSouschef/GuardUT4.png'
 }
 
 const RBSouschefGregorSkill1: Skill = {
@@ -46,7 +46,7 @@ const RBSouschefGregorSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/RBSouschef/KeepItFresh.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/RBSouschef/KeepItFresh.png'
 }
 
 const RBSouschefGregorSkill2: Skill = {
@@ -64,7 +64,7 @@ const RBSouschefGregorSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Bleed] Count, Inflict 2 [Bind] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/RBSouschef/YouFreshEnough.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/RBSouschef/YouFreshEnough.png'
 }
 
 const RBSouschefGregorSkill3: Skill = {
@@ -85,7 +85,7 @@ const RBSouschefGregorSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Heal HP based on target's [Bleed] (Max 20%)", 4)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/RBSouschef/ButcherViand.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/RBSouschef/ButcherViand.png'
 }
 
 export const RBSouschefGregor: Identity = {
@@ -121,6 +121,6 @@ export const RBSouschefGregor: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Gregor/Identities/RBSouschef/11204gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Gregor/Identities/RBSouschef/11204gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Gregor/Identities/RBSouschef/11204gacksung.png',
+    PortraitImageDir: './assets/Sinners/Gregor/Identities/RBSouschef/11204gacksunginfo.png'
 }

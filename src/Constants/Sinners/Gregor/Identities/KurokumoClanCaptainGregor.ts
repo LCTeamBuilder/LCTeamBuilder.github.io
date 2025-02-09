@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const KurokumoClanCaptainGregorDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const KurokumoClanCaptainGregorDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/KurokumoClanCaptain/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/KurokumoClanCaptain/GuardUT4.png'
 }
 
 const KurokumoClanCaptainGregorSkill1: Skill = {
@@ -46,7 +46,7 @@ const KurokumoClanCaptainGregorSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +1 [Bleed] Count", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/KurokumoClanCaptain/LenticularRend.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/KurokumoClanCaptain/LenticularRend.png'
 }
 
 const KurokumoClanCaptainGregorSkill2: Skill = {
@@ -66,7 +66,7 @@ const KurokumoClanCaptainGregorSkill2: Skill = {
             "[On Hit] If the target has 7+ [Bleed], inflict 1 [Attack Power Down] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/KurokumoClanCaptain/ShadowCloud.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/KurokumoClanCaptain/ShadowCloud.png'
 }
 
 const KurokumoClanCaptainGregorSkill3: Skill = {
@@ -90,7 +90,7 @@ const KurokumoClanCaptainGregorSkill3: Skill = {
             "[On Hit] If the target has 7+ [Bleed], inflict 1 [Plus Coin Drop] next turn", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/KurokumoClanCaptain/ShadowcloudShattercleave.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/KurokumoClanCaptain/ShadowcloudShattercleave.png'
 }
 
 export const KurokumoClanCaptainGregor: Identity = {
@@ -126,6 +126,6 @@ export const KurokumoClanCaptainGregor: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Gregor/Identities/KurokumoClanCaptain/11208gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Gregor/Identities/KurokumoClanCaptain/11208gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Gregor/Identities/KurokumoClanCaptain/11208gacksung.png',
+    PortraitImageDir: './assets/Sinners/Gregor/Identities/KurokumoClanCaptain/11208gacksunginfo.png'
 }

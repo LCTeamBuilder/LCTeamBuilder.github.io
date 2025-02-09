@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const GCorpHeadManagerOutisDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const GCorpHeadManagerOutisDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/GCorpHeadManager/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/GCorpHeadManager/GuardUT4.png'
 }
 
 const GCorpHeadManagerOutisSkill1: Skill = {
@@ -45,7 +45,7 @@ const GCorpHeadManagerOutisSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Apply 2 [Protection] to the ally with the lowest Speed", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/GCorpHeadManager/Order.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/GCorpHeadManager/Order.png'
 }
 
 const GCorpHeadManagerOutisSkill2: Skill = {
@@ -63,7 +63,7 @@ const GCorpHeadManagerOutisSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Apply 2 [Damage Up] to the ally with the lowest Speed", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/GCorpHeadManager/OnslaughtCommand.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/GCorpHeadManager/OnslaughtCommand.png'
 }
 
 const GCorpHeadManagerOutisSkill3: Skill = {
@@ -82,7 +82,7 @@ const GCorpHeadManagerOutisSkill3: Skill = {
             "[Heads Hit] Inflict 4 [Sinking]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/GCorpHeadManager/Focus.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/GCorpHeadManager/Focus.png'
 }
 
 export const GCorpHeadManagerOutis: Identity = {
@@ -118,6 +118,6 @@ export const GCorpHeadManagerOutis: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Outis/Identities/GCorpHeadManager/11103gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Outis/Identities/GCorpHeadManager/11103gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Outis/Identities/GCorpHeadManager/11103gacksung.png',
+    PortraitImageDir: './assets/Sinners/Outis/Identities/GCorpHeadManager/11103gacksunginfo.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerFaustDefense: Skill = {
     Name: "Evade",
@@ -26,7 +26,7 @@ const LCBSinnerFaustDefense: Skill = {
     SkillDescription: [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LCBSinner/EvadeUT4.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LCBSinner/EvadeUT4.png', 
 }
 
 const LCBSinnerFaustSkill1: Skill = {
@@ -42,7 +42,7 @@ const LCBSinnerFaustSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 1 [Paralyze]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LCBSinner/DownwardSlash.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LCBSinner/DownwardSlash.png', 
 }
 
 const LCBSinnerFaustSkill2: Skill = {
@@ -58,7 +58,7 @@ const LCBSinnerFaustSkill2: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 3 [Offense Level Down] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LCBSinner/UpwardSlash.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LCBSinner/UpwardSlash.png', 
 }
 
 const LCBSinnerFaustSkill3: Skill = {
@@ -74,7 +74,7 @@ const LCBSinnerFaustSkill3: Skill = {
     SkillDescription: [new SkillDescriptionPart("[Heads Hit] Inflict 1 [Attack Power Down] next turn", 1),            new SkillDescriptionPart("[On Hit] Inflict 1 [Attack Power Down] next turn", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LCBSinner/DrillingStab.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LCBSinner/DrillingStab.png', 
 }
 
 export const LCBSinnerFaust: Identity = {
@@ -110,6 +110,6 @@ export const LCBSinnerFaust: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Faust/Identities/LCBSinner/10201normal.png",
-    PortraitImageDir: "./assets/Sinners/Faust/Identities/LCBSinner/10201normalinfo.png"
+    FullImageDir: './assets/Sinners/Faust/Identities/LCBSinner/10201normal.png',
+    PortraitImageDir: './assets/Sinners/Faust/Identities/LCBSinner/10201normalinfo.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TelepoleHeathcliffAwakening: Skill = {
     Name: "Telepole",
@@ -25,7 +25,7 @@ const TelepoleHeathcliffAwakening: Skill = {
         new SkillDescriptionPart("[Tails Hit] Gain +5 [Charge] Count", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/Telepole/20702awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/Telepole/20702awakenprofile.png'
 }
 
 const TelepoleHeathcliffCorrosion: Skill = {
@@ -45,7 +45,7 @@ const TelepoleHeathcliffCorrosion: Skill = {
         new SkillDescriptionPart("[Heads Hit] Gain 3 [Fragile] next turn", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/Telepole/20702erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/Telepole/20702erosionprofile.png'
 }
 
 export const TelepoleHeathcliff: Ego = {
@@ -69,5 +69,5 @@ export const TelepoleHeathcliff: Ego = {
             { sin: SinEnum.Lust, amount: 2 },
             { sin: SinEnum.Envy, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Heathcliff/EGO/Telepole/20702cg.png"
+    FullImageDir: './assets/Sinners/Heathcliff/EGO/Telepole/20702cg.png'
 }

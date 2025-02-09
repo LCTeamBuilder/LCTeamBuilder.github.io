@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BladeLineageSalsuFaustDefense: Skill = {
     Name: "Redirect",
@@ -27,7 +27,7 @@ const BladeLineageSalsuFaustDefense: Skill = {
         [new SkillDescriptionPart("[On Use] For every 4 [Poise] on self, gain Final Power +1 (Max 5)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/BladeLineageSalsu/RedirectUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/BladeLineageSalsu/RedirectUT4.png'
 }
 
 const BladeLineageSalsuFaustSkill1: Skill = {
@@ -47,7 +47,7 @@ const BladeLineageSalsuFaustSkill1: Skill = {
         new SkillDescriptionPart("[On Crit] Inflict 1 [Red Plum Blossom]", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/BladeLineageSalsu/MoonlitBladeDance.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/BladeLineageSalsu/MoonlitBladeDance.png'
 }
 
 const BladeLineageSalsuFaustSkill2: Skill = {
@@ -69,7 +69,7 @@ const BladeLineageSalsuFaustSkill2: Skill = {
             "[On Crit] Inflict 2 [Red Plum Blossom]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/BladeLineageSalsu/Acupuncture.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/BladeLineageSalsu/Acupuncture.png'
 }
 
 const BladeLineageSalsuFaustSkill3: Skill = {
@@ -93,7 +93,7 @@ const BladeLineageSalsuFaustSkill3: Skill = {
             "[On Crit] If the target has 10 [Red Plum Blossom], inflict 1 [Slash Fragility]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/BladeLineageSalsu/RedPlumBlossomsScatter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/BladeLineageSalsu/RedPlumBlossomsScatter.png'
 }
 
 export const BladeLineageSalsuFaust: Identity = {
@@ -129,6 +129,6 @@ export const BladeLineageSalsuFaust: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Faust/Identities/BladeLineageSalsu/10208gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Faust/Identities/BladeLineageSalsu/10208gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Faust/Identities/BladeLineageSalsu/10208gacksung.png',
+    PortraitImageDir: './assets/Sinners/Faust/Identities/BladeLineageSalsu/10208gacksunginfo.png'
 }

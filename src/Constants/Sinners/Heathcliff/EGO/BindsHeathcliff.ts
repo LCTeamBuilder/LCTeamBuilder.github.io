@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BindsHeathcliffAwakening: Skill = {
     Name: "Binds",
@@ -28,7 +28,7 @@ const BindsHeathcliffAwakening: Skill = {
             "[On Hit] Trigger [Tremor Burst]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/Binds/20706awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/Binds/20706awakenprofile.png'
 }
 
 const BindsHeathcliffCorrosion: Skill = {
@@ -53,7 +53,7 @@ const BindsHeathcliffCorrosion: Skill = {
             "[On Hit] Trigger [Tremor Burst]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/Binds/20706erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/Binds/20706erosionprofile.png'
 }
 
 export const BindsHeathcliff: Ego = {
@@ -79,5 +79,5 @@ export const BindsHeathcliff: Ego = {
             { sin: SinEnum.Pride, amount: 2 },
             { sin: SinEnum.Envy, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Heathcliff/EGO/Binds/20706cg.png"
+    FullImageDir: './assets/Sinners/Heathcliff/EGO/Binds/20706cg.png'
 }

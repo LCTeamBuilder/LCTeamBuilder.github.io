@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LassoHongLuAwakening: Skill = {
     Name: "Lasso",
@@ -30,7 +30,7 @@ const LassoHongLuAwakening: Skill = {
             "[On Hit] Randomly inflict [Rupture] equal to this unit's Speed between the targets (max 7)", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/Snare/20607awakenprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/Snare/20607awakenprofile.png'
 }
 
 const LassoHongLuCorrosion: Skill = {
@@ -58,7 +58,7 @@ const LassoHongLuCorrosion: Skill = {
             "[On Hit] Deal +1% more damage for every [Rupture] on the target (max 30%)", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/Snare/20607erosionprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/Snare/20607erosionprofile.png'
 }
 
 export const LassoHongLu: Ego = {
@@ -82,5 +82,5 @@ export const LassoHongLu: Ego = {
             { sin: SinEnum.Gluttony, amount: 4 },
             { sin: SinEnum.Pride, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/HongLu/EGO/Snare/20607cg.png"
+    FullImageDir: './assets/Sinners/HongLu/EGO/Snare/20607cg.png'
 }

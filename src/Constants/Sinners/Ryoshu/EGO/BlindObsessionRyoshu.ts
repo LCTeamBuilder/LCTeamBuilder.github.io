@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BlindObsessionRyoshuAwakening: Skill = {
     Name: "Blind Obsession",
@@ -26,7 +26,7 @@ const BlindObsessionRyoshuAwakening: Skill = {
             "[On Crit] Gain +2 [Charge] count", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/BlindObsession/20406awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/BlindObsession/20406awakenprofile.png'
 }
 
 const BlindObsessionRyoshuCorrosion: Skill = {
@@ -48,7 +48,7 @@ const BlindObsessionRyoshuCorrosion: Skill = {
             "[On Crit] At 10+ [Poise], gain +30% Critical Damage", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/BlindObsession/20406erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/BlindObsession/20406erosionprofile.png'
 }
 
 export const BlindObsessionRyoshu: Ego = {
@@ -72,5 +72,5 @@ export const BlindObsessionRyoshu: Ego = {
             { sin: SinEnum.Pride, amount: 2 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ryoshu/EGO/BlindObsession/20406cg.png"
+    FullImageDir: './assets/Sinners/Ryoshu/EGO/BlindObsession/20406cg.png'
 }

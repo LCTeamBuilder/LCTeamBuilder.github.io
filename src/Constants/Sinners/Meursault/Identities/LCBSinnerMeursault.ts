@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerMeursaultDefense: Skill = {
     Name: "Guard",
@@ -26,7 +26,7 @@ const LCBSinnerMeursaultDefense: Skill = {
     SkillDescription: [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/LCBSinner/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/LCBSinner/GuardUT4.png'
 }
 
 const LCBSinnerMeursaultSkill1: Skill = {
@@ -42,7 +42,7 @@ const LCBSinnerMeursaultSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 1 [Tremor]", 1),            new SkillDescriptionPart("[On Hit] Inflict 1 [Tremor]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/LCBSinner/UnDeux.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/LCBSinner/UnDeux.png'
 }
 
 const LCBSinnerMeursaultSkill2: Skill = {
@@ -58,7 +58,7 @@ const LCBSinnerMeursaultSkill2: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Use] Gain 3 [Defense Power Up] next turn"),            new SkillDescriptionPart("[On Hit] Trigger [Tremor Burst]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/LCBSinner/NailingFist.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/LCBSinner/NailingFist.png'
 }
 
 const LCBSinnerMeursaultSkill3: Skill = {
@@ -74,7 +74,7 @@ const LCBSinnerMeursaultSkill3: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Use] Gain 3 [Protection] next turn"),            new SkillDescriptionPart("[Heads Hit] Inflict 1 [Tremor]", 1),            new SkillDescriptionPart("[Heads Hit] Inflict 1 [Tremor]", 2),            new SkillDescriptionPart("[Heads Hit] Inflict 1 [Tremor]", 3),            new SkillDescriptionPart("[On Hit] Inflict +2 [Tremor] Count", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/LCBSinner/DesCoups.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/LCBSinner/DesCoups.png'
 }
 
 export const LCBSinnerMeursault: Identity = {
@@ -110,6 +110,6 @@ export const LCBSinnerMeursault: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Meursault/Identities/LCBSinner/10501normal.png",
-    PortraitImageDir: "./assets/Sinners/Meursault/Identities/LCBSinner/10501normalinfo.png"
+    FullImageDir: './assets/Sinners/Meursault/Identities/LCBSinner/10501normal.png',
+    PortraitImageDir: './assets/Sinners/Meursault/Identities/LCBSinner/10501normalinfo.png'
 }

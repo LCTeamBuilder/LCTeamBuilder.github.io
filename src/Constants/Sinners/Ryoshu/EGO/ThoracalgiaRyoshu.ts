@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ThoracalgiaRyoshuAwakening: Skill = {
     Name: "Thoracalgia",
@@ -29,7 +29,7 @@ const ThoracalgiaRyoshuAwakening: Skill = {
             "[On Hit] Gain 4 [Deep Breath] (once per turn)", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/Thoracalgia/20408awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/Thoracalgia/20408awakenprofile.png'
 }
 
 const ThoracalgiaRyoshuCorrosion: Skill = {
@@ -55,7 +55,7 @@ const ThoracalgiaRyoshuCorrosion: Skill = {
             "[On Hit] Gain 7 [Deep Breath] (once per turn)", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/Thoracalgia/20408erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/Thoracalgia/20408erosionprofile.png'
 }
 
 export const ThoracalgiaRyoshu: Ego = {
@@ -82,5 +82,5 @@ export const ThoracalgiaRyoshu: Ego = {
             { sin: SinEnum.Lust, amount: 1 },
             { sin: SinEnum.Pride, amount: 5 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ryoshu/EGO/Thoracalgia/20408cg.png"
+    FullImageDir: './assets/Sinners/Ryoshu/EGO/Thoracalgia/20408cg.png'
 }

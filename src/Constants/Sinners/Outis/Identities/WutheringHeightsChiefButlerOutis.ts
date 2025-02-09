@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WutheringHeightsChiefButlerOutisDefense: Skill = {
     Name: "Insolent Fool...!",
@@ -27,7 +27,7 @@ const WutheringHeightsChiefButlerOutisDefense: Skill = {
         [new SkillDescriptionPart("[On Evade] Inflict 1 [Sinking] (6 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/WutheringHeightsChiefButler/InsolentFoolUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/WutheringHeightsChiefButler/InsolentFoolUT4.png'
 }
 
 const WutheringHeightsChiefButlerOutisSkill1: Skill = {
@@ -45,7 +45,7 @@ const WutheringHeightsChiefButlerOutisSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/WutheringHeightsChiefButler/Knocking.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/WutheringHeightsChiefButler/Knocking.png'
 }
 
 const WutheringHeightsChiefButlerOutisSkill2: Skill = {
@@ -65,7 +65,7 @@ const WutheringHeightsChiefButlerOutisSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/WutheringHeightsChiefButler/Dusting.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/WutheringHeightsChiefButler/Dusting.png'
 }
 
 const WutheringHeightsChiefButlerOutisSkill3: Skill = {
@@ -85,7 +85,7 @@ const WutheringHeightsChiefButlerOutisSkill3: Skill = {
             "[On Hit] If the target has [Echoes of the Manor], inflict Gloom Affinity damage equal to [Sinking] Potency on target (Max 30)", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/WutheringHeightsChiefButler/AsMistressCommands.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/WutheringHeightsChiefButler/AsMistressCommands.png'
 }
 
 export const WutheringHeightsChiefButlerOutis: Identity = {
@@ -123,6 +123,6 @@ export const WutheringHeightsChiefButlerOutis: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Outis/Identities/WutheringHeightsChiefButler/11108gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Outis/Identities/WutheringHeightsChiefButler/11108gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Outis/Identities/WutheringHeightsChiefButler/11108gacksung.png',
+    PortraitImageDir: './assets/Sinners/Outis/Identities/WutheringHeightsChiefButler/11108gacksunginfo.png'
 }

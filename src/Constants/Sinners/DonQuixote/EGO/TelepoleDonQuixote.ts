@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TelepoleDonQuixoteAwakening: Skill = {
     Name: "Telepole",
@@ -24,7 +24,7 @@ const TelepoleDonQuixoteAwakening: Skill = {
             "[After Attack] Give [Charge] Count to all ", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/Telepole/20303awakenprofile.png"
+    SkillImageDir: './assets/Sinners/DonQuixote/EGO/Telepole/20303awakenprofile.png'
 }
 
 const TelepoleDonQuixoteCorrosion: Skill = {
@@ -42,7 +42,7 @@ const TelepoleDonQuixoteCorrosion: Skill = {
             "[After Attack] Give 5 [Fragile], 10 [Rupture], and +12 [Charge] Count to all allies")],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/Telepole/20303erosionprofile.png"
+    SkillImageDir: './assets/Sinners/DonQuixote/EGO/Telepole/20303erosionprofile.png'
 }
 
 export const TelepoleDonQuixote: Ego = {
@@ -66,5 +66,5 @@ export const TelepoleDonQuixote: Ego = {
             { sin: SinEnum.Gloom, amount: 2 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/DonQuixote/EGO/Telepole/20303cg.png"
+    FullImageDir: './assets/Sinners/DonQuixote/EGO/Telepole/20303cg.png'
 }

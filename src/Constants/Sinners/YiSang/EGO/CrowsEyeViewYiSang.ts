@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const CrowsEyeViewYisangAwakening: Skill = {
     Name: "Crow's Eye View",
@@ -25,7 +25,7 @@ const CrowsEyeViewYisangAwakening: Skill = {
             "[On Hit] Inflict 2 [Bind] next turn", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/YiSang/EGO/CrowsEyeView/20101awakenprofile.png"
+    SkillImageDir: './assets/Sinners/YiSang/EGO/CrowsEyeView/20101awakenprofile.png'
 }
 
 export const CrowsEyeViewYisang: Ego = {
@@ -47,6 +47,6 @@ export const CrowsEyeViewYisang: Ego = {
                 { sin: SinEnum.Envy, resistance: 2 }],
     Cost: [{ sin: SinEnum.Wrath, amount: 1 },              { sin: SinEnum.Sloth, amount: 3}],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/YiSang/EGO/CrowsEyeView/20101cg.png",
+    FullImageDir: './assets/Sinners/YiSang/EGO/CrowsEyeView/20101cg.png',
 
 }

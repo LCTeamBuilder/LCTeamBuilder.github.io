@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WCorpL2CleanupAgentFaustDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const WCorpL2CleanupAgentFaustDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/WCorpL2CleanupAgent/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/WCorpL2CleanupAgent/GuardUT4.png'
 }
 
 const WCorpL2CleanupAgentFaustSkill1: Skill = {
@@ -45,7 +45,7 @@ const WCorpL2CleanupAgentFaustSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +2 [Charge] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/WCorpL2CleanupAgent/EnergyCycle.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/WCorpL2CleanupAgent/EnergyCycle.png'
 }
 
 const WCorpL2CleanupAgentFaustSkill2: Skill = {
@@ -64,7 +64,7 @@ const WCorpL2CleanupAgentFaustSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Spend 3 [Charge] Count to inflict 4 [Bind] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/WCorpL2CleanupAgent/Leap.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/WCorpL2CleanupAgent/Leap.png'
 }
 
 const WCorpL2CleanupAgentFaustSkill3: Skill = {
@@ -82,7 +82,7 @@ const WCorpL2CleanupAgentFaustSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Spend 5 [Charge] Count to inflict 2 [Attack Power Down] and 3 [Paralyze] next turn")],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/WCorpL2CleanupAgent/Overcharge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/WCorpL2CleanupAgent/Overcharge.png'
 }
 
 export const WCorpL2CleanupAgentFaust: Identity = {
@@ -119,6 +119,6 @@ export const WCorpL2CleanupAgentFaust: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Faust/Identities/WCorpL2CleanupAgent/10202gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Faust/Identities/WCorpL2CleanupAgent/10202gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Faust/Identities/WCorpL2CleanupAgent/10202gacksung.png',
+    PortraitImageDir: './assets/Sinners/Faust/Identities/WCorpL2CleanupAgent/10202gacksunginfo.png'
 }

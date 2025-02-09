@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TheBarberOfLaManchalandOutisDefense: Skill = {
     Name: "Quite Discourteous!",
@@ -29,7 +29,7 @@ const TheBarberOfLaManchalandOutisDefense: Skill = {
         new SkillDescriptionPart("[On Use] Coin Power +1 for every 5 [Bleed] on self (max 3)", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/TheBarberOfLaManchaland/QuiteDiscourteous.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/TheBarberOfLaManchaland/QuiteDiscourteous.png'
 }
 
 const TheBarberOfLaManchalandOutisSkill1: Skill = {
@@ -53,7 +53,7 @@ const TheBarberOfLaManchalandOutisSkill1: Skill = {
             "[On Hit] If the target has [Sewing Target], inflict +1 [Bleed] Count", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/TheBarberOfLaManchaland/Sewing.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/TheBarberOfLaManchaland/Sewing.png'
 }
 
 const TheBarberOfLaManchalandOutisSkill2: Skill = {
@@ -78,7 +78,7 @@ const TheBarberOfLaManchalandOutisSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Sewing Target] next turn", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/TheBarberOfLaManchaland/Scission.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/TheBarberOfLaManchaland/Scission.png'
 }
 
 const TheBarberOfLaManchalandOutisSkill3: Skill = {
@@ -107,7 +107,7 @@ const TheBarberOfLaManchalandOutisSkill3: Skill = {
 "- At 20+ [Blood-tinged Scissorblades], deal +([Blood-tinged Scissorblades] x 4)% more damage instead (max 120%)", 4)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/TheBarberOfLaManchaland/IllMakeYouANewDress.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/TheBarberOfLaManchaland/IllMakeYouANewDress.png'
 }
 
 export const TheBarberOfLaManchalandOutis: Identity = {
@@ -151,6 +151,6 @@ export const TheBarberOfLaManchalandOutis: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Outis/Identities/TheBarberOfLaManchaland/11111gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Outis/Identities/TheBarberOfLaManchaland/11111gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Outis/Identities/TheBarberOfLaManchaland/11111gacksung.png',
+    PortraitImageDir: './assets/Sinners/Outis/Identities/TheBarberOfLaManchaland/11111gacksunginfo.png'
 }

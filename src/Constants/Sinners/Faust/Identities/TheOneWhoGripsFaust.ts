@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TheOneWhoGripsFaustDefense: Skill = {
     Name: "Such Filth",
@@ -27,7 +27,7 @@ const TheOneWhoGripsFaustDefense: Skill = {
         [new SkillDescriptionPart("[On Evade] Target loses 3 SP")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/TheOneWhoGrips/SuchFilthUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/TheOneWhoGrips/SuchFilthUT4.png'
 }
 
 const TheOneWhoGripsFaustSkill1: Skill = {
@@ -46,7 +46,7 @@ const TheOneWhoGripsFaustSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/TheOneWhoGrips/Cackle.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/TheOneWhoGrips/Cackle.png'
 }
 
 const TheOneWhoGripsFaustSkill2: Skill = {
@@ -66,7 +66,7 @@ const TheOneWhoGripsFaustSkill2: Skill = {
             "[On Hit] Inflict [Gaze] next turn", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/TheOneWhoGrips/TheGripping.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/TheOneWhoGrips/TheGripping.png'
 }
 
 const TheOneWhoGripsFaustSkill3: Skill = {
@@ -86,7 +86,7 @@ const TheOneWhoGripsFaustSkill3: Skill = {
         new SkillDescriptionPart("+70% damage to targets with 5+ [Nails]", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/TheOneWhoGrips/Execution.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/TheOneWhoGrips/Execution.png'
 }
 
 export const TheOneWhoGripsFaust: Identity = {
@@ -124,6 +124,6 @@ export const TheOneWhoGripsFaust: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Faust/Identities/TheOneWhoGrips/10204gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Faust/Identities/TheOneWhoGrips/10204gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Faust/Identities/TheOneWhoGrips/10204gacksung.png',
+    PortraitImageDir: './assets/Sinners/Faust/Identities/TheOneWhoGrips/10204gacksunginfo.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SodaRyoshuAwakening: Skill = {
     Name: "Soda",
@@ -24,7 +24,7 @@ const SodaRyoshuAwakening: Skill = {
             "[On Kill] Gain 3 E.G.O resources of a random Affinity currently owned, All allies heal 3 SP", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/Soda/20405awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/Soda/20405awakenprofile.png'
 }
 
 const SodaRyoshuCorrosion: Skill = {
@@ -44,7 +44,7 @@ const SodaRyoshuCorrosion: Skill = {
             "[After Attack] All allies gain +1 [E.G.O Resource Amp], apply 1 Haste next turn", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/Soda/20405erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/Soda/20405erosionprofile.png'
 }
 
 export const SodaRyoshu: Ego = {
@@ -68,5 +68,5 @@ export const SodaRyoshu: Ego = {
             { sin: SinEnum.Pride, amount: 2 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ryoshu/EGO/Soda/20405cg.png"
+    FullImageDir: './assets/Sinners/Ryoshu/EGO/Soda/20405cg.png'
 }

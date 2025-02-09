@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RCorp4thPackRabbitHeathcliffDefense: Skill = {
     Name: "Evade",
@@ -27,7 +27,7 @@ const RCorp4thPackRabbitHeathcliffDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain +1 [Charge] Count")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/RCorp4thPackRabbit/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/RCorp4thPackRabbit/EvadeUT4.png'
 }
 
 const RCorp4thPackRabbitHeathcliffSkill1: Skill = {
@@ -46,7 +46,7 @@ const RCorp4thPackRabbitHeathcliffSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +3 [Charge] Count", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/RCorp4thPackRabbit/GrazeTheGrass.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/RCorp4thPackRabbit/GrazeTheGrass.png'
 }
 
 const RCorp4thPackRabbitHeathcliffSkill2: Skill = {
@@ -69,7 +69,7 @@ const RCorp4thPackRabbitHeathcliffSkill2: Skill = {
             "[On Hit] Inflict 1 [Bleed]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/RCorp4thPackRabbit/ConcentratedFire.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/RCorp4thPackRabbit/ConcentratedFire.png'
 }
 
 const RCorp4thPackRabbitHeathcliffSkill3: Skill = {
@@ -93,7 +93,7 @@ const RCorp4thPackRabbitHeathcliffSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 [Rupture]", 5)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/RCorp4thPackRabbit/QuickSuppression.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/RCorp4thPackRabbit/QuickSuppression.png'
 }
 
 export const RCorp4thPackRabbitHeathcliff: Identity = {
@@ -131,6 +131,6 @@ export const RCorp4thPackRabbitHeathcliff: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Heathcliff/Identities/RCorp4thPackRabbit/10703gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Heathcliff/Identities/RCorp4thPackRabbit/10703gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Heathcliff/Identities/RCorp4thPackRabbit/10703gacksung.png',
+    PortraitImageDir: './assets/Sinners/Heathcliff/Identities/RCorp4thPackRabbit/10703gacksunginfo.png'
 }

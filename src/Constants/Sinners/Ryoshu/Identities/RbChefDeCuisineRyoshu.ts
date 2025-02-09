@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RbChefDeCuisineRyoshuDefense: Skill = {
     Name: "F.I. in Sight",
@@ -27,7 +27,7 @@ const RbChefDeCuisineRyoshuDefense: Skill = {
         [new SkillDescriptionPart("[On Evade] Gain 1 [Haste] next turn")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/RBChefDeCuisine/FIInSightUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/RBChefDeCuisine/FIInSightUT4.png'
 }
 
 const RbChefDeCuisineRyoshuSkill1: Skill = {
@@ -45,7 +45,7 @@ const RbChefDeCuisineRyoshuSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 2 [Appetite]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/RBChefDeCuisine/PC.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/RBChefDeCuisine/PC.png'
 }
 
 const RbChefDeCuisineRyoshuSkill2: Skill = {
@@ -65,7 +65,7 @@ const RbChefDeCuisineRyoshuSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] If target has [Bleed] or [Paralyze], inflict 4 [HP Healing Down] next turn", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/RBChefDeCuisine/IH.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/RBChefDeCuisine/IH.png'
 }
 
 const RbChefDeCuisineRyoshuSkill3: Skill = {
@@ -85,7 +85,7 @@ const RbChefDeCuisineRyoshuSkill3: Skill = {
         new SkillDescriptionPart("[Heads Hit] The final Coin deals +5% damage", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/RBChefDeCuisine/ICanCookAnything.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/RBChefDeCuisine/ICanCookAnything.png'
 }
 
 export const RbChefDeCuisineRyoshu: Identity = {
@@ -122,6 +122,6 @@ export const RbChefDeCuisineRyoshu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ryoshu/Identities/RBChefDeCuisine/10404gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ryoshu/Identities/RBChefDeCuisine/10404gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ryoshu/Identities/RBChefDeCuisine/10404gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ryoshu/Identities/RBChefDeCuisine/10404gacksunginfo.png'
 }

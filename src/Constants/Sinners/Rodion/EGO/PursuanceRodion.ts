@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const PursuanceRodionAwakening: Skill = {
     Name: "Pursuance",
@@ -25,7 +25,7 @@ const PursuanceRodionAwakening: Skill = {
             "[Heads Attack End] If target is Staggered or defeated, apply 15% of this unit's Max HP as Shield to allies that this unit healed", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/Pursuance/20905awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/Pursuance/20905awakenprofile.png'
 }
 
 const PursuanceRodionCorrosion: Skill = {
@@ -47,7 +47,7 @@ const PursuanceRodionCorrosion: Skill = {
             "[On Hit] If the target is Staggered or defeated, heal 7 SP on self", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/Pursuance/20905erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/Pursuance/20905erosionprofile.png'
 }
 
 export const PursuanceRodion: Ego = {
@@ -70,5 +70,5 @@ export const PursuanceRodion: Ego = {
     Cost: [{ sin: SinEnum.Sloth, amount: 4 },
             { sin: SinEnum.Pride, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Rodion/EGO/Pursuance/20905cg.png"
+    FullImageDir: './assets/Sinners/Rodion/EGO/Pursuance/20905cg.png'
 }

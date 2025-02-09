@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const MulticrackOfficeRepFaustDefense: Skill = {
     Name: "Charge",
@@ -27,7 +27,7 @@ const MulticrackOfficeRepFaustDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain +4 [Charge] Count (2 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/MultiCrackOfficeRep/ChargeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/MultiCrackOfficeRep/ChargeUT4.png'
 }
 
 const MulticrackOfficeRepFaustSkill1: Skill = {
@@ -45,7 +45,7 @@ const MulticrackOfficeRepFaustSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +3 [Charge] Count", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/MultiCrackOfficeRep/40Y3Activation.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/MultiCrackOfficeRep/40Y3Activation.png'
 }
 
 const MulticrackOfficeRepFaustSkill2: Skill = {
@@ -64,7 +64,7 @@ const MulticrackOfficeRepFaustSkill2: Skill = {
         new SkillDescriptionPart("At 3+ Reson. including this Skill, consume all [Charge] Count on self and deal +([Charge] + 4)% more damage for every [Charge] Count consumed by this Skill (max 180%)", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/MultiCrackOfficeRep/ChargeCountercurrent.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/MultiCrackOfficeRep/ChargeCountercurrent.png'
 }
 
 const MulticrackOfficeRepFaustSkill3: Skill = {
@@ -86,7 +86,7 @@ const MulticrackOfficeRepFaustSkill3: Skill = {
                 "- At 2+ [Charge], inflict 1 additional [Envy Fragility]", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/MultiCrackOfficeRep/40Y3Charge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/MultiCrackOfficeRep/40Y3Charge.png'
 }
 
 export const MulticrackOfficeRepFaust: Identity = {
@@ -126,6 +126,6 @@ export const MulticrackOfficeRepFaust: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Faust/Identities/MultiCrackOfficeRep/10210gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Faust/Identities/MultiCrackOfficeRep/10210gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Faust/Identities/MultiCrackOfficeRep/10210gacksung.png',
+    PortraitImageDir: './assets/Sinners/Faust/Identities/MultiCrackOfficeRep/10210gacksunginfo.png'
 }

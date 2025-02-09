@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const EdgarFamilyButlerIshmaelDefense: Skill = {
     Name: "Evade",
@@ -27,7 +27,7 @@ const EdgarFamilyButlerIshmaelDefense: Skill = {
         [new SkillDescriptionPart("[On Evade] Heal 5 SP (once per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/EdgarFamilyButler/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/EdgarFamilyButler/EvadeUT4.png'
 }
 
 const EdgarFamilyButlerIshmaelSkill1: Skill = {
@@ -48,7 +48,7 @@ const EdgarFamilyButlerIshmaelSkill1: Skill = {
             "[On Crit] Gain 1 [Haste] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/EdgarFamilyButler/SweepingRedirection.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/EdgarFamilyButler/SweepingRedirection.png'
 }
 
 const EdgarFamilyButlerIshmaelSkill2: Skill = {
@@ -71,7 +71,7 @@ const EdgarFamilyButlerIshmaelSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 4 [Sinking]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/EdgarFamilyButler/Housekeeping.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/EdgarFamilyButler/Housekeeping.png'
 }
 
 const EdgarFamilyButlerIshmaelSkill3: Skill = {
@@ -94,7 +94,7 @@ const EdgarFamilyButlerIshmaelSkill3: Skill = {
             "[On Hit] Inflict 1 [Slash Fragility] next turn", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/EdgarFamilyButler/RestrainingTechnique.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/EdgarFamilyButler/RestrainingTechnique.png'
 }
 
 export const EdgarFamilyButlerIshmael: Identity = {
@@ -130,6 +130,6 @@ export const EdgarFamilyButlerIshmael: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ishmael/Identities/EdgarFamilyButler/10809gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ishmael/Identities/EdgarFamilyButler/10809gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ishmael/Identities/EdgarFamilyButler/10809gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ishmael/Identities/EdgarFamilyButler/10809gacksunginfo.png'
 }

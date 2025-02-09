@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ThePriestOfLaManchalandGregorDefense: Skill = {
     Name: "Faded Patience",
@@ -29,7 +29,7 @@ const ThePriestOfLaManchalandGregorDefense: Skill = {
             "[Combat Start] Gain 3 [Ailing Heart] (once per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/ThePriestOfLaManchaland/FadedPatienceUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/ThePriestOfLaManchaland/FadedPatienceUT4.png'
 }
 
 const ThePriestOfLaManchalandGregorSkill1: Skill = {
@@ -52,7 +52,7 @@ const ThePriestOfLaManchalandGregorSkill1: Skill = {
             "[On Hit] Gain 3 [Bloodied Hand]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/ThePriestOfLaManchaland/SacrificeForTheFamily.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/ThePriestOfLaManchaland/SacrificeForTheFamily.png'
 }
 
 const ThePriestOfLaManchalandGregorSkill2: Skill = {
@@ -76,7 +76,7 @@ const ThePriestOfLaManchalandGregorSkill2: Skill = {
             "[On Hit] Gain 3 [Bloodied Hand]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/ThePriestOfLaManchaland/SuffocatingGuilt.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/ThePriestOfLaManchaland/SuffocatingGuilt.png'
 }
 
 const ThePriestOfLaManchalandGregorSkill3: Skill = {
@@ -106,7 +106,7 @@ const ThePriestOfLaManchalandGregorSkill3: Skill = {
             "[On Hit] Inflict 2 [Rupture]", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/ThePriestOfLaManchaland/TheUnforgivableSin.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/ThePriestOfLaManchaland/TheUnforgivableSin.png'
 }
 
 export const ThePriestOfLaManchalandGregor: Identity = {
@@ -149,6 +149,6 @@ export const ThePriestOfLaManchalandGregor: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Gregor/Identities/ThePriestOfLaManchaland/11210gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Gregor/Identities/ThePriestOfLaManchaland/11210gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Gregor/Identities/ThePriestOfLaManchaland/11210gacksung.png',
+    PortraitImageDir: './assets/Sinners/Gregor/Identities/ThePriestOfLaManchaland/11210gacksunginfo.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WCorpL3CleanupAgentYiSangDefense: Skill = {
     Name: "Hollow Dimension",
@@ -28,7 +28,7 @@ const WCorpL3CleanupAgentYiSangDefense: Skill = {
             "[On Evade] +1 Potency when applying [Rupture] for the first time with a Skill effect next turn (Max +3 per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/WCorpL3CleanupAgent/HollowDimensionUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/WCorpL3CleanupAgent/HollowDimensionUT4.png'
 }
 
 const WCorpL3CleanupAgentYiSangSkill1: Skill = {
@@ -48,7 +48,7 @@ const WCorpL3CleanupAgentYiSangSkill1: Skill = {
             "[On Hit] Inflict 2 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/WCorpL3CleanupAgent/DimensionalSlit.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/WCorpL3CleanupAgent/DimensionalSlit.png'
 }
 
 const WCorpL3CleanupAgentYiSangSkill2: Skill = {
@@ -69,7 +69,7 @@ const WCorpL3CleanupAgentYiSangSkill2: Skill = {
             "[On Hit] At 10+ [Charge] Count, inflict 3 [Rupture] and +2 [Rupture] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/WCorpL3CleanupAgent/EnergyCycle.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/WCorpL3CleanupAgent/EnergyCycle.png'
 }
 
 const WCorpL3CleanupAgentYiSangSkill3: Skill = {
@@ -93,7 +93,7 @@ const WCorpL3CleanupAgentYiSangSkill3: Skill = {
             "[On Kill] Gain 5 [Charge Barrier]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/WCorpL3CleanupAgent/DimensionalRift.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/WCorpL3CleanupAgent/DimensionalRift.png'
 }
 
 export const WCorpL3CleanupAgentYiSang: Identity = {
@@ -130,6 +130,6 @@ export const WCorpL3CleanupAgentYiSang: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/YiSang/Identities/WCorpL3CleanupAgent/10106gacksung.png",
-    PortraitImageDir: "./assets/Sinners/YiSang/Identities/WCorpL3CleanupAgent/10106gacksunginfo.png"
+    FullImageDir: './assets/Sinners/YiSang/Identities/WCorpL3CleanupAgent/10106gacksung.png',
+    PortraitImageDir: './assets/Sinners/YiSang/Identities/WCorpL3CleanupAgent/10106gacksunginfo.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ShiAssocSouthSection5DirectorDonQuixoteDefense: Skill = {
     Name: "Evade",
@@ -27,7 +27,7 @@ const ShiAssocSouthSection5DirectorDonQuixoteDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/ShiSection5/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/ShiSection5/EvadeUT4.png'
 }
 
 const ShiAssocSouthSection5DirectorDonQuixoteSkill1: Skill = {
@@ -45,7 +45,7 @@ const ShiAssocSouthSection5DirectorDonQuixoteSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 3 [Poise] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/ShiSection5/CatchBreath.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/ShiSection5/CatchBreath.png'
 }
 
 const ShiAssocSouthSection5DirectorDonQuixoteSkill2: Skill = {
@@ -64,7 +64,7 @@ const ShiAssocSouthSection5DirectorDonQuixoteSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 3 [Haste] next turn", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/ShiSection5/DualStrike.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/ShiSection5/DualStrike.png'
 }
 
 const ShiAssocSouthSection5DirectorDonQuixoteSkill3: Skill = {
@@ -81,7 +81,7 @@ const ShiAssocSouthSection5DirectorDonQuixoteSkill3: Skill = {
         [new SkillDescriptionPart("At 10+ Speed, Skill Power +5")],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/ShiSection5/Overbreathe.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/ShiSection5/Overbreathe.png'
 }
 
 export const ShiAssocSouthSection5DirectorDonQuixote: Identity = {
@@ -117,6 +117,6 @@ export const ShiAssocSouthSection5DirectorDonQuixote: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/DonQuixote/Identities/ShiAssocSouthSection5Director/10303gacksung.png",
-    PortraitImageDir: "./assets/Sinners/DonQuixote/Identities/ShiAssocSouthSection5Director/10303gacksunginfo.png"
+    FullImageDir: './assets/Sinners/DonQuixote/Identities/ShiAssocSouthSection5Director/10303gacksung.png',
+    PortraitImageDir: './assets/Sinners/DonQuixote/Identities/ShiAssocSouthSection5Director/10303gacksunginfo.png'
 }

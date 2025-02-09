@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LobotomyEgoRedSheetSinclairDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const LobotomyEgoRedSheetSinclairDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain 1 [Talisman]")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/LobotomyEGORedSheet/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/LobotomyEGORedSheet/GuardUT4.png'
 }
 
 const LobotomyEgoRedSheetSinclairSkill1: Skill = {
@@ -45,7 +45,7 @@ const LobotomyEgoRedSheetSinclairSkill1: Skill = {
         "[On Hit] If target has 5+ [Rupture], gain 1 [Talisman]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/LobotomyEGORedSheet/MagnifyWound.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/LobotomyEGORedSheet/MagnifyWound.png'
 }
 
 const LobotomyEgoRedSheetSinclairSkill2: Skill = {
@@ -67,7 +67,7 @@ const LobotomyEgoRedSheetSinclairSkill2: Skill = {
         "[On Hit] If target has [Rupture], gain 1 [Talisman]", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/LobotomyEGORedSheet/ProliferatingTalismans.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/LobotomyEGORedSheet/ProliferatingTalismans.png'
 }
 
 const LobotomyEgoRedSheetSinclairSkill3: Skill = {
@@ -85,7 +85,7 @@ const LobotomyEgoRedSheetSinclairSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] If target has [Talisman], inflict +3 [Rupture] Count")],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/LobotomyEGORedSheet/RupturingTalismans.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/LobotomyEGORedSheet/RupturingTalismans.png'
 }
 
 export const LobotomyEgoRedSheetSinclair: Identity = {
@@ -121,6 +121,6 @@ export const LobotomyEgoRedSheetSinclair: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Sinclair/Identities/LobotomyEGORedSheet/11006gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Sinclair/Identities/LobotomyEGORedSheet/11006gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Sinclair/Identities/LobotomyEGORedSheet/11006gacksung.png',
+    PortraitImageDir: './assets/Sinners/Sinclair/Identities/LobotomyEGORedSheet/11006gacksunginfo.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const DimensionShredderHongLuAwakening: Skill = {
     Name: "Dimension Shredder",
@@ -25,7 +25,7 @@ const DimensionShredderHongLuAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Fragile] and 4 [Dimensional Rift]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/DimensionShredder/20603awakenprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/DimensionShredder/20603awakenprofile.png'
 }
 
 const DimensionShredderHongLuCorrosion: Skill = {
@@ -46,7 +46,7 @@ const DimensionShredderHongLuCorrosion: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Fragile] and 4 [Dimensional Rift]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/DimensionShredder/20603erosionprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/DimensionShredder/20603erosionprofile.png'
 }
 
 export const DimensionShredderHongLu: Ego = {
@@ -70,5 +70,5 @@ export const DimensionShredderHongLu: Ego = {
     Cost: [{ sin: SinEnum.Gluttony, amount: 3 },
             { sin: SinEnum.Pride, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/HongLu/EGO/DimensionShredder/20603cg.png"
+    FullImageDir: './assets/Sinners/HongLu/EGO/DimensionShredder/20603cg.png'
 }

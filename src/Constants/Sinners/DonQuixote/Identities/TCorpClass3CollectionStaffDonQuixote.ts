@@ -10,7 +10,7 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
+} from '../../../../Enums/Index';
 import { Identity } from "../../../../Models/Identity";
 import { Passive } from "../../../../Models/Passive";
 import { Skill } from "../../../../Models/Skill";
@@ -31,7 +31,7 @@ const TCorpClass3CollectionStaffDonQuixoteDefense: Skill = {
             "[On Use] For this turn: when hit by an enemy, inflict 3 [Tremor] on target next turn (6 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TCorpClass3CollectionStaff/IShallSummonTheTimeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TCorpClass3CollectionStaff/IShallSummonTheTimeUT4.png'
 }
 
 const TCorpClass3CollectionStaffDonQuixoteSkill1: Skill = {
@@ -52,7 +52,7 @@ const TCorpClass3CollectionStaffDonQuixoteSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Tremor]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TCorpClass3CollectionStaff/LetUsPrepareToCollect.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TCorpClass3CollectionStaff/LetUsPrepareToCollect.png'
 }
 
 const TCorpClass3CollectionStaffDonQuixoteSkill2: Skill = {
@@ -74,7 +74,7 @@ const TCorpClass3CollectionStaffDonQuixoteSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] If this Skill's Coin effects consumed [Tremor] on target, trigger [Tremor Burst], then, reduce target's [Tremor] Count by 1", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TCorpClass3CollectionStaff/TCorpAcceleratedAmputator.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TCorpClass3CollectionStaff/TCorpAcceleratedAmputator.png'
 }
 
 const TCorpClass3CollectionStaffDonQuixoteSkill3: Skill = {
@@ -99,7 +99,7 @@ const TCorpClass3CollectionStaffDonQuixoteSkill3: Skill = {
             "[On Hit] If the target's Speed is slower than this unit's, trigger [Amplitude Conversion] into [Tremor - Chain]", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TCorpClass3CollectionStaff/ICommandTheeHalt.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TCorpClass3CollectionStaff/ICommandTheeHalt.png'
 }
 
 export const TCorpClass3CollectionStaffDonQuixote: Identity = {
@@ -137,6 +137,6 @@ export const TCorpClass3CollectionStaffDonQuixote: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/DonQuixote/Identities/TCorpClass3CollectionStaff/10309gacksung.png",
-    PortraitImageDir: "./assets/Sinners/DonQuixote/Identities/TCorpClass3CollectionStaff/10309gacksunginfo.png"
+    FullImageDir: './assets/Sinners/DonQuixote/Identities/TCorpClass3CollectionStaff/10309gacksung.png',
+    PortraitImageDir: './assets/Sinners/DonQuixote/Identities/TCorpClass3CollectionStaff/10309gacksunginfo.png'
 }

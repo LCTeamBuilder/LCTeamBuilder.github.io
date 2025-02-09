@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LanternSinclairAwakening: Skill = {
     Name: "Lantern",
@@ -24,7 +24,7 @@ const LanternSinclairAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 Rupture [On Hit] Heal 2 allies with the lowest HP by 15% of Max HP.", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/Lantern/21004awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/Lantern/21004awakenprofile.png'
 }
 
 const LanternSinclairCorrosion: Skill = {
@@ -46,7 +46,7 @@ const LanternSinclairCorrosion: Skill = {
             "[On Hit] Heal self by 50% of damage dealt")],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/Lantern/21004erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/Lantern/21004erosionprofile.png'
 }
 
 export const LanternSinclair: Ego = {
@@ -70,5 +70,5 @@ export const LanternSinclair: Ego = {
             { sin: SinEnum.Gluttony, amount: 4 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Sinclair/EGO/Lantern/21004cg.png"
+    FullImageDir: './assets/Sinners/Sinclair/EGO/Lantern/21004cg.png'
 }

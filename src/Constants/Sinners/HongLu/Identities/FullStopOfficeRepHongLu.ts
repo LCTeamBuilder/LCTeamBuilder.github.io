@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const FullStopOfficeRepHongLuDefense: Skill = {
     Name: "Combat Poise",
@@ -28,7 +28,7 @@ const FullStopOfficeRepHongLuDefense: Skill = {
             "[On Evade] Gain 1 [Poise] (5 times per turn)")],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: DefenseTypeEnum.UniqueCounter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/10611044.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/10611044.png'
 }
 
 const FullStopOfficeRepHongLuDefense2: Skill = {
@@ -50,7 +50,7 @@ const FullStopOfficeRepHongLuDefense2: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 1 [Poise]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: DefenseTypeEnum.UniqueCounter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061107.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061107.png'
 }
 
 const FullStopOfficeRepHongLuSkill11: Skill = {
@@ -72,7 +72,7 @@ const FullStopOfficeRepHongLuSkill11: Skill = {
             "[On Hit] Gain 2 [Poise]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061101.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061101.png'
 }
 
 const FullStopOfficeRepHongLuSkill12: Skill = {
@@ -92,7 +92,7 @@ const FullStopOfficeRepHongLuSkill12: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 1 [Poise]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061108.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061108.png'
 }
 
 const FullStopOfficeRepHongLuSkill21: Skill = {
@@ -118,7 +118,7 @@ const FullStopOfficeRepHongLuSkill21: Skill = {
             "[On Hit] Inflict 1 [Attack Power Down] next turn", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061102.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061102.png'
 }
 
 const FullStopOfficeRepHongLuSkill22: Skill = {
@@ -146,7 +146,7 @@ const FullStopOfficeRepHongLuSkill22: Skill = {
             "+30% Damage on Critical Hit", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061105.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061105.png'
 }
 
 const FullStopOfficeRepHongLuSkill31: Skill = {
@@ -175,7 +175,7 @@ const FullStopOfficeRepHongLuSkill31: Skill = {
             "[On Hit] Inflict 2 [Pierce Fragility]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061103.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061103.png'
 }
 
 const FullStopOfficeRepHongLuSkill32: Skill = {
@@ -207,7 +207,7 @@ const FullStopOfficeRepHongLuSkill32: Skill = {
             "Deal +(the target's Pierce Res. x 50)% more damage", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061106.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FullStopOfficeRep/1061106.png'
 }
 
 export const FullStopOfficeRepHongLu: Identity = {
@@ -254,6 +254,6 @@ export const FullStopOfficeRepHongLu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/HongLu/Identities/FullStopOfficeRep/10611gacksung.png",
-    PortraitImageDir: "./assets/Sinners/HongLu/Identities/FullStopOfficeRep/10611gacksunginfo.png"
+    FullImageDir: './assets/Sinners/HongLu/Identities/FullStopOfficeRep/10611gacksung.png',
+    PortraitImageDir: './assets/Sinners/HongLu/Identities/FullStopOfficeRep/10611gacksunginfo.png'
 }

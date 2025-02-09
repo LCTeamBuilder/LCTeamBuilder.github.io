@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LegerdemainGregorAwakening: Skill = {
     Name: "Legerdemain",
@@ -25,7 +25,7 @@ const LegerdemainGregorAwakening: Skill = {
             "[On Hit] Inflict 4 [Paralyze]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/Legerdemain/21202awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/Legerdemain/21202awakenprofile.png'
 }
 
 const LegerdemainGregorCorrosion: Skill = {
@@ -46,7 +46,7 @@ const LegerdemainGregorCorrosion: Skill = {
             "[On Hit] Inflict 6 [Maggots]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/Legerdemain/21202erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/Legerdemain/21202erosionprofile.png'
 }
 
 export const LegerdemainGregor: Ego = {
@@ -69,5 +69,5 @@ export const LegerdemainGregor: Ego = {
     Cost: [{ sin: SinEnum.Sloth, amount: 1 },
             { sin: SinEnum.Gluttony, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Gregor/EGO/Legerdemain/21202cg.png"
+    FullImageDir: './assets/Sinners/Gregor/EGO/Legerdemain/21202cg.png'
 }

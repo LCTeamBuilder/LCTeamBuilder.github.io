@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const DieciAssocSouthSection4YiSangDefense: Skill = {
     Name: "Fixated Study",
@@ -28,7 +28,7 @@ const DieciAssocSouthSection4YiSangDefense: Skill = {
             "[On Use] Gain +5 [Aggro] to this Skill Slot next turn")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/DieciAssociationSouthSection4/FixatedStudy.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/DieciAssociationSouthSection4/FixatedStudy.png'
 }
 
 const DieciAssocSouthSection4YiSangSkill1: Skill = {
@@ -49,7 +49,7 @@ const DieciAssocSouthSection4YiSangSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Lower user's Stagger Threshold by [Insight]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/DieciAssociationSouthSection4/ExpendKnowledge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/DieciAssociationSouthSection4/ExpendKnowledge.png'
 }
 
 const DieciAssocSouthSection4YiSangSkill2: Skill = {
@@ -71,7 +71,7 @@ const DieciAssocSouthSection4YiSangSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict [Sinking] equal to [Insight]", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/DieciAssociationSouthSection4/SealShut.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/DieciAssociationSouthSection4/SealShut.png'
 }
 
 const DieciAssocSouthSection4YiSangSkill3: Skill = {
@@ -91,7 +91,7 @@ const DieciAssocSouthSection4YiSangSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +3 [Sinking] Count", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/DieciAssociationSouthSection4/GraceOfKnowledge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/DieciAssociationSouthSection4/GraceOfKnowledge.png'
 }
 
 export const DieciAssocSouthSection4YiSang: Identity = {
@@ -127,6 +127,6 @@ export const DieciAssocSouthSection4YiSang: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/YiSang/Identities/DieciAssociationSouthSection4/10108gacksung.png",
-    PortraitImageDir: "./assets/Sinners/YiSang/Identities/DieciAssociationSouthSection4/10108gacksunginfo.png"
+    FullImageDir: './assets/Sinners/YiSang/Identities/DieciAssociationSouthSection4/10108gacksung.png',
+    PortraitImageDir: './assets/Sinners/YiSang/Identities/DieciAssociationSouthSection4/10108gacksunginfo.png'
 }

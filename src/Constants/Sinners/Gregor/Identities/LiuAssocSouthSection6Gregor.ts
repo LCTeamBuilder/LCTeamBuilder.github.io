@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LiuAssocSouthSection6GregorDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const LiuAssocSouthSection6GregorDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/LiuAssocSouthSection6/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/LiuAssocSouthSection6/GuardUT4.png'
 }
 
 const LiuAssocSouthSection6GregorSkill1: Skill = {
@@ -48,7 +48,7 @@ const LiuAssocSouthSection6GregorSkill1: Skill = {
             "[Heads Hit] Inflict 1 [Burn]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/LiuAssocSouthSection6/SinglepointStab.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/LiuAssocSouthSection6/SinglepointStab.png'
 }
 
 const LiuAssocSouthSection6GregorSkill2: Skill = {
@@ -69,7 +69,7 @@ const LiuAssocSouthSection6GregorSkill2: Skill = {
             "[On Hit] If target has 6+ [Burn], gain 1 [Attack Power Up] next turn", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/LiuAssocSouthSection6/RushDown.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/LiuAssocSouthSection6/RushDown.png'
 }
 
 const LiuAssocSouthSection6GregorSkill3: Skill = {
@@ -90,7 +90,7 @@ const LiuAssocSouthSection6GregorSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 [Burn]", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/LiuAssocSouthSection6/PerfectedPalmStrike.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/LiuAssocSouthSection6/PerfectedPalmStrike.png'
 }
 
 export const LiuAssocSouthSection6Gregor: Identity = {
@@ -126,6 +126,6 @@ export const LiuAssocSouthSection6Gregor: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Gregor/Identities/LiuAssociationSouthSection6/11202gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Gregor/Identities/LiuAssociationSouthSection6/11202gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Gregor/Identities/LiuAssociationSouthSection6/11202gacksung.png',
+    PortraitImageDir: './assets/Sinners/Gregor/Identities/LiuAssociationSouthSection6/11202gacksunginfo.png'
 }

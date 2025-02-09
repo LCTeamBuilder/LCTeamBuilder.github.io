@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const FourthMatchFlameRodionAwakening: Skill = {
     Name: "4th Match Flame",
@@ -24,7 +24,7 @@ const FourthMatchFlameRodionAwakening: Skill = {
         "[On Hit] Inflict 3 [Wrath Fragility] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/4thMatchFlame/20902awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/4thMatchFlame/20902awakenprofile.png'
 }
 
 const FourthMatchFlameRodionCorrosion: Skill = {
@@ -44,7 +44,7 @@ const FourthMatchFlameRodionCorrosion: Skill = {
             "[On Hit] Inflict 3 [Wrath Fragility] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/4thMatchFlame/20902erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/4thMatchFlame/20902erosionprofile.png'
 }
 
 export const FourthMatchFlameRodion: Ego = {
@@ -68,5 +68,5 @@ export const FourthMatchFlameRodion: Ego = {
             { sin: SinEnum.Pride, amount: 2 },
             { sin: SinEnum.Envy, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Rodion/EGO/4thMatchFlame/20902cg.png"
+    FullImageDir: './assets/Sinners/Rodion/EGO/4thMatchFlame/20902cg.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LobotomyEgoRegretFaustDefense: Skill = {
     Name: "Gathering Spite",
@@ -27,7 +27,7 @@ const LobotomyEgoRegretFaustDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain +6 [Tremor] Count")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LobotomyEGORegret/GatheringSpiteUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LobotomyEGORegret/GatheringSpiteUT4.png'
 }
 
 const LobotomyEgoRegretFaustSkill1: Skill = {
@@ -47,7 +47,7 @@ const LobotomyEgoRegretFaustSkill1: Skill = {
             "[On Hit] Inflict +3 [Tremor] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LobotomyEGORegret/ContractingStraightjacket.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LobotomyEGORegret/ContractingStraightjacket.png'
 }
 
 const LobotomyEgoRegretFaustSkill2: Skill = {
@@ -69,7 +69,7 @@ const LobotomyEgoRegretFaustSkill2: Skill = {
             "[On Hit] Inflict 1 [Plus Coin Drop] next turn", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LobotomyEGORegret/MetallicRinging.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LobotomyEGORegret/MetallicRinging.png'
 }
 
 const LobotomyEgoRegretFaustSkill3: Skill = {
@@ -96,7 +96,7 @@ const LobotomyEgoRegretFaustSkill3: Skill = {
             "Reduce [Tremor] Count by 3", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LobotomyEGORegret/UnleashedViolence.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LobotomyEGORegret/UnleashedViolence.png'
 }
 
 export const LobotomyEgoRegretFaust: Identity = {
@@ -134,6 +134,6 @@ export const LobotomyEgoRegretFaust: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Faust/Identities/LobotomyEGORegret/10207gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Faust/Identities/LobotomyEGORegret/10207gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Faust/Identities/LobotomyEGORegret/10207gacksung.png',
+    PortraitImageDir: './assets/Sinners/Faust/Identities/LobotomyEGORegret/10207gacksunginfo.png'
 }

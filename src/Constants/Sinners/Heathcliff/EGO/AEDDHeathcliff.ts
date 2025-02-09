@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const AEDDHeathcliffAwakening: Skill = {
     Name: "AEDD",
@@ -25,7 +25,7 @@ const AEDDHeathcliffAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 [Paralyze] and 1 [Gloom Fragility]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/AEDD/20703awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/AEDD/20703awakenprofile.png'
 }
 
 const AEDDHeathcliffCorrosion: Skill = {
@@ -48,7 +48,7 @@ const AEDDHeathcliffCorrosion: Skill = {
             "[Tails Attack End] Lose HP by 10% of Max HP to gain +10 [Charge] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/AEDD/20703erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/AEDD/20703erosionprofile.png'
 }
 
 export const AEDDHeathcliff: Ego = {
@@ -72,5 +72,5 @@ export const AEDDHeathcliff: Ego = {
     Cost: [{ sin: SinEnum.Gloom, amount: 3 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Heathcliff/EGO/AEDD/20703cg.png"
+    FullImageDir: './assets/Sinners/Heathcliff/EGO/AEDD/20703cg.png'
 }

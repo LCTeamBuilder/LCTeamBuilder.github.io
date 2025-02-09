@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const MolarBoatworksFixerIshmaelDefense: Skill = {
     Name: "Nimble Steps",
@@ -27,7 +27,7 @@ const MolarBoatworksFixerIshmaelDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain 2 [Rupture Protection] (6 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/MolarBoatworksFixer/NimbleStepsUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/MolarBoatworksFixer/NimbleStepsUT4.png'
 }
 
 const MolarBoatworksFixerIshmaelSkill1: Skill = {
@@ -46,7 +46,7 @@ const MolarBoatworksFixerIshmaelSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Sinking] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/MolarBoatworksFixer/ReadyToCrush.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/MolarBoatworksFixer/ReadyToCrush.png'
 }
 
 const MolarBoatworksFixerIshmaelSkill2: Skill = {
@@ -67,7 +67,7 @@ const MolarBoatworksFixerIshmaelSkill2: Skill = {
             "[On Hit] Inflict 4 [Defense Level Down] next turn", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/MolarBoatworksFixer/ExplosiveBlast.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/MolarBoatworksFixer/ExplosiveBlast.png'
 }
 
 const MolarBoatworksFixerIshmaelSkill3: Skill = {
@@ -90,7 +90,7 @@ const MolarBoatworksFixerIshmaelSkill3: Skill = {
             "[On Hit] Spend 5 [Tremor] Count to inflict 2 [Fragile] next turn", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/MolarBoatworksFixer/RiskyJudgement.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/MolarBoatworksFixer/RiskyJudgement.png'
 }
 
 export const MolarBoatworksFixerIshmael: Identity = {
@@ -126,6 +126,6 @@ export const MolarBoatworksFixerIshmael: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ishmael/Identities/MolarBoatworksFixer/10807gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ishmael/Identities/MolarBoatworksFixer/10807gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ishmael/Identities/MolarBoatworksFixer/10807gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ishmael/Identities/MolarBoatworksFixer/10807gacksunginfo.png'
 }

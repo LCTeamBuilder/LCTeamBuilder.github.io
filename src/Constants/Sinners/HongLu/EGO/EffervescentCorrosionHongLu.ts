@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const EffervescentCorrosionHongLuAwakening: Skill = {
     Name: "Effervescent Corrosion",
@@ -27,7 +27,7 @@ const EffervescentCorrosionHongLuAwakening: Skill = {
             "[On Hit] Inflict 2 [Bind] next turn", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/EffervescentCorrosion/20605awakenprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/EffervescentCorrosion/20605awakenprofile.png'
 }
 
 const EffervescentCorrosionHongLuCorrosion: Skill = {
@@ -50,7 +50,7 @@ const EffervescentCorrosionHongLuCorrosion: Skill = {
             "[On Hit] Inflict 2 [Bind] next turn", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/EffervescentCorrosion/20605awakenprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/EffervescentCorrosion/20605awakenprofile.png'
 }
 
 export const EffervescentCorrosionHongLu: Ego = {
@@ -73,5 +73,5 @@ export const EffervescentCorrosionHongLu: Ego = {
     Cost: [{ sin: SinEnum.Gluttony, amount: 6 },
             { sin: SinEnum.Gloom, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/HongLu/EGO/EffervescentCorrosion/20605cg.png"
+    FullImageDir: './assets/Sinners/HongLu/EGO/EffervescentCorrosion/20605cg.png'
 }

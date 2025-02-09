@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LobotomyEGOSolemnLamentYiSangDefense: Skill = {
     Name: "FromTheCoffinAButterflyTakesFlight",
@@ -28,7 +28,7 @@ const LobotomyEGOSolemnLamentYiSangDefense: Skill = {
         "[Combat Start] Gain Shield equal to (the sum of both [Butterfly] on the selected target)% HP. (max 20% per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LobotomyEGOSolemnLament/10110044.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LobotomyEGOSolemnLament/10110044.png'
 }
 
 const LobotomyEGOSolemnLamentYiSangSkill1: Skill = {
@@ -51,7 +51,7 @@ const LobotomyEGOSolemnLamentYiSangSkill1: Skill = {
         "[On Hit] Inflict [Butterfly] equal to [The Living & The Departed] consumed", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LobotomyEGOSolemnLament/1011001.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LobotomyEGOSolemnLament/1011001.png'
 }
 
 const LobotomyEGOSolemnLamentYiSangSkill2: Skill = {
@@ -77,7 +77,7 @@ const LobotomyEGOSolemnLamentYiSangSkill2: Skill = {
         "[On Hit] Inflict [Butterfly] equal to [The Living & The Departed] consumed", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LobotomyEGOSolemnLament/1011002.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LobotomyEGOSolemnLament/1011002.png'
 }
 
 const LobotomyEGOSolemnLamentYiSangSkill3: Skill = {
@@ -106,7 +106,7 @@ const LobotomyEGOSolemnLamentYiSangSkill3: Skill = {
         '- "All" = the sum of both The Living and The Departed on the target', 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LobotomyEGOSolemnLament/1011003.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LobotomyEGOSolemnLament/1011003.png'
 }
 
 export const LobotomyEGOSolemnLamentYiSang: Identity = {
@@ -160,6 +160,6 @@ export const LobotomyEGOSolemnLamentYiSang: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/YiSang/Identities/LobotomyEGOSolemnLament/10110gacksung.png",
-    PortraitImageDir: "./assets/Sinners/YiSang/Identities/LobotomyEGOSolemnLament/10110gacksunginfo.png"
+    FullImageDir: './assets/Sinners/YiSang/Identities/LobotomyEGOSolemnLament/10110gacksung.png',
+    PortraitImageDir: './assets/Sinners/YiSang/Identities/LobotomyEGOSolemnLament/10110gacksunginfo.png'
 }

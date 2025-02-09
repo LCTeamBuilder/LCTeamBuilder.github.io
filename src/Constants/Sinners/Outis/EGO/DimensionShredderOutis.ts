@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const DimensionShredderOutisAwakening: Skill = {
     Name: "Dimension Shredder",
@@ -28,7 +28,7 @@ const DimensionShredderOutisAwakening: Skill = {
             "[On Kill] Gain +2 [Charge] Count", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/DimensionShredder/21107awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/DimensionShredder/21107awakenprofile.png'
 }
 
 const DimensionShredderOutisCorrosion: Skill = {
@@ -52,7 +52,7 @@ const DimensionShredderOutisCorrosion: Skill = {
             "[On Kill] Gain +2 [Charge] Count", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/DimensionShredder/21107erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/DimensionShredder/21107erosionprofile.png'
 }
 
 export const DimensionShredderOutis: Ego = {
@@ -78,5 +78,5 @@ export const DimensionShredderOutis: Ego = {
             { sin: SinEnum.Pride, amount: 1 },
             { sin: SinEnum.Envy, amount: 4 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Outis/EGO/DimensionShredder/21107cg.png"
+    FullImageDir: './assets/Sinners/Outis/EGO/DimensionShredder/21107cg.png'
 }

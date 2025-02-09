@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TheRingPointillistStudentYiSangDefense: Skill = {
     Name: "Beat the Brush",
@@ -27,7 +27,7 @@ const TheRingPointillistStudentYiSangDefense: Skill = {
         [new SkillDescriptionPart("Base Power +1 for every 1 [Bleed] on target (max 10)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/TheRingPointillistStudent/BeatTheBrushUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/TheRingPointillistStudent/BeatTheBrushUT4.png'
 }
 
 const TheRingPointillistStudentYiSangSkill1: Skill = {
@@ -46,7 +46,7 @@ const TheRingPointillistStudentYiSangSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Bleed]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/TheRingPointillistStudent/PaintOver.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/TheRingPointillistStudent/PaintOver.png'
 }
 
 const TheRingPointillistStudentYiSangSkill2: Skill = {
@@ -67,7 +67,7 @@ const TheRingPointillistStudentYiSangSkill2: Skill = {
         "[On Hit] Inflict +3 Count for 1 of the following effects: [Burn], [Bleed], [Rupture], [Tremor], or [Sinking]. Effect selected at random.", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/TheRingPointillistStudent/SanguinePointillism.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/TheRingPointillistStudent/SanguinePointillism.png'
 }
 
 const TheRingPointillistStudentYiSangSkill3: Skill = {
@@ -91,7 +91,7 @@ const TheRingPointillistStudentYiSangSkill3: Skill = {
         "[After Attack] If the target is Staggered or Defeated, inflict 2 Potency of 1 of the following effects on 2 enemies with the least negative effects: [Burn], [Bleed], [Rupture], [Tremor], or [Sinking]. Effect selected at random.", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/TheRingPointillistStudent/HematicColoring.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/TheRingPointillistStudent/HematicColoring.png'
 }
 
 export const TheRingPointillistStudentYiSang: Identity = {
@@ -136,6 +136,6 @@ export const TheRingPointillistStudentYiSang: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/YiSang/Identities/TheRingPointillistStudent/10109gacksung.png",
-    PortraitImageDir: "./assets/Sinners/YiSang/Identities/TheRingPointillistStudent/10109gacksunginfo.png"
+    FullImageDir: './assets/Sinners/YiSang/Identities/TheRingPointillistStudent/10109gacksung.png',
+    PortraitImageDir: './assets/Sinners/YiSang/Identities/TheRingPointillistStudent/10109gacksunginfo.png'
 }

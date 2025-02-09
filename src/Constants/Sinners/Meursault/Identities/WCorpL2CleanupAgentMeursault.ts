@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WCorpL2CleanupAgentMeursaultDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const WCorpL2CleanupAgentMeursaultDefense: Skill = {
         [new SkillDescriptionPart("[Combat Start] Gain +2 [Charge] Count")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/WCorpL3CleanupAgent/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/WCorpL3CleanupAgent/GuardUT4.png'
 }
 
 const WCorpL2CleanupAgentMeursaultSkill1: Skill = {
@@ -46,7 +46,7 @@ const WCorpL2CleanupAgentMeursaultSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +3 [Charge] Count", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/WCorpL3CleanupAgent/Rip.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/WCorpL3CleanupAgent/Rip.png'
 }
 
 const WCorpL2CleanupAgentMeursaultSkill2: Skill = {
@@ -67,7 +67,7 @@ const WCorpL2CleanupAgentMeursaultSkill2: Skill = {
             "[On Hit] Spend 3 [Charge] Count to inflict 2 [Slash Fragility]", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/WCorpL3CleanupAgent/EnergyCycle.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/WCorpL3CleanupAgent/EnergyCycle.png'
 }
 
 const WCorpL2CleanupAgentMeursaultSkill3: Skill = {
@@ -88,7 +88,7 @@ const WCorpL2CleanupAgentMeursaultSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Spend 2 [Charge] Count to inflict 2 [Defense Level Down]", 4)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/WCorpL3CleanupAgent/EnergyCurrent.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/WCorpL3CleanupAgent/EnergyCurrent.png'
 }
 
 export const WCorpL2CleanupAgentMeursault: Identity = {
@@ -126,6 +126,6 @@ export const WCorpL2CleanupAgentMeursault: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Meursault/Identities/WCorpCleanupCrew/10503gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Meursault/Identities/WCorpCleanupCrew/10503gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Meursault/Identities/WCorpCleanupCrew/10503gacksung.png',
+    PortraitImageDir: './assets/Sinners/Meursault/Identities/WCorpCleanupCrew/10503gacksunginfo.png'
 }

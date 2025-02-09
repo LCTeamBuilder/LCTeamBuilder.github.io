@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LobotomyEgoSloshingIshmaelDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const LobotomyEgoSloshingIshmaelDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain +4 [Aggro] to this Skill Slot next turn")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LobotomyEGOSloshing/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LobotomyEGOSloshing/GuardUT4.png'
 }
 
 const LobotomyEgoSloshingIshmaelSkill1: Skill = {
@@ -47,7 +47,7 @@ const LobotomyEgoSloshingIshmaelSkill1: Skill = {
             "[On Hit] Inflict +1 [Tremor] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LobotomyEGOSloshing/ItsHeavy.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LobotomyEGOSloshing/ItsHeavy.png'
 }
 
 const LobotomyEgoSloshingIshmaelSkill2: Skill = {
@@ -67,7 +67,7 @@ const LobotomyEgoSloshingIshmaelSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Tremor]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LobotomyEGOSloshing/ItsChurning.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LobotomyEGOSloshing/ItsChurning.png'
 }
 
 const LobotomyEgoSloshingIshmaelSkill3: Skill = {
@@ -87,7 +87,7 @@ const LobotomyEgoSloshingIshmaelSkill3: Skill = {
             "After bursting [Tremor], reduce [Tremor] Count by 4. Inflict 5 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LobotomyEGOSloshing/CorrosiveSplash.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LobotomyEGOSloshing/CorrosiveSplash.png'
 }
 
 export const LobotomyEgoSloshingIshmael: Identity = {
@@ -123,6 +123,6 @@ export const LobotomyEgoSloshingIshmael: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ishmael/Identities/LobotomyEGOSloshing/10805gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ishmael/Identities/LobotomyEGOSloshing/10805gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ishmael/Identities/LobotomyEGOSloshing/10805gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ishmael/Identities/LobotomyEGOSloshing/10805gacksunginfo.png'
 }

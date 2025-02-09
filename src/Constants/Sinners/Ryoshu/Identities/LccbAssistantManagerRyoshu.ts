@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LccbAssistantManagerRyoshuDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const LccbAssistantManagerRyoshuDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LCCBAssistantManager/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LCCBAssistantManager/GuardUT4.png'
 }
 
 const LccbAssistantManagerRyoshuSkill1: Skill = {
@@ -46,7 +46,7 @@ const LccbAssistantManagerRyoshuSkill1: Skill = {
         new SkillDescriptionPart("[On Crit] Target loses 8 SP", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LCCBAssistantManager/Shove.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LCCBAssistantManager/Shove.png'
 }
 
 const LccbAssistantManagerRyoshuSkill2: Skill = {
@@ -67,7 +67,7 @@ const LccbAssistantManagerRyoshuSkill2: Skill = {
             "[On Crit] Inflict 1 [Offense Level Down]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LCCBAssistantManager/TN.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LCCBAssistantManager/TN.png'
 }
 
 const LccbAssistantManagerRyoshuSkill3: Skill = {
@@ -92,7 +92,7 @@ const LccbAssistantManagerRyoshuSkill3: Skill = {
             "[On Hit] Trigger [Tremor Burst]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LCCBAssistantManager/OOF.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LCCBAssistantManager/OOF.png'
 }
 
 export const LccbAssistantManagerRyoshu: Identity = {
@@ -131,6 +131,6 @@ export const LccbAssistantManagerRyoshu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ryoshu/Identities/LCCBAssistantManager/10406gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ryoshu/Identities/LCCBAssistantManager/10406gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ryoshu/Identities/LCCBAssistantManager/10406gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ryoshu/Identities/LCCBAssistantManager/10406gacksunginfo.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LaSangreDeSanchoDonQuixoteAwakening: Skill = {
     Name: "La Sangre de Sancho",
@@ -24,7 +24,7 @@ const LaSangreDeSanchoDonQuixoteAwakening: Skill = {
             "[On Hit] Heal by 50% of damage dealt", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/LaSangreDeSancho/20301awakenprofile.png"
+    SkillImageDir: './assets/Sinners/DonQuixote/EGO/LaSangreDeSancho/20301awakenprofile.png'
 }
 
 export const LaSangreDeSanchoDonQuixote: Ego = {
@@ -47,5 +47,5 @@ export const LaSangreDeSanchoDonQuixote: Ego = {
     Cost: [{ sin: SinEnum.Lust, amount: 2 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/DonQuixote/EGO/LaSangreDeSancho/20301cg.png"
+    FullImageDir: './assets/Sinners/DonQuixote/EGO/LaSangreDeSancho/20301cg.png'
 }

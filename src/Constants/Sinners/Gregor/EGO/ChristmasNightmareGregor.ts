@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ChristmasNightmareGregorAwakening: Skill = {
     Name: "Christmas Nightmare",
@@ -29,7 +29,7 @@ const ChristmasNightmareGregorAwakening: Skill = {
             "[On Hit] If the target is in Staggered, Low Morale, or Panic states, inflict 1 [Attack Power Down] and Fragility against the Affinity of the highest Reson. next turn", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/ChristmasNightmare/21208awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/ChristmasNightmare/21208awakenprofile.png'
 }
 
 const ChristmasNightmareGregorCorrosion: Skill = {
@@ -55,7 +55,7 @@ const ChristmasNightmareGregorCorrosion: Skill = {
             "[On Hit] If the target is in Staggered, Low Morale, or Panic states, inflict 1 [Attack Power Down] and 2 [Fragility] against the Affinity of the highest Reson. next turn", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/ChristmasNightmare/21208erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/ChristmasNightmare/21208erosionprofile.png'
 }
 
 export const ChristmasNightmareGregor: Ego = {
@@ -81,5 +81,5 @@ export const ChristmasNightmareGregor: Ego = {
             { sin: SinEnum.Gloom, amount: 2 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Gregor/EGO/ChristmasNightmare/21208cg.png"
+    FullImageDir: './assets/Sinners/Gregor/EGO/ChristmasNightmare/21208cg.png'
 }

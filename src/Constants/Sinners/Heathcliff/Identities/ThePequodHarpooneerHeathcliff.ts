@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ThePequodHarpooneerHeathcliffDefense: Skill = {
     Name: "Payback",
@@ -28,7 +28,7 @@ const ThePequodHarpooneerHeathcliffDefense: Skill = {
             "[Combat Start] Gain [Defense Level Up] for every [Poise] on self (Max 10)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/ThePequodHarpooneer/PaybackUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/ThePequodHarpooneer/PaybackUT4.png'
 }
 
 const ThePequodHarpooneerHeathcliffSkill1: Skill = {
@@ -47,7 +47,7 @@ const ThePequodHarpooneerHeathcliffSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/ThePequodHarpooneer/StalkPrey.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/ThePequodHarpooneer/StalkPrey.png'
 }
 
 const ThePequodHarpooneerHeathcliffSkill2: Skill = {
@@ -66,7 +66,7 @@ const ThePequodHarpooneerHeathcliffSkill2: Skill = {
         new SkillDescriptionPart("[On Crit] Inflict [Bleed] Count equal to 1/3 of [Bleed] Potency on target (Max 10)", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/ThePequodHarpooneer/Snagharpoon.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/ThePequodHarpooneer/Snagharpoon.png'
 }
 
 const ThePequodHarpooneerHeathcliffSkill3: Skill = {
@@ -92,7 +92,7 @@ const ThePequodHarpooneerHeathcliffSkill3: Skill = {
         new SkillDescriptionPart("[On Crit] +50% Damage on Critical Hit", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/ThePequodHarpooneer/SeverKnot.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/ThePequodHarpooneer/SeverKnot.png'
 }
 
 export const ThePequodHarpooneerHeathcliff: Identity = {
@@ -131,6 +131,6 @@ export const ThePequodHarpooneerHeathcliff: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Heathcliff/Identities/ThePequodHarpooneer/10707gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Heathcliff/Identities/ThePequodHarpooneer/10707gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Heathcliff/Identities/ThePequodHarpooneer/10707gacksung.png',
+    PortraitImageDir: './assets/Sinners/Heathcliff/Identities/ThePequodHarpooneer/10707gacksunginfo.png'
 }

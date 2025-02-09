@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const EffervescentCorrosionRodionAwakening: Skill = {
     Name: "Effervescent Corrosion",
@@ -27,7 +27,7 @@ const EffervescentCorrosionRodionAwakening: Skill = {
             "[On Hit] Trigger [Tremor Burst]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/EffervescentCorrosion/20904awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/EffervescentCorrosion/20904awakenprofile.png'
 }
 
 const EffervescentCorrosionRodionCorrosion: Skill = {
@@ -50,7 +50,7 @@ const EffervescentCorrosionRodionCorrosion: Skill = {
             "[On Hit] Trigger [Tremor Burst]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/EffervescentCorrosion/20904erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/EffervescentCorrosion/20904erosionprofile.png'
 }
 
 export const EffervescentCorrosionRodion: Ego = {
@@ -74,5 +74,5 @@ export const EffervescentCorrosionRodion: Ego = {
             { sin: SinEnum.Gloom, amount: 2 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Rodion/EGO/EffervescentCorrosion/20904cg.png"
+    FullImageDir: './assets/Sinners/Rodion/EGO/EffervescentCorrosion/20904cg.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SunshowerOutisAwakening: Skill = {
     Name: "Sunshower",
@@ -26,7 +26,7 @@ const SunshowerOutisAwakening: Skill = {
             "[On Crit] Trigger [Tremor Burst], Inflict +3 [Sinking] Count", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/Sunshower/21104awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/Sunshower/21104awakenprofile.png'
 }
 
 const SunshowerOutisCorrosion: Skill = {
@@ -49,7 +49,7 @@ const SunshowerOutisCorrosion: Skill = {
             "[On Crit] Trigger [Tremor Burst], Inflict +3 [Sinking] Count and [Rupture] Count", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/Sunshower/21104erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/Sunshower/21104erosionprofile.png'
 }
 
 export const SunshowerOutis: Ego = {
@@ -74,5 +74,5 @@ export const SunshowerOutis: Ego = {
             { sin: SinEnum.Gluttony, amount: 2 },
             { sin: SinEnum.Gloom, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Outis/EGO/Sunshower/21104cg.png"
+    FullImageDir: './assets/Sinners/Outis/EGO/Sunshower/21104cg.png'
 }

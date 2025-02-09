@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerIshmaelDefense: Skill = {
     Name: "Guard",
@@ -26,7 +26,7 @@ const LCBSinnerIshmaelDefense: Skill = {
     SkillDescription: [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LCBSinner/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LCBSinner/GuardUT4.png'
 }
 
 const LCBSinnerIshmaelSkill1: Skill = {
@@ -42,7 +42,7 @@ const LCBSinnerIshmaelSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict +1 [Tremor] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LCBSinner/Loggerhead.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LCBSinner/Loggerhead.png'
 }
 
 const LCBSinnerIshmaelSkill2: Skill = {
@@ -58,7 +58,7 @@ const LCBSinnerIshmaelSkill2: Skill = {
     SkillDescription: [new SkillDescriptionPart("[Clash Win] Inflict 3 [Defense Power Down]"),            new SkillDescriptionPart("[On Hit] Inflict 3 [Tremor]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LCBSinner/Slide.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LCBSinner/Slide.png'
 }
 
 const LCBSinnerIshmaelSkill3: Skill = {
@@ -74,7 +74,7 @@ const LCBSinnerIshmaelSkill3: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Trigger [Tremor Burst], Inflict 1 [Blunt Fragility]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LCBSinner/Guard.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LCBSinner/Guard.png', 
     // At time of writing this is incorrectly named in the source folder. To avoid having to manually rename this every time the
     // skill icon folder is overwritten and the rename script is ran, for the time being this will use the incorrect name until either
     // the source folder is fixed or the script is edited to automatically rename this file.
@@ -113,6 +113,6 @@ export const LCBSinnerIshmael: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ishmael/Identities/LCBSinner/10801normal.png",
-    PortraitImageDir: "./assets/Sinners/Ishmael/Identities/LCBSinner/10801normalinfo.png"
+    FullImageDir: './assets/Sinners/Ishmael/Identities/LCBSinner/10801normal.png',
+    PortraitImageDir: './assets/Sinners/Ishmael/Identities/LCBSinner/10801normalinfo.png'
 }

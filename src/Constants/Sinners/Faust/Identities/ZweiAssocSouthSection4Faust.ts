@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ZweiAssocSouthSection4FaustDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const ZweiAssocSouthSection4FaustDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain +3 [Aggro] to this Skill Slot next turn.")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/ZweiAssociationSouthSection4/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/ZweiAssociationSouthSection4/GuardUT4.png'
 }
 
 const ZweiAssocSouthSection4FaustSkill1: Skill = {
@@ -46,7 +46,7 @@ const ZweiAssocSouthSection4FaustSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 2 [Defense Level Up] next turn", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/ZweiAssociationSouthSection4/Patrolling.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/ZweiAssociationSouthSection4/Patrolling.png'
 }
 
 const ZweiAssocSouthSection4FaustSkill2: Skill = {
@@ -67,7 +67,7 @@ const ZweiAssocSouthSection4FaustSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 1 [Defense Level Up] next turn", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/ZweiAssociationSouthSection4/ClientProtection.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/ZweiAssociationSouthSection4/ClientProtection.png'
 }
 
 const ZweiAssocSouthSection4FaustSkill3: Skill = {
@@ -87,7 +87,7 @@ const ZweiAssocSouthSection4FaustSkill3: Skill = {
             "If the ally is a Zwei Association Fixer, apply an additional 1 [Haste], 1 [Defense Level Up]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/ZweiAssociationSouthSection4/LawAndOrder.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/ZweiAssociationSouthSection4/LawAndOrder.png'
 }
 
 export const ZweiAssocSouthSection4Faust: Identity = {
@@ -125,6 +125,6 @@ export const ZweiAssocSouthSection4Faust: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Faust/Identities/ZweiAssociationSouthSection4/10205gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Faust/Identities/ZweiAssociationSouthSection4/10205gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Faust/Identities/ZweiAssociationSouthSection4/10205gacksung.png',
+    PortraitImageDir: './assets/Sinners/Faust/Identities/ZweiAssociationSouthSection4/10205gacksunginfo.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const AsymmetricalInertiaHeathcliffAwakening: Skill = {
     Name: "Asymmetrical Inertia",
@@ -30,7 +30,7 @@ const AsymmetricalInertiaHeathcliffAwakening: Skill = {
             "- If the highest Reson. was a 3+ Sloth Reson., inflict 1 [Sloth Fragility] next turn as well", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/AsymmetricalInertia/20708awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/AsymmetricalInertia/20708awakenprofile.png'
 }
 
 const AsymmetricalInertiaHeathcliffCorrosion: Skill = {
@@ -57,7 +57,7 @@ const AsymmetricalInertiaHeathcliffCorrosion: Skill = {
             "- If the highest Reson. was a 3+ Sloth Reson., inflict 2 [Sloth Fragility] next turn as well", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Heathcliff/EGO/AsymmetricalInertia/20708erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Heathcliff/EGO/AsymmetricalInertia/20708erosionprofile.png'
 }
 
 export const AsymmetricalInertiaHeathcliff: Ego = {
@@ -83,5 +83,5 @@ export const AsymmetricalInertiaHeathcliff: Ego = {
             { sin: SinEnum.Pride, amount: 2 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Heathcliff/EGO/AsymmetricalInertia/20708cg.png"
+    FullImageDir: './assets/Sinners/Heathcliff/EGO/AsymmetricalInertia/20708cg.png'
 }

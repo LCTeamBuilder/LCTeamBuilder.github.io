@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SevenAssocSouthSection6YiSangDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const SevenAssocSouthSection6YiSangDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/SevenAssociationSouthSection6/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/SevenAssociationSouthSection6/GuardUT4.png'
 }
 
 const SevenAssocSouthSection6YiSangSkill1: Skill = {
@@ -44,7 +44,7 @@ const SevenAssocSouthSection6YiSangSkill1: Skill = {
         [new SkillDescriptionPart("[Heads Hit] Inflict 2 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/SevenAssociationSouthSection6/Fleche.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/SevenAssociationSouthSection6/Fleche.png'
 }
 
 const SevenAssocSouthSection6YiSangSkill2: Skill = {
@@ -64,7 +64,7 @@ const SevenAssocSouthSection6YiSangSkill2: Skill = {
             "[On Hit] Inflict 1 [Rupture]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/SevenAssociationSouthSection6/Riposte.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/SevenAssociationSouthSection6/Riposte.png'
 }
 
 const SevenAssocSouthSection6YiSangSkill3: Skill = {
@@ -84,7 +84,7 @@ const SevenAssocSouthSection6YiSangSkill3: Skill = {
             "[On Hit] Inflict 1 [Rupture]")],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/SevenAssociationSouthSection6/Moulinet.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/SevenAssociationSouthSection6/Moulinet.png'
 }
 
 export const SevenAssocSouthSection6YiSang: Identity = {
@@ -120,6 +120,6 @@ export const SevenAssocSouthSection6YiSang: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/YiSang/Identities/SevenAssociationSouthSection6/10102gacksung.png",
-    PortraitImageDir: "./assets/Sinners/YiSang/Identities/SevenAssociationSouthSection6/10102gacksunginfo.png"
+    FullImageDir: './assets/Sinners/YiSang/Identities/SevenAssociationSouthSection6/10102gacksung.png',
+    PortraitImageDir: './assets/Sinners/YiSang/Identities/SevenAssociationSouthSection6/10102gacksunginfo.png'
 }

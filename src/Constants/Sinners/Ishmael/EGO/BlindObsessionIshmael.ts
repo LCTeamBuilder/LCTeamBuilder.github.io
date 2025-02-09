@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BlindObsessionIshmaelAwakening: Skill = {
     Name: "Blind Obsession",
@@ -26,7 +26,7 @@ const BlindObsessionIshmaelAwakening: Skill = {
             "[After Attack] Apply 2 [Pierce Power Up] and 2 [Damage Up] to 4 allies with the highest SP", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/BlindObsession/20805awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/BlindObsession/20805awakenprofile.png'
 }
 
 const BlindObsessionIshmaelCorrosion: Skill = {
@@ -48,7 +48,7 @@ const BlindObsessionIshmaelCorrosion: Skill = {
             "[After Attack] Apply 2 [Damage Up] this turn and next turn to 4 allies with the least SP", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/BlindObsession/20805erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/BlindObsession/20805erosionprofile.png'
 }
 
 export const BlindObsessionIshmael: Ego = {
@@ -73,5 +73,5 @@ export const BlindObsessionIshmael: Ego = {
             { sin: SinEnum.Pride, amount: 3 },
             { sin: SinEnum.Envy, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ishmael/EGO/BlindObsession/20805cg.png"
+    FullImageDir: './assets/Sinners/Ishmael/EGO/BlindObsession/20805cg.png'
 }

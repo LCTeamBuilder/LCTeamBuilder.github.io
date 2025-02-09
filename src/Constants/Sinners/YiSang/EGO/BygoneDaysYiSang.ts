@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BygoneDaysYiSangAwakening: Skill = {
     Name: "Bygone Days",
@@ -24,7 +24,7 @@ const BygoneDaysYiSangAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] If the target has 6+ [Sinking], inflict 2 [Bind] next turn", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/YiSang/EGO/BygoneDays/20106awakenprofile.png"
+    SkillImageDir: './assets/Sinners/YiSang/EGO/BygoneDays/20106awakenprofile.png'
 }
 
 const BygoneDaysYiSangCorrosion: Skill = {
@@ -46,7 +46,7 @@ const BygoneDaysYiSangCorrosion: Skill = {
         "[On Hit] If the target has 6+ [Sinking], inflict 2 [Bind] next turn", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/YiSang/EGO/BygoneDays/20106erosionprofile.png"
+    SkillImageDir: './assets/Sinners/YiSang/EGO/BygoneDays/20106erosionprofile.png'
 }
 
 export const BygoneDaysYiSang: Ego = {
@@ -71,5 +71,5 @@ export const BygoneDaysYiSang: Ego = {
     Cost: [{ sin: SinEnum.Sloth, amount: 3},
             { sin: SinEnum.Gloom, amount: 3}],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/YiSang/EGO/BygoneDays/20106cg.png"
+    FullImageDir: './assets/Sinners/YiSang/EGO/BygoneDays/20106cg.png'
 }

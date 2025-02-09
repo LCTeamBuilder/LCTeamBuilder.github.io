@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SanguineDesireRodionAwakening: Skill = {
     Name: "Sanguine Desire",
@@ -30,7 +30,7 @@ const SanguineDesireRodionAwakening: Skill = {
             "[On Kill] If this Skill or its Coin effects dealt damage that exceeds the target's(In Focused Encounters, the Core's) remaining HP, deal the excess damage as fixed damage between all enemies.", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/SanguineDesire/20906awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/SanguineDesire/20906awakenprofile.png'
 }
 
 const SanguineDesireRodionCorrosion: Skill = {
@@ -51,7 +51,7 @@ const SanguineDesireRodionCorrosion: Skill = {
             "[On Hit] Inflict +3 [Bleed] Count", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/SanguineDesire/20906erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/SanguineDesire/20906erosionprofile.png'
 }
 
 export const SanguineDesireRodion: Ego = {
@@ -76,5 +76,5 @@ export const SanguineDesireRodion: Ego = {
             { sin: SinEnum.Pride, amount: 3 },
             { sin: SinEnum.Envy, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Rodion/EGO/SanguineDesire/20906cg.png"
+    FullImageDir: './assets/Sinners/Rodion/EGO/SanguineDesire/20906cg.png'
 }

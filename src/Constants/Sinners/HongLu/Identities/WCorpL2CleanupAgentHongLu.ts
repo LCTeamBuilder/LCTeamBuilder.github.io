@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WCorpL2CleanupAgentHongLuDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const WCorpL2CleanupAgentHongLuDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain 3 [Charge Barrier] (3 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/WCorpL2CleanupAgent/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/WCorpL2CleanupAgent/GuardUT4.png'
 }
 
 const WCorpL2CleanupAgentHongLuSkill1: Skill = {
@@ -46,7 +46,7 @@ const WCorpL2CleanupAgentHongLuSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +1 [Charge] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/WCorpL2CleanupAgent/EnergyCycle.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/WCorpL2CleanupAgent/EnergyCycle.png'
 }
 
 const WCorpL2CleanupAgentHongLuSkill2: Skill = {
@@ -66,7 +66,7 @@ const WCorpL2CleanupAgentHongLuSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] At 5+ [Charge] Count, gain 1 [Charge] Barrier for every 5 [Charge] Count next turn (Max 4)", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/WCorpL2CleanupAgent/CleanupSupport.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/WCorpL2CleanupAgent/CleanupSupport.png'
 }
 
 const WCorpL2CleanupAgentHongLuSkill3: Skill = {
@@ -85,7 +85,7 @@ const WCorpL2CleanupAgentHongLuSkill3: Skill = {
             "[On Hit] Gain 2 [Charge Barrier] next turn", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/WCorpL2CleanupAgent/DeployChargeBarrier.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/WCorpL2CleanupAgent/DeployChargeBarrier.png'
 }
 
 export const WCorpL2CleanupAgentHongLu: Identity = {
@@ -122,6 +122,6 @@ export const WCorpL2CleanupAgentHongLu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/HongLu/Identities/WCorpL2CleanupAgent/10606gacksung.png",
-    PortraitImageDir: "./assets/Sinners/HongLu/Identities/WCorpL2CleanupAgent/10606gacksunginfo.png"
+    FullImageDir: './assets/Sinners/HongLu/Identities/WCorpL2CleanupAgent/10606gacksung.png',
+    PortraitImageDir: './assets/Sinners/HongLu/Identities/WCorpL2CleanupAgent/10606gacksunginfo.png'
 }
