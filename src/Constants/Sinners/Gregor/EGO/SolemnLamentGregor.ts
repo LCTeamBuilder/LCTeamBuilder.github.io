@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SolemnLamentGregorAwakening: Skill = {
     Name: "Solemn Lament",
@@ -32,7 +32,7 @@ const SolemnLamentGregorAwakening: Skill = {
             "[On Hit] At 0+ SP, Reuse this Coin (5 times max per Skill)", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/SolemnLament/21207awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/SolemnLament/21207awakenprofile.png'
 }
 
 const SolemnLamentGregorCorrosion: Skill = {
@@ -58,7 +58,7 @@ const SolemnLamentGregorCorrosion: Skill = {
             '- "All" = the sum of both The Living and The Departed on the target', 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/SolemnLament/21207erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/SolemnLament/21207erosionprofile.png'
 }
 
 export const SolemnLamentGregor: Ego = {
@@ -84,5 +84,5 @@ export const SolemnLamentGregor: Ego = {
             { sin: SinEnum.Gloom, amount: 2 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Gregor/EGO/SolemnLament/21207cg.png"
+    FullImageDir: './assets/Sinners/Gregor/EGO/SolemnLament/21207cg.png'
 }

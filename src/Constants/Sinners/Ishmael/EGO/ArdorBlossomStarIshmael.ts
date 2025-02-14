@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ArdorBlossomStarIshmaelAwakening: Skill = {
     Name: "Ardor Blossom Star",
@@ -26,7 +26,7 @@ const ArdorBlossomStarIshmaelAwakening: Skill = {
             "[Heads Attack End] Inflict 5 [Burn] on 3 random enemies", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/ArdorBlossomStar/20803awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/ArdorBlossomStar/20803awakenprofile.png'
 }
 
 const ArdorBlossomStarIshmaelCorrosion: Skill = {
@@ -47,7 +47,7 @@ const ArdorBlossomStarIshmaelCorrosion: Skill = {
             "[On Hit] Raise Stagger Threshold by 60% of damage dealt")],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/ArdorBlossomStar/20803erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/ArdorBlossomStar/20803erosionprofile.png'
 }
 
 export const ArdorBlossomStarIshmael: Ego = {
@@ -71,5 +71,5 @@ export const ArdorBlossomStarIshmael: Ego = {
             { sin: SinEnum.Lust, amount: 2 },
             { sin: SinEnum.Envy, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ishmael/EGO/ArdorBlossomStar/20803cg.png"
+    FullImageDir: './assets/Sinners/Ishmael/EGO/ArdorBlossomStar/20803cg.png'
 }

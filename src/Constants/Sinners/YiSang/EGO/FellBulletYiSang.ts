@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const FellBulletYiSangAwakening: Skill = {
     Name: "Fell Bullet",
@@ -36,7 +36,7 @@ const FellBulletYiSangAwakening: Skill = {
             "[On Crit] Inflict 3 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/YiSang/EGO/FellBullet/20107awakenprofile.png"
+    SkillImageDir: './assets/Sinners/YiSang/EGO/FellBullet/20107awakenprofile.png'
 }
 
 const FellBulletYiSangCorrosion: Skill = {
@@ -71,7 +71,7 @@ const FellBulletYiSangCorrosion: Skill = {
             "[On Crit] Inflict 5 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/YiSang/EGO/FellBullet/20107erosionprofile.png"
+    SkillImageDir: './assets/Sinners/YiSang/EGO/FellBullet/20107erosionprofile.png'
 }
 
 export const FellBulletYiSang: Ego = {
@@ -94,5 +94,5 @@ export const FellBulletYiSang: Ego = {
     Cost: [{ sin: SinEnum.Wrath, amount: 2 },
             { sin: SinEnum.Pride, amount: 6 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/YiSang/EGO/FellBullet/20107cg.png"
+    FullImageDir: './assets/Sinners/YiSang/EGO/FellBullet/20107cg.png'
 }

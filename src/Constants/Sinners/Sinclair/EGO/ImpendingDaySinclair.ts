@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ImpendingDaySinclairAwakening: Skill = {
     Name: "Impending Day",
@@ -25,7 +25,7 @@ const ImpendingDaySinclairAwakening: Skill = {
             "[On Kill] Heal all allies for 15% of their Max HP", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/ImpendingDay/21002awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/ImpendingDay/21002awakenprofile.png'
 }
 
 const ImpendingDaySinclairCorrosion: Skill = {
@@ -46,7 +46,7 @@ const ImpendingDaySinclairCorrosion: Skill = {
             "[Failed Kill] Gain 3 [Attack Power Up] next turn", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/ImpendingDay/21002erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/ImpendingDay/21002erosionprofile.png'
 }
 
 export const ImpendingDaySinclair: Ego = {
@@ -69,5 +69,5 @@ export const ImpendingDaySinclair: Ego = {
     Cost: [{ sin: SinEnum.Wrath, amount: 3 },
             { sin: SinEnum.Lust, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Sinclair/EGO/ImpendingDay/21002cg.png"
+    FullImageDir: './assets/Sinners/Sinclair/EGO/ImpendingDay/21002cg.png'
 }

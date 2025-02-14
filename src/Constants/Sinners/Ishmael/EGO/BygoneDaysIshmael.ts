@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BygoneDaysIshmaelAwakening: Skill = {
     Name: "Bygone Days",
@@ -30,7 +30,7 @@ const BygoneDaysIshmaelAwakening: Skill = {
             "[On Hit] Inflict 2 [The Uninvited]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/BygoneDays/20807awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/BygoneDays/20807awakenprofile.png'
 }
 
 const BygoneDaysIshmaelCorrosion: Skill = {
@@ -57,7 +57,7 @@ const BygoneDaysIshmaelCorrosion: Skill = {
             "[On Hit] Inflict 2 [Echoes of the Manor] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/BygoneDays/20807erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/BygoneDays/20807erosionprofile.png'
 }
 
 export const BygoneDaysIshmael: Ego = {
@@ -82,5 +82,5 @@ export const BygoneDaysIshmael: Ego = {
             { sin: SinEnum.Sloth, amount: 1 },
             { sin: SinEnum.Gloom, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ishmael/EGO/BygoneDays/20807cg.png"
+    FullImageDir: './assets/Sinners/Ishmael/EGO/BygoneDays/20807cg.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WishingCairnYiSangAwakening: Skill = {
     Name: "Wishing Cairn",
@@ -25,7 +25,7 @@ const WishingCairnYiSangAwakening: Skill = {
             "[Heads Hit] Inflict 3 [Paralyze]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/YiSang/EGO/WishingCairn/20103awakenprofile.png"
+    SkillImageDir: './assets/Sinners/YiSang/EGO/WishingCairn/20103awakenprofile.png'
 }
 
 const WishingCairnYiSangCorrosion: Skill = {
@@ -46,7 +46,7 @@ const WishingCairnYiSangCorrosion: Skill = {
             "[Heads Hit] Inflict 3 [Bind] next turn", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/YiSang/EGO/WishingCairn/20103erosionprofile.png"
+    SkillImageDir: './assets/Sinners/YiSang/EGO/WishingCairn/20103erosionprofile.png'
 }
 
 export const WishingCairnYiSang: Ego = {
@@ -69,5 +69,5 @@ export const WishingCairnYiSang: Ego = {
     Cost: [{ sin: SinEnum.Sloth, amount: 4 },
             { sin: SinEnum.Gloom, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/YiSang/EGO/WishingCairn/20103cg.png"
+    FullImageDir: './assets/Sinners/YiSang/EGO/WishingCairn/20103cg.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LiuAssocSouthSection6MeursaultDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const LiuAssocSouthSection6MeursaultDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/LiuAssociationSouthSection6/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/LiuAssociationSouthSection6/GuardUT4.png'
 }
 
 const LiuAssocSouthSection6MeursaultSkill1: Skill = {
@@ -45,7 +45,7 @@ const LiuAssocSouthSection6MeursaultSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Burn]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/LiuAssociationSouthSection6/Assault.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/LiuAssociationSouthSection6/Assault.png'
 }
 
 const LiuAssocSouthSection6MeursaultSkill2: Skill = {
@@ -64,7 +64,7 @@ const LiuAssocSouthSection6MeursaultSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Burn]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/LiuAssociationSouthSection6/StalwartStance.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/LiuAssociationSouthSection6/StalwartStance.png'
 }
 
 const LiuAssocSouthSection6MeursaultSkill3: Skill = {
@@ -84,7 +84,7 @@ const LiuAssocSouthSection6MeursaultSkill3: Skill = {
             "[On Hit] If target has 6+ [Burn], inflict 3 [Burn] on 2 random enemies", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/LiuAssociationSouthSection6/PerfectedDeathFist.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/LiuAssociationSouthSection6/PerfectedDeathFist.png'
 }
 
 export const LiuAssocSouthSection6Meursault: Identity = {
@@ -121,6 +121,6 @@ export const LiuAssocSouthSection6Meursault: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Meursault/Identities/LiuAssociationSouthSection6/10502gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Meursault/Identities/LiuAssociationSouthSection6/10502gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Meursault/Identities/LiuAssociationSouthSection6/10502gacksung.png',
+    PortraitImageDir: './assets/Sinners/Meursault/Identities/LiuAssociationSouthSection6/10502gacksunginfo.png'
 }

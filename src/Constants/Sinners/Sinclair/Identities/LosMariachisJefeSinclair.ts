@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LosMariachisJefeSinclairDefense: Skill = {
     Name: "Evade",
@@ -27,7 +27,7 @@ const LosMariachisJefeSinclairDefense: Skill = {
         [new SkillDescriptionPart("[On Evade] Gain +1 [Poise] Count")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/JefeDeLosMariachis/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/JefeDeLosMariachis/EvadeUT4.png'
 }
 
 const LosMariachisJefeSinclairSkill1: Skill = {
@@ -45,7 +45,7 @@ const LosMariachisJefeSinclairSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 4 [Sinking]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/JefeDeLosMariachis/BaileYRola.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/JefeDeLosMariachis/BaileYRola.png'
 }
 
 const LosMariachisJefeSinclairSkill2: Skill = {
@@ -67,7 +67,7 @@ const LosMariachisJefeSinclairSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/JefeDeLosMariachis/DanzaDePasion.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/JefeDeLosMariachis/DanzaDePasion.png'
 }
 
 const LosMariachisJefeSinclairSkill3: Skill = {
@@ -86,7 +86,7 @@ const LosMariachisJefeSinclairSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Lower user's Stagger Threshold by 50% of damage dealt", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/JefeDeLosMariachis/PanataParty.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/JefeDeLosMariachis/PanataParty.png'
 }
 
 export const LosMariachisJefeSinclair: Identity = {
@@ -122,6 +122,6 @@ export const LosMariachisJefeSinclair: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Sinclair/Identities/JefeDeLosMariachis/11004gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Sinclair/Identities/JefeDeLosMariachis/11004gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Sinclair/Identities/JefeDeLosMariachis/11004gacksung.png',
+    PortraitImageDir: './assets/Sinners/Sinclair/Identities/JefeDeLosMariachis/11004gacksunginfo.png'
 }

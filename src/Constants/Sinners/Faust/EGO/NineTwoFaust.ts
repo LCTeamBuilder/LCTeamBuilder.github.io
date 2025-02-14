@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const NineTwoFaustAwakening: Skill = {
     Name: "9:2",
@@ -26,7 +26,7 @@ const NineTwoFaustAwakening: Skill = {
             "[On Hit] Convert 2 [Burn] on target to 1 [Defense Level Down] (Max 10)", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/92/20205awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/92/20205awakenprofile.png'
 }
 
 const NineTwoFaustCorrosion: Skill = {
@@ -49,7 +49,7 @@ const NineTwoFaustCorrosion: Skill = {
             "[On Hit] Convert 2 [Burn] on target to 1 [Defense Level Down] (Max 10)", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/92/20205awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/92/20205awakenprofile.png'
 }
 
 export const NineTwoFaust: Ego = {
@@ -73,5 +73,5 @@ export const NineTwoFaust: Ego = {
             { sin: SinEnum.Gluttony, amount: 3 },
             { sin: SinEnum.Pride, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Faust/EGO/92/20205cg.png"
+    FullImageDir: './assets/Sinners/Faust/EGO/92/20205cg.png'
 }

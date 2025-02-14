@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ChristmasNightmareIshmaelAwakening: Skill = {
     Name: "Christmas Nightmare",
@@ -29,7 +29,7 @@ const ChristmasNightmareIshmaelAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] Trigger [Tremor Burst]; then, reduce target's [Tremor] Count by 1", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/ChristmasNightmare/20808awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/ChristmasNightmare/20808awakenprofile.png'
 }
 
 const ChristmasNightmareIshmaelCorrosion: Skill = {
@@ -57,7 +57,7 @@ const ChristmasNightmareIshmaelCorrosion: Skill = {
             "[On Hit] Trigger [Tremor Burst]; then, reduce target's [Tremor] Count by 1", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/ChristmasNightmare/20808erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/ChristmasNightmare/20808erosionprofile.png'
 }
 
 export const ChristmasNightmareIshmael: Ego = {
@@ -83,5 +83,5 @@ export const ChristmasNightmareIshmael: Ego = {
             { sin: SinEnum.Gluttony, amount: 1 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ishmael/EGO/ChristmasNightmare/20808cg.png"
+    FullImageDir: './assets/Sinners/Ishmael/EGO/ChristmasNightmare/20808cg.png'
 }

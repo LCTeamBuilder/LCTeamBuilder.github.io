@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WhatIsCastRodionAwakening: Skill = {
     Name: "What is Cast",
@@ -26,7 +26,7 @@ const WhatIsCastRodionAwakening: Skill = {
             "[On Hit] Gain -2 [SP Loss Efficiency] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/WhatIsCast/20901awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/WhatIsCast/20901awakenprofile.png'
 }
 
 export const WhatIsCastRodion: Ego = {
@@ -49,5 +49,5 @@ export const WhatIsCastRodion: Ego = {
     Cost: [{ sin: SinEnum.Gloom, amount: 1 },
             { sin: SinEnum.Pride, amount: 3}],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Rodion/EGO/WhatIsCast/20901cg.png"
+    FullImageDir: './assets/Sinners/Rodion/EGO/WhatIsCast/20901cg.png'
 }

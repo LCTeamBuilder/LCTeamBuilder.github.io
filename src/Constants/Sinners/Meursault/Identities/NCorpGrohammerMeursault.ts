@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const NCorpGrohammerMeursaultDefense: Skill = {
     Name: "Foolishness...!",
@@ -28,7 +28,7 @@ const NCorpGrohammerMeursaultDefense: Skill = {
             "At less than 50% HP, +2 Final Power")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/NCorpGrohammer/FoolishnessUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/NCorpGrohammer/FoolishnessUT4.png'
 }
 
 const NCorpGrohammerMeursaultSkill1: Skill = {
@@ -48,7 +48,7 @@ const NCorpGrohammerMeursaultSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Lower user's Stagger Threshold by 60% of damage dealt", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/NCorpGrohammer/Drive.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/NCorpGrohammer/Drive.png'
 }
 
 const NCorpGrohammerMeursaultSkill2: Skill = {
@@ -68,7 +68,7 @@ const NCorpGrohammerMeursaultSkill2: Skill = {
             "[On Hit] If target has 5+ [Nails], inflict 2 [Bind] and 2 [Attack Power Down] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/NCorpGrohammer/YouAreCleansedOfSin.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/NCorpGrohammer/YouAreCleansedOfSin.png'
 }
 
 const NCorpGrohammerMeursaultSkill3: Skill = {
@@ -88,7 +88,7 @@ const NCorpGrohammerMeursaultSkill3: Skill = {
             "HP Heal +3% for each of target's [Nails]")],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/NCorpGrohammer/AnnihilateHeretics.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/NCorpGrohammer/AnnihilateHeretics.png'
 }
 
 export const NCorpGrohammerMeursault: Identity = {
@@ -125,6 +125,6 @@ export const NCorpGrohammerMeursault: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Meursault/Identities/NCorpGrohammer/10504gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Meursault/Identities/NCorpGrohammer/10504gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Meursault/Identities/NCorpGrohammer/10504gacksung.png',
+    PortraitImageDir: './assets/Sinners/Meursault/Identities/NCorpGrohammer/10504gacksunginfo.png'
 }

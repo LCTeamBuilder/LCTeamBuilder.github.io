@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BladeLineageSalsuDonQuixoteSkill1: Skill = {
     Name: "Draw of the Sword",
@@ -30,7 +30,7 @@ const BladeLineageSalsuDonQuixoteSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 1 [Poise]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/BladeLineageSalsu/DrawOfTheSword.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/BladeLineageSalsu/DrawOfTheSword.png'
 }
 
 const BladeLineageSalsuDonQuixoteSkill2: Skill = {
@@ -51,7 +51,7 @@ const BladeLineageSalsuDonQuixoteSkill2: Skill = {
             "If the affected ally is from the Blade Lineage, apply 2 additional [Poise]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/BladeLineageSalsu/BladeArc.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/BladeLineageSalsu/BladeArc.png'
 }
 
 const BladeLineageSalsuDonQuixoteSkill3: Skill = {
@@ -75,7 +75,7 @@ const BladeLineageSalsuDonQuixoteSkill3: Skill = {
             "[After Attack] If the target is defeated, apply 1 [Slash DMG Up] to self and 1 random other ally next turn", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/BladeLineageSalsu/FareTheeWell.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/BladeLineageSalsu/FareTheeWell.png'
 }
 
 const BladeLineageSalsuDonQuixoteDefense: Skill = {
@@ -92,7 +92,7 @@ const BladeLineageSalsuDonQuixoteDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/BladeLineageSalsu/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/BladeLineageSalsu/EvadeUT4.png'
 }
 
 export const BladeLineageSalsuDonQuixote: Identity = {
@@ -128,6 +128,6 @@ export const BladeLineageSalsuDonQuixote: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/DonQuixote/Identities/BladeLineageSalsu/10308gacksung.png",
-    PortraitImageDir: "./assets/Sinners/DonQuixote/Identities/BladeLineageSalsu/10308gacksunginfo.png"
+    FullImageDir: './assets/Sinners/DonQuixote/Identities/BladeLineageSalsu/10308gacksung.png',
+    PortraitImageDir: './assets/Sinners/DonQuixote/Identities/BladeLineageSalsu/10308gacksunginfo.png'
 }

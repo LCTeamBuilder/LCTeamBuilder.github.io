@@ -1,4 +1,4 @@
-import { PassiveCostTypeEnum, PassiveTypeEnum, SinEnum } from "../Enums/Index";
+import { PassiveCostTypeEnum, PassiveTypeEnum, SinEnum } from '../Enums/Index';
 
 export class Passive {
     public readonly Name: string;

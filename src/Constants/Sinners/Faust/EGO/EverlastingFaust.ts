@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const EverlastingFaustAwakening: Skill = {
     Name: "Everlasting",
@@ -33,7 +33,7 @@ const EverlastingFaustAwakening: Skill = {
             "[On Hit] Reduce target's Max Speed by half next turn", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/Everlasting/20206awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/Everlasting/20206awakenprofile.png'
 }
 
 const EverlastingFaustCorrosion: Skill = {
@@ -60,7 +60,7 @@ const EverlastingFaustCorrosion: Skill = {
             "[On Hit] Reduce the target's Max Speed by half next turn", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/Everlasting/20206erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/Everlasting/20206erosionprofile.png'
 }
 
 export const EverlastingFaust: Ego = {
@@ -85,5 +85,5 @@ export const EverlastingFaust: Ego = {
             { sin: SinEnum.Gloom, amount: 2 },
             { sin: SinEnum.Pride, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Faust/EGO/Everlasting/20206cg.png"
+    FullImageDir: './assets/Sinners/Faust/EGO/Everlasting/20206cg.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ScrewlooseWallopMeursaultAwakening: Skill = {
     Name: "Screwloose Wallop",
@@ -25,7 +25,7 @@ const ScrewlooseWallopMeursaultAwakening: Skill = {
         new SkillDescriptionPart("[Heads Hit] Inflict 3 [Paralyze]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/YouWantToGetBeatHurtily/20502awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/YouWantToGetBeatHurtily/20502awakenprofile.png'
 }
 
 const ScrewlooseWallopMeursaultCorrosion: Skill = {
@@ -46,7 +46,7 @@ const ScrewlooseWallopMeursaultCorrosion: Skill = {
             "Raise Stagger Threshold by 30% of damage dealt", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/YouWantToGetBeatHurtily/20502erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/YouWantToGetBeatHurtily/20502erosionprofile.png'
 }
 
 export const ScrewlooseWallopMeursault: Ego = {
@@ -70,5 +70,5 @@ export const ScrewlooseWallopMeursault: Ego = {
             { sin: SinEnum.Pride, amount: 1 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Meursault/EGO/YouWantToGetBeatHurtily/20502cg.png"
+    FullImageDir: './assets/Sinners/Meursault/EGO/YouWantToGetBeatHurtily/20502cg.png'
 }

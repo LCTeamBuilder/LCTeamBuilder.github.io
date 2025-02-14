@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TheOneWhoShallGripSinclairDefense: Skill = {
     Name: "Enough...",
@@ -27,7 +27,7 @@ const TheOneWhoShallGripSinclairDefense: Skill = {
         [new SkillDescriptionPart("[Combat Start] Heal 5-10 SP")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/TheOneWhoShallGrip/Guard.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/TheOneWhoShallGrip/Guard.png'
 }
 
 const TheOneWhoShallGripSinclairSkill1: Skill = {
@@ -46,7 +46,7 @@ const TheOneWhoShallGripSinclairSkill1: Skill = {
             "[On Hit] Inflict 3 [Burn]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/TheOneWhoShallGrip/CoercedJudgement.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/TheOneWhoShallGrip/CoercedJudgement.png'
 }
 
 const TheOneWhoShallGripSinclairSkill2: Skill = {
@@ -70,7 +70,7 @@ const TheOneWhoShallGripSinclairSkill2: Skill = {
             "[On Hit] Inflict 2 [Bleed]", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/TheOneWhoShallGrip/AmoralEnactment.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/TheOneWhoShallGrip/AmoralEnactment.png'
 }
 
 const TheOneWhoShallGripSinclairSkill3: Skill = {
@@ -92,7 +92,7 @@ const TheOneWhoShallGripSinclairSkill3: Skill = {
             "[On Kill] Gain 1 [Blunt Power Up] next turn", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/TheOneWhoShallGrip/SelfdestructivePurge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/TheOneWhoShallGrip/SelfdestructivePurge.png'
 }
 
 export const TheOneWhoShallGripSinclair: Identity = {
@@ -130,6 +130,6 @@ export const TheOneWhoShallGripSinclair: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Sinclair/Identities/TheOneWhoShallGrip/11005gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Sinclair/Identities/TheOneWhoShallGrip/11005gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Sinclair/Identities/TheOneWhoShallGrip/11005gacksung.png',
+    PortraitImageDir: './assets/Sinners/Sinclair/Identities/TheOneWhoShallGrip/11005gacksunginfo.png'
 }

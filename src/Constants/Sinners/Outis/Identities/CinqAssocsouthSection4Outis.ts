@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const CinqAssocsouthSection4OutisDefense: Skill = {
     Name: "Retraite",
@@ -28,7 +28,7 @@ const CinqAssocsouthSection4OutisDefense: Skill = {
             "[On Evade] Gain 1 [Poise] (Max 10)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/CinqAssociationSouthSection4/RetraiteUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/CinqAssociationSouthSection4/RetraiteUT4.png'
 }
 
 const CinqAssocsouthSection4OutisSkill1: Skill = {
@@ -48,7 +48,7 @@ const CinqAssocsouthSection4OutisSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +1 [Poise] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/CinqAssociationSouthSection4/Marche.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/CinqAssociationSouthSection4/Marche.png'
 }
 
 const CinqAssocsouthSection4OutisSkill2: Skill = {
@@ -69,7 +69,7 @@ const CinqAssocsouthSection4OutisSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Bind] next turn", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/CinqAssociationSouthSection4/Punition.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/CinqAssociationSouthSection4/Punition.png'
 }
 
 const CinqAssocsouthSection4OutisSkill3: Skill = {
@@ -90,7 +90,7 @@ const CinqAssocsouthSection4OutisSkill3: Skill = {
             "[On Crit] +70% Damage on Critical Hit", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/CinqAssociationSouthSection4/BalestraFente.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/CinqAssociationSouthSection4/BalestraFente.png'
 }
 
 export const CinqAssocsouthSection4Outis: Identity = {
@@ -127,6 +127,6 @@ export const CinqAssocsouthSection4Outis: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Outis/Identities/CinqAssociationSouthSection4/11106gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Outis/Identities/CinqAssociationSouthSection4/11106gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Outis/Identities/CinqAssociationSouthSection4/11106gacksung.png',
+    PortraitImageDir: './assets/Sinners/Outis/Identities/CinqAssociationSouthSection4/11106gacksunginfo.png'
 }

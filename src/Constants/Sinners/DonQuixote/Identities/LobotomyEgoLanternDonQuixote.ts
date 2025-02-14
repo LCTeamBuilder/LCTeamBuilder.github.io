@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LobotomyEgoLanternDonQuixoteSkill1: Skill = {
     Name: "I Shall Nibble Thee!",
@@ -28,7 +28,7 @@ const LobotomyEgoLanternDonQuixoteSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Rupture] Count", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/LobotomyEGOLantern/IShallNibbleThee.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/LobotomyEGOLantern/IShallNibbleThee.png'
 }
 
 const LobotomyEgoLanternDonQuixoteSkill2: Skill = {
@@ -50,7 +50,7 @@ const LobotomyEgoLanternDonQuixoteSkill2: Skill = {
             "[On Hit] If the target has 2 or less [Rupture] Count, inflict +3 [Rupture] Count", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/LobotomyEGOLantern/FlashingLure.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/LobotomyEGOLantern/FlashingLure.png'
 }
 
 const LobotomyEgoLanternDonQuixoteSkill3: Skill = {
@@ -72,7 +72,7 @@ const LobotomyEgoLanternDonQuixoteSkill3: Skill = {
             "At 50%- HP, reuse Coin once", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/LobotomyEGOLantern/WhirldwindOmNomNom.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/LobotomyEGOLantern/WhirldwindOmNomNom.png'
 }
 
 const LobotomyEgoLanternDonQuixoteDefense: Skill = {
@@ -90,7 +90,7 @@ const LobotomyEgoLanternDonQuixoteDefense: Skill = {
             "[Turn End] Heal HP equal to remaining Shield HP (Once per turn. Max Heal amount: 10% of Max HP)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/LobotomyEGOLantern/ChatteringTeethUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/LobotomyEGOLantern/ChatteringTeethUT4.png'
 }
 
 export const LobotomyEgoLanternDonQuixote: Identity = {
@@ -127,6 +127,6 @@ export const LobotomyEgoLanternDonQuixote: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/DonQuixote/Identities/LobotomyEGOLantern/10307gacksung.png",
-    PortraitImageDir: "./assets/Sinners/DonQuixote/Identities/LobotomyEGOLantern/10307gacksunginfo.png"
+    FullImageDir: './assets/Sinners/DonQuixote/Identities/LobotomyEGOLantern/10307gacksung.png',
+    PortraitImageDir: './assets/Sinners/DonQuixote/Identities/LobotomyEGOLantern/10307gacksunginfo.png'
 }

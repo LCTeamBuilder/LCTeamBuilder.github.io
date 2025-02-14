@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerHongLuDefense: Skill = {
     Name: "Evade",
@@ -26,7 +26,7 @@ const LCBSinnerHongLuDefense: Skill = {
     SkillDescription: [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/LCBSinner/EvadeUT4.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/LCBSinner/EvadeUT4.png', 
 }
 
 const LCBSinnerHongLuSkill1: Skill = {
@@ -42,7 +42,7 @@ const LCBSinnerHongLuSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/LCBSinner/DownwardCleave.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/LCBSinner/DownwardCleave.png', 
 }
 
 const LCBSinnerHongLuSkill2: Skill = {
@@ -58,7 +58,7 @@ const LCBSinnerHongLuSkill2: Skill = {
     SkillDescription: [new SkillDescriptionPart("If user took no damage last turn, Coin Power +1"),            new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 1),            new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/LCBSinner/DualStrike.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/LCBSinner/DualStrike.png', 
 }
 
 const LCBSinnerHongLuSkill3: Skill = {
@@ -78,7 +78,7 @@ const LCBSinnerHongLuSkill3: Skill = {
             "[On Hit] Inflict 2 [Rupture]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/LCBSinner/Whirldwind.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/LCBSinner/Whirldwind.png', 
 }
 
 export const LCBSinnerHongLu: Identity = {
@@ -114,6 +114,6 @@ export const LCBSinnerHongLu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/HongLu/Identities/LCBSinner/10601normal.png",
-    PortraitImageDir: "./assets/Sinners/HongLu/Identities/LCBSinner/10601normalinfo.png"
+    FullImageDir: './assets/Sinners/HongLu/Identities/LCBSinner/10601normal.png',
+    PortraitImageDir: './assets/Sinners/HongLu/Identities/LCBSinner/10601normalinfo.png'
 }

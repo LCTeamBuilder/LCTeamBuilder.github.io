@@ -4,8 +4,8 @@ import {
     SinEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../Enums/Index";
-import { SkillDescriptionPart } from "./SkillDescriptionPart";
+} from '../Enums/Index';
+import { SkillDescriptionPart } from './SkillDescriptionPart';
 
 export abstract class Skill {
     abstract readonly Name: string;

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SevenAssocSouthSection6RyoshuDefense: Skill = {
     Name: "Counter",
@@ -27,7 +27,7 @@ const SevenAssocSouthSection6RyoshuDefense: Skill = {
         [new SkillDescriptionPart("[On Hit] Inflict 1 [Slash Fragility]")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/SevenAssociationSouthSection6/Counter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/SevenAssociationSouthSection6/Counter.png'
 }
 
 const SevenAssocSouthSection6RyoshuSkill1: Skill = {
@@ -44,7 +44,7 @@ const SevenAssocSouthSection6RyoshuSkill1: Skill = {
         [new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]")],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/SevenAssociationSouthSection6/Slash.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/SevenAssociationSouthSection6/Slash.png'
 }
 
 const SevenAssocSouthSection6RyoshuSkill2: Skill = {
@@ -63,7 +63,7 @@ const SevenAssocSouthSection6RyoshuSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Defense Level Down]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/SevenAssociationSouthSection6/UpperSlash.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/SevenAssociationSouthSection6/UpperSlash.png'
 }
 
 const SevenAssocSouthSection6RyoshuSkill3: Skill = {
@@ -81,7 +81,7 @@ const SevenAssocSouthSection6RyoshuSkill3: Skill = {
             new SkillDescriptionPart("[On Hit] Inflict 3 [Slash Fragility] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/SevenAssociationSouthSection6/Swash.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/SevenAssociationSouthSection6/Swash.png'
 }
 
 export const SevenAssocSouthSection6Ryoshu: Identity = {
@@ -117,6 +117,6 @@ export const SevenAssocSouthSection6Ryoshu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ryoshu/Identities/SevenAssociationSouthSection6/10402gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ryoshu/Identities/SevenAssociationSouthSection6/10402gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ryoshu/Identities/SevenAssociationSouthSection6/10402gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ryoshu/Identities/SevenAssociationSouthSection6/10402gacksunginfo.png'
 }

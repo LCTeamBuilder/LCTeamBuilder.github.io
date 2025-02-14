@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const KurokumoClanWakashuHongLuDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const KurokumoClanWakashuHongLuDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/KurokumoClanWakashu/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/KurokumoClanWakashu/GuardUT4.png'
 }
 
 const KurokumoClanWakashuHongLuSkill1: Skill = {
@@ -44,7 +44,7 @@ const KurokumoClanWakashuHongLuSkill1: Skill = {
         [new SkillDescriptionPart("[On Hit] Inflict 3 [Bleed]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/KurokumoClanWakashu/Cleave.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/KurokumoClanWakashu/Cleave.png'
 }
 
 const KurokumoClanWakashuHongLuSkill2: Skill = {
@@ -63,7 +63,7 @@ const KurokumoClanWakashuHongLuSkill2: Skill = {
             new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/KurokumoClanWakashu/CloudCutter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/KurokumoClanWakashu/CloudCutter.png'
 }
 
 const KurokumoClanWakashuHongLuSkill3: Skill = {
@@ -83,7 +83,7 @@ const KurokumoClanWakashuHongLuSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 5 [Paralyze]", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/KurokumoClanWakashu/Cloudburst.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/KurokumoClanWakashu/Cloudburst.png'
 }
 
 export const KurokumoClanWakashuHongLu: Identity = {
@@ -119,6 +119,6 @@ export const KurokumoClanWakashuHongLu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/HongLu/Identities/KurokumoClanWakashu/10602gacksung.png",
-    PortraitImageDir: "./assets/Sinners/HongLu/Identities/KurokumoClanWakashu/10602gacksunginfo.png"
+    FullImageDir: './assets/Sinners/HongLu/Identities/KurokumoClanWakashu/10602gacksung.png',
+    PortraitImageDir: './assets/Sinners/HongLu/Identities/KurokumoClanWakashu/10602gacksunginfo.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TheMiddleLittleBrotherMeursaultDefense: Skill = {
     Name: "Multifold Retribution",
@@ -29,7 +29,7 @@ const TheMiddleLittleBrotherMeursaultDefense: Skill = {
             new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 2)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/TheMiddleLittleBrother/MultifoldRetribution.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/TheMiddleLittleBrother/MultifoldRetribution.png'
 }
 
 const TheMiddleLittleBrotherMeursaultSkill1: Skill = {
@@ -48,7 +48,7 @@ const TheMiddleLittleBrotherMeursaultSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/TheMiddleLittleBrother/WeRemember.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/TheMiddleLittleBrother/WeRemember.png'
 }
 
 const TheMiddleLittleBrotherMeursaultSkill2: Skill = {
@@ -68,7 +68,7 @@ const TheMiddleLittleBrotherMeursaultSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/TheMiddleLittleBrother/ChainsOfLoyalty.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/TheMiddleLittleBrother/ChainsOfLoyalty.png'
 }
 
 const TheMiddleLittleBrotherMeursaultSkill3: Skill = {
@@ -88,7 +88,7 @@ const TheMiddleLittleBrotherMeursaultSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] If target has [Vengeance Mark], inflict 2 [Envy Fragility] next turn", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/TheMiddleLittleBrother/Recording.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/TheMiddleLittleBrother/Recording.png'
 }
 
 export const TheMiddleLittleBrotherMeursault: Identity = {
@@ -126,6 +126,6 @@ export const TheMiddleLittleBrotherMeursault: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Meursault/Identities/TheMiddleLittleBrother/10507gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Meursault/Identities/TheMiddleLittleBrother/10507gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Meursault/Identities/TheMiddleLittleBrother/10507gacksung.png',
+    PortraitImageDir: './assets/Sinners/Meursault/Identities/TheMiddleLittleBrother/10507gacksunginfo.png'
 }

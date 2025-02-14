@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const NCorpMittelhammerRodionDefense: Skill = {
     Name: "Counter",
@@ -27,7 +27,7 @@ const NCorpMittelhammerRodionDefense: Skill = {
         [new SkillDescriptionPart("[On Hit] Inflict 1 [Nails]", 1)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/NCorpMittelhammer/CounterUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/NCorpMittelhammer/CounterUT4.png'
 }
 
 const NCorpMittelhammerRodionSkill1: Skill = {
@@ -47,7 +47,7 @@ const NCorpMittelhammerRodionSkill1: Skill = {
             "[On Hit] If target has [Nails], inflict 1 [Nails]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/NCorpMittelhammer/DevotedHammering.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/NCorpMittelhammer/DevotedHammering.png'
 }
 
 const NCorpMittelhammerRodionSkill2: Skill = {
@@ -66,7 +66,7 @@ const NCorpMittelhammerRodionSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Paralyze] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/NCorpMittelhammer/ZealousPurge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/NCorpMittelhammer/ZealousPurge.png'
 }
 
 const NCorpMittelhammerRodionSkill3: Skill = {
@@ -86,7 +86,7 @@ const NCorpMittelhammerRodionSkill3: Skill = {
         new SkillDescriptionPart("[Heads Hit] Inflict 2 [Bleed]", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/NCorpMittelhammer/IroncladRetribution.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/NCorpMittelhammer/IroncladRetribution.png'
 }
 
 export const NCorpMittelhammerRodion: Identity = {
@@ -123,6 +123,6 @@ export const NCorpMittelhammerRodion: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Rodion/Identities/NCorpMittelhammer/10904gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Rodion/Identities/NCorpMittelhammer/10904gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Rodion/Identities/NCorpMittelhammer/10904gacksung.png',
+    PortraitImageDir: './assets/Sinners/Rodion/Identities/NCorpMittelhammer/10904gacksunginfo.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const CinqAssocSouthSection5DirectorDonQuixoteSkill1: Skill = {
     Name: "Remise",
@@ -29,7 +29,7 @@ const CinqAssocSouthSection5DirectorDonQuixoteSkill1: Skill = {
         new SkillDescriptionPart("[Hit After Clash Win] Inflict 1 [Bind] next turn", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/CinqAssociationSouthSection5Director/Remise.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/CinqAssociationSouthSection5Director/Remise.png'
 }
 
 const CinqAssocSouthSection5DirectorDonQuixoteSkill2: Skill = {
@@ -48,7 +48,7 @@ const CinqAssocSouthSection5DirectorDonQuixoteSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Bind] next turn", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/CinqAssociationSouthSection5Director/Fleche.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/CinqAssociationSouthSection5Director/Fleche.png'
 }
 
 const CinqAssocSouthSection5DirectorDonQuixoteSkill3: Skill = {
@@ -68,7 +68,7 @@ const CinqAssocSouthSection5DirectorDonQuixoteSkill3: Skill = {
         new SkillDescriptionPart("[On Kill] Heal 15 SP", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/CinqAssociationSouthSection5Director/Salut.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/CinqAssociationSouthSection5Director/Salut.png'
 }
 
 const CinqAssocSouthSection5DirectorDonQuixoteDefense: Skill = {
@@ -85,7 +85,7 @@ const CinqAssocSouthSection5DirectorDonQuixoteDefense: Skill = {
         [new SkillDescriptionPart("[On Evade] Target loses 3 SP")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/CinqAssociationSouthSection5Director/DefensiveUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/CinqAssociationSouthSection5Director/DefensiveUT4.png'
 }
 
 export const CinqAssocSouthSection5DirectorDonQuixote: Identity = {
@@ -121,6 +121,6 @@ export const CinqAssocSouthSection5DirectorDonQuixote: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/DonQuixote/Identities/CinqAssociationSouthSection5Director/10305gacksung.png",
-    PortraitImageDir: "./assets/Sinners/DonQuixote/Identities/CinqAssociationSouthSection5Director/10305gacksunginfo.png"
+    FullImageDir: './assets/Sinners/DonQuixote/Identities/CinqAssociationSouthSection5Director/10305gacksung.png',
+    PortraitImageDir: './assets/Sinners/DonQuixote/Identities/CinqAssociationSouthSection5Director/10305gacksunginfo.png'
 }

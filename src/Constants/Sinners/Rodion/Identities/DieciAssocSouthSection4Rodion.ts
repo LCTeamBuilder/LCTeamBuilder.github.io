@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const DieciAssocSouthSection4RodionDefense: Skill = {
     Name: "Fixated Study",
@@ -28,7 +28,7 @@ const DieciAssocSouthSection4RodionDefense: Skill = {
             "[On Use] This Slot gains +5 [Aggro] next turn")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/DieciAssociationSouthSection4/FixatedStudyUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/DieciAssociationSouthSection4/FixatedStudyUT4.png'
 }
 
 const DieciAssocSouthSection4RodionSkill1: Skill = {
@@ -47,7 +47,7 @@ const DieciAssocSouthSection4RodionSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Lower user's Stagger Threshold by 10", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/DieciAssociationSouthSection4/IlluminateThyVacuity.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/DieciAssociationSouthSection4/IlluminateThyVacuity.png'
 }
 
 const DieciAssocSouthSection4RodionSkill2: Skill = {
@@ -68,7 +68,7 @@ const DieciAssocSouthSection4RodionSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 5 Sinking", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/DieciAssociationSouthSection4/WeightOfKnowledge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/DieciAssociationSouthSection4/WeightOfKnowledge.png'
 }
 
 const DieciAssocSouthSection4RodionSkill3: Skill = {
@@ -90,7 +90,7 @@ const DieciAssocSouthSection4RodionSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Sinking] Count", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/DieciAssociationSouthSection4/ExcruciatingStudy.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/DieciAssociationSouthSection4/ExcruciatingStudy.png'
 }
 
 export const DieciAssocSouthSection4Rodion: Identity = {
@@ -129,6 +129,6 @@ export const DieciAssocSouthSection4Rodion: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Rodion/Identities/DieciAssociationSouthSection4/10907gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Rodion/Identities/DieciAssociationSouthSection4/10907gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Rodion/Identities/DieciAssociationSouthSection4/10907gacksung.png',
+    PortraitImageDir: './assets/Sinners/Rodion/Identities/DieciAssociationSouthSection4/10907gacksunginfo.png'
 }

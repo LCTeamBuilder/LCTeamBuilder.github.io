@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TwinhookPiratesFirstMateGregorDefense: Skill = {
     Name: "Take a Breather",
@@ -27,7 +27,7 @@ const TwinhookPiratesFirstMateGregorDefense: Skill = {
         [new SkillDescriptionPart("[On Evade] Gain 1 [Poise] (Max 5 per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/TwinhookPiratesFirstMate/TakeABreather.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/TwinhookPiratesFirstMate/TakeABreather.png'
 }
 
 const TwinhookPiratesFirstMateGregorSkill1: Skill = {
@@ -48,7 +48,7 @@ const TwinhookPiratesFirstMateGregorSkill1: Skill = {
         new SkillDescriptionPart("[On Crit] Inflict 2 Bleed", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/TwinhookPiratesFirstMate/NegotiationStart.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/TwinhookPiratesFirstMate/NegotiationStart.png'
 }
 
 const TwinhookPiratesFirstMateGregorSkill2: Skill = {
@@ -71,7 +71,7 @@ const TwinhookPiratesFirstMateGregorSkill2: Skill = {
             "+50% Damage on Critical Hit", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/TwinhookPiratesFirstMate/UnilateralBusiness.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/TwinhookPiratesFirstMate/UnilateralBusiness.png'
 }
 
 const TwinhookPiratesFirstMateGregorSkill3: Skill = {
@@ -93,7 +93,7 @@ const TwinhookPiratesFirstMateGregorSkill3: Skill = {
             "[On Kill] Gain 1 [Plus Coin Boost] next turn", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/TwinhookPiratesFirstMate/ForegoneConclusion.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/TwinhookPiratesFirstMate/ForegoneConclusion.png'
 }
 
 export const TwinhookPiratesFirstMateGregor: Identity = {
@@ -132,6 +132,6 @@ export const TwinhookPiratesFirstMateGregor: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Gregor/Identities/TwinhookPiratesFirstMate/11207gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Gregor/Identities/TwinhookPiratesFirstMate/11207gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Gregor/Identities/TwinhookPiratesFirstMate/11207gacksung.png',
+    PortraitImageDir: './assets/Sinners/Gregor/Identities/TwinhookPiratesFirstMate/11207gacksunginfo.png'
 }

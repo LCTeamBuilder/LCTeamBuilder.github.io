@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LccbAssistantManagerIshmaelDefense: Skill = {
     Name: "Guard",
@@ -28,7 +28,7 @@ const LccbAssistantManagerIshmaelDefense: Skill = {
             "At 0 [Ammo], gain 2 more [Aggro]")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LCCBAssistantManager/Guard.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LCCBAssistantManager/Guard.png'
 }
 
 const LccbAssistantManagerIshmaelSkill1: Skill = {
@@ -47,7 +47,7 @@ const LccbAssistantManagerIshmaelSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 Paralyze", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LCCBAssistantManager/Shove.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LCCBAssistantManager/Shove.png'
 }
 
 const LccbAssistantManagerIshmaelSkill2: Skill = {
@@ -68,7 +68,7 @@ const LccbAssistantManagerIshmaelSkill2: Skill = {
             "[On Hit] Inflict 8 [Tremor], Inflict +2 [Tremor] Count", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LCCBAssistantManager/QuakeRounds.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LCCBAssistantManager/QuakeRounds.png'
 }
 
 const LccbAssistantManagerIshmaelSkill3: Skill = {
@@ -92,7 +92,7 @@ const LccbAssistantManagerIshmaelSkill3: Skill = {
             "[On Hit] Inflict 5 [Fragile]", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/LCCBAssistantManager/Suppress.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/LCCBAssistantManager/Suppress.png'
 }
 
 export const LccbAssistantManagerIshmael: Identity = {
@@ -128,6 +128,6 @@ export const LccbAssistantManagerIshmael: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ishmael/Identities/LCCBAssistantManager/10804gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ishmael/Identities/LCCBAssistantManager/10804gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ishmael/Identities/LCCBAssistantManager/10804gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ishmael/Identities/LCCBAssistantManager/10804gacksunginfo.png'
 }

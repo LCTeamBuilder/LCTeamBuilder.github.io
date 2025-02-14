@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerSinclairDefense: Skill = {
     Name: "Guard",
@@ -26,7 +26,7 @@ const LCBSinnerSinclairDefense: Skill = {
     SkillDescription: [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/LCBSinner/Counter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/LCBSinner/Counter.png'
 }
 
 const LCBSinnerSinclairSkill1: Skill = {
@@ -42,7 +42,7 @@ const LCBSinnerSinclairSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/LCBSinner/DownwardSwing.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/LCBSinner/DownwardSwing.png'
 }
 
 const LCBSinnerSinclairSkill2: Skill = {
@@ -58,7 +58,7 @@ const LCBSinnerSinclairSkill2: Skill = {
     SkillDescription: [new SkillDescriptionPart("[Clash Win] +30% damage")],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/LCBSinner/RavagingCut.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/LCBSinner/RavagingCut.png'
 }
 
 const LCBSinnerSinclairSkill3: Skill = {
@@ -74,7 +74,7 @@ const LCBSinnerSinclairSkill3: Skill = {
     SkillDescription: [new SkillDescriptionPart("[Clash Win] Gain 1 [Attack Power Up]"),            new SkillDescriptionPart("[Heads Hit] Inflict 1 [Rupture]", 1),            new SkillDescriptionPart("[Heads Hit] Inflict 1 [Rupture]", 2),            new SkillDescriptionPart("[Heads Hit] Inflict 1 [Rupture]", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/ThePequodFirstMate/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/ThePequodFirstMate/EvadeUT4.png'
 }
 
 export const LCBSinnerSinclair: Identity = {
@@ -110,6 +110,6 @@ export const LCBSinnerSinclair: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Sinclair/Identities/LCBSinner/11001normal.png",
-    PortraitImageDir: "./assets/Sinners/Sinclair/Identities/LCBSinner/11001normalinfo.png"
+    FullImageDir: './assets/Sinners/Sinclair/Identities/LCBSinner/11001normal.png',
+    PortraitImageDir: './assets/Sinners/Sinclair/Identities/LCBSinner/11001normalinfo.png'
 }

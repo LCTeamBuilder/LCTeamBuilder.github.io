@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WildHuntHeathcliffDefense: Skill = {
     Name: "O Dullahan...!",
@@ -33,7 +33,7 @@ const WildHuntHeathcliffDefense: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking] and +1 [Sinking] Count", 2)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/WildHunt/ODullahan.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/WildHunt/ODullahan.png'
 }
 
 const WildHuntHeathcliffSkill1: Skill = {
@@ -52,7 +52,7 @@ const WildHuntHeathcliffSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 [Sinking]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/WildHunt/Beheading.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/WildHunt/Beheading.png'
 }
 
 const WildHuntHeathcliffSkill2: Skill = {
@@ -75,7 +75,7 @@ const WildHuntHeathcliffSkill2: Skill = {
             "[On Hit] Inflict 2 [Impending Ruin] next turn", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/WildHunt/MemorialProcession.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/WildHunt/MemorialProcession.png'
 }
 
 const WildHuntHeathcliffSkill3: Skill = {
@@ -101,7 +101,7 @@ const WildHuntHeathcliffSkill3: Skill = {
             "[On Kill] Inflict ([Sinking] on killed target/2) [Sinking] on 2 random enemies (max 5)", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/WildHunt/Requiem.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/WildHunt/Requiem.png'
 }
 
 const WildHuntHeathcliffSkill4: Skill = {
@@ -131,7 +131,7 @@ const WildHuntHeathcliffSkill4: Skill = {
             "[On Kill] Heal 15 SP", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/WildHunt/LamentMournAndDespair.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/WildHunt/LamentMournAndDespair.png'
 }
 
 export const WildHuntHeathcliff: Identity = {
@@ -184,6 +184,6 @@ export const WildHuntHeathcliff: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Heathcliff/Identities/WildHunt/10710gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Heathcliff/Identities/WildHunt/10710gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Heathcliff/Identities/WildHunt/10710gacksung.png',
+    PortraitImageDir: './assets/Sinners/Heathcliff/Identities/WildHunt/10710gacksunginfo.png'
 }

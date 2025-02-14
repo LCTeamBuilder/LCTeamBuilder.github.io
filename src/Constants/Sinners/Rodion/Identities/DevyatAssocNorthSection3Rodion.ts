@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const DevyatAssocNorthSection3RodionDefense: Skill = {
     Name: "Courier Support & Control Sequence",
@@ -30,7 +30,7 @@ const DevyatAssocNorthSection3RodionDefense: Skill = {
             "- At less than 15 [Courier Trunk - Rodion], gain 1 additional [Courier Trunk - Rodion]")],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/CourierSupportControlSequence.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/CourierSupportControlSequence.png'
 }
 
 const DevyatAssocNorthSection3RodionDefense2: Skill = {
@@ -48,7 +48,7 @@ const DevyatAssocNorthSection3RodionDefense2: Skill = {
             "[Turn End] Activate [Strategic R&R Mode]")],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/JustAStrategicTimeOff.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/JustAStrategicTimeOff.png'
 }
 
 const DevyatAssocNorthSection3RodionSkill1: Skill = {
@@ -69,7 +69,7 @@ const DevyatAssocNorthSection3RodionSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 [Rupture]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/CourierTrunkDecayKnife.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/CourierTrunkDecayKnife.png'
 }
 
 const DevyatAssocNorthSection3RodionSkill2: Skill = {
@@ -93,7 +93,7 @@ const DevyatAssocNorthSection3RodionSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Defense Level Down] for every 5 [Courier Trunk - Rodion] on self or for every 5 [Rupture] on the target (max 6, once per turn)", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/CourierTrunkGadgetReveal.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/CourierTrunkGadgetReveal.png'
 }
 
 const DevyatAssocNorthSection3RodionSkill3: Skill = {
@@ -116,7 +116,7 @@ const DevyatAssocNorthSection3RodionSkill3: Skill = {
             "[After Attack] If the target is Staggered or defeated, gain 2 [Haste] next turn (once per turn)", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/ITrustYaPolu.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/DevyatAssocNorthSection3/ITrustYaPolu.png'
 }
 
 export const DevyatAssocNorthSection3Rodion: Identity = {
@@ -161,6 +161,6 @@ export const DevyatAssocNorthSection3Rodion: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Rodion/Identities/DevyatAssocNorthSection3/10910gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Rodion/Identities/DevyatAssocNorthSection3/10910gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Rodion/Identities/DevyatAssocNorthSection3/10910gacksung.png',
+    PortraitImageDir: './assets/Sinners/Rodion/Identities/DevyatAssocNorthSection3/10910gacksunginfo.png'
 }

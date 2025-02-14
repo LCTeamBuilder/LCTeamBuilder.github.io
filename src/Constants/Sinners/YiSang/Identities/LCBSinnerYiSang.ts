@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerYiSangDefense: Skill = {
     Name: "Guard",
@@ -26,7 +26,7 @@ const LCBSinnerYiSangDefense: Skill = {
     SkillDescription: [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LCBSinner/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LCBSinner/GuardUT4.png'
 }
 
 const LCBSinnerYiSangSkill1: Skill = {
@@ -42,7 +42,7 @@ const LCBSinnerYiSangSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LCBSinner/Deflect.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LCBSinner/Deflect.png'
 }
 
 const LCBSinnerYiSangSkill2: Skill = {
@@ -58,7 +58,7 @@ const LCBSinnerYiSangSkill2: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking], Inflict +1 [Sinking] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LCBSinner/EndstopStab.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LCBSinner/EndstopStab.png'
 }
 
 const LCBSinnerYiSangSkill3: Skill = {
@@ -74,7 +74,7 @@ const LCBSinnerYiSangSkill3: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 1),            new SkillDescriptionPart("[On Hit] Inflict 1 [Sinking]", 2),            new SkillDescriptionPart("[On Hit] If target's SP is below 0, inflict 1 [Fragile] next turn", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/LCBSinner/Enjamb.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/LCBSinner/Enjamb.png'
 }
 
 export const LCBSinnerYiSang: Identity = {
@@ -110,6 +110,6 @@ export const LCBSinnerYiSang: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/YiSang/Identities/LCBSinner/10101normal.png",
-    PortraitImageDir: "./assets/Sinners/YiSang/Identities/LCBSinner/10101normalinfo.png"
+    FullImageDir: './assets/Sinners/YiSang/Identities/LCBSinner/10101normal.png',
+    PortraitImageDir: './assets/Sinners/YiSang/Identities/LCBSinner/10101normalinfo.png'
 }

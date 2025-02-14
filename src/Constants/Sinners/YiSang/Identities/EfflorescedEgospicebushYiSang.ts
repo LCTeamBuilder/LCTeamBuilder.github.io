@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const EfflorescedEgospicebushYiSangDefense: Skill = {
     Name: "Scattering Aroma",
@@ -27,7 +27,7 @@ const EfflorescedEgospicebushYiSangDefense: Skill = {
         [new SkillDescriptionPart("[On Evade] Inflict 1 [Sinking]")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/EfflorescedEGOSpicebush/ScatteringAroma.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/EfflorescedEGOSpicebush/ScatteringAroma.png'
 }
 
 const EfflorescedEgospicebushYiSangSkill1: Skill = {
@@ -46,7 +46,7 @@ const EfflorescedEgospicebushYiSangSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Sinking] Count next turn", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/EfflorescedEGOSpicebush/SproutingBud.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/EfflorescedEGOSpicebush/SproutingBud.png'
 }
 
 const EfflorescedEgospicebushYiSangSkill2: Skill = {
@@ -67,7 +67,7 @@ const EfflorescedEgospicebushYiSangSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking] next turn", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/EfflorescedEGOSpicebush/MomentsFloralBreeze.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/EfflorescedEGOSpicebush/MomentsFloralBreeze.png'
 }
 
 const EfflorescedEgospicebushYiSangSkill3: Skill = {
@@ -89,7 +89,7 @@ const EfflorescedEgospicebushYiSangSkill3: Skill = {
             "[On Hit] If user has 10+ [Tremor] Count, deal 40% of damage dealt as bonus damage", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/EfflorescedEGOSpicebush/BloodsteepedScent.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/EfflorescedEGOSpicebush/BloodsteepedScent.png'
 }
 
 export const EfflorescedEgospicebushYiSang: Identity = {
@@ -125,6 +125,6 @@ export const EfflorescedEgospicebushYiSang: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/YiSang/Identities/EfflorescedEGOSpicebush/10104gacksung.png",
-    PortraitImageDir: "./assets/Sinners/YiSang/Identities/EfflorescedEGOSpicebush/10104gacksunginfo.png"
+    FullImageDir: './assets/Sinners/YiSang/Identities/EfflorescedEGOSpicebush/10104gacksung.png',
+    PortraitImageDir: './assets/Sinners/YiSang/Identities/EfflorescedEGOSpicebush/10104gacksunginfo.png'
 }

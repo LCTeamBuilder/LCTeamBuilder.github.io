@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RoseateDesireIshmaelAwakening: Skill = {
     Name: "Roseate Desire",
@@ -26,7 +26,7 @@ const RoseateDesireIshmaelAwakening: Skill = {
             "[On Hit] Inflict 3 [Bind] next turn", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/RoseataDesire/20802awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/RoseataDesire/20802awakenprofile.png'
 }
 
 const RoseateDesireIshmaelCorrosion: Skill = {
@@ -47,7 +47,7 @@ const RoseateDesireIshmaelCorrosion: Skill = {
             "[On Hit] Inflict 5 [Bind] next turn", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/RoseataDesire/20802erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/RoseataDesire/20802erosionprofile.png'
 }
 
 export const RoseateDesireIshmael: Ego = {
@@ -70,5 +70,5 @@ export const RoseateDesireIshmael: Ego = {
     Cost: [{ sin: SinEnum.Wrath, amount: 1 },
             { sin: SinEnum.Lust, amount: 4 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ishmael/EGO/RoseataDesire/20802cg.png"
+    FullImageDir: './assets/Sinners/Ishmael/EGO/RoseataDesire/20802cg.png'
 }

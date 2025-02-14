@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RoseateDesireHongLuAwakening: Skill = {
     Name: "Roseate Desire",
@@ -24,7 +24,7 @@ const RoseateDesireHongLuAwakening: Skill = {
             "[On Hit] Inflict 5 Defense Level Down", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/RoseataDesire/20602awakenprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/RoseataDesire/20602awakenprofile.png'
 }
 
 const RoseateDesireHongLuCorrosion: Skill = {
@@ -45,7 +45,7 @@ const RoseateDesireHongLuCorrosion: Skill = {
             "[On Hit] Inflict 4 [Bind] next turn", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/RoseataDesire/20602erosionprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/RoseataDesire/20602erosionprofile.png'
 }
 
 export const RoseateDesireHongLu: Ego = {
@@ -68,5 +68,5 @@ export const RoseateDesireHongLu: Ego = {
     Cost: [{ sin: SinEnum.Lust, amount: 4 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/HongLu/EGO/RoseataDesire/20602cg.png"
+    FullImageDir: './assets/Sinners/HongLu/EGO/RoseataDesire/20602cg.png'
 }

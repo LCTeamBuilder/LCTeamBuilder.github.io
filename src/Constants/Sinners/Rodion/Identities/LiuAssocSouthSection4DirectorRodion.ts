@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LiuAssocSouthSection4DirectorRodionDefense: Skill = {
     Name: "Counter",
@@ -27,7 +27,7 @@ const LiuAssocSouthSection4DirectorRodionDefense: Skill = {
         [new SkillDescriptionPart("[On Hit] Inflict 1 [Burn]", 1)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LiuAssociationSouthSection4Director/Counter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LiuAssociationSouthSection4Director/Counter.png'
 }
 
 const LiuAssocSouthSection4DirectorRodionSkill1: Skill = {
@@ -46,7 +46,7 @@ const LiuAssocSouthSection4DirectorRodionSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Burn]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LiuAssociationSouthSection4Director/FlamingFists.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LiuAssociationSouthSection4Director/FlamingFists.png'
 }
 
 const LiuAssocSouthSection4DirectorRodionSkill2: Skill = {
@@ -67,7 +67,7 @@ const LiuAssocSouthSection4DirectorRodionSkill2: Skill = {
             "[On Hit] If the target has 6+ [Burn] Count, apply 3 [Burn] for 2 targets with no [Burn] or with the least [Burn] Count", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LiuAssociationSouthSection4Director/FieryKnifehandCombust.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LiuAssociationSouthSection4Director/FieryKnifehandCombust.png'
 }
 
 const LiuAssocSouthSection4DirectorRodionSkill3: Skill = {
@@ -89,7 +89,7 @@ const LiuAssocSouthSection4DirectorRodionSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict Wrath Affinity damage equal to [Burn] Potency on target. (Max 30) Reduce Target's [Burn] Count by 2.", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LiuAssociationSouthSection4Director/PinpointBlitz.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LiuAssociationSouthSection4Director/PinpointBlitz.png'
 }
 
 export const LiuAssocSouthSection4DirectorRodion: Identity = {
@@ -128,6 +128,6 @@ export const LiuAssocSouthSection4DirectorRodion: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Rodion/Identities/LiuAssociationSouthSection4Director/10908gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Rodion/Identities/LiuAssociationSouthSection4Director/10908gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Rodion/Identities/LiuAssociationSouthSection4Director/10908gacksung.png',
+    PortraitImageDir: './assets/Sinners/Rodion/Identities/LiuAssociationSouthSection4Director/10908gacksunginfo.png'
 }

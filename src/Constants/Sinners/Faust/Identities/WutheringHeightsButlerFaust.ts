@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WutheringHeightsButlerFaustDefense: Skill = {
     Name: "Hunting Plans",
@@ -27,7 +27,7 @@ const WutheringHeightsButlerFaustDefense: Skill = {
         [new SkillDescriptionPart("[On Use] If the target has 10+ [Sinking], Coin Power +7")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/WutheringHeightsButler/HuntingPlansUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/WutheringHeightsButler/HuntingPlansUT4.png'
 }
 
 const WutheringHeightsButlerFaustSkill1: Skill = {
@@ -45,7 +45,7 @@ const WutheringHeightsButlerFaustSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/WutheringHeightsButler/Confiscation.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/WutheringHeightsButler/Confiscation.png'
 }
 
 const WutheringHeightsButlerFaustSkill2: Skill = {
@@ -64,7 +64,7 @@ const WutheringHeightsButlerFaustSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +3 [Sinking] Count")],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/WutheringHeightsButler/InterloperReception.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/WutheringHeightsButler/InterloperReception.png'
 }
 
 const WutheringHeightsButlerFaustSkill3: Skill = {
@@ -84,7 +84,7 @@ const WutheringHeightsButlerFaustSkill3: Skill = {
             "[On Hit] If the target has [Echoes of the Manor], inflict +3 [Sinking] Count", 4)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/WutheringHeightsButler/ReceptionArts4Heartseal.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/WutheringHeightsButler/ReceptionArts4Heartseal.png'
 }
 
 export const WutheringHeightsButlerFaust: Identity = {
@@ -121,6 +121,6 @@ export const WutheringHeightsButlerFaust: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Faust/Identities/WutheringHeightsButler/10209gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Faust/Identities/WutheringHeightsButler/10209gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Faust/Identities/WutheringHeightsButler/10209gacksung.png',
+    PortraitImageDir: './assets/Sinners/Faust/Identities/WutheringHeightsButler/10209gacksunginfo.png'
 }

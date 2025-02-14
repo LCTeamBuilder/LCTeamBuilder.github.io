@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ThePequodFirstMateYiSangDefense: Skill = {
     Name: "Evade",
@@ -27,7 +27,7 @@ const ThePequodFirstMateYiSangDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/ThePequodFirstMate/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/ThePequodFirstMate/EvadeUT4.png'
 }
 
 const ThePequodFirstMateYiSangSkill1: Skill = {
@@ -46,7 +46,7 @@ const ThePequodFirstMateYiSangSkill1: Skill = {
             "[On Hit] Inflict 2 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/ThePequodFirstMate/Impale.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/ThePequodFirstMate/Impale.png'
 }
 
 const ThePequodFirstMateYiSangSkill2: Skill = {
@@ -67,7 +67,7 @@ const ThePequodFirstMateYiSangSkill2: Skill = {
             "[On Crit] Reuse this Coin (3 times max)", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/ThePequodFirstMate/RelentlessStabbing.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/ThePequodFirstMate/RelentlessStabbing.png'
 }
 
 const ThePequodFirstMateYiSangSkill3: Skill = {
@@ -88,7 +88,7 @@ const ThePequodFirstMateYiSangSkill3: Skill = {
             "[On Crit] Inflict +6 [Bleed] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/ThePequodFirstMate/Ambush.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/ThePequodFirstMate/Ambush.png'
 }
 
 export const ThePequodFirstMateYiSang: Identity = {
@@ -124,6 +124,6 @@ export const ThePequodFirstMateYiSang: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/YiSang/Identities/ThePequodFirstMate/10107gacksung.png",
-    PortraitImageDir: "./assets/Sinners/YiSang/Identities/ThePequodFirstMate/10107gacksunginfo.png"
+    FullImageDir: './assets/Sinners/YiSang/Identities/ThePequodFirstMate/10107gacksung.png',
+    PortraitImageDir: './assets/Sinners/YiSang/Identities/ThePequodFirstMate/10107gacksunginfo.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const FanghuntOfficeFixerHongLuDefense: Skill = {
     Name: "Emergency Styptics",
@@ -27,7 +27,7 @@ const FanghuntOfficeFixerHongLuDefense: Skill = {
         [new SkillDescriptionPart("[Combat Start] Lose 2 [Bleed] Potency on self (3 times per turn. If [Bleed] Potency drops to 0 or less, the [Bleed] effect expires)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FanghuntOfficeFixer/EmergencyStypticsUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FanghuntOfficeFixer/EmergencyStypticsUT4.png'
 }
 
 const FanghuntOfficeFixerHongLuSkill1: Skill = {
@@ -48,7 +48,7 @@ const FanghuntOfficeFixerHongLuSkill1: Skill = {
             "[Heads Hit] Inflict 1 [Rupture]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FanghuntOfficeFixer/Slam.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FanghuntOfficeFixer/Slam.png'
 }
 
 const FanghuntOfficeFixerHongLuSkill2: Skill = {
@@ -72,7 +72,7 @@ const FanghuntOfficeFixerHongLuSkill2: Skill = {
             "[On Hit] Inflict 2 [HP Healing Down] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FanghuntOfficeFixer/Bonecrusher.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FanghuntOfficeFixer/Bonecrusher.png'
 }
 
 const FanghuntOfficeFixerHongLuSkill3: Skill = {
@@ -95,7 +95,7 @@ const FanghuntOfficeFixerHongLuSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] If the target has 15+ [Rupture], or has less than 30% HP, Reuse this Coin (once per Skill)", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/FanghuntOfficeFixer/ACheerfulHuntsEnd.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/FanghuntOfficeFixer/ACheerfulHuntsEnd.png'
 }
 
 export const FanghuntOfficeFixerHongLu: Identity = {
@@ -133,6 +133,6 @@ export const FanghuntOfficeFixerHongLu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/HongLu/Identities/FanghuntOfficeFixer/10610gacksung.png",
-    PortraitImageDir: "./assets/Sinners/HongLu/Identities/FanghuntOfficeFixer/10610gacksunginfo.png"
+    FullImageDir: './assets/Sinners/HongLu/Identities/FanghuntOfficeFixer/10610gacksung.png',
+    PortraitImageDir: './assets/Sinners/HongLu/Identities/FanghuntOfficeFixer/10610gacksunginfo.png'
 }

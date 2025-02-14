@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const District20YurodivyRyoshuDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const District20YurodivyRyoshuDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain 2 x ([Tremor] Count on self) as Shield HP (max 10)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/District20Yurodivy/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/District20Yurodivy/GuardUT4.png'
 }
 
 const District20YurodivyRyoshuSkill1: Skill = {
@@ -47,7 +47,7 @@ const District20YurodivyRyoshuSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Tremor] Count", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/District20Yurodivy/GotAScrewLoose.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/District20Yurodivy/GotAScrewLoose.png'
 }
 
 const District20YurodivyRyoshuSkill2: Skill = {
@@ -68,7 +68,7 @@ const District20YurodivyRyoshuSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Consume [Tremor] Count on self, and inflict the same amount of [Tremor] Count on target (max 5)", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/District20Yurodivy/CompressionWindupSpanner.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/District20Yurodivy/CompressionWindupSpanner.png'
 }
 
 const District20YurodivyRyoshuSkill3: Skill = {
@@ -90,7 +90,7 @@ const District20YurodivyRyoshuSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Trigger [Tremor Burst], then, reduce target's [Tremor] Count by 1", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/District20Yurodivy/PercussiveMaintenance.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/District20Yurodivy/PercussiveMaintenance.png'
 }
 
 export const District20YurodivyRyoshu: Identity = {
@@ -128,6 +128,6 @@ export const District20YurodivyRyoshu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ryoshu/Identities/District20Yurodivy/10409gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ryoshu/Identities/District20Yurodivy/10409gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ryoshu/Identities/District20Yurodivy/10409gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ryoshu/Identities/District20Yurodivy/10409gacksunginfo.png'
 }

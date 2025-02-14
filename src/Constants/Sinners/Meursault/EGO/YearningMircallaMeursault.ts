@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const YearningMircallaMeursaultAwakening: Skill = {
     Name: "Yearning Mircalla",
@@ -34,7 +34,7 @@ const YearningMircallaMeursaultAwakening: Skill = {
             "[On Kill] When dealing excess damage past the enemy's remaining HP, deal the excess damage as fixed damage between all enemies. (min 1)", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/YearningMircalla/20507awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/YearningMircalla/20507awakenprofile.png'
 }
 
 const YearningMircallaMeursaultCorrosion: Skill = {
@@ -66,7 +66,7 @@ const YearningMircallaMeursaultCorrosion: Skill = {
             "[On Kill] When dealing excess damage past the enemy's remaining HP, deal the excess damage as fixed damage between all enemies. (min 1)", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/YearningMircalla/20507erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/YearningMircalla/20507erosionprofile.png'
 }
 
 export const YearningMircallaMeursault: Ego = {
@@ -91,5 +91,5 @@ export const YearningMircallaMeursault: Ego = {
             { sin: SinEnum.Pride, amount: 3 },
             { sin: SinEnum.Envy, amount: 4 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Meursault/EGO/YearningMircalla/20507cg.png"
+    FullImageDir: './assets/Sinners/Meursault/EGO/YearningMircalla/20507cg.png'
 }

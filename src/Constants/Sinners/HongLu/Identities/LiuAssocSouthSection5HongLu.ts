@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LiuAssocSouthSection5HongLuDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const LiuAssocSouthSection5HongLuDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/LiuAssociationSouthSection5/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/LiuAssociationSouthSection5/GuardUT4.png'
 }
 
 const LiuAssocSouthSection5HongLuSkill1: Skill = {
@@ -45,7 +45,7 @@ const LiuAssocSouthSection5HongLuSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Burn]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/LiuAssociationSouthSection5/WarmUp.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/LiuAssociationSouthSection5/WarmUp.png'
 }
 
 const LiuAssocSouthSection5HongLuSkill2: Skill = {
@@ -64,7 +64,7 @@ const LiuAssocSouthSection5HongLuSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +1 [Burn] Count, at 30+ SP, inflict 1 more, at 45+ SP, inflict 2 more", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/LiuAssociationSouthSection5/FlowingFlame.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/LiuAssociationSouthSection5/FlowingFlame.png'
 }
 
 const LiuAssocSouthSection5HongLuSkill3: Skill = {
@@ -84,7 +84,7 @@ const LiuAssocSouthSection5HongLuSkill3: Skill = {
             "[On Hit] If target has 6+ [Burn] Count, raise Stagger Threshold by 30% of damage dealt", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/LiuAssociationSouthSection5/CrimsonBlazeFist.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/LiuAssociationSouthSection5/CrimsonBlazeFist.png'
 }
 
 export const LiuAssocSouthSection5HongLu: Identity = {
@@ -120,6 +120,6 @@ export const LiuAssocSouthSection5HongLu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/HongLu/Identities/LiuAssociationSouthSection5/10604gacksung.png",
-    PortraitImageDir: "./assets/Sinners/HongLu/Identities/LiuAssociationSouthSection5/10604gacksunginfo.png"
+    FullImageDir: './assets/Sinners/HongLu/Identities/LiuAssociationSouthSection5/10604gacksung.png',
+    PortraitImageDir: './assets/Sinners/HongLu/Identities/LiuAssociationSouthSection5/10604gacksunginfo.png'
 }

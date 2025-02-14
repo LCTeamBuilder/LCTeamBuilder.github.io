@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const MolarOfficeFixerOutisDefense: Skill = {
     Name: "Hangover Cure",
@@ -27,7 +27,7 @@ const MolarOfficeFixerOutisDefense: Skill = {
         [new SkillDescriptionPart("[On Use] [Discard] the Skill of lowest rank in all of this unit's Skill Slots")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/MolarOfficeFixer/HangoverCureUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/MolarOfficeFixer/HangoverCureUT4.png'
 }
 
 const MolarOfficeFixerOutisSkill1: Skill = {
@@ -47,7 +47,7 @@ const MolarOfficeFixerOutisSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Lower user's Stagger Threshold for every [Tremor] Count on self (Max 10)", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/MolarOfficeFixer/WaitUp.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/MolarOfficeFixer/WaitUp.png'
 }
 
 const MolarOfficeFixerOutisSkill2: Skill = {
@@ -68,7 +68,7 @@ const MolarOfficeFixerOutisSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] At 6+ [Tremor] Count, Trigger [Tremor Burst]. Reduce target's [Tremor] Count by 1", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/MolarOfficeFixer/Slice.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/MolarOfficeFixer/Slice.png'
 }
 
 const MolarOfficeFixerOutisSkill3: Skill = {
@@ -91,7 +91,7 @@ const MolarOfficeFixerOutisSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Trigger [Tremor Burst], After [Tremor Burst], reduce target's [Tremor] Count by 1", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/MolarOfficeFixer/DaringDecision.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/MolarOfficeFixer/DaringDecision.png'
 }
 
 export const MolarOfficeFixerOutis: Identity = {
@@ -127,6 +127,6 @@ export const MolarOfficeFixerOutis: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Outis/Identities/MolarOfficeFixer/11105gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Outis/Identities/MolarOfficeFixer/11105gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Outis/Identities/MolarOfficeFixer/11105gacksung.png',
+    PortraitImageDir: './assets/Sinners/Outis/Identities/MolarOfficeFixer/11105gacksunginfo.png'
 }

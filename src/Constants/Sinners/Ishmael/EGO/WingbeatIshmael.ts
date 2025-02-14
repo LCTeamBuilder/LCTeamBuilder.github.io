@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WingbeatIshmaelAwakening: Skill = {
     Name: "Wingbeat",
@@ -29,7 +29,7 @@ const WingbeatIshmaelAwakening: Skill = {
             "[On Hit] Inflict 1~4 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/Wingbeat/20806awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/Wingbeat/20806awakenprofile.png'
 }
 
 const WingbeatIshmaelCorrosion: Skill = {
@@ -56,7 +56,7 @@ const WingbeatIshmaelCorrosion: Skill = {
             "[On Kill] Gain 1 [Attack Power Up] next turn (max 3)", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/Wingbeat/20806erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/Wingbeat/20806erosionprofile.png'
 }
 
 export const WingbeatIshmael: Ego = {
@@ -84,5 +84,5 @@ export const WingbeatIshmael: Ego = {
             { sin: SinEnum.Gluttony, amount: 3 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ishmael/EGO/Wingbeat/20806cg.png"
+    FullImageDir: './assets/Sinners/Ishmael/EGO/Wingbeat/20806cg.png'
 }

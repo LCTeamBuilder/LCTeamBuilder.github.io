@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SodaHongLuAwakening: Skill = {
     Name: "Soda",
@@ -25,7 +25,7 @@ const SodaHongLuAwakening: Skill = {
             "[Crit Attack End] Heal the ally with the lowest HP percentage for 8 HP, Heal the ally with the least SP for 8 SP", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/Soda/20604awakenprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/Soda/20604awakenprofile.png'
 }
 
 const SodaHongLuCorrosion: Skill = {
@@ -44,7 +44,7 @@ const SodaHongLuCorrosion: Skill = {
             "[On Hit] Inflict 5 [Tremor]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/HongLu/EGO/Soda/20604erosionprofile.png"
+    SkillImageDir: './assets/Sinners/HongLu/EGO/Soda/20604erosionprofile.png'
 }
 
 export const SodaHongLu: Ego = {
@@ -68,5 +68,5 @@ export const SodaHongLu: Ego = {
             { sin: SinEnum.Gloom, amount: 2 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/HongLu/EGO/Soda/20604cg.png"
+    FullImageDir: './assets/Sinners/HongLu/EGO/Soda/20604cg.png'
 }

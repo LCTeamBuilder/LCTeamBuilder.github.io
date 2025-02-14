@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ElectricScreamingMeursaultAwakening: Skill = {
     Name: "Electric Screaming",
@@ -28,7 +28,7 @@ const ElectricScreamingMeursaultAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/ElectricScreaming/20506awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/ElectricScreaming/20506awakenprofile.png'
 }
 
 const ElectricScreamingMeursaultCorrosion: Skill = {
@@ -51,7 +51,7 @@ const ElectricScreamingMeursaultCorrosion: Skill = {
             "[On Hit] Inflict 3 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Meursault/EGO/ElectricScreaming/20506erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Meursault/EGO/ElectricScreaming/20506erosionprofile.png'
 }
 
 export const ElectricScreamingMeursault: Ego = {
@@ -75,5 +75,5 @@ export const ElectricScreamingMeursault: Ego = {
     Cost: [{ sin: SinEnum.Wrath, amount: 1 },
             { sin: SinEnum.Envy, amount: 4 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Meursault/EGO/ElectricScreaming/20506cg.png"
+    FullImageDir: './assets/Sinners/Meursault/EGO/ElectricScreaming/20506cg.png'
 }

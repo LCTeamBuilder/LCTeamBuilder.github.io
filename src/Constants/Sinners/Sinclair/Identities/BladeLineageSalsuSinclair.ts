@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BladeLineageSalsuSinclairDefense: Skill = {
     Name: "Newsprung Counter",
@@ -28,7 +28,7 @@ const BladeLineageSalsuSinclairDefense: Skill = {
             "[On Use] Gain +3 [Poise] Count")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/BladeLineageSalsu/NewsprungCounter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/BladeLineageSalsu/NewsprungCounter.png'
 }
 
 const BladeLineageSalsuSinclairSkill1: Skill = {
@@ -46,7 +46,7 @@ const BladeLineageSalsuSinclairSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +2 [Poise] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/BladeLineageSalsu/SliceThenStab.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/BladeLineageSalsu/SliceThenStab.png'
 }
 
 const BladeLineageSalsuSinclairSkill2: Skill = {
@@ -67,7 +67,7 @@ const BladeLineageSalsuSinclairSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 1 [Poise]", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/BladeLineageSalsu/SlashSeries.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/BladeLineageSalsu/SlashSeries.png'
 }
 
 const BladeLineageSalsuSinclairSkill3: Skill = {
@@ -86,7 +86,7 @@ const BladeLineageSalsuSinclairSkill3: Skill = {
             "[On Hit] Inflict 3 [Bleed]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/BladeLineageSalsu/ToClaimTheirBones.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/BladeLineageSalsu/ToClaimTheirBones.png'
 }
 
 export const BladeLineageSalsuSinclair: Identity = {
@@ -123,6 +123,6 @@ export const BladeLineageSalsuSinclair: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Sinclair/Identities/BladeLineageSalsu/11002gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Sinclair/Identities/BladeLineageSalsu/11002gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Sinclair/Identities/BladeLineageSalsu/11002gacksung.png',
+    PortraitImageDir: './assets/Sinners/Sinclair/Identities/BladeLineageSalsu/11002gacksunginfo.png'
 }

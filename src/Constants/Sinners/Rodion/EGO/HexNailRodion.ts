@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const HexNailRodionAwakening: Skill = {
     Name: "Hex Nail",
@@ -28,7 +28,7 @@ const HexNailRodionAwakening: Skill = {
             "[Heads Hit] Inflict 3 [Nails]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/HexNail/20907awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/HexNail/20907awakenprofile.png'
 }
 
 const HexNailRodionCorrosion: Skill = {
@@ -53,7 +53,7 @@ const HexNailRodionCorrosion: Skill = {
             "[Tails Hit] Inflict 3 [Nails]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/HexNail/20907erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/HexNail/20907erosionprofile.png'
 }
 
 export const HexNailRodion: Ego = {
@@ -80,5 +80,5 @@ export const HexNailRodion: Ego = {
             { sin: SinEnum.Pride, amount: 1 },
             { sin: SinEnum.Envy, amount: 4 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Rodion/EGO/HexNail/20907cg.png"
+    FullImageDir: './assets/Sinners/Rodion/EGO/HexNail/20907cg.png'
 }

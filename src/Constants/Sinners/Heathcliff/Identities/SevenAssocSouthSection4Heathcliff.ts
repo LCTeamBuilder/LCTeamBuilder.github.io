@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SevenAssocSouthSection4HeathcliffDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const SevenAssocSouthSection4HeathcliffDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/SevenAssociationSouthSection4/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/SevenAssociationSouthSection4/GuardUT4.png'
 }
 
 const SevenAssocSouthSection4HeathcliffSkill1: Skill = {
@@ -48,7 +48,7 @@ const SevenAssocSouthSection4HeathcliffSkill1: Skill = {
             "[Heads Hit] Inflict 1 [Rupture]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/SevenAssociationSouthSection4/Intuition.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/SevenAssociationSouthSection4/Intuition.png'
 }
 
 const SevenAssocSouthSection4HeathcliffSkill2: Skill = {
@@ -67,7 +67,7 @@ const SevenAssocSouthSection4HeathcliffSkill2: Skill = {
         "[On Hit] Inflict +2 [Rupture] Count", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/SevenAssociationSouthSection4/TheWrapup.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/SevenAssociationSouthSection4/TheWrapup.png'
 }
 
 const SevenAssocSouthSection4HeathcliffSkill3: Skill = {
@@ -89,7 +89,7 @@ const SevenAssocSouthSection4HeathcliffSkill3: Skill = {
             "[On Kill] Inflict +2 [Rupture] Count against the enemy with the lowest [Rupture] Count")],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/SevenAssociationSouthSection4/Forensics.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/SevenAssociationSouthSection4/Forensics.png'
 }
 
 export const SevenAssocSouthSection4Heathcliff: Identity = {
@@ -127,6 +127,6 @@ export const SevenAssocSouthSection4Heathcliff: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Heathcliff/Identities/SevenAssociationSouthSection4/10706gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Heathcliff/Identities/SevenAssociationSouthSection4/10706gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Heathcliff/Identities/SevenAssociationSouthSection4/10706gacksung.png',
+    PortraitImageDir: './assets/Sinners/Heathcliff/Identities/SevenAssociationSouthSection4/10706gacksunginfo.png'
 }

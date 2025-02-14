@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const EbonyStemOutisAwakening: Skill = {
     Name: "Ebony Stem",
@@ -25,7 +25,7 @@ const EbonyStemOutisAwakening: Skill = {
             "[On Hit] Inflict 2 Glut Fragility", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/EbonyStem/21102awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/EbonyStem/21102awakenprofile.png'
 }
 
 const EbonyStemOutisCorrosion: Skill = {
@@ -46,7 +46,7 @@ const EbonyStemOutisCorrosion: Skill = {
             "[On Hit] Inflict 3 [Gluttony Fragility]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/EbonyStem/21102erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/EbonyStem/21102erosionprofile.png'
 }
 
 export const EbonyStemOutis: Ego = {
@@ -71,5 +71,5 @@ export const EbonyStemOutis: Ego = {
             { sin: SinEnum.Gloom, amount: 1 },
             { sin: SinEnum.Pride, amount: 4 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Outis/EGO/EbonyStem/21102cg.png"
+    FullImageDir: './assets/Sinners/Outis/EGO/EbonyStem/21102cg.png'
 }

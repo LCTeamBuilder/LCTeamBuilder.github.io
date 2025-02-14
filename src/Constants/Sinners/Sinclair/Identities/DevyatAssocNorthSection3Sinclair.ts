@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const DevyatAssocNorthSection3SinclairDefense: Skill = {
     Name: "Courier Assistance & Crisis Control System",
@@ -28,7 +28,7 @@ const DevyatAssocNorthSection3SinclairDefense: Skill = {
             "[Combat Start] If this Skill is to be activated, gain ([Courier Trunk - Sinclair])% of this unit's max HP as Shield (max 25%, once per turn)")],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/DevyatAssocNorthSection3/CourierAssistanceAndCrisisControlSystem.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/DevyatAssocNorthSection3/CourierAssistanceAndCrisisControlSystem.png'
 }
 
 const DevyatAssocNorthSection3SinclairDefense2: Skill = {
@@ -46,7 +46,7 @@ const DevyatAssocNorthSection3SinclairDefense2: Skill = {
             "[Turn End] Activate [Strategic R&R Mode]")],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/DevyatAssocNorthSection3/WWaitINeedToDoSomeMaintenance.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/DevyatAssocNorthSection3/WWaitINeedToDoSomeMaintenance.png'
 }
 
 const DevyatAssocNorthSection3SinclairSkill1: Skill = {
@@ -68,7 +68,7 @@ const DevyatAssocNorthSection3SinclairSkill1: Skill = {
             "- At 15+ [Courier Trunk - Sinclair], inflict +1 additional [Rupture] Count", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/DevyatAssocNorthSection3/CourierTrunkDecayHammer.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/DevyatAssocNorthSection3/CourierTrunkDecayHammer.png'
 }
 
 const DevyatAssocNorthSection3SinclairSkill2: Skill = {
@@ -93,7 +93,7 @@ const DevyatAssocNorthSection3SinclairSkill2: Skill = {
             "- At 15+ [Courier Trunk - Sinclair], inflict +2 [Rupture] Count", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/DevyatAssocNorthSection3/CourierTrunkDemolitionGadget.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/DevyatAssocNorthSection3/CourierTrunkDemolitionGadget.png'
 }
 
 const DevyatAssocNorthSection3SinclairSkill3: Skill = {
@@ -117,7 +117,7 @@ const DevyatAssocNorthSection3SinclairSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] If this Skill's effect to raise its final Coin Power did not activate, gain 2 [Haste] next turn", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/DevyatAssocNorthSection3/PoludnitsaITrustYou.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/DevyatAssocNorthSection3/PoludnitsaITrustYou.png'
 }
 
 export const DevyatAssocNorthSection3Sinclair: Identity = {
@@ -160,6 +160,6 @@ export const DevyatAssocNorthSection3Sinclair: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Sinclair/Identities/DevyatAssocNorthSection3/11011gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Sinclair/Identities/DevyatAssocNorthSection3/11011gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Sinclair/Identities/DevyatAssocNorthSection3/11011gacksung.png',
+    PortraitImageDir: './assets/Sinners/Sinclair/Identities/DevyatAssocNorthSection3/11011gacksunginfo.png'
 }

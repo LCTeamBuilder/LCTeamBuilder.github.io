@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TheMiddleLittleSisterDonQuixoteDefense: Skill = {
     Name: "Multifold Retribution",
@@ -31,7 +31,7 @@ const TheMiddleLittleSisterDonQuixoteDefense: Skill = {
         new SkillDescriptionPart("[On Hit] Lower user's Stagger Threshold by 5", 2)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheMiddleLittleSister/MultifoldRetribution.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheMiddleLittleSister/MultifoldRetribution.png'
 }
 
 const TheMiddleLittleSisterDonQuixoteSkill1: Skill = {
@@ -50,7 +50,7 @@ const TheMiddleLittleSisterDonQuixoteSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheMiddleLittleSister/CheckingTheBook.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheMiddleLittleSister/CheckingTheBook.png'
 }
 
 const TheMiddleLittleSisterDonQuixoteSkill2: Skill = {
@@ -71,7 +71,7 @@ const TheMiddleLittleSisterDonQuixoteSkill2: Skill = {
             "[On Hit] Inflict 1 [Damage Down]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheMiddleLittleSister/ProofOfLoyalty.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheMiddleLittleSister/ProofOfLoyalty.png'
 }
 
 const TheMiddleLittleSisterDonQuixoteSkill3: Skill = {
@@ -94,7 +94,7 @@ const TheMiddleLittleSisterDonQuixoteSkill3: Skill = {
         new SkillDescriptionPart("[After Attack] If target is defeated, 1 ally with the least SP heals 6 SP", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/TheMiddleLittleSister/AJustVengeance1.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/TheMiddleLittleSister/AJustVengeance1.png'
 }
 
 export const TheMiddleLittleSisterDonQuixote: Identity = {
@@ -132,6 +132,6 @@ export const TheMiddleLittleSisterDonQuixote: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/DonQuixote/Identities/TheMiddleLittleSister/10306gacksung.png",
-    PortraitImageDir: "./assets/Sinners/DonQuixote/Identities/TheMiddleLittleSister/10306gacksunginfo.png"
+    FullImageDir: './assets/Sinners/DonQuixote/Identities/TheMiddleLittleSister/10306gacksung.png',
+    PortraitImageDir: './assets/Sinners/DonQuixote/Identities/TheMiddleLittleSister/10306gacksunginfo.png'
 }

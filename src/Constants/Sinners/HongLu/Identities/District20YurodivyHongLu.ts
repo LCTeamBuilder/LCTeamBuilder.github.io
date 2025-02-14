@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const District20YurodivyHongLuDefense: Skill = {
     Name: "Wait?!",
@@ -27,7 +27,7 @@ const District20YurodivyHongLuDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain 2 x ([Tremor] Count on target) as Shield HP (max 13)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/District20Yurodivy/Wait.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/District20Yurodivy/Wait.png'
 }
 
 const District20YurodivyHongLuSkill1: Skill = {
@@ -47,7 +47,7 @@ const District20YurodivyHongLuSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +2 [Tremor] Count", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/District20Yurodivy/DeductionStart.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/District20Yurodivy/DeductionStart.png'
 }
 
 const District20YurodivyHongLuSkill2: Skill = {
@@ -69,7 +69,7 @@ const District20YurodivyHongLuSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] If the target has 6+ [Tremor], trigger [Tremor Burst], then, reduce target's [Tremor] Count by 1", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/District20Yurodivy/MorphCaneTechnique.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/District20Yurodivy/MorphCaneTechnique.png'
 }
 
 const District20YurodivyHongLuSkill3: Skill = {
@@ -93,7 +93,7 @@ const District20YurodivyHongLuSkill3: Skill = {
             "- If this unit consumed less than 15 [Tremor] Count, trigger [Tremor Burst] on self after activating the above effect", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/District20Yurodivy/YoureTheCulprit.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/District20Yurodivy/YoureTheCulprit.png'
 }
 
 export const District20YurodivyHongLu: Identity = {
@@ -129,6 +129,6 @@ export const District20YurodivyHongLu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/HongLu/Identities/District20Yurodivy/10609gacksung.png",
-    PortraitImageDir: "./assets/Sinners/HongLu/Identities/District20Yurodivy/10609gacksunginfo.png"
+    FullImageDir: './assets/Sinners/HongLu/Identities/District20Yurodivy/10609gacksung.png',
+    PortraitImageDir: './assets/Sinners/HongLu/Identities/District20Yurodivy/10609gacksunginfo.png'
 }

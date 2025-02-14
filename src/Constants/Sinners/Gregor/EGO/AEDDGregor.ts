@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const AEDDGregorAwakening: Skill = {
     Name: "AEDD",
@@ -24,7 +24,7 @@ const AEDDGregorAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 15 [Spark Discharge]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/AEDD/21204awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/AEDD/21204awakenprofile.png'
 }
 
 const AEDDGregorCorrosion: Skill = {
@@ -44,7 +44,7 @@ const AEDDGregorCorrosion: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 15 [Spark Discharge] and +7 [Charge] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/AEDD/21204erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/AEDD/21204erosionprofile.png'
 }
 
 export const AEDDGregor: Ego = {
@@ -67,5 +67,5 @@ export const AEDDGregor: Ego = {
     Cost: [{ sin: SinEnum.Gloom, amount: 3 },
             { sin: SinEnum.Envy, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Gregor/EGO/AEDD/21204cg.png"
+    FullImageDir: './assets/Sinners/Gregor/EGO/AEDD/21204cg.png'
 }

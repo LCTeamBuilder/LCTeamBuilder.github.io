@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LccbAssistantManagerRodionDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const LccbAssistantManagerRodionDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LCCBAssistantManager/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LCCBAssistantManager/GuardUT4.png'
 }
 
 const LccbAssistantManagerRodionSkill1: Skill = {
@@ -45,7 +45,7 @@ const LccbAssistantManagerRodionSkill1: Skill = {
         new SkillDescriptionPart("[Heads Hit] Inflict 3 [Paralyze]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LCCBAssistantManager/Bludgeon.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LCCBAssistantManager/Bludgeon.png'
 }
 
 const LccbAssistantManagerRodionSkill2: Skill = {
@@ -63,7 +63,7 @@ const LccbAssistantManagerRodionSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 4 [Defense Power Down]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LCCBAssistantManager/Thrust.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LCCBAssistantManager/Thrust.png'
 }
 
 const LccbAssistantManagerRodionSkill3: Skill = {
@@ -83,7 +83,7 @@ const LccbAssistantManagerRodionSkill3: Skill = {
         new SkillDescriptionPart("[Heads Hit] Inflict 3 [Paralyze]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LCCBAssistantManager/Suppress.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LCCBAssistantManager/Suppress.png'
 }
 
 export const LccbAssistantManagerRodion: Identity = {
@@ -119,6 +119,6 @@ export const LccbAssistantManagerRodion: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Rodion/Identities/LCCBAssistantManager/10903gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Rodion/Identities/LCCBAssistantManager/10903gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Rodion/Identities/LCCBAssistantManager/10903gacksung.png',
+    PortraitImageDir: './assets/Sinners/Rodion/Identities/LCCBAssistantManager/10903gacksunginfo.png'
 }

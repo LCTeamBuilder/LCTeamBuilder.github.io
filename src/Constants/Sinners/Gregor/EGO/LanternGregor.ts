@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LanternGregorAwakening: Skill = {
     Name: "Lantern",
@@ -23,7 +23,7 @@ const LanternGregorAwakening: Skill = {
         [new SkillDescriptionPart("[On Hit] Heal 60% of damage dealt", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/Lantern/21203awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/Lantern/21203awakenprofile.png'
 }
 
 const LanternGregorCorrosion: Skill = {
@@ -43,7 +43,7 @@ const LanternGregorCorrosion: Skill = {
             "[Heads Hit] Inflict 5 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/Lantern/21203erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/Lantern/21203erosionprofile.png'
 }
 
 export const LanternGregor: Ego = {
@@ -66,5 +66,5 @@ export const LanternGregor: Ego = {
     Cost: [{ sin: SinEnum.Sloth, amount: 1 },
             { sin: SinEnum.Gluttony, amount: 4 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Gregor/EGO/Lantern/21203cg.png"
+    FullImageDir: './assets/Sinners/Gregor/EGO/Lantern/21203cg.png'
 }

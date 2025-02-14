@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const CinqAssocsouthSection4DirectorSinclairDefense: Skill = {
     Name: "Défensive",
@@ -27,7 +27,7 @@ const CinqAssocsouthSection4DirectorSinclairDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/CinqAssocSouthSection4Director/DefensiveUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/CinqAssocSouthSection4Director/DefensiveUT4.png'
 }
 
 const CinqAssocsouthSection4DirectorSinclairSkill1: Skill = {
@@ -47,7 +47,7 @@ const CinqAssocsouthSection4DirectorSinclairSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 1 [Haste] next turn", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/CinqAssocSouthSection4Director/Remise.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/CinqAssocSouthSection4Director/Remise.png'
 }
 
 const CinqAssocsouthSection4DirectorSinclairSkill2: Skill = {
@@ -67,7 +67,7 @@ const CinqAssocsouthSection4DirectorSinclairSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +1 [Poise] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/CinqAssocSouthSection4Director/Engagement.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/CinqAssocSouthSection4Director/Engagement.png'
 }
 
 const CinqAssocsouthSection4DirectorSinclairSkill3: Skill = {
@@ -88,7 +88,7 @@ const CinqAssocsouthSection4DirectorSinclairSkill3: Skill = {
         new SkillDescriptionPart("[On Crit] +50% Damage on Critical Hit", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/CinqAssocSouthSection4Director/ContreAttaque.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/CinqAssocSouthSection4Director/ContreAttaque.png'
 }
 
 export const CinqAssocsouthSection4DirectorSinclair: Identity = {
@@ -125,6 +125,6 @@ export const CinqAssocsouthSection4DirectorSinclair: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Sinclair/Identities/CinqAssociationSouthSection4Director/11008gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Sinclair/Identities/CinqAssociationSouthSection4Director/11008gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Sinclair/Identities/CinqAssociationSouthSection4Director/11008gacksung.png',
+    PortraitImageDir: './assets/Sinners/Sinclair/Identities/CinqAssociationSouthSection4Director/11008gacksunginfo.png'
 }

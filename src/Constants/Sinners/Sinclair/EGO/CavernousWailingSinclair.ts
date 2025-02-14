@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const CavernousWailingSinclairAwakening: Skill = {
     Name: "Cavernous Wailing",
@@ -27,7 +27,7 @@ const CavernousWailingSinclairAwakening: Skill = {
             "- At 4+ highest Gloom A-Reason., this Skill's above effects change to 'apply 3 [Blubberbubble]' and 'change the [Blubberbubble] value to 3' instead.", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/CavernousWailing/21006awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/CavernousWailing/21006awakenprofile.png'
 }
 
 const CavernousWailingSinclairCorrosion: Skill = {
@@ -52,7 +52,7 @@ const CavernousWailingSinclairCorrosion: Skill = {
             "- At 4+ Gloom Reason., gain additional Shield equal to 10% of this unit's max HP", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/CavernousWailing/21006erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/CavernousWailing/21006erosionprofile.png'
 }
 
 export const CavernousWailingSinclair: Ego = {
@@ -77,5 +77,5 @@ export const CavernousWailingSinclair: Ego = {
             { sin: SinEnum.Sloth, amount: 2 },
             { sin: SinEnum.Gloom, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Sinclair/EGO/CavernousWailing/21006cg.png"
+    FullImageDir: './assets/Sinners/Sinclair/EGO/CavernousWailing/21006cg.png'
 }

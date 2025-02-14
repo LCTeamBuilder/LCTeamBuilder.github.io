@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ToPathosMathosOutisAwakening: Skill = {
     Name: "To Páthos Máthos",
@@ -22,7 +22,7 @@ const ToPathosMathosOutisAwakening: Skill = {
     SkillDescription: [new SkillDescriptionPart("If target's HP is below 50%, +30% Damage"),            new SkillDescriptionPart("[On Hit] Inflict 4 [Rupture]<br>"+                "[On Kill] Give 1 [Damage Up] to a random ally", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/ToPathosMathos/21101awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/ToPathosMathos/21101awakenprofile.png'
 }
 
 export const ToPathosMathosOutis: Ego = {
@@ -45,5 +45,5 @@ export const ToPathosMathosOutis: Ego = {
     Cost: [{ sin: SinEnum.Sloth, amount: 2 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Outis/EGO/ToPathosMathos/21101cg.png"
+    FullImageDir: './assets/Sinners/Outis/EGO/ToPathosMathos/21101cg.png'
 }

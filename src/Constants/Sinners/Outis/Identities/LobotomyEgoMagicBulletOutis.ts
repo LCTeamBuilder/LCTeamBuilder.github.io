@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LobotomyEgoMagicBulletOutisDefense: Skill = {
     Name: "The Price of a Bullet",
@@ -29,7 +29,7 @@ const LobotomyEgoMagicBulletOutisDefense: Skill = {
             "[Skill End] Lose SP equal to [Magic Bullet]")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/LobotomyEGOMagicBullet/ThePriceOfABullet.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/LobotomyEGOMagicBullet/ThePriceOfABullet.png'
 }
 
 const LobotomyEgoMagicBulletOutisSkill1: Skill = {
@@ -48,7 +48,7 @@ const LobotomyEgoMagicBulletOutisSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict [Burn] equal to [Dark Flame] on target", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/LobotomyEGOMagicBullet/Ignition.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/LobotomyEGOMagicBullet/Ignition.png'
 }
 
 const LobotomyEgoMagicBulletOutisSkill2: Skill = {
@@ -67,7 +67,7 @@ const LobotomyEgoMagicBulletOutisSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict [Burn] equal to [Dark Flame] on target", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/LobotomyEGOMagicBullet/DetonateMagicBullet.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/LobotomyEGOMagicBullet/DetonateMagicBullet.png'
 }
 
 const LobotomyEgoMagicBulletOutisSkill3: Skill = {
@@ -92,7 +92,7 @@ const LobotomyEgoMagicBulletOutisSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict [Dark Flame] equal to [Magic Bullet] next turn", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/LobotomyEGOMagicBullet/MagicBulletFire.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/LobotomyEGOMagicBullet/MagicBulletFire.png'
 }
 
 export const LobotomyEgoMagicBulletOutis: Identity = {
@@ -129,6 +129,6 @@ export const LobotomyEgoMagicBulletOutis: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Outis/Identities/LobotomyEGOMagicBullet/11107gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Outis/Identities/LobotomyEGOMagicBullet/11107gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Outis/Identities/LobotomyEGOMagicBullet/11107gacksung.png',
+    PortraitImageDir: './assets/Sinners/Outis/Identities/LobotomyEGOMagicBullet/11107gacksunginfo.png'
 }

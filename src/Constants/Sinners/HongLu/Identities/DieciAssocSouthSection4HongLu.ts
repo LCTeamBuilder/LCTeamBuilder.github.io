@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const DieciAssocSouthSection4HongLuDefense: Skill = {
     Name: "Guiding Steps",
@@ -27,7 +27,7 @@ const DieciAssocSouthSection4HongLuDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Randomly [Discard] 2 of this unit's Skills in ascending order of ranks from all of its Skill Slots")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/DieciAssociationSouthSection4/GuidingStepsUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/DieciAssociationSouthSection4/GuidingStepsUT4.png'
 }
 
 const DieciAssocSouthSection4HongLuSkill1: Skill = {
@@ -47,7 +47,7 @@ const DieciAssocSouthSection4HongLuSkill1: Skill = {
             "[On Hit] Reuse Coin ([Insight] - 1) times", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/DieciAssociationSouthSection4/ExpendKnowledge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/DieciAssociationSouthSection4/ExpendKnowledge.png'
 }
 
 const DieciAssocSouthSection4HongLuSkill2: Skill = {
@@ -66,7 +66,7 @@ const DieciAssocSouthSection4HongLuSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 4 [Sinking]", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/DieciAssociationSouthSection4/Unveil.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/DieciAssociationSouthSection4/Unveil.png'
 }
 
 const DieciAssocSouthSection4HongLuSkill3: Skill = {
@@ -86,7 +86,7 @@ const DieciAssocSouthSection4HongLuSkill3: Skill = {
             "[After Attack] If target is Staggered or defeated, heal 10 SP", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/DieciAssociationSouthSection4/CyclicalKnowledge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/DieciAssociationSouthSection4/CyclicalKnowledge.png'
 }
 
 export const DieciAssocSouthSection4HongLu: Identity = {
@@ -123,6 +123,6 @@ export const DieciAssocSouthSection4HongLu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/HongLu/Identities/DieciAssociationSouthSection4/10608gacksung.png",
-    PortraitImageDir: "./assets/Sinners/HongLu/Identities/DieciAssociationSouthSection4/10608gacksunginfo.png"
+    FullImageDir: './assets/Sinners/HongLu/Identities/DieciAssociationSouthSection4/10608gacksung.png',
+    PortraitImageDir: './assets/Sinners/HongLu/Identities/DieciAssociationSouthSection4/10608gacksunginfo.png'
 }

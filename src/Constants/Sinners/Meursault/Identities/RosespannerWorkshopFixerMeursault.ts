@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RosespannerWorkshopFixerMeursaultDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const RosespannerWorkshopFixerMeursaultDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/RosespannerWorkshopFixer/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/RosespannerWorkshopFixer/GuardUT4.png'
 }
 
 const RosespannerWorkshopFixerMeursaultSkill1: Skill = {
@@ -46,7 +46,7 @@ const RosespannerWorkshopFixerMeursaultSkill1: Skill = {
             "[On Hit] Inflict 2 [Tremor]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/RosespannerWorkshopFixer/SaddledTasks.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/RosespannerWorkshopFixer/SaddledTasks.png'
 }
 
 const RosespannerWorkshopFixerMeursaultSkill2: Skill = {
@@ -66,7 +66,7 @@ const RosespannerWorkshopFixerMeursaultSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] If target has 5+ [Tremor], inflict 1 [Attack Power Down] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/RosespannerWorkshopFixer/ForcedBreak.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/RosespannerWorkshopFixer/ForcedBreak.png'
 }
 
 const RosespannerWorkshopFixerMeursaultSkill3: Skill = {
@@ -91,7 +91,7 @@ const RosespannerWorkshopFixerMeursaultSkill3: Skill = {
             "When triggering [Tremor Burst] reduce [Tremor] Count by 3, then spend all [Charge] Count to further raise Stagger Threshold by ([Charge] Count x5)% (Max 50%)", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/RosespannerWorkshopFixer/FinishingRunup.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/RosespannerWorkshopFixer/FinishingRunup.png'
 }
 
 export const RosespannerWorkshopFixerMeursault: Identity = {
@@ -128,6 +128,6 @@ export const RosespannerWorkshopFixerMeursault: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Meursault/Identities/RosespannerWorkshopFixer/10505gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Meursault/Identities/RosespannerWorkshopFixer/10505gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Meursault/Identities/RosespannerWorkshopFixer/10505gacksung.png',
+    PortraitImageDir: './assets/Sinners/Meursault/Identities/RosespannerWorkshopFixer/10505gacksunginfo.png'
 }

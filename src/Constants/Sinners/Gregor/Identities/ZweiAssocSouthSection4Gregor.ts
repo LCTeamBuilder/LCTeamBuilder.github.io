@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ZweiAssocSouthSection4GregorDefense: Skill = {
     Name: "The Best Defense",
@@ -28,7 +28,7 @@ const ZweiAssocSouthSection4GregorDefense: Skill = {
             "[On Use] Gain +5 [Aggro] to this Skill Slot next turn")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/ZweiAssociationSouthSection4/TheBestDefenseUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/ZweiAssociationSouthSection4/TheBestDefenseUT4.png'
 }
 
 const ZweiAssocSouthSection4GregorSkill1: Skill = {
@@ -47,7 +47,7 @@ const ZweiAssocSouthSection4GregorSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 2 [Haste] next turn", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/ZweiAssociationSouthSection4/Standoff.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/ZweiAssociationSouthSection4/Standoff.png'
 }
 
 const ZweiAssocSouthSection4GregorSkill2: Skill = {
@@ -69,7 +69,7 @@ const ZweiAssocSouthSection4GregorSkill2: Skill = {
         new SkillDescriptionPart("At 6+ [Defense Level Up], deal +40% damage", 4)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/ZweiAssociationSouthSection4/FlexibleSuppression.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/ZweiAssociationSouthSection4/FlexibleSuppression.png'
 }
 
 const ZweiAssocSouthSection4GregorSkill3: Skill = {
@@ -89,7 +89,7 @@ const ZweiAssocSouthSection4GregorSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Apply 3 [Defense Level Up] to all allies next turn", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/ZweiAssociationSouthSection4/Guardian.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/ZweiAssociationSouthSection4/Guardian.png'
 }
 
 export const ZweiAssocSouthSection4Gregor: Identity = {
@@ -126,6 +126,6 @@ export const ZweiAssocSouthSection4Gregor: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Gregor/Identities/ZweiAssociationSouthSection4/11206gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Gregor/Identities/ZweiAssociationSouthSection4/11206gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Gregor/Identities/ZweiAssociationSouthSection4/11206gacksung.png',
+    PortraitImageDir: './assets/Sinners/Gregor/Identities/ZweiAssociationSouthSection4/11206gacksunginfo.png'
 }

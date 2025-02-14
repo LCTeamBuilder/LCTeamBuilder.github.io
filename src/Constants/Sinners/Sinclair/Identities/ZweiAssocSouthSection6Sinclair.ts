@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ZweiAssocSouthSection6SinclairDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const ZweiAssocSouthSection6SinclairDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain +4 [Aggro] to this Skill Slot next turn")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/ZweiAssociationSouthSection6/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/ZweiAssociationSouthSection6/GuardUT4.png'
 }
 
 const ZweiAssocSouthSection6SinclairSkill1: Skill = {
@@ -45,7 +45,7 @@ const ZweiAssocSouthSection6SinclairSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Tremor]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/ZweiAssociationSouthSection6/Baton.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/ZweiAssociationSouthSection6/Baton.png'
 }
 
 const ZweiAssocSouthSection6SinclairSkill2: Skill = {
@@ -65,7 +65,7 @@ const ZweiAssocSouthSection6SinclairSkill2: Skill = {
             "[On Hit] Inflict 2 [Damage Down] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/ZweiAssociationSouthSection6/Supress.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/ZweiAssociationSouthSection6/Supress.png'
 }
 
 const ZweiAssocSouthSection6SinclairSkill3: Skill = {
@@ -86,7 +86,7 @@ const ZweiAssocSouthSection6SinclairSkill3: Skill = {
             "[On Hit] Inflict 2 [Blunt Fragility]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/ZweiAssociationSouthSection6/StrongStrike.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/ZweiAssociationSouthSection6/StrongStrike.png'
 }
 
 export const ZweiAssocSouthSection6Sinclair: Identity = {
@@ -122,6 +122,6 @@ export const ZweiAssocSouthSection6Sinclair: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Sinclair/Identities/ZweiAssociationSouthSection6/11003gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Sinclair/Identities/ZweiAssociationSouthSection6/11003gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Sinclair/Identities/ZweiAssociationSouthSection6/11003gacksung.png',
+    PortraitImageDir: './assets/Sinners/Sinclair/Identities/ZweiAssociationSouthSection6/11003gacksunginfo.png'
 }

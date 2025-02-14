@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RepresentationEmitterFaustAwakening: Skill = {
     Name: "Representation Emitter",
@@ -22,7 +22,7 @@ const RepresentationEmitterFaustAwakening: Skill = {
     SkillDescription: [new SkillDescriptionPart("[After Attack] Heal 12 SP for 4 allies with the least SP", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/RepresentationEmitter/20201awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/RepresentationEmitter/20201awakenprofile.png'
 }
 
 export const RepresentationEmitterFaust: Ego = {
@@ -45,5 +45,5 @@ export const RepresentationEmitterFaust: Ego = {
     Cost: [{ sin: SinEnum.Gluttony, amount: 2 },
             { sin: SinEnum.Pride, amount: 4}],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Faust/EGO/RepresentationEmitter/20201cg.png"
+    FullImageDir: './assets/Sinners/Faust/EGO/RepresentationEmitter/20201cg.png'
 }

@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LassoFaustAwakening: Skill = {
     Name: "Lasso",
@@ -30,7 +30,7 @@ const LassoFaustAwakening: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]", 3),],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/Snare/20207awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/Snare/20207awakenprofile.png'
 }
 
 const LassoFaustCorrosion: Skill = {
@@ -56,7 +56,7 @@ const LassoFaustCorrosion: Skill = {
             "[On Hit] Deal +2% more damage for every [Rupture] on the target (max 60%)", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Faust/EGO/Snare/20207erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Faust/EGO/Snare/20207erosionprofile.png'
 }
 
 export const LassoFaust: Ego = {
@@ -80,5 +80,5 @@ export const LassoFaust: Ego = {
             { sin: SinEnum.Gluttony, amount: 3 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Faust/EGO/Snare/20207cg.png"
+    FullImageDir: './assets/Sinners/Faust/EGO/Snare/20207cg.png'
 }

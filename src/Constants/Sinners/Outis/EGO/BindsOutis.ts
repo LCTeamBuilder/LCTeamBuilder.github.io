@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BindsOutisAwakening: Skill = {
     Name: "Binds",
@@ -28,7 +28,7 @@ const BindsOutisAwakening: Skill = {
             "[On Hit] Trigger [Tremor Burst]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/Binds/21106awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/Binds/21106awakenprofile.png'
 }
 
 const BindsOutisCorrosion: Skill = {
@@ -54,7 +54,7 @@ const BindsOutisCorrosion: Skill = {
             "[On Hit] Trigger [Tremor Burst]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/Binds/21106erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/Binds/21106erosionprofile.png'
 }
 
 export const BindsOutis: Ego = {
@@ -79,5 +79,5 @@ export const BindsOutis: Ego = {
             { sin: SinEnum.Sloth, amount: 4 },
             { sin: SinEnum.Pride, amount: 4 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Outis/EGO/Binds/21106cg.png"
+    FullImageDir: './assets/Sinners/Outis/EGO/Binds/21106cg.png'
 }

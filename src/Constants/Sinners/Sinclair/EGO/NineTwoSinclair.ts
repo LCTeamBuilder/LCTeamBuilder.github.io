@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const NineTwoSinclairAwakening: Skill = {
     Name: "9:2",
@@ -27,7 +27,7 @@ const NineTwoSinclairAwakening: Skill = {
             "[Tails Hit] If target has 10+ [Burn], inflict 1 [Attack Power Down] and 1 [Defense Power Down] next turn", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/92/21005awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/92/21005awakenprofile.png'
 }
 
 const NineTwoSinclairCorrosion: Skill = {
@@ -50,7 +50,7 @@ const NineTwoSinclairCorrosion: Skill = {
             "[Tails Hit] If target has 10+ [Burn], inflict 2 [Lust Fragility] next turn", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Sinclair/EGO/92/21005erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Sinclair/EGO/92/21005erosionprofile.png'
 }
 
 export const NineTwoSinclair: Ego = {
@@ -76,5 +76,5 @@ export const NineTwoSinclair: Ego = {
             { sin: SinEnum.Lust, amount: 5 },
             { sin: SinEnum.Envy, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Sinclair/EGO/92/21005cg.png"
+    FullImageDir: './assets/Sinners/Sinclair/EGO/92/21005cg.png'
 }

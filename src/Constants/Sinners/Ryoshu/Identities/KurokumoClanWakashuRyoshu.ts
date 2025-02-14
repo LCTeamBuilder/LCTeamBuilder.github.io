@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const KurokumoClanWakashuRyoshuDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const KurokumoClanWakashuRyoshuDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/KurokumoClanWakashu/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/KurokumoClanWakashu/GuardUT4.png'
 }
 
 const KurokumoClanWakashuRyoshuSkill1: Skill = {
@@ -45,7 +45,7 @@ const KurokumoClanWakashuRyoshuSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 [Paralyze]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/KurokumoClanWakashu/FocusStrike.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/KurokumoClanWakashu/FocusStrike.png'
 }
 
 const KurokumoClanWakashuRyoshuSkill2: Skill = {
@@ -65,7 +65,7 @@ const KurokumoClanWakashuRyoshuSkill2: Skill = {
             "[Heads Hit] Inflict 2 [Damage Down]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/KurokumoClanWakashu/CleanUp.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/KurokumoClanWakashu/CleanUp.png'
 }
 
 const KurokumoClanWakashuRyoshuSkill3: Skill = {
@@ -85,7 +85,7 @@ const KurokumoClanWakashuRyoshuSkill3: Skill = {
             "[On Hit] Inflict 5 [Offense Level Down]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/KurokumoClanWakashu/LenticularSwirl.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/KurokumoClanWakashu/LenticularSwirl.png'
 }
 
 export const KurokumoClanWakashuRyoshu: Identity = {
@@ -121,6 +121,6 @@ export const KurokumoClanWakashuRyoshu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ryoshu/Identities/KurokumoClanWakashu/10403gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ryoshu/Identities/KurokumoClanWakashu/10403gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ryoshu/Identities/KurokumoClanWakashu/10403gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ryoshu/Identities/KurokumoClanWakashu/10403gacksunginfo.png'
 }

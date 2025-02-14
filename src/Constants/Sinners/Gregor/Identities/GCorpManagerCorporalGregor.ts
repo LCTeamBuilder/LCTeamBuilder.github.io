@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const GCorpManagerCorporalGregorDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const GCorpManagerCorporalGregorDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/GCorpManagerCorporal/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/GCorpManagerCorporal/GuardUT4.png'
 }
 
 const GCorpManagerCorporalGregorSkill1: Skill = {
@@ -46,7 +46,7 @@ const GCorpManagerCorporalGregorSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Heal by 50% of damage dealt", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/GCorpManagerCorporal/Hack.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/GCorpManagerCorporal/Hack.png'
 }
 
 const GCorpManagerCorporalGregorSkill2: Skill = {
@@ -65,7 +65,7 @@ const GCorpManagerCorporalGregorSkill2: Skill = {
             "[On Hit] Heal by 50% of damage dealt", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/GCorpManagerCorporal/Dismember.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/GCorpManagerCorporal/Dismember.png'
 }
 
 const GCorpManagerCorporalGregorSkill3: Skill = {
@@ -86,7 +86,7 @@ const GCorpManagerCorporalGregorSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Heal by 100% of damage dealt", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/GCorpManagerCorporal/Eviscerate.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/GCorpManagerCorporal/Eviscerate.png'
 }
 
 export const GCorpManagerCorporalGregor: Identity = {
@@ -122,6 +122,6 @@ export const GCorpManagerCorporalGregor: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Gregor/Identities/GCorpCorporalManager/11203gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Gregor/Identities/GCorpCorporalManager/11203gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Gregor/Identities/GCorpCorporalManager/11203gacksung.png',
+    PortraitImageDir: './assets/Sinners/Gregor/Identities/GCorpCorporalManager/11203gacksunginfo.png'
 }

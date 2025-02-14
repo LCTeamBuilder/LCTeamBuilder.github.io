@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const KurokumoClanWakashuRodionDefense: Skill = {
     Name: "Counter",
@@ -28,7 +28,7 @@ const KurokumoClanWakashuRodionDefense: Skill = {
             "[On Use] Gain +2 [Poise] Count")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/KurokumoHenchwoman/Counter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/KurokumoHenchwoman/Counter.png'
 }
 
 const KurokumoClanWakashuRodionSkill1: Skill = {
@@ -46,7 +46,7 @@ const KurokumoClanWakashuRodionSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 4 [Poise]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/KurokumoHenchwoman/SharpenedBlade.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/KurokumoHenchwoman/SharpenedBlade.png'
 }
 
 const KurokumoClanWakashuRodionSkill2: Skill = {
@@ -68,7 +68,7 @@ const KurokumoClanWakashuRodionSkill2: Skill = {
             "[On Hit] Inflict 3 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/KurokumoHenchwoman/ScatteringSlash.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/KurokumoHenchwoman/ScatteringSlash.png'
 }
 
 const KurokumoClanWakashuRodionSkill3: Skill = {
@@ -87,7 +87,7 @@ const KurokumoClanWakashuRodionSkill3: Skill = {
         new SkillDescriptionPart("[On Crit] Inflict 10 [Bleed]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/KurokumoHenchwoman/SkyclearingCut.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/KurokumoHenchwoman/SkyclearingCut.png'
 }
 
 export const KurokumoClanWakashuRodion: Identity = {
@@ -123,6 +123,6 @@ export const KurokumoClanWakashuRodion: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Rodion/Identities/KurokumoHenchwoman/10902gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Rodion/Identities/KurokumoHenchwoman/10902gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Rodion/Identities/KurokumoHenchwoman/10902gacksung.png',
+    PortraitImageDir: './assets/Sinners/Rodion/Identities/KurokumoHenchwoman/10902gacksunginfo.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const HookOfficeFixerHongLuDefense: Skill = {
     Name: "Quickness",
@@ -28,7 +28,7 @@ const HookOfficeFixerHongLuDefense: Skill = {
             "[On Evade] Gain 1 [Haste] next turn (3 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/HookOfficeFixer/QuicknessUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/HookOfficeFixer/QuicknessUT4.png'
 }
 
 const HookOfficeFixerHongLuSkill1: Skill = {
@@ -47,7 +47,7 @@ const HookOfficeFixerHongLuSkill1: Skill = {
             "[Heads Hit] Inflict +1 [Bleed] Count", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/HookOfficeFixer/Track.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/HookOfficeFixer/Track.png'
 }
 
 const HookOfficeFixerHongLuSkill2: Skill = {
@@ -68,7 +68,7 @@ const HookOfficeFixerHongLuSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] If this unit is faster than the target, inflict [Bleed] Count equal to their Speed difference (Max 4)", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/HookOfficeFixer/GoinFirst.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/HookOfficeFixer/GoinFirst.png'
 }
 
 const HookOfficeFixerHongLuSkill3: Skill = {
@@ -89,7 +89,7 @@ const HookOfficeFixerHongLuSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Bleed]", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/HongLu/HookOfficeFixer/Rampage.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/HongLu/HookOfficeFixer/Rampage.png'
 }
 
 export const HookOfficeFixerHongLu: Identity = {
@@ -125,6 +125,6 @@ export const HookOfficeFixerHongLu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/HongLu/Identities/HookOfficeFixer/10607gacksung.png",
-    PortraitImageDir: "./assets/Sinners/HongLu/Identities/HookOfficeFixer/10607gacksunginfo.png"
+    FullImageDir: './assets/Sinners/HongLu/Identities/HookOfficeFixer/10607gacksung.png',
+    PortraitImageDir: './assets/Sinners/HongLu/Identities/HookOfficeFixer/10607gacksunginfo.png'
 }

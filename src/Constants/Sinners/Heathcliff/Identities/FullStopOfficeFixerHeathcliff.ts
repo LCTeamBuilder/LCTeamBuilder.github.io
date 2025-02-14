@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const FullStopOfficeFixerHeathcliffDefense: Skill = {
     Name: "Combat Poise",
@@ -30,7 +30,7 @@ const FullStopOfficeFixerHeathcliffDefense: Skill = {
             "[Turn End] Gain 1 [Concentration(Sniper)] next turn (once per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/10711044.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/10711044.png'
 }
 
 const FullStopOfficeFixerHeathcliffDefense2: Skill = {
@@ -51,7 +51,7 @@ const FullStopOfficeFixerHeathcliffDefense2: Skill = {
         new SkillDescriptionPart("[Unbreakable Coin]", 1)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/10711064.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/10711064.png'
 }
 
 const FullStopOfficeFixerHeathcliffSkill1: Skill = {
@@ -73,7 +73,7 @@ const FullStopOfficeFixerHeathcliffSkill1: Skill = {
         new SkillDescriptionPart("Spend 1 [Ammo]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/1071101.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/1071101.png'
 }
 
 const FullStopOfficeFixerHeathcliffSkill2: Skill = {
@@ -96,7 +96,7 @@ const FullStopOfficeFixerHeathcliffSkill2: Skill = {
             "[On Crit] Inflict 1 [Pierce Fragility] next turn (once per turn)", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/1071102.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/1071102.png'
 }
 
 const FullStopOfficeFixerHeathcliffSkill31: Skill = {
@@ -121,7 +121,7 @@ const FullStopOfficeFixerHeathcliffSkill31: Skill = {
             "[On Crit] At more than 30 [Poise] Potency, consume up to 10 of [Poise] Potency over 30 to deal +([Poise] Potency consumed x 10)% more damage", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/1071103.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/1071103.png'
 }
 
 const FullStopOfficeFixerHeathcliffSkill32: Skill = {
@@ -145,7 +145,7 @@ const FullStopOfficeFixerHeathcliffSkill32: Skill = {
             "[On Crit] At more than 30 [Poise] Potency, consume up to 10 of [Poise] Potency over 30 to deal +([Poise] Potency consumed x 10)% more damage", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/1071105.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/FullStopOfficeFixer/1071105.png'
 }
 
 export const FullStopOfficeFixerHeathcliff: Identity = {
@@ -198,6 +198,6 @@ export const FullStopOfficeFixerHeathcliff: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Heathcliff/Identities/FullStopOfficeFixer/10711gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Heathcliff/Identities/FullStopOfficeFixer/10711gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Heathcliff/Identities/FullStopOfficeFixer/10711gacksung.png',
+    PortraitImageDir: './assets/Sinners/Heathcliff/Identities/FullStopOfficeFixer/10711gacksunginfo.png'
 }

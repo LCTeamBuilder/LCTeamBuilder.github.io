@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WCorpL3CleanupAgentDonQuixoteDefense: Skill = {
     Name: "Evade",
@@ -27,7 +27,7 @@ const WCorpL3CleanupAgentDonQuixoteDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/WCorpL3CleanupAgent/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/WCorpL3CleanupAgent/EvadeUT4.png'
 }
 
 const WCorpL3CleanupAgentDonQuixoteSkill1: Skill = {
@@ -46,7 +46,7 @@ const WCorpL3CleanupAgentDonQuixoteSkill1: Skill = {
             "[Heads Hit] Gain +4 [Charge] Count", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/WCorpL3CleanupAgent/Rip.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/WCorpL3CleanupAgent/Rip.png'
 }
 
 const WCorpL3CleanupAgentDonQuixoteSkill2: Skill = {
@@ -66,7 +66,7 @@ const WCorpL3CleanupAgentDonQuixoteSkill2: Skill = {
             new SkillDescriptionPart("[Heads Hit] Inflict 2 [Fragile]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/WCorpL3CleanupAgent/Leap.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/WCorpL3CleanupAgent/Leap.png'
 }
 
 const WCorpL3CleanupAgentDonQuixoteSkill3: Skill = {
@@ -85,7 +85,7 @@ const WCorpL3CleanupAgentDonQuixoteSkill3: Skill = {
         new SkillDescriptionPart("[Heads Hit] Inflict 5 [Rupture]", 5)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/WCorpL3CleanupAgent/RipSpace.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/WCorpL3CleanupAgent/RipSpace.png'
 }
 
 export const WCorpL3CleanupAgentDonQuixote: Identity = {
@@ -121,6 +121,6 @@ export const WCorpL3CleanupAgentDonQuixote: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/DonQuixote/Identities/WCorpCleanupCrew/10302gacksung.png",
-    PortraitImageDir: "./assets/Sinners/DonQuixote/Identities/WCorpCleanupCrew/10302gacksunginfo.png"
+    FullImageDir: './assets/Sinners/DonQuixote/Identities/WCorpCleanupCrew/10302gacksung.png',
+    PortraitImageDir: './assets/Sinners/DonQuixote/Identities/WCorpCleanupCrew/10302gacksunginfo.png'
 }

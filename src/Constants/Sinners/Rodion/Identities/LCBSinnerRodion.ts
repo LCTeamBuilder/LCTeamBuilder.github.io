@@ -9,8 +9,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerRodionDefense: Skill = {
     Name: "Counter",
@@ -25,7 +25,7 @@ const LCBSinnerRodionDefense: Skill = {
     SkillDescription: [],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LCBSinner/Counter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LCBSinner/Counter.png'
 }
 
 const LCBSinnerRodionSkill1: Skill = {
@@ -41,7 +41,7 @@ const LCBSinnerRodionSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 2 [Bleed]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LCBSinner/StrikeDown.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LCBSinner/StrikeDown.png'
 }
 
 const LCBSinnerRodionSkill2: Skill = {
@@ -57,7 +57,7 @@ const LCBSinnerRodionSkill2: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 2 [Bleed]", 1),            new SkillDescriptionPart("[On Hit] Inflict 2 [Bleed]", 2),            new SkillDescriptionPart("[Heads Hit] Inflict +1 [Bleed] Count", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LCBSinner/AxeCombo.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LCBSinner/AxeCombo.png'
 }
 
 const LCBSinnerRodionSkill3: Skill = {
@@ -73,7 +73,7 @@ const LCBSinnerRodionSkill3: Skill = {
     SkillDescription: [new SkillDescriptionPart("Skill Power +1 when below 0 SP"),            new SkillDescriptionPart("[Heads Hit] Inflict 1 [Bleed]", 1),            new SkillDescriptionPart("[Heads Hit] Inflict 1 [Bleed]", 2),            new SkillDescriptionPart("[Heads Hit] Inflict 1 [Bleed]", 3),            new SkillDescriptionPart("[On Hit] If target has +6 [Bleed], deal +20% damage", 4)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/LCBSinner/Slay.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/LCBSinner/Slay.png'
 }
 
 export const LCBSinnerRodion: Identity = {
@@ -109,6 +109,6 @@ export const LCBSinnerRodion: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Rodion/Identities/LCBSinner/10901normal.png",
-    PortraitImageDir: "./assets/Sinners/Rodion/Identities/LCBSinner/10901normalinfo.png"
+    FullImageDir: './assets/Sinners/Rodion/Identities/LCBSinner/10901normal.png',
+    PortraitImageDir: './assets/Sinners/Rodion/Identities/LCBSinner/10901normalinfo.png'
 }

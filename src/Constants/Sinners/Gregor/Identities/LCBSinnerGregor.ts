@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerGregorDefense: Skill = {
     Name: "Guard",
@@ -26,7 +26,7 @@ const LCBSinnerGregorDefense: Skill = {
     SkillDescription: [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/LCBSinner/GuardUT4.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/LCBSinner/GuardUT4.png', 
 }
 
 const LCBSinnerGregorSkill1: Skill = {
@@ -42,7 +42,7 @@ const LCBSinnerGregorSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[Heads Hit] Inflict 4 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/LCBSinner/Swipe.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/LCBSinner/Swipe.png', 
 }
 
 const LCBSinnerGregorSkill2: Skill = {
@@ -61,7 +61,7 @@ const LCBSinnerGregorSkill2: Skill = {
             "[Heads Hit] Inflict 2 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/LCBSinner/Jag.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/LCBSinner/Jag.png', 
 }
 
 const LCBSinnerGregorSkill3: Skill = {
@@ -80,7 +80,7 @@ const LCBSinnerGregorSkill3: Skill = {
             "[Heads Hit] Heal by 30% of damage dealt", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/LCBSinner/ChopUp.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/LCBSinner/ChopUp.png', 
 }
 
 export const LCBSinnerGregor: Identity = {
@@ -116,6 +116,6 @@ export const LCBSinnerGregor: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Gregor/Identities/LCBSinner/11201normal.png",
-    PortraitImageDir: "./assets/Sinners/Gregor/Identities/LCBSinner/11201normalinfo.png"
+    FullImageDir: './assets/Sinners/Gregor/Identities/LCBSinner/11201normal.png',
+    PortraitImageDir: './assets/Sinners/Gregor/Identities/LCBSinner/11201normalinfo.png'
 }

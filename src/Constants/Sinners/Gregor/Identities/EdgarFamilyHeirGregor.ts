@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const EdgarFamilyHeirGregorDefense: Skill = {
     Name: "Do You Wish to Weep?",
@@ -27,7 +27,7 @@ const EdgarFamilyHeirGregorDefense: Skill = {
         [new SkillDescriptionPart("[On Use]Coin Power +1 for every 3 [Sinking] on target (max 3)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/EdgarFamilyHeir/DoYouWishToWeepUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/EdgarFamilyHeir/DoYouWishToWeepUT4.png'
 }
 
 const EdgarFamilyHeirGregorSkill1: Skill = {
@@ -46,7 +46,7 @@ const EdgarFamilyHeirGregorSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 [Sinking]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/EdgarFamilyHeir/SabreSlash.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/EdgarFamilyHeir/SabreSlash.png'
 }
 
 const EdgarFamilyHeirGregorSkill2: Skill = {
@@ -67,7 +67,7 @@ const EdgarFamilyHeirGregorSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +3 [Sinking] Count", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/EdgarFamilyHeir/Remise.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/EdgarFamilyHeir/Remise.png'
 }
 
 const EdgarFamilyHeirGregorSkill3: Skill = {
@@ -90,7 +90,7 @@ const EdgarFamilyHeirGregorSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Absorb 10 [Sinking] from the target and gain 1 [Plus Coin Boost] and 3 [Damage Up] next turn. 50% chance to gain the above effects without absorbing [Sinking].", 4)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/EdgarFamilyHeir/NightmareHunt.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/EdgarFamilyHeir/NightmareHunt.png'
 }
 
 export const EdgarFamilyHeirGregor: Identity = {
@@ -127,6 +127,6 @@ export const EdgarFamilyHeirGregor: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Gregor/Identities/EdgarFamilyHeir/11209gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Gregor/Identities/EdgarFamilyHeir/11209gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Gregor/Identities/EdgarFamilyHeir/11209gacksung.png',
+    PortraitImageDir: './assets/Sinners/Gregor/Identities/EdgarFamilyHeir/11209gacksunginfo.png'
 }

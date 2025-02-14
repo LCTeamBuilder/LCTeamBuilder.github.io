@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RedEyesRyoshuAwakening: Skill = {
     Name: "Red Eyes",
@@ -25,7 +25,7 @@ const RedEyesRyoshuAwakening: Skill = {
             "[On Hit] If target's Speed is lower than user's, inflict 2 [Slash Fragility] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/RedEyes/20403awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/RedEyes/20403awakenprofile.png'
 }
 
 const RedEyesRyoshuCorrosion: Skill = {
@@ -46,7 +46,7 @@ const RedEyesRyoshuCorrosion: Skill = {
             "[On Hit] If target's Speed is lower than user's, inflict 1-3 [Slash Fragility] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ryoshu/EGO/RedEyes/20403erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ryoshu/EGO/RedEyes/20403erosionprofile.png'
 }
 
 export const RedEyesRyoshu: Ego = {
@@ -70,5 +70,5 @@ export const RedEyesRyoshu: Ego = {
             { sin: SinEnum.Gluttony, amount: 2 },
             { sin: SinEnum.Envy, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ryoshu/EGO/RedEyes/20403cg.png"
+    FullImageDir: './assets/Sinners/Ryoshu/EGO/RedEyes/20403cg.png'
 }

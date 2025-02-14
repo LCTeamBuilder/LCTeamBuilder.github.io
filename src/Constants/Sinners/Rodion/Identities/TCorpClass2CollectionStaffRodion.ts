@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const TCorpClass2CollectionStaffRodionDefense: Skill = {
     Name: "Borrow Time",
@@ -28,7 +28,7 @@ const TCorpClass2CollectionStaffRodionDefense: Skill = {
             "[On Use] For this turn: when hit by an enemy, inflict 2 [Tremor] on target next turn (6 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/TCorpClass2CollectionStaff/BorrowTimeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/TCorpClass2CollectionStaff/BorrowTimeUT4.png'
 }
 
 const TCorpClass2CollectionStaffRodionSkill1: Skill = {
@@ -49,7 +49,7 @@ const TCorpClass2CollectionStaffRodionSkill1: Skill = {
             "[Hit After Clash Win] Inflict +1 [Tremor] Count", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/TCorpClass2CollectionStaff/PrepareToCollect.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/TCorpClass2CollectionStaff/PrepareToCollect.png'
 }
 
 const TCorpClass2CollectionStaffRodionSkill2: Skill = {
@@ -72,7 +72,7 @@ const TCorpClass2CollectionStaffRodionSkill2: Skill = {
             "[On Hit] If the target has 6+ [Tremor], inflict 1 [Bind] next turn", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/TCorpClass2CollectionStaff/TCorpMartialSuppression.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/TCorpClass2CollectionStaff/TCorpMartialSuppression.png'
 }
 
 const TCorpClass2CollectionStaffRodionSkill3: Skill = {
@@ -98,7 +98,7 @@ const TCorpClass2CollectionStaffRodionSkill3: Skill = {
             "[On Hit] Trigger [Tremor Burst], then, reduce target's [Tremor] Count by 1", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Rodion/TCorpClass2CollectionStaff/ExecuteCollections.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Rodion/TCorpClass2CollectionStaff/ExecuteCollections.png'
 }
 
 export const TCorpClass2CollectionStaffRodion: Identity = {
@@ -136,6 +136,6 @@ export const TCorpClass2CollectionStaffRodion: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Rodion/Identities/TCorpClass2CollectionStaff/10909gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Rodion/Identities/TCorpClass2CollectionStaff/10909gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Rodion/Identities/TCorpClass2CollectionStaff/10909gacksung.png',
+    PortraitImageDir: './assets/Sinners/Rodion/Identities/TCorpClass2CollectionStaff/10909gacksunginfo.png'
 }

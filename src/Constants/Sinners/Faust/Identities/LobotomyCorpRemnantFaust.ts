@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LobotomyCorpRemnantFaustDefense: Skill = {
     Name: "Evade",
@@ -27,7 +27,7 @@ const LobotomyCorpRemnantFaustDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/EvadeUT4.png'
 }
 
 const LobotomyCorpRemnantFaustSkill1: Skill = {
@@ -45,7 +45,7 @@ const LobotomyCorpRemnantFaustSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/SoleStrike.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/SoleStrike.png'
 }
 
 const LobotomyCorpRemnantFaustSkill2: Skill = {
@@ -65,7 +65,7 @@ const LobotomyCorpRemnantFaustSkill2: Skill = {
             "[On Hit] Gain 1 [Poise] next turn", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/DeepCuts.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/DeepCuts.png'
 }
 
 const LobotomyCorpRemnantFaustSkill3: Skill = {
@@ -83,7 +83,7 @@ const LobotomyCorpRemnantFaustSkill3: Skill = {
         new SkillDescriptionPart("[Heads Hit] Inflict 5 [Rupture]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/OpportunisticSlash.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/LobotomyCorpRemnant/OpportunisticSlash.png'
 }
 
 export const LobotomyCorpRemnantFaust: Identity = {
@@ -119,6 +119,6 @@ export const LobotomyCorpRemnantFaust: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Faust/Identities/LobotomyCorpRemnant/10203gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Faust/Identities/LobotomyCorpRemnant/10203gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Faust/Identities/LobotomyCorpRemnant/10203gacksung.png',
+    PortraitImageDir: './assets/Sinners/Faust/Identities/LobotomyCorpRemnant/10203gacksunginfo.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const ThePequodCaptainIshmaelDefense: Skill = {
     Name: "Do Not Fear",
@@ -27,7 +27,7 @@ const ThePequodCaptainIshmaelDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Heal 5 SP for 2 allies adjacent to this unit on the Dashboard (2 times max)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ThePequodCaptain/DoNotFearUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ThePequodCaptain/DoNotFearUT4.png'
 }
 
 const ThePequodCaptainIshmaelSkill1: Skill = {
@@ -47,7 +47,7 @@ const ThePequodCaptainIshmaelSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ThePequodCaptain/ToMe.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ThePequodCaptain/ToMe.png'
 }
 
 const ThePequodCaptainIshmaelSkill2: Skill = {
@@ -69,7 +69,7 @@ const ThePequodCaptainIshmaelSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 1 [Burn]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ThePequodCaptain/PursueThemToTheEnd.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ThePequodCaptain/PursueThemToTheEnd.png'
 }
 
 const ThePequodCaptainIshmaelSkill3: Skill = {
@@ -91,7 +91,7 @@ const ThePequodCaptainIshmaelSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +1 [Burn] Count", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/ThePequodCaptain/HarpoonOfObsession.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/ThePequodCaptain/HarpoonOfObsession.png'
 }
 
 export const ThePequodCaptainIshmael: Identity = {
@@ -134,6 +134,6 @@ export const ThePequodCaptainIshmael: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ishmael/Identities/ThePequodCaptain/10808gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ishmael/Identities/ThePequodCaptain/10808gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ishmael/Identities/ThePequodCaptain/10808gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ishmael/Identities/ThePequodCaptain/10808gacksunginfo.png'
 }

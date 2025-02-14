@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const CapoteIshmaelAwakening: Skill = {
     Name: "Capote",
@@ -25,7 +25,7 @@ const CapoteIshmaelAwakening: Skill = {
             "[On Hit] Target loses 15 SP", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/Capote/20804awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/Capote/20804awakenprofile.png'
 }
 
 const CapoteIshmaelCorrosion: Skill = {
@@ -47,7 +47,7 @@ const CapoteIshmaelCorrosion: Skill = {
             "[On Hit] Trigger [Tremor Burst], then reduce [Tremor] Count by 2, if the burst Staggered the target, inflict 2 [Burn] on 3 random units", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Ishmael/EGO/Capote/20804erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Ishmael/EGO/Capote/20804erosionprofile.png'
 }
 
 export const CapoteIshmael: Ego = {
@@ -71,5 +71,5 @@ export const CapoteIshmael: Ego = {
             { sin: SinEnum.Lust, amount: 2 },
             { sin: SinEnum.Sloth, amount: 1 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Ishmael/EGO/Capote/20804cg.png"
+    FullImageDir: './assets/Sinners/Ishmael/EGO/Capote/20804cg.png'
 }

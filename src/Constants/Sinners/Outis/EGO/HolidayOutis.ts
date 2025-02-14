@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const HolidayOutisAwakening: Skill = {
     Name: "Holiday",
@@ -25,7 +25,7 @@ const HolidayOutisAwakening: Skill = {
             "[After Attack] Heal 20 SP for 4 allies with the least SP", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/Holiday/21105awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/Holiday/21105awakenprofile.png'
 }
 
 const HolidayOutisCorrosion: Skill = {
@@ -48,7 +48,7 @@ const HolidayOutisCorrosion: Skill = {
             "[Tails Attack End] Gain 1 'Damage Up' to the Affinity with the highest Resonance count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Outis/EGO/Holiday/21105erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Outis/EGO/Holiday/21105erosionprofile.png'
 }
 
 export const HolidayOutis: Ego = {
@@ -74,5 +74,5 @@ export const HolidayOutis: Ego = {
             { sin: SinEnum.Pride, amount: 3 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Outis/EGO/Holiday/21105cg.png"
+    FullImageDir: './assets/Sinners/Outis/EGO/Holiday/21105cg.png'
 }

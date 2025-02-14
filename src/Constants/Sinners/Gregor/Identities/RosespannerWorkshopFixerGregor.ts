@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RosespannerWorkshopFixerGregorDefense: Skill = {
     Name: "Guard",
@@ -27,7 +27,7 @@ const RosespannerWorkshopFixerGregorDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/RosespannerWorkshopFixer/GuardUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/RosespannerWorkshopFixer/GuardUT4.png'
 }
 
 const RosespannerWorkshopFixerGregorSkill1: Skill = {
@@ -46,7 +46,7 @@ const RosespannerWorkshopFixerGregorSkill1: Skill = {
             "[On Hit] If target has 5+ [Tremor] Count, inflict 3 [Rupture]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/RosespannerWorkshopFixer/RevUp.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/RosespannerWorkshopFixer/RevUp.png'
 }
 
 const RosespannerWorkshopFixerGregorSkill2: Skill = {
@@ -65,7 +65,7 @@ const RosespannerWorkshopFixerGregorSkill2: Skill = {
             "[On Hit] Inflict +2 [Rupture] Count", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/RosespannerWorkshopFixer/GreaseChains.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/RosespannerWorkshopFixer/GreaseChains.png'
 }
 
 const RosespannerWorkshopFixerGregorSkill3: Skill = {
@@ -90,7 +90,7 @@ const RosespannerWorkshopFixerGregorSkill3: Skill = {
             "[On Hit] If target has 5+ [Tremor] Count, inflict 3 [Rupture]", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Gregor/RosespannerWorkshopFixer/LetsGrindEm.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Gregor/RosespannerWorkshopFixer/LetsGrindEm.png'
 }
 
 export const RosespannerWorkshopFixerGregor: Identity = {
@@ -126,6 +126,6 @@ export const RosespannerWorkshopFixerGregor: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Gregor/Identities/RosespannerWorkshopFixer/11205gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Gregor/Identities/RosespannerWorkshopFixer/11205gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Gregor/Identities/RosespannerWorkshopFixer/11205gacksung.png',
+    PortraitImageDir: './assets/Sinners/Gregor/Identities/RosespannerWorkshopFixer/11205gacksunginfo.png'
 }

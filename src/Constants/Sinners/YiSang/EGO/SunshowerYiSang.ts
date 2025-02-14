@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SunshowerYiSangAwakening: Skill = {
     Name: "Sunshower",
@@ -24,7 +24,7 @@ const SunshowerYiSangAwakening: Skill = {
         new SkillDescriptionPart("[Heads Hit] Heal 15 SP", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/YiSang/EGO/Sunshower/20105awakenprofile.png"
+    SkillImageDir: './assets/Sinners/YiSang/EGO/Sunshower/20105awakenprofile.png'
 }
 
 const SunshowerYiSangCorrosion: Skill = {
@@ -44,7 +44,7 @@ const SunshowerYiSangCorrosion: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Sloth Fragility] and 2 [Pierce Fragility] this turn and next turn", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/YiSang/EGO/Sunshower/20105erosionprofile.png"
+    SkillImageDir: './assets/Sinners/YiSang/EGO/Sunshower/20105erosionprofile.png'
 }
 
 export const SunshowerYiSang: Ego = {
@@ -69,5 +69,5 @@ export const SunshowerYiSang: Ego = {
             { sin: SinEnum.Gloom, amount: 2 },
             { sin: SinEnum.Pride, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/YiSang/EGO/Sunshower/20105cg.png"
+    FullImageDir: './assets/Sinners/YiSang/EGO/Sunshower/20105cg.png'
 }

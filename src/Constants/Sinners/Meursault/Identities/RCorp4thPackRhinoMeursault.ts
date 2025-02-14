@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RCorp4thPackRhinoMeursaultDefense: Skill = {
     Name: "Bioelectricity Induction",
@@ -27,7 +27,7 @@ const RCorp4thPackRhinoMeursaultDefense: Skill = {
         [new SkillDescriptionPart("[On Use] If attacked while shielded, gain +2 [Charge] Count (Max 10 per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/RCorp4thPackRhino/BioelectricityInduction.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/RCorp4thPackRhino/BioelectricityInduction.png'
 }
 
 const RCorp4thPackRhinoMeursaultSkill1: Skill = {
@@ -47,7 +47,7 @@ const RCorp4thPackRhinoMeursaultSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +2 [Charge] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/RCorp4thPackRhino/WeightyBash.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/RCorp4thPackRhino/WeightyBash.png'
 }
 
 const RCorp4thPackRhinoMeursaultSkill2: Skill = {
@@ -68,7 +68,7 @@ const RCorp4thPackRhinoMeursaultSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +1 [Bleed] Count", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/RCorp4thPackRhino/Demolish.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/RCorp4thPackRhino/Demolish.png'
 }
 
 const RCorp4thPackRhinoMeursaultSkill3: Skill = {
@@ -91,7 +91,7 @@ const RCorp4thPackRhinoMeursaultSkill3: Skill = {
             "[On Hit] Spend 3 [Charge] Count, Inflict +1 [Bleed] Count", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/RCorp4thPackRhino/RhinoRam.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/RCorp4thPackRhino/RhinoRam.png'
 }
 
 export const RCorp4thPackRhinoMeursault: Identity = {
@@ -128,6 +128,6 @@ export const RCorp4thPackRhinoMeursault: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Meursault/Identities/RCorp4thPackRhino/10506gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Meursault/Identities/RCorp4thPackRhino/10506gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Meursault/Identities/RCorp4thPackRhino/10506gacksung.png',
+    PortraitImageDir: './assets/Sinners/Meursault/Identities/RCorp4thPackRhino/10506gacksunginfo.png'
 }

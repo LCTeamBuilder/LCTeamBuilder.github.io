@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RimeShankRodionAwakening: Skill = {
     Name: "Rime Shank",
@@ -26,7 +26,7 @@ const RimeShankRodionAwakening: Skill = {
             "[On Hit] Inflict +5 [Sinking] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/RimeShank/20903awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/RimeShank/20903awakenprofile.png'
 }
 
 const RimeShankRodionCorrosion: Skill = {
@@ -48,7 +48,7 @@ const RimeShankRodionCorrosion: Skill = {
             "[On Hit] Inflict +8 [Sinking] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Rodion/EGO/RimeShank/20903erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Rodion/EGO/RimeShank/20903erosionprofile.png'
 }
 
 export const RimeShankRodion: Ego = {
@@ -71,5 +71,5 @@ export const RimeShankRodion: Ego = {
     Cost: [{ sin: SinEnum.Gloom, amount: 5 },
             { sin: SinEnum.Envy, amount: 3 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Rodion/EGO/RimeShank/20903cg.png"
+    FullImageDir: './assets/Sinners/Rodion/EGO/RimeShank/20903cg.png'
 }

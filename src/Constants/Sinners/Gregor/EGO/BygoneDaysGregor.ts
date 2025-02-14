@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BygoneDaysGregorAwakening: Skill = {
     Name: "Bygone Days",
@@ -25,7 +25,7 @@ const BygoneDaysGregorAwakening: Skill = {
             "- If the target is defeated, inflict 3 [Sinking] and 1 [Curse] on 3 random enemies (For Focused Encounters, random Parts)")],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/BygoneDays/21206awakenprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/BygoneDays/21206awakenprofile.png'
 }
 
 const BygoneDaysGregorCorrosion: Skill = {
@@ -47,7 +47,7 @@ const BygoneDaysGregorCorrosion: Skill = {
             "[On Hit] Inflict 3 [Curse]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/Gregor/EGO/BygoneDays/21206erosionprofile.png"
+    SkillImageDir: './assets/Sinners/Gregor/EGO/BygoneDays/21206erosionprofile.png'
 }
 
 export const BygoneDaysGregor: Ego = {
@@ -72,5 +72,5 @@ export const BygoneDaysGregor: Ego = {
     Cost: [{ sin: SinEnum.Lust, amount: 2 },
             { sin: SinEnum.Gloom, amount: 4 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/Gregor/EGO/BygoneDays/21206cg.png"
+    FullImageDir: './assets/Sinners/Gregor/EGO/BygoneDays/21206cg.png'
 }

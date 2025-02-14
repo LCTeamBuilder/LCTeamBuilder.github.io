@@ -6,8 +6,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Ego, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Ego, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const YearningMircallaDonQuixoteAwakening: Skill = {
     Name: "Yearning Mircalla",
@@ -36,7 +36,7 @@ const YearningMircallaDonQuixoteAwakening: Skill = {
             "[Hit after Clash Win] Inflict [Polydipsic Rose] based on the highest Lust A-Reson. (max 4)", 4)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/YearningMircalla/20307awakenprofile.png"
+    SkillImageDir: './assets/Sinners/DonQuixote/EGO/YearningMircalla/20307awakenprofile.png'
 }
 
 const YearningMircallaDonQuixoteCorrosion: Skill = {
@@ -64,7 +64,7 @@ const YearningMircallaDonQuixoteCorrosion: Skill = {
             "[Hit after Clash Win] Heal by 50% of the HP damage dealt (max 10)", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "./assets/Sinners/DonQuixote/EGO/YearningMircalla/20307erosionprofile.png"
+    SkillImageDir: './assets/Sinners/DonQuixote/EGO/YearningMircalla/20307erosionprofile.png'
 }
 
 export const YearningMircallaDonQuixote: Ego = {
@@ -89,5 +89,5 @@ export const YearningMircallaDonQuixote: Ego = {
             { sin: SinEnum.Pride, amount: 2 },
             { sin: SinEnum.Envy, amount: 2 }],
     Keywords: [],
-    FullImageDir: "./assets/Sinners/DonQuixote/EGO/YearningMircalla/20307cg.png"
+    FullImageDir: './assets/Sinners/DonQuixote/EGO/YearningMircalla/20307cg.png'
 }

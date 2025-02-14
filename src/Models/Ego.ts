@@ -1,6 +1,6 @@
-import { KeywordEnum, RiskLevelEnum, SinEnum, SinnerEnum } from "../Enums/Index";
-import { Passive } from "./Passive";
-import { Skill } from "./Skill";
+import { KeywordEnum, RiskLevelEnum, SinEnum, SinnerEnum } from '../Enums/Index';
+import { Passive } from './Passive';
+import { Skill } from './Skill';
 
 export abstract class Ego {
     abstract readonly Id: number;

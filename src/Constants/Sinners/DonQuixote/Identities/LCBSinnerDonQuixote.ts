@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerDonQuixoteSkill1: Skill = {
     Name: "Joust",
@@ -26,7 +26,7 @@ const LCBSinnerDonQuixoteSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[Clash Win] Gain 2 [Haste] next turn")],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/LCBSinner/Joust.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/LCBSinner/Joust.png', 
 }
 
 const LCBSinnerDonQuixoteSkill2: Skill = {
@@ -44,7 +44,7 @@ const LCBSinnerDonQuixoteSkill2: Skill = {
         new SkillDescriptionPart("[Heads Hit] Inflict 2 [Bleed]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/LCBSinner/GallopingTilt.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/LCBSinner/GallopingTilt.png', 
 }
 
 const LCBSinnerDonQuixoteSkill3: Skill = {
@@ -64,7 +64,7 @@ const LCBSinnerDonQuixoteSkill3: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +2 [Bleed] count", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/LCBSinner/ForJustice.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/LCBSinner/ForJustice.png', 
 }
 
 export const LCBSinnerDonQuixoteDefense: Skill = {
@@ -80,7 +80,7 @@ export const LCBSinnerDonQuixoteDefense: Skill = {
     SkillDescription: [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/LCBSinner/EvadeUT4.png", 
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/LCBSinner/EvadeUT4.png', 
 }
 
 export const LCBSinnerDonQuixote: Identity = {
@@ -116,6 +116,6 @@ export const LCBSinnerDonQuixote: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/DonQuixote/Identities/LCBSinner/10301normal.png",
-    PortraitImageDir: "./assets/Sinners/DonQuixote/Identities/LCBSinner/10301normalinfo.png"
+    FullImageDir: './assets/Sinners/DonQuixote/Identities/LCBSinner/10301normal.png',
+    PortraitImageDir: './assets/Sinners/DonQuixote/Identities/LCBSinner/10301normalinfo.png'
 }

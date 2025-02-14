@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const NCorpMittelhammerDonQuixoteSkill1: Skill = {
     Name: "Rightful Purge",
@@ -29,7 +29,7 @@ const NCorpMittelhammerDonQuixoteSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 2 [Tremor]", 2)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/NCorpMittelhammer/RightfulPurge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/NCorpMittelhammer/RightfulPurge.png'
 }
 
 const NCorpMittelhammerDonQuixoteSkill2: Skill = {
@@ -47,7 +47,7 @@ const NCorpMittelhammerDonQuixoteSkill2: Skill = {
             "+30% damage to targets with 5+ [Nails]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/NCorpMittelhammer/Enactment.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/NCorpMittelhammer/Enactment.png'
 }
 
 const NCorpMittelhammerDonQuixoteSkill3: Skill = {
@@ -69,7 +69,7 @@ const NCorpMittelhammerDonQuixoteSkill3: Skill = {
         "[On Hit] Inflict +1 [Tremor] Count", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/NCorpMittelhammer/FanaticalJudgement.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/NCorpMittelhammer/FanaticalJudgement.png'
 }
 
 const NCorpMittelhammerDonQuixoteDefense: Skill = {
@@ -86,7 +86,7 @@ const NCorpMittelhammerDonQuixoteDefense: Skill = {
         [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/DonQuixote/NCorpMittelhammer/Guard.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/DonQuixote/NCorpMittelhammer/Guard.png'
 }
 
 export const NCorpMittelhammerDonQuixote: Identity = {
@@ -123,6 +123,6 @@ export const NCorpMittelhammerDonQuixote: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/DonQuixote/Identities/NCorpMittelhammer/10304gacksung.png",
-    PortraitImageDir: "./assets/Sinners/DonQuixote/Identities/NCorpMittelhammer/10304gacksunginfo.png"
+    FullImageDir: './assets/Sinners/DonQuixote/Identities/NCorpMittelhammer/10304gacksung.png',
+    PortraitImageDir: './assets/Sinners/DonQuixote/Identities/NCorpMittelhammer/10304gacksunginfo.png'
 }

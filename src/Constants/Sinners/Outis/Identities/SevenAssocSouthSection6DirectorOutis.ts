@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SevenAssocSouthSection6DirectorOutisDefense: Skill = {
     Name: "I'll Take the Lead",
@@ -27,7 +27,7 @@ const SevenAssocSouthSection6DirectorOutisDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain 1 [Haste] and 1 [Defense Power Up] next turn")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/SevenAssociationSouthSection6Director/IllTakeTheLeadUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/SevenAssociationSouthSection6Director/IllTakeTheLeadUT4.png'
 }
 
 const SevenAssocSouthSection6DirectorOutisSkill1: Skill = {
@@ -46,7 +46,7 @@ const SevenAssocSouthSection6DirectorOutisSkill1: Skill = {
             "[On Hit] Inflict 1 [Rupture]", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/SevenAssociationSouthSection6Director/PredictiveAnalysis.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/SevenAssociationSouthSection6Director/PredictiveAnalysis.png'
 }
 
 const SevenAssocSouthSection6DirectorOutisSkill2: Skill = {
@@ -67,7 +67,7 @@ const SevenAssocSouthSection6DirectorOutisSkill2: Skill = {
             "[On Hit] Inflict 2 [Defense Level Down] next turn", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/SevenAssociationSouthSection6Director/FieldCommand.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/SevenAssociationSouthSection6Director/FieldCommand.png'
 }
 
 const SevenAssocSouthSection6DirectorOutisSkill3: Skill = {
@@ -88,7 +88,7 @@ const SevenAssocSouthSection6DirectorOutisSkill3: Skill = {
             "[On Hit] Inflict [Weakness Analyzed] next turn", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/SevenAssociationSouthSection6Director/ExploitTheGap.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/SevenAssociationSouthSection6Director/ExploitTheGap.png'
 }
 
 export const SevenAssocSouthSection6DirectorOutis: Identity = {
@@ -124,6 +124,6 @@ export const SevenAssocSouthSection6DirectorOutis: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Outis/Identities/SevenAssociationSouthSection6Director/11104gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Outis/Identities/SevenAssociationSouthSection6Director/11104gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Outis/Identities/SevenAssociationSouthSection6Director/11104gacksung.png',
+    PortraitImageDir: './assets/Sinners/Outis/Identities/SevenAssociationSouthSection6Director/11104gacksunginfo.png'
 }

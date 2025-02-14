@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BladeLineageSalsuYiSangDefense: Skill = {
     Name: "Counter",
@@ -27,7 +27,7 @@ const BladeLineageSalsuYiSangDefense: Skill = {
         [new SkillDescriptionPart("+70% Damage on Critical Hit", 1)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/BladeLineageSalsu/Counter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/BladeLineageSalsu/Counter.png'
 }
 
 const BladeLineageSalsuYiSangSkill1: Skill = {
@@ -45,7 +45,7 @@ const BladeLineageSalsuYiSangSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 3 [Poise] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/BladeLineageSalsu/StrikersStance.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/BladeLineageSalsu/StrikersStance.png'
 }
 
 const BladeLineageSalsuYiSangSkill2: Skill = {
@@ -62,7 +62,7 @@ const BladeLineageSalsuYiSangSkill2: Skill = {
         [new SkillDescriptionPart("[Clash Win] Gain +2 [Poise] Count next turn")],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/BladeLineageSalsu/HeelTurn.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/BladeLineageSalsu/HeelTurn.png'
 }
 
 const BladeLineageSalsuYiSangSkill3: Skill = {
@@ -81,7 +81,7 @@ const BladeLineageSalsuYiSangSkill3: Skill = {
         new SkillDescriptionPart("+70% Damage on Critical Hit", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/YiSang/BladeLineageSalsu/FlankThrust.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/YiSang/BladeLineageSalsu/FlankThrust.png'
 }
 
 export const BladeLineageSalsuYiSang: Identity = {
@@ -118,6 +118,6 @@ export const BladeLineageSalsuYiSang: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/YiSang/Identities/BladeLineageSalsu/10103gacksung.png",
-    PortraitImageDir: "./assets/Sinners/YiSang/Identities/BladeLineageSalsu/10103gacksunginfo.png"
+    FullImageDir: './assets/Sinners/YiSang/Identities/BladeLineageSalsu/10103gacksung.png',
+    PortraitImageDir: './assets/Sinners/YiSang/Identities/BladeLineageSalsu/10103gacksunginfo.png'
 }

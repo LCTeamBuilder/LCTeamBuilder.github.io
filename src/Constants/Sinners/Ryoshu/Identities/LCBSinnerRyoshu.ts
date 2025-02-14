@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerRyoshuDefense: Skill = {
     Name: "Evade",
@@ -26,7 +26,7 @@ const LCBSinnerRyoshuDefense: Skill = {
     SkillDescription: [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LCBSinner/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LCBSinner/EvadeUT4.png'
 }
 
 const LCBSinnerRyoshuSkill1: Skill = {
@@ -42,7 +42,7 @@ const LCBSinnerRyoshuSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Gain 2 [Poise] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LCBSinner/Paint.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LCBSinner/Paint.png'
 }
 
 const LCBSinnerRyoshuSkill2: Skill = {
@@ -58,7 +58,7 @@ const LCBSinnerRyoshuSkill2: Skill = {
     SkillDescription: [new SkillDescriptionPart("If target previously took damage this turn, deal +30% damage", 1),            new SkillDescriptionPart("If target previously took damage this turn, deal +30% damage", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LCBSinner/Splatter.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LCBSinner/Splatter.png'
 }
 
 const LCBSinnerRyoshuSkill3: Skill = {
@@ -75,7 +75,7 @@ SkillDescription: [new SkillDescriptionPart("[Combat Start] Gain 2 [Slash DMG Up
                             new SkillDescriptionPart("[On Hit] Gain 2 [Poise] next turn", 2)],
 DamageType: DamageTypeEnum.Slash,
 DefenseType: undefined,
-SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LCBSinner/Brushstroke.png"
+SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LCBSinner/Brushstroke.png'
 }
 
 export const LCBSinnerRyoshu: Identity = {
@@ -111,6 +111,6 @@ export const LCBSinnerRyoshu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ryoshu/Identities/LCBSinner/10401normal.png",
-    PortraitImageDir: "./assets/Sinners/Ryoshu/Identities/LCBSinner/10401normalinfo.png"
+    FullImageDir: './assets/Sinners/Ryoshu/Identities/LCBSinner/10401normal.png',
+    PortraitImageDir: './assets/Sinners/Ryoshu/Identities/LCBSinner/10401normalinfo.png'
 }

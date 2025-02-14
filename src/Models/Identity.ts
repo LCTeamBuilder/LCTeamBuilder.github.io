@@ -1,6 +1,6 @@
-import { FactionEnum, KeywordEnum, RarityEnum, SinnerEnum } from "../Enums/Index";
-import { Passive } from "./Passive";
-import { Skill } from "./Skill";
+import { FactionEnum, KeywordEnum, RarityEnum, SinnerEnum } from '../Enums/Index';
+import { Passive } from './Passive';
+import { Skill } from './Skill';
 
 export abstract class Identity {
     abstract readonly Id: number;

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LCBSinnerOutisDefense: Skill = {
     Name: "Evade",
@@ -26,7 +26,7 @@ const LCBSinnerOutisDefense: Skill = {
     SkillDescription: [],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/LCBSinner/EvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/LCBSinner/EvadeUT4.png'
 }
 
 const LCBSinnerOutisSkill1: Skill = {
@@ -42,7 +42,7 @@ const LCBSinnerOutisSkill1: Skill = {
     SkillDescription: [new SkillDescriptionPart("[On Hit] Inflict 2 [Rupture]", 2),            new SkillDescriptionPart(" [Heads Hit] Inflict 1 [Rupture]", 3)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/LCBSinner/PulledBlade.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/LCBSinner/PulledBlade.png'
 }
 
 const LCBSinnerOutisSkill2: Skill = {
@@ -58,7 +58,7 @@ const LCBSinnerOutisSkill2: Skill = {
     SkillDescription: [new SkillDescriptionPart("If user's speed is higher than target's, +20% Damage", 1),            new SkillDescriptionPart("If user's speed is higher than target's, +20% Damage", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/LCBSinner/Backslash.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/LCBSinner/Backslash.png'
 }
 
 const LCBSinnerOutisSkill3: Skill = {
@@ -74,7 +74,7 @@ const LCBSinnerOutisSkill3: Skill = {
     SkillDescription: [new SkillDescriptionPart("If target's HP is above 50%, deal +20% damage", 1),            new SkillDescriptionPart("[On Hit] Inflict +1 [Rupture] Count", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Outis/LCBSinner/PiercingThrust.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Outis/LCBSinner/PiercingThrust.png'
 }
 
 export const LCBSinnerOutis: Identity = {
@@ -110,6 +110,6 @@ export const LCBSinnerOutis: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Outis/Identities/LCBSinner/11101normal.png",
-    PortraitImageDir: "./assets/Sinners/Outis/Identities/LCBSinner/11101normalinfo.png"
+    FullImageDir: './assets/Sinners/Outis/Identities/LCBSinner/11101normal.png',
+    PortraitImageDir: './assets/Sinners/Outis/Identities/LCBSinner/11101normalinfo.png'
 }

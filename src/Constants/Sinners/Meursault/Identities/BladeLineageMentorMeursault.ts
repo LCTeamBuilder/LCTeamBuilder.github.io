@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const BladeLineageMentorMeursaultDefense: Skill = {
     Name: "Overthrow",
@@ -29,7 +29,7 @@ const BladeLineageMentorMeursaultDefense: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 2 [Poise]", 1)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/BladeLineageMentor/OverthrowUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/BladeLineageMentor/OverthrowUT4.png'
 }
 
 const BladeLineageMentorMeursaultSkill1: Skill = {
@@ -51,7 +51,7 @@ const BladeLineageMentorMeursaultSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain 1 [Poise]", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/BladeLineageMentor/DrawOfTheSword.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/BladeLineageMentor/DrawOfTheSword.png'
 }
 
 const BladeLineageMentorMeursaultSkill2: Skill = {
@@ -74,7 +74,7 @@ const BladeLineageMentorMeursaultSkill2: Skill = {
         new SkillDescriptionPart("+60% Damage on Critical Hit", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/BladeLineageMentor/Acupuncture.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/BladeLineageMentor/Acupuncture.png'
 }
 
 const BladeLineageMentorMeursaultSkill3: Skill = {
@@ -97,7 +97,7 @@ const BladeLineageMentorMeursaultSkill3: Skill = {
             "Deal +0,5% more damage per 1% missing HP on self (Max 25%)")],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/BladeLineageMentor/YieldMyFlesh.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/BladeLineageMentor/YieldMyFlesh.png'
 }
 
 const BladeLineageMentorMeursaultSkill4: Skill = {
@@ -121,7 +121,7 @@ const BladeLineageMentorMeursaultSkill4: Skill = {
             "[On Hit] Inflict 5 [Paralyze] next turn", 4)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Meursault/BladeLineageMentor/ToClaimTheirBones.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Meursault/BladeLineageMentor/ToClaimTheirBones.png'
 }
 
 export const BladeLineageMentorMeursault: Identity = {
@@ -170,6 +170,6 @@ export const BladeLineageMentorMeursault: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Meursault/Identities/BladeLineageMentor/10508gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Meursault/Identities/BladeLineageMentor/10508gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Meursault/Identities/BladeLineageMentor/10508gacksung.png',
+    PortraitImageDir: './assets/Sinners/Meursault/Identities/BladeLineageMentor/10508gacksunginfo.png'
 }

@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const RCorp4thPackReindeerIshmaelDefense: Skill = {
     Name: "Evade",
@@ -27,7 +27,7 @@ const RCorp4thPackReindeerIshmaelDefense: Skill = {
         [new SkillDescriptionPart("[On Evade] Gain+ 1 [Charge] Count")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/RCorp4thPackReindeer/Evade.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/RCorp4thPackReindeer/Evade.png'
 }
 
 const RCorp4thPackReindeerIshmaelSkill1: Skill = {
@@ -48,7 +48,7 @@ const RCorp4thPackReindeerIshmaelSkill1: Skill = {
             "[On Hit] Gain +2 [Charge] Count", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/RCorp4thPackReindeer/MindStrike.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/RCorp4thPackReindeer/MindStrike.png'
 }
 
 const RCorp4thPackReindeerIshmaelSkill2: Skill = {
@@ -66,7 +66,7 @@ const RCorp4thPackReindeerIshmaelSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict +3 [Sinking] Count", 1)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/RCorp4thPackReindeer/FlayingSurge.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/RCorp4thPackReindeer/FlayingSurge.png'
 }
 
 const RCorp4thPackReindeerIshmaelSkill3: Skill = {
@@ -92,7 +92,7 @@ const RCorp4thPackReindeerIshmaelSkill3: Skill = {
         "[On Hit] Raise Stagger Threshold by 10% of damage dealt", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ishmael/RCorp4thPackReindeer/MindWhip.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ishmael/RCorp4thPackReindeer/MindWhip.png'
 }
 
 export const RCorp4thPackReindeerIshmael: Identity = {
@@ -129,6 +129,6 @@ export const RCorp4thPackReindeerIshmael: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ishmael/Identities/RCorp4thPackReindeer/10802gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ishmael/Identities/RCorp4thPackReindeer/10802gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ishmael/Identities/RCorp4thPackReindeer/10802gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ishmael/Identities/RCorp4thPackReindeer/10802gacksunginfo.png'
 }

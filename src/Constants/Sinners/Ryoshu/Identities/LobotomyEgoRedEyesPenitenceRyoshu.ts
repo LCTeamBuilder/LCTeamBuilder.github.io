@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const LobotomyEgoRedEyesPenitenceRyoshuDefense: Skill = {
     Name: "Mealtime, Bedtime",
@@ -30,7 +30,7 @@ const LobotomyEgoRedEyesPenitenceRyoshuDefense: Skill = {
             "- At less than 7 [Penitence], gain +1 additional [Penitence]", 2)],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Counter,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041004.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041004.png'
 }
 
 const LobotomyEgoRedEyesPenitenceRyoshuSkill1: Skill = {
@@ -52,7 +52,7 @@ const LobotomyEgoRedEyesPenitenceRyoshuSkill1: Skill = {
             "[On Hit] Inflict 1 [Bleed]", 2)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041001.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041001.png'
 }
 
 const LobotomyEgoRedEyesPenitenceRyoshuSkill2: Skill = {
@@ -75,7 +75,7 @@ const LobotomyEgoRedEyesPenitenceRyoshuSkill2: Skill = {
             "[Heads Hit] At 7+ [Red Eyes], gain 1 [Haste] next turn (2 times per turn)", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041002.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041002.png'
 }
 
 const LobotomyEgoRedEyesPenitenceRyoshuSkill3: Skill = {
@@ -101,7 +101,7 @@ const LobotomyEgoRedEyesPenitenceRyoshuSkill3: Skill = {
             "[On Hit] Heal self and 1 ally with the least SP by ([Penitence] - 10) SP (min 0)", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041003.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041003.png'
 }
 
 const LobotomyEgoRedEyesPenitenceRyoshuSkill4: Skill = {
@@ -128,7 +128,7 @@ const LobotomyEgoRedEyesPenitenceRyoshuSkill4: Skill = {
             "[On Hit] Inflict 3 [Bind] and 2 [Attack Power Down] next turn (once per turn)", 3)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041005.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/LobotomyEGORedEyesPenitence/1041005.png'
 }
 
 export const LobotomyEgoRedEyesPenitenceRyoshu: Identity = {
@@ -183,6 +183,6 @@ export const LobotomyEgoRedEyesPenitenceRyoshu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ryoshu/Identities/LobotomyEGORedEyesPenitence/10410gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ryoshu/Identities/LobotomyEGORedEyesPenitence/10410gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ryoshu/Identities/LobotomyEGORedEyesPenitence/10410gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ryoshu/Identities/LobotomyEGORedEyesPenitence/10410gacksunginfo.png'
 }

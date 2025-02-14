@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const SevenAssocSouthSection4FaustDefense: Skill = {
     Name: "Let's Wrap It Up",
@@ -27,7 +27,7 @@ const SevenAssocSouthSection4FaustDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain 1 [Haste] next turn (3 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/SevenAssociationSouthSection4/LetsWrapItUpUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/SevenAssociationSouthSection4/LetsWrapItUpUT4.png'
 }
 
 const SevenAssocSouthSection4FaustSkill1: Skill = {
@@ -45,7 +45,7 @@ const SevenAssocSouthSection4FaustSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 3 Rupture", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/SevenAssociationSouthSection4/PredictiveAnalysis.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/SevenAssociationSouthSection4/PredictiveAnalysis.png'
 }
 
 const SevenAssocSouthSection4FaustSkill2: Skill = {
@@ -65,7 +65,7 @@ const SevenAssocSouthSection4FaustSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] If target has 6+ [Rupture], inflict [Weakness Analyzed] next turn", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/SevenAssociationSouthSection4/DissectTarget.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/SevenAssociationSouthSection4/DissectTarget.png'
 }
 
 const SevenAssocSouthSection4FaustSkill3: Skill = {
@@ -85,7 +85,7 @@ const SevenAssocSouthSection4FaustSkill3: Skill = {
         new SkillDescriptionPart("[After Attack] If target is Staggered or defeated, gain 1 [Haste] and 1 [Slash Power Up] next turn", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Faust/SevenAssociationSouthSection4/Profiling.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Faust/SevenAssociationSouthSection4/Profiling.png'
 }
 
 export const SevenAssocSouthSection4Faust: Identity = {
@@ -124,6 +124,6 @@ export const SevenAssocSouthSection4Faust: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Faust/Identities/SevenAssociationSouthSection4/10206gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Faust/Identities/SevenAssociationSouthSection4/10206gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Faust/Identities/SevenAssociationSouthSection4/10206gacksung.png',
+    PortraitImageDir: './assets/Sinners/Faust/Identities/SevenAssociationSouthSection4/10206gacksunginfo.png'
 }

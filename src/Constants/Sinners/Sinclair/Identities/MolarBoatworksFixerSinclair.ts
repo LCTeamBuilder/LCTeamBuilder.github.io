@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const MolarBoatworksFixerSinclairDefense: Skill = {
     Name: "Crab Bastards...!",
@@ -27,7 +27,7 @@ const MolarBoatworksFixerSinclairDefense: Skill = {
         [new SkillDescriptionPart("[On Use] Gain +1 [Rupture Protection] (3 times per turn)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Guard,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/MolarBoatworksFixer/CrabBastardsUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/MolarBoatworksFixer/CrabBastardsUT4.png'
 }
 
 const MolarBoatworksFixerSinclairSkill1: Skill = {
@@ -48,7 +48,7 @@ const MolarBoatworksFixerSinclairSkill1: Skill = {
             "[On Hit] Inflict +1 [Tremor] Count", 4)],
     DamageType: DamageTypeEnum.Blunt,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/MolarBoatworksFixer/FierceAssault.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/MolarBoatworksFixer/FierceAssault.png'
 }
 
 const MolarBoatworksFixerSinclairSkill2: Skill = {
@@ -66,7 +66,7 @@ const MolarBoatworksFixerSinclairSkill2: Skill = {
         new SkillDescriptionPart("[On Hit] Inflict 6 [Tremor]", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/MolarBoatworksFixer/Steady.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/MolarBoatworksFixer/Steady.png'
 }
 
 const MolarBoatworksFixerSinclairSkill3: Skill = {
@@ -85,7 +85,7 @@ const MolarBoatworksFixerSinclairSkill3: Skill = {
             "[On Hit] At less than 10 [Tremor] Count, gain 10 [Tremor] and Trigger [Tremor Burst] on self. Deal Blunt damage equal to [Tremor Burst] damage", 1)],
     DamageType: DamageTypeEnum.Pierce,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Sinclair/MolarBoatworksFixer/Gamble.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Sinclair/MolarBoatworksFixer/Gamble.png'
 }
 
 export const MolarBoatworksFixerSinclair: Identity = {
@@ -121,6 +121,6 @@ export const MolarBoatworksFixerSinclair: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Sinclair/Identities/MolarBoatworksFixer/11007gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Sinclair/Identities/MolarBoatworksFixer/11007gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Sinclair/Identities/MolarBoatworksFixer/11007gacksung.png',
+    PortraitImageDir: './assets/Sinners/Sinclair/Identities/MolarBoatworksFixer/11007gacksunginfo.png'
 }

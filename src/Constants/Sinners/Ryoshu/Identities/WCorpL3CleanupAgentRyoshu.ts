@@ -10,8 +10,8 @@ import {
     SinnerEnum,
     SkillTierEnum,
     SkillTypeEnum
-} from "../../../../Enums/Index";
-import { Identity, Passive, Skill, SkillDescriptionPart } from "../../../../Models/Index";
+} from '../../../../Enums/Index';
+import { Identity, Passive, Skill, SkillDescriptionPart } from '../../../../Models/Index';
 
 const WCorpL3CleanupAgentRyoshuDefense: Skill = {
     Name: "Charged Evade",
@@ -27,7 +27,7 @@ const WCorpL3CleanupAgentRyoshuDefense: Skill = {
         [new SkillDescriptionPart("Base Power +1 per 5 [Charge] Count (Max 3)")],
     DamageType: undefined,
     DefenseType: DefenseTypeEnum.Evade,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/WCorpL3CleanupAgent/ChargedEvadeUT4.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/WCorpL3CleanupAgent/ChargedEvadeUT4.png'
 }
 
 const WCorpL3CleanupAgentRyoshuSkill1: Skill = {
@@ -47,7 +47,7 @@ const WCorpL3CleanupAgentRyoshuSkill1: Skill = {
         new SkillDescriptionPart("[On Hit] Gain +2 [Charge] Count", 2)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/WCorpL3CleanupAgent/EC.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/WCorpL3CleanupAgent/EC.png'
 }
 
 const WCorpL3CleanupAgentRyoshuSkill2: Skill = {
@@ -69,7 +69,7 @@ const WCorpL3CleanupAgentRyoshuSkill2: Skill = {
             "[On Kill] Gain 3 [Haste] next turn", 3)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/WCorpL3CleanupAgent/Leap.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/WCorpL3CleanupAgent/Leap.png'
 }
 
 const WCorpL3CleanupAgentRyoshuSkill3: Skill = {
@@ -93,7 +93,7 @@ const WCorpL3CleanupAgentRyoshuSkill3: Skill = {
         new SkillDescriptionPart("[On Kill] If the skill consumed 15 [Charge] Count upon use, apply 7 [Charge Barrier] to self and 1 other ally", 4)],
     DamageType: DamageTypeEnum.Slash,
     DefenseType: undefined,
-    SkillImageDir: "assets/Icons/Skills/Sinners/Ryoshu/WCorpL3CleanupAgent/DDEDR.png"
+    SkillImageDir: 'assets/Icons/Skills/Sinners/Ryoshu/WCorpL3CleanupAgent/DDEDR.png'
 }
 
 export const WCorpL3CleanupAgentRyoshu: Identity = {
@@ -129,6 +129,6 @@ export const WCorpL3CleanupAgentRyoshu: Identity = {
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,
-    FullImageDir: "./assets/Sinners/Ryoshu/Identities/WCorpL3CleanupAgent/10405gacksung.png",
-    PortraitImageDir: "./assets/Sinners/Ryoshu/Identities/WCorpL3CleanupAgent/10405gacksunginfo.png"
+    FullImageDir: './assets/Sinners/Ryoshu/Identities/WCorpL3CleanupAgent/10405gacksung.png',
+    PortraitImageDir: './assets/Sinners/Ryoshu/Identities/WCorpL3CleanupAgent/10405gacksunginfo.png'
 }
