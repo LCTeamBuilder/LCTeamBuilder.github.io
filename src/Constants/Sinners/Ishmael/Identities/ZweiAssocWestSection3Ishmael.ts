@@ -134,7 +134,7 @@ export const ZweiAssocWestSection3Ishmael: Identity = {
             [{ sin: SinEnum.Pride, amount: 5 }],
             PassiveCostTypeEnum.Owned),
 
-        new Passive("mergency Protection",
+        new Passive("Emergency Protection",
             PassiveTypeEnum.Support,
             "At Combat Start, compare each Identity's current HP to their HP at the start of the previous turn. Then, apply 2 Defense Level Up to the Identity with the greatest disparity of HP values between turns.",
             [{ sin: SinEnum.Pride, amount: 3 }],

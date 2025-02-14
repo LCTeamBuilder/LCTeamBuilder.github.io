@@ -31,7 +31,7 @@ const WildHuntHeathcliffDefense: Skill = {
             "[Clash Win] Gain [Offense Level Up] next turn equal to (# of Clashes/3) (max 3, once per turn)<br>"+
             "[Turn End] If this unit has [Dullahan], lose [Dullahan]"),
         new SkillDescriptionPart("[On Hit] Inflict 2 [Sinking] and +1 [Sinking] Count", 2)],
-    DamageType: undefined,
+    DamageType: DamageTypeEnum.Slash,
     DefenseType: DefenseTypeEnum.Counter,
     SkillImageDir: 'assets/Icons/Skills/Sinners/Heathcliff/WildHunt/ODullahan.png'
 }

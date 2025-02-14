@@ -517,6 +517,27 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- Turn End: gain 1 Stack",
         ImageLink: './assets/Icons/Statuses/ConcentrationSniper.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, 'Concentration(Sniper)'); }
     },
+    '[Dark Cloud Blade]': {
+        Name: 'Dark Cloud Blade', Type: StatusTypeEnum.Buff, Description:
+            "Max Stack: 1<br>" +
+            "Gain 1 Slash Power<br>" +
+            "Inflict 1 Bleed On Hit with Slash Skills",
+        ImageLink: './assets/Icons/Statuses/DarkCloudBlade.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Battle Ready]': {
+        Name: 'Battle Ready', Type: StatusTypeEnum.Buff, Description:
+            "Max Value: 1<br>" +
+            "Bleed Potency and Count inflicted with this unit's Skill or Coin effects: +1<br>" +
+            "Gain 1 Slash Power Up and 3 Slash DMG Up for the duration of this Encounter",
+        ImageLink: './assets/Icons/Statuses/BattleReady.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Cumulus Wall]': {
+        Name: 'Cumulus Wall', Type: StatusTypeEnum.Buff, Description:
+            "Max Stack: 1<br>" +
+            "Defense Skill Final Power +1<br>" +
+            "This effect expires at Turn End or after attack of the following: 'Rules of the Backstreets'",
+        ImageLink: './assets/Icons/Statuses/CumulusWall.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
     '[The First Magic Bullet]': {
         Name: 'The First Magic Bullet', Type: StatusTypeEnum.Buff, Description:
             "- Deal +20% more damage <br>" +
@@ -1326,6 +1347,14 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- Deal +20% more damage<br>" +
             "- Take +20% more damage",
         ImageLink: './assets/Icons/Statuses/Responsibility.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Dark Cloud]': {
+        Name: 'Dark Cloud', Type: StatusTypeEnum.Neutral, Description:
+            "Max Stack: 1<br>" +
+            "Converts all of this unit's Base Attack Skill Coins used this turn to Unbreakable Coins, prevents damage from Staggering this unit until Skill End, and inflict +1 more of Bleed effects<br>" +
+            "On Clash Lose: gain Final Power +3<br>" +
+            "Turn End: this effect expires",
+        ImageLink: './assets/Icons/Statuses/DarkCloud.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
     '[Final Augment]': {
         Name: 'Final Augment', Type: StatusTypeEnum.Neutral, Description:

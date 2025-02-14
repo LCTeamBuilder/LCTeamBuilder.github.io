@@ -215,6 +215,8 @@ import { MagicBulletOutis } from './Sinners/Outis/EGO/MagicBulletOutis';
 import { ThoracalgiaRyoshu } from './Sinners/Ryoshu/EGO/ThoracalgiaRyoshu';
 import { LCEEGOLanternYiSang } from './Sinners/YiSang/Identities/LCEEGOLanternYiSang';
 import { LCEEGOArdorBlossomStarFaust } from './Sinners/Faust/Identities/LCEEGOArdorBlossomStarFaust';
+import { KurokumoClanWakashuHeathcliff } from './Sinners/Heathcliff/Identities/KurokumoClanWakashuHeathcliff';
+import { KurokumoClanCaptainIshmael } from './Sinners/Ishmael/Identities/KurokumoClanCaptainIshmael';
 
 export const Identities: ReadonlyArray<Identity> = [
     //Yi Sang
@@ -242,7 +244,7 @@ export const Identities: ReadonlyArray<Identity> = [
     WutheringHeightsButlerFaust,
     ZweiAssocSouthSection4Faust,
 
-    //DonQuixote
+    //Don Quixote
     BladeLineageSalsuDonQuixote,
     CinqAssocSouthSection5DirectorDonQuixote,
     LCBSinnerDonQuixote,
@@ -294,6 +296,7 @@ export const Identities: ReadonlyArray<Identity> = [
 
     //Heathcliff
     FullStopOfficeFixerHeathcliff,
+    KurokumoClanWakashuHeathcliff,
     LCBSinnerHeathcliff,
     LobotomyEgoSunshowerHeathcliff,
     MulticrackOfficeFixerHeathcliff,
@@ -307,6 +310,7 @@ export const Identities: ReadonlyArray<Identity> = [
 
     //Ishmael
     EdgarFamilyButlerIshmael,
+    KurokumoClanCaptainIshmael,
     LCBSinnerIshmael,
     LccbAssistantManagerIshmael,
     LiuAssocSouthSection4Ishmael,
@@ -388,7 +392,7 @@ export const Egos: ReadonlyArray<Ego> = [
     RepresentationEmitterFaust,
     TelepoleFaust,
 
-    //DonQuixote
+    //Don Quixote
     ElectricScreamingDonQuixote,
     FluidSacDonQuixote,
     LaSangreDeSanchoDonQuixote,
