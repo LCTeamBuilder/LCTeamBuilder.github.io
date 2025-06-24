@@ -67,7 +67,7 @@ export const ChristmasNightmareGregor: Ego = {
     AwakeningSanityCost: 20,
     CorrosionSkill: ChristmasNightmareGregorCorrosion,
     CorrosionSanityCost: 30,
-    Passive: new Passive("Insomniac Night", PassiveTypeEnum.Ego, "Combat Start: against all enemies, inflict 1 Offense Level Down.pngOffense Level Down or 1 Defense Level Down.pngDefense Level Down to all enemies (# of enemies in Staggered, Low Morale, or Panic states) times. (2 times per turn)<br>"+
+    Passive: new Passive("Insomniac Night", PassiveTypeEnum.Ego, "Combat Start: against all enemies, inflict 1 [Offense Level Down] or 1 [Defense Level Down] to all enemies (# of enemies in Staggered, Low Morale, or Panic states) times. (2 times per turn)<br>"+
         "- Effect does not stack with E.G.O Gifts with the same effect."),
     Resistances: [{ sin: SinEnum.Wrath, resistance: 1 },
                 { sin: SinEnum.Lust, resistance: 2 },

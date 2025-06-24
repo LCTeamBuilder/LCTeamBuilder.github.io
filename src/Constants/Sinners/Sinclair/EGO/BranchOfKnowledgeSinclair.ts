@@ -20,7 +20,7 @@ const BranchOfKnowledgeSinclairAwakening: Skill = {
     AttackWeight: 1,
     SkillLevel: +3,
     SkillDescription: 
-        [new SkillDescriptionPart("[Heads Hit] Inflict 12 Rupture.pngRupture<br>"+
+        [new SkillDescriptionPart("[Heads Hit] Inflict 12 [Rupture]<br>"+
         "[Heads Hit] Lose 10 SP. Gain 1 [Attack Power Up] next turn<br>"+
         "[Tails Hit] Gain 10 SP. Gain 1 [Protection] next turn", 1)],
     DamageType: DamageTypeEnum.Slash,
