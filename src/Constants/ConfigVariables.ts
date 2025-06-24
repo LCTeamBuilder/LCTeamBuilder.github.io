@@ -1,2 +1,2 @@
-export const MaxLevel: number = 50;
+export const MaxLevel: number = 55;
 export const MouseHoldTimeThreshhold: number = 500;
