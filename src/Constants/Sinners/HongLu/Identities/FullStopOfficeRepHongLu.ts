@@ -135,7 +135,7 @@ const FullStopOfficeRepHongLuSkill22: Skill = {
         [new SkillDescriptionPart("Base Power +1 for every [Ammo] about to be spent by this Skill<br>"+
             "[On Use] Gain +3 [Poise] Count<br>"+
             "[Clash Lose] Final Power +5"),
-        new SkillDescriptionPart("[On Hit] Gain 2 Poise.pngPoise", 1),
+        new SkillDescriptionPart("[On Hit] Gain 2 [Poise]", 1),
         new SkillDescriptionPart("Spend up to 3 [Ammo]<br>"+
             "Deal +([Ammo] spent x 10)% more damage<br>"+
             "+([Ammo] spent x 10)% more damage on Critical Hit", 2),

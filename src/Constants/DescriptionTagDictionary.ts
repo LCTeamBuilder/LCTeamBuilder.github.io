@@ -340,6 +340,16 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             " · Cannot be Staggered by damage",
         ImageLink: './assets/Icons/Statuses/DefensiveStance.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    '[Book of Vengeance (Sinclair)]': {
+        Name: 'Book of Vengeance [Sinclair]', Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 30<br>" +
+            "- Deal more damage equal to (Stack)% (max 30%)<br>" +
+            "- Gain the following effects next turn based on Stack:<br>" +
+            " · At 10+ Stack: gain 1 Blunt DMG Up<br>" +
+            " · At 20+ Stack: Max Speed +1, gain 1 Power Up<br>" +
+            " · At 30 Stack: gain 2 Blunt DMG Up",
+        ImageLink: './assets/Icons/Statuses/BookOfVengeanceSinclair.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Book of Vengeance (Sinclair)"); }
+    },
     '[Fanatic]': {
         Name: 'Fanatic', Type: StatusTypeEnum.Buff, Description:
             "Skill Power +1 against units with Nails.",
@@ -524,6 +534,37 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "Inflict 1 Bleed On Hit with Slash Skills",
         ImageLink: './assets/Icons/Statuses/DarkCloudBlade.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    '[District 12 Fuel]': {
+        Name: 'District 12 Fuel', Type: StatusTypeEnum.Buff, Description:
+            "Max Stack: 100<br>" +
+            "Consumed by certain Skills.<br>" +
+            "At 50- Stack, become Overheated Fuel",
+        ImageLink: './assets/Icons/Statuses/District12Fuel.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Overheated Fuel]': {
+        Name: 'Overheated Fuel', Type: StatusTypeEnum.Buff, Description:
+            "Max Stack: 100<br>" +
+            "Consuming District 12 Fuel in Overheated Fuel State consumes Overheated Fuel instead<br>" +
+            "Consuming Overheated Fuel also counts as consuming District 12 Fuel<br>" +
+            "At over 50 Stack, become District 12 Fuel",
+        ImageLink: './assets/Icons/Statuses/OverheatedFuel.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    "[Tianjiu Stars Blade]": {
+        Name: "Tianjiu Star's Blade", Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 20<br>" +
+            "- At 10+ Stack: at Turn End, gain 1 Haste next turn<br>" +
+            "- Used for certain Skills",
+        ImageLink: './assets/Icons/Statuses/TianjiuStarsBlade.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Tianjiu Stars Blade"); }
+    },
+    "[Assist Defense]": {
+        Name: "Assist Defense", Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 3<br>" +
+            "- When an ally is about to take an Unopposed Attack from an enemy, consume 1 Stack to redirect the enemy's targeting to self; then, use the unique Skill that activates for Assist Defense<br>" +
+            "- When there are multiple allies with Assist Defense Stacks, the ally with the highest Stack has the highest activation priority<br>" +
+            "- Does not activate for allies who equipped Defense Skills<br>" +
+            "- Expires at Turn End",
+        ImageLink: './assets/Icons/Statuses/AssistDefense.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
     '[Battle Ready]': {
         Name: 'Battle Ready', Type: StatusTypeEnum.Buff, Description:
             "Max Value: 1<br>" +
@@ -537,6 +578,54 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "Defense Skill Final Power +1<br>" +
             "This effect expires at Turn End or after attack of the following: 'Rules of the Backstreets'",
         ImageLink: './assets/Icons/Statuses/CumulusWall.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Strider - Mao]': {
+        Name: 'Strider【Mao】', Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 3<br>" +
+            "- Turn End: gain 5 Haste next turn<br>" +
+            "- Reduced by 1 at Turn End",
+        ImageLink: './assets/Icons/Statuses/StriderMao.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Strider - Mao"); }
+    },
+    '[Serpent Arm]': {
+        Name: 'Serpent Arm', Type: StatusTypeEnum.Buff, Description:
+            "Max Stack: 3<br>" +
+            "Turn End: gain 3 Poise and +2 Poise Count next turn<br>" +
+            "On Base Attack Skill use, if target has Rupture, gain 5 Poise<br>" +
+            "Turn End: lose 1 Stack",
+        ImageLink: './assets/Icons/Statuses/SerpentArm.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Assist]': {
+        Name: 'Assist [援]', Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 1<br>" +
+            "- If target has 5+ negative effects, Clash Power +1, deal +10% damage",
+        ImageLink: './assets/Icons/Statuses/Assist.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Assist"); }
+    },
+    '[Unrelenting Spirit]': {
+        Name: 'Unrelenting Spirit [剛氣]', Type: StatusTypeEnum.Buff, Description:
+            "- Min & Max Speed +1<br>" +
+            "- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 2.5)% damage (max 20%)<br>" +
+            "- Inflict +1 more Tremor Potency and Tremor Count with this unit's Skills<br>" +
+            "- If this unit has spent 8+ (sum of Tigermark Round and Savage Tigermark Round): at Turn End, convert this buff to Unrelenting Spirit - Shin [剛氣-心] next turn<br>" +
+            "- Max Stack: 1",
+        ImageLink: './assets/Icons/Statuses/UnrelentingSpirit.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Unrelenting Spirit"); }
+    },
+    '[Unrelenting Spirit - Shin]': {
+        Name: 'Unrelenting Spirit - Shin [剛氣-心]', Type: StatusTypeEnum.Buff, Description:
+            "- Min & Max Speed +3<br>" +
+            "- If this unit's Speed is faster than the target's by 3 or more, deal +(Speed difference x 5)% damage (max 40%)<br>" +
+            "- Inflict +2 more Tremor Potency and Tremor Count with this unit's Skills<br>" +
+            "- Max Stack: 1",
+        ImageLink: './assets/Icons/Statuses/UnrelentingSpiritShin.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Unrelenting Spirit - Shin"); }
+    },
+    '[Overheat]': {
+        Name: 'Overheat', Type: StatusTypeEnum.Buff, Description:
+            "- Loses this effect when this unit gains Savage Tigermark Round<br>" +
+            "- Min & Max Speed +2<br>" +
+            "- Base Attack Skills Lose (cumulative number of Tigermark & Savage Tigermark Rounds spent / 2) Clash Power (max 10); however, gain the following effects(cumulative):<br>" +
+            "· 8+ Rounds spent: Gain 1 Protection for every 10% missing HP on self at Turn Start<br>" +
+            "· 14+ Rounds spent: On Clash Lose, Unbreakable Coins of this unit's Base Attack Skills deal +(75 + missing HP percentage on self)% damage (max 150%)<br>" +
+            "· 20+ Rounds spent: Deal +(HP percentage difference)% damage against targets with higher remaining HP percentage than this unit (max 50%; except E.G.O Skills)",
+        ImageLink: './assets/Icons/Statuses/Overheat.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
     '[The First Magic Bullet]': {
         Name: 'The First Magic Bullet', Type: StatusTypeEnum.Buff, Description:
@@ -987,6 +1076,14 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "(Interacts the same way as normal Tremor does to effects that raises or reduces Tremor Potency/Count)",
         ImageLink: './assets/Icons/Statuses/TremorClockwinding.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    '[Tremor - Scorch]': {
+        Name: 'Tremor - Scorch', Type: StatusTypeEnum.Debuff, Description:
+            "- On Tremor Burst, take Wrath Damage equal to (sum of Tremor Potency and Burn Potency / 2), and lose 1 Burn Count<br>" +
+            "- When hit by Skills that trigger Tremor Burst, raise this unit's Stagger Threshold equal by the effect's Potency<br>" +
+            "- Turn End: reduce the Count by 1<br>" +
+            "(Interacts the same way as normal Tremor does to effects that raise or reduce Tremor Potency/Count)",
+        ImageLink: './assets/Icons/Statuses/TremorScorch.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
     '[Time Moratorium]': {
         Name: 'Time Moratorium', Type: StatusTypeEnum.Debuff, Description:
             "- Does not take any damage as long as this effect is active; store all damage received instead<br>" +
@@ -1012,12 +1109,56 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "Turn End: At 6+ Count, remove all Talisman and take fixed damage by its Count.",
         ImageLink: './assets/Icons/Statuses/Talisman.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    '[Fairy Lure]': {
+        Name: 'Fairy Lure', Type: StatusTypeEnum.Debuff, Description:
+            "- Max Stack: 5<br>" +
+            "- Turn Start: leftmost Slot on the Dashboard gains +10 Aggro<br>" +
+            "- Take +50% more damage<br>" +
+            "- When hit, inflict 1 Rupture against the attacker (3 times per target's Skill)<br>" +
+            "· At less than 50% HP, inflict 1 additional Rupture<br>" +
+            "· If the target has 15+ Rupture, this effect does not inflict Rupture<br>" +
+            "- Reduced by 1 at Turn End",
+        ImageLink: './assets/Icons/Statuses/GlowingLantern.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Deathrite - Haste]': {
+        Name: 'Deathrite【Haste】', Type: StatusTypeEnum.Debuff, Description:
+            "- Base Stack: 3<br>" +
+            "- When getting Rupture triggered by getting hit by an Attack Skill from a target with 10+ Speed, lose 1 Stack and gain +1 Rupture Count<br>" +
+            "- At 0 Stack, take Gluttony damage equal to Rupture Potency on self; then, this effect expires<br>" +
+            "※ Cannot gain additional Stacks of this effect while it is already active",
+        ImageLink: './assets/Icons/Statuses/DeathriteHaste.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Deathrite - Haste"); }
+    },
+    '[Deathrite - Venom]': {
+        Name: 'Deathrite【Venom】', Type: StatusTypeEnum.Debuff, Description:
+            "Base Stack: 5<br>" +
+            "- When getting Rupture triggered by a Critical Hit from the target, lose 1 Stack<br>" +
+            "- When losing Stacks due to this effect, gain 1 Offense Level Down or 1 Defense Level Down (3 times per turn)<br>" +
+            "- When losing Stacks due to this effect, if the Stack drops to 0, take Gluttony damage equal to Rupture Potency on self<br>" +
+            "-※ Cannot gain additional Stacks of this effect while it is already active",
+        ImageLink: './assets/Icons/Statuses/DeathriteVenom.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Deathrite - Venom"); }
+    },
+    '[Deathrite - Fissure]': {
+        Name: 'Deathrite【Fissure】', Type: StatusTypeEnum.Debuff, Description:
+            "- Base Stack: 3<br>" +
+            "- When getting Rupture triggered by getting hit by an Attack Skill from a target with 10+ Speed, lose 1 Stack and gain +1 Rupture Count<br>" +
+            "- At 0 Stack, take Gluttony damage equal to Rupture Potency on self; then, this effect expires<br>" +
+            "※ Cannot gain additional Stacks of this effect while it is already active",
+        ImageLink: './assets/Icons/Statuses/DeathriteFissure.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Deathrite - Fissure"); }
+    },
     '[Lasso]': {
         Name: 'Lasso', Type: StatusTypeEnum.Debuff, Description:
             "- Max Value: 3<br>" +
             "- Turn End: gain Rupture Potency equal to this unit's current Speed value (max 5), and gain 1 Bind next turn<br>" +
             "- Turn End: reduced by 1",
         ImageLink: './assets/Icons/Statuses/Snare.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Mark of Decay]': {
+        Name: 'Mark of Decay', Type: StatusTypeEnum.Debuff, Description:
+            "- Max Stack: 1<br>" +
+            "- Take +10% damage from Gluttony Affinity Skills<br>" +
+            "- Take +10% damage from Deathrite<br>" +
+            "- Removed at Turn End",
+        ImageLink: './assets/Icons/Statuses/MarkOfDecay.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
     '[Sinking]': {
         Name: 'Sinking', Type: StatusTypeEnum.Debuff, Description:
@@ -1117,6 +1258,15 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "Applied to the unit that dealt the most damage to an ally (Max 1)",
         ImageLink: './assets/Icons/Statuses/VengeanceMark.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    '[Vendetta Mark]': {
+        Name: 'Vendetta Mark', Type: StatusTypeEnum.Debuff, Description:
+            "- Max Stack: 10<br>" +
+            "- Consumed by certain Skills or Passives<br>" +
+            "- Take +2% damage from The Middle enemies for every Stack (max 20%)<br>" +
+            "- Turn End: the unit with the highest Stack of this effect gains 1 Sibling Vengeance Mark next turn<br>" +
+            "(Counted separately from Vengeance Mark; if more than a single unit has the highest Stack of this effect, this effect targets the one with a higher HP percentage)",
+        ImageLink: './assets/Icons/Statuses/VendettaMark.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
     '[B.M.]': {
         Name: 'B.M.', Type: StatusTypeEnum.Debuff, Description:
             "Enhances Edgar Family Chief Butler Ryōshū Skills against targets with this effect.<br>" +
@@ -1139,17 +1289,6 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "When hit, the attacker gains +1 Charge Count; when hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1",
         ImageLink: './assets/Icons/Statuses/SparkDischarge.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
-    '[Fairy Lure]': {
-        Name: 'Fairy Lure', Type: StatusTypeEnum.Debuff, Description:
-            "- Max Stack: 5<br>" +
-            "- Turn Start: leftmost Slot on the Dashboard gains +10 Aggro<br>" +
-            "- Take +50% more damage<br>" +
-            "- When hit, inflict 1 Rupture against the attacker (3 times per target's Skill)<br>" +
-            "· At less than 50% HP, inflict 1 additional Rupture<br>" +
-            "· If the target has 15+ Rupture, this effect does not inflict Rupture<br>" +
-            "- Reduced by 1 at Turn End",
-        ImageLink: './assets/Icons/Statuses/GlowingLantern.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
-    },
 
     '[Aggro]': {
         Name: 'Aggro', Type: StatusTypeEnum.Neutral, Description:
@@ -1169,6 +1308,13 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- If an Attack Skill has this Coin, attack with this Coin after getting hit.<br>" +
             "- Upon Clash Lose, fix the Coin Power of the unbroken Coin to 1",
         ImageLink: './assets/Icons/Statuses/UnbreakableCoin.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Unfocused Volley]': {
+        Name: 'Unfocused Volley', Type: StatusTypeEnum.Neutral, Description:
+            "- When this Skill flips Coins, each Coin flips against a random enemy among its targets<br>" +
+            "· The first Coin always targets the main target<br>" +
+            "· All 'On Hit' effects and all damage dealt by each Coin are inflicted only against the random target the Coin selected",
+        ImageLink: './assets/Icons/Statuses/UnfocusedVolley.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
     '[Ammo]': {
         Name: 'Ammo', Type: StatusTypeEnum.Neutral, Description:
@@ -1198,6 +1344,28 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- Whether The Living(Potency) or The Departed(Count) will be consumed for each shot is randomly determined<br>" +
             "- Some attacks cancel if this unit runs out of ammo.",
         ImageLink: './assets/Icons/Statuses/TheLiving&TheDeparted.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Scorch Propellant Ammo]': {
+        Name: 'Scorch Propellant Ammo', Type: StatusTypeEnum.Neutral, Description:
+            "- Max Capacity: 15<br>" +
+            "- Unique Ammo<br>" +
+            "- Spent by certain Skills",
+        ImageLink: './assets/Icons/Statuses/ScorchPropellantAmmo.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Tigermark Round]': {
+        Name: 'Tigermark Round', Type: StatusTypeEnum.Neutral, Description:
+            "- Unique Ammo<br>" +
+            "- At 8+ (cumulative sum of Tigermark Rounds and Savage Tigermark Rounds spent), gain Unrelenting Spirit - Shin [剛氣-心] instead of Unrelenting Spirit [剛氣] from this unit's Passive<br>" +
+            "- Max Capacity: 12",
+        ImageLink: './assets/Icons/Statuses/TigermarkRound.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Savage Tigermark Round]': {
+        Name: 'Savage Tigermark Round', Type: StatusTypeEnum.Neutral, Description:
+            "- Unique Ammo<br>" +
+            "- At 8+ (cumulative sum of Tigermark Rounds and Savage Tigermark Rounds spent), gain Unrelenting Spirit - Shin [剛氣-心] instead of Unrelenting Spirit [剛氣] from this unit's Passive<br>" +
+            "- Actives the same way as Tigermark Round does<br>" +
+            "- Max Capacity: 8",
+        ImageLink: './assets/Icons/Statuses/SavageTigermarkRound.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
     '[Reload]': {
         Name: 'Reload', Type: StatusTypeEnum.Neutral, Description:
@@ -1281,24 +1449,19 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
         ImageLink: './assets/Icons/Statuses/StrategicR&RMode.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    '[Battlefield Retreat]': {
+        Name: 'Battlefield Retreat', Type: StatusTypeEnum.Neutral, Description:
+            "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)<br>" +
+            "· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)<br>" +
+            "· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
+        ImageLink: './assets/Icons/Statuses/BattlefieldRetreat.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
     '[Overwatch Assignment]': {
         Name: 'Overwatch Assignment', Type: StatusTypeEnum.Neutral, Description:
             "- Turn End: recover from Stagger and Retreat from the Encounter (unless it's a forced Stagger; does not count as death)<br>" +
             "· In Chain Battles, give this unit's Slots to a Substituted unit and move to the rearmost place in the Backup units' Deployment order (escape from the Encounter entirely if there are no other Backup Units remaining to swap places with next turn. When returning to battle, return in the order they retreated in)<br>" +
             "· When returning to battle, return with the same amount of HP and SP this unit had when it retreated, and eliminate all effects on self save for a select few (if this unit had less than 0 SP when retreating, reset SP to 0 instead)",
         ImageLink: './assets/Icons/Statuses/OverwatchAssignment.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
-    },
-    '[Target Spotted]': {
-        Name: 'Target Spotted', Type: StatusTypeEnum.Neutral, Description:
-            "If unit A applies this effect to unit B: Unit B follows up with an Unopposed Attack with its Skill 2 against the same enemy Unit A attacked with its Skill. Activates at Unit A's Attack End.<br>" +
-            "- The Skill used due to this effect does not affect Unit B's upcoming Skills list.",
-        ImageLink: './assets/Icons/Statuses/TargetSpotted.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
-    },
-    '[Melee Support]': {
-        Name: 'Melee Support', Type: StatusTypeEnum.Neutral, Description:
-            "- If unit A applies this effect to unit B: Unit B follows up with an Unopposed Attack with the 'Melee Support' Skill against the same enemy that attacked Unit A. Activates at Unit A's Skill End.<br>" +
-            "- The Skill used due to the 'Melee Support' effect does not affect Unit B's upcoming Skills list.",
-        ImageLink: './assets/Icons/Statuses/MeleeSupport.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
     '[Bloodfeast]': {
         Name: 'Bloodfeast', Type: StatusTypeEnum.Neutral, Description:
@@ -1356,6 +1519,40 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "Turn End: this effect expires",
         ImageLink: './assets/Icons/Statuses/DarkCloud.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    '[Ready]': {
+        Name: 'Ready [待]', Type: StatusTypeEnum.Neutral, Description:
+            "- Max Stack: 3<br>" +
+            "- Number of turns this unit spent in Retreat or as a Backup unit",
+        ImageLink: './assets/Icons/Statuses/Ready.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Ready"); }
+    },
+    '[Launcher]': {
+        Name: 'Launcher [始]', Type: StatusTypeEnum.Neutral, Description:
+            "- Max Stack: 6<br>" +
+            "- Number of turns this unit spent active in the Encounter<br>" +
+            "- Expires upon Retreat<br>" +
+            "- Gain 1 Stack at Turn End",
+        ImageLink: './assets/Icons/Statuses/Launcher.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Launcher"); }
+    },
+    '[Volatile Passion]': {
+        Name: 'Torn Memory', Type: StatusTypeEnum.Neutral, Description:
+            "- On Hit, inflict 1 Burn<br>" +
+            "- If the main target has Burn, gain Final Power<br>" +
+            "- When hit, if this unit had a Defense Skill chained at Combat Start, inflict Burn against the attacker for the turn<br>" +
+            "- Turn End: lose (# of turns spent in Volatile E.G.O state x 5) SP. (Max SP Loss: 40)",
+        ImageLink: './assets/Icons/Statuses/VolatilePassion.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Target Spotted]': {
+        Name: 'Target Spotted', Type: StatusTypeEnum.Neutral, Description:
+            "If unit A applies this effect to unit B: Unit B follows up with an Unopposed Attack with its Skill 2 against the same enemy Unit A attacked with its Skill. Activates at Unit A's Attack End.<br>" +
+            "- The Skill used due to this effect does not affect Unit B's upcoming Skills list.",
+        ImageLink: './assets/Icons/Statuses/TargetSpotted.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Melee Support]': {
+        Name: 'Melee Support', Type: StatusTypeEnum.Neutral, Description:
+            "- If unit A applies this effect to unit B: Unit B follows up with an Unopposed Attack with the 'Melee Support' Skill against the same enemy that attacked Unit A. Activates at Unit A's Skill End.<br>" +
+            "- The Skill used due to the 'Melee Support' effect does not affect Unit B's upcoming Skills list.",
+        ImageLink: './assets/Icons/Statuses/MeleeSupport.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
     '[Final Augment]': {
         Name: 'Final Augment', Type: StatusTypeEnum.Neutral, Description:
             "Turn Start: Gain 3 Attack Power Up, Defense Power Up, and Haste; die when count reaches zero.",
@@ -1384,20 +1581,13 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- Used for certain Skills",
         ImageLink: './assets/Icons/Statuses/TornMemory.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
-    '[Volatile Passion]': {
-        Name: 'Torn Memory', Type: StatusTypeEnum.Neutral, Description:
-            "- On Hit, inflict 1 Burn<br>" +
-            "- If the main target has Burn, gain Final Power<br>" +
-            "- When hit, if this unit had a Defense Skill chained at Combat Start, inflict Burn against the attacker for the turn<br>" +
-            "- Turn End: lose (# of turns spent in Volatile E.G.O state x 5) SP. (Max SP Loss: 40)",
-        ImageLink: './assets/Icons/Statuses/VolatilePassion.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
-    },
 
 
     '[On Use]': { Name: '[On Use]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(38, 205, 251)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
 
     '[Before Use]': { Name: '[Before Use]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[Before Attack]': { Name: '[Before Attack]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
+    '[Before Getting Hit]': { Name: '[Before Getting Hit]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[Combat Start]': { Name: '[Combat Start]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[On Hit]': { Name: '[On Hit]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[On Crit]': { Name: '[On Crit]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
@@ -1405,8 +1595,10 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
     '[Hit after Clash Win]': { Name: '[Hit after Clash Win]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[Hit After Clash Win]': { Name: '[Hit After Clash Win]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[Heads Hit After Clash Win]': { Name: '[Heads Hit After Clash Win]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
+    '[Reuse - On Hit]': { Name: '[Reuse - On Hit]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[Reuse - Heads Hit]': { Name: '[Reuse - Heads Hit]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[On Kill]': { Name: '[On Kill]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
+    '[On Crit Kill Against Enemy]': { Name: '[On Crit Kill Against Enemy]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[On Ally Kill]': { Name: '[On Ally Kill]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[On Target Kill]': { Name: '[On Target Kill]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[Failed Kill]': { Name: '[Failed Kill]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
@@ -1429,5 +1621,5 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
 
     '[Clash Lose]': { Name: '[Clash Lose]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(225, 0, 0)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[Indiscriminate]': { Name: '[Indiscriminate]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(225, 0, 0)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
-
+    '[Unclashable]': { Name: '[Unclashable]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(225, 0, 0)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
 };

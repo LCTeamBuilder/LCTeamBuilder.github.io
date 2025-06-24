@@ -217,6 +217,18 @@ import { LCEEGOLanternYiSang } from './Sinners/YiSang/Identities/LCEEGOLanternYi
 import { LCEEGOArdorBlossomStarFaust } from './Sinners/Faust/Identities/LCEEGOArdorBlossomStarFaust';
 import { KurokumoClanWakashuHeathcliff } from './Sinners/Heathcliff/Identities/KurokumoClanWakashuHeathcliff';
 import { KurokumoClanCaptainIshmael } from './Sinners/Ishmael/Identities/KurokumoClanCaptainIshmael';
+import { LiuAssocSouthSection3YiSang } from './Sinners/YiSang/Identities/LiuAssocSouthSection3YiSang';
+import { HeishouPackMaoBranchAdeptFaust } from './Sinners/Faust/Identities/HeishouPackMaoBranchAdeptFaust';
+import { HeishouPackMaoBranchRyoshu } from './Sinners/Ryoshu/Identities/HeishouPackMaoBranchRyoshu';
+import { RCorp4thPackReindeerHongLu } from './Sinners/HongLu/Identities/RCorp4thPackReindeerHongLu';
+import { FamilyHierarchCandidateIshmael } from './Sinners/Ishmael/Identities/FamilyHierarchCandidateIshmael';
+import { HeishouPackSiBranchRodion } from './Sinners/Rodion/Identities/HeishouPackSiBranchRodion';
+import { TheMiddleLittleBrotherSinclair } from './Sinners/Sinclair/Identities/TheMiddleLittleBrotherSinclair';
+import { TheThumbEastSoldatoIISinclair } from './Sinners/Sinclair/Identities/TheThumbEastSoldatoIISinclair';
+import { HeishouPackMaoBranchOutis } from './Sinners/Outis/Identities/HeishouPackMaoBranchOutis';
+import { FirefistOfficeSurvivorGregor } from './Sinners/Gregor/Identities/FirefistOfficeSurvivorGregor';
+import { HeishouPackSiBranchGregor } from './Sinners/Gregor/Identities/HeishouPackSiBranchGregor';
+import { TheThumbEastCapoIIIIMeursault } from './Sinners/Meursault/Identities/TheThumbEastCapoIIIIMeursault';
 
 export const Identities: ReadonlyArray<Identity> = [
     //Yi Sang
@@ -225,6 +237,7 @@ export const Identities: ReadonlyArray<Identity> = [
     EfflorescedEgospicebushYiSang,
     LCBSinnerYiSang,
     LCEEGOLanternYiSang,
+    LiuAssocSouthSection3YiSang,
     LobotomyEGOSolemnLamentYiSang,
     MolarOfficeFixerYiSang,
     SevenAssocSouthSection6YiSang,
@@ -234,6 +247,7 @@ export const Identities: ReadonlyArray<Identity> = [
 
     //Faust
     BladeLineageSalsuFaust,
+    HeishouPackMaoBranchAdeptFaust,
     LCBSinnerFaust,
     LCEEGOArdorBlossomStarFaust,
     LobotomyEgoRegretFaust,
@@ -271,6 +285,7 @@ export const Identities: ReadonlyArray<Identity> = [
     //Meursault
     BladeLineageMentorMeursault,
     CinqAssocWestSection3Meursault,
+    HeishouPackMaoBranchRyoshu,
     DeadRabbitsBossMeursault,
     DieciAssocSouthSection4DirectorMeursault,
     LCBSinnerMeursault,
@@ -279,6 +294,7 @@ export const Identities: ReadonlyArray<Identity> = [
     RCorp4thPackRhinoMeursault,
     RosespannerWorkshopFixerMeursault,
     TheMiddleLittleBrotherMeursault,
+    TheThumbEastCapoIIIIMeursault,
     WCorpL2CleanupAgentMeursault,
 
     //Hong Lu
@@ -291,6 +307,7 @@ export const Identities: ReadonlyArray<Identity> = [
     KurokumoClanWakashuHongLu,
     LCBSinnerHongLu,
     LiuAssocSouthSection5HongLu,
+    RCorp4thPackReindeerHongLu,
     TingtangGangGangleaderHongLu,
     WCorpL2CleanupAgentHongLu,
 
@@ -310,6 +327,7 @@ export const Identities: ReadonlyArray<Identity> = [
 
     //Ishmael
     EdgarFamilyButlerIshmael,
+    FamilyHierarchCandidateIshmael,
     KurokumoClanCaptainIshmael,
     LCBSinnerIshmael,
     LccbAssistantManagerIshmael,
@@ -324,6 +342,7 @@ export const Identities: ReadonlyArray<Identity> = [
     //Rodion
     DevyatAssocNorthSection3Rodion,
     DieciAssocSouthSection4Rodion,
+    HeishouPackSiBranchRodion,
     KurokumoClanWakashuRodion,
     LCBSinnerRodion,
     LccbAssistantManagerRodion,
@@ -343,6 +362,8 @@ export const Identities: ReadonlyArray<Identity> = [
     LCBSinnerSinclair,
     LobotomyEgoRedSheetSinclair,
     MolarBoatworksFixerSinclair,
+    TheMiddleLittleBrotherSinclair,
+    TheThumbEastSoldatoIISinclair,
     TheOneWhoShallGripSinclair,
     ZweiAssocSouthSection6Sinclair,
     ZweiAssocWestSection3Sinclair,
@@ -351,6 +372,7 @@ export const Identities: ReadonlyArray<Identity> = [
     BladeLineageSalsuOutis,
     CinqAssocsouthSection4Outis,
     GCorpHeadManagerOutis,
+    HeishouPackMaoBranchOutis,
     LCBSinnerOutis,
     LobotomyEgoMagicBulletOutis,
     MolarOfficeFixerOutis,
@@ -362,7 +384,9 @@ export const Identities: ReadonlyArray<Identity> = [
 
     //Gregor
     EdgarFamilyHeirGregor,
+    FirefistOfficeSurvivorGregor,
     GCorpManagerCorporalGregor,
+    HeishouPackSiBranchGregor,
     KurokumoClanCaptainGregor,
     LCBSinnerGregor,
     LiuAssocSouthSection6Gregor,
