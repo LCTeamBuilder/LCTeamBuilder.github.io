@@ -579,6 +579,22 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "This effect expires at Turn End or after attack of the following: 'Rules of the Backstreets'",
         ImageLink: './assets/Icons/Statuses/CumulusWall.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    '[Flower-burying Pin]': {
+        Name: 'Flower-burying Pin [埋花針]', Type: StatusTypeEnum.Buff, Description:
+            "Max Stack: 20<br>" +
+            "- Gain 1 Stack at Turn End or when hit<br>" +
+            "- Gain 1 Offense Level per 5 Stack<br>" +
+            "- If the unit with this effect dies, inflict Gluttony damage equal to Stack and inflict 5 Rupture<br>" +
+            "- Expires upon death or Retreat, Coin Power +1",
+        ImageLink: './assets/Icons/Statuses/FlowerBuryingPin.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Flower-burying Pin"); }
+    },
+    '[Denial]': {
+        Name: 'Denial [不許]', Type: StatusTypeEnum.Buff, Description:
+            "When this unit takes damage that brings their HP down to 0: this unit's HP does not drop below 1; recover from Stagger due to damage.<br>" +
+            "If the above effect activated, dies at Turn End.<br>" +
+            "Expires upon death, Retreat, or Turn End",
+        ImageLink: './assets/Icons/Statuses/Denial.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Denial"); }
+    },
     '[Strider - Mao]': {
         Name: 'Strider【Mao】', Type: StatusTypeEnum.Buff, Description:
             "- Max Stack: 3<br>" +
@@ -940,6 +956,15 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- Turn End: Deal (Value x Burn on target) Pride Affinity damage, then expires",
         ImageLink: './assets/Icons/Statuses/DarkFlame.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    '[Searing Birdcage]': {
+        Name: 'Searing Birdcage', Type: StatusTypeEnum.Debuff, Description:
+            "Max Stack: 5<br>" +
+            "If this unit has Burn, Wrath Resistance +0.1 for every Stack (cannot exceed 2.0 Wrath Resistance with this effect)<br>" +
+            "Turn End: gain Bind equal to Stack next turn<br>" +
+            "Turn End: halve Stack (rounded down)<br>" +
+            "※ Cannot gain additional Stacks of this effect while it is already active<br>",
+        ImageLink: './assets/Icons/Statuses/SearingBirdcage.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
     '[Bleed]': {
         Name: 'Bleed', Type: StatusTypeEnum.Debuff, Description:
             "When tossing an attack Coin, take fixed damage by the effect's Potency.<br>" +
@@ -1108,6 +1133,23 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "On hit, inflict Rupture by the Count; When hit, gain Rupture by the Count.<br>" +
             "Turn End: At 6+ Count, remove all Talisman and take fixed damage by its Count.",
         ImageLink: './assets/Icons/Statuses/Talisman.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Twisted Curse Talisman]': {
+        Name: 'Twisted Curse Talisman', Type: StatusTypeEnum.Debuff, Description:
+            "- Max Stack: 10<br>" +
+            "- Expires at Turn End<br>" +
+            "- At 10+ Stack, when taking 30+ damage from a Skill: gain +1 Rupture Count; take Gluttony damage equal to Rupture Potency on self (once per turn)<br>" +
+            "- When this effect expires, gain (Stack / 4) Attack Power Down next turn (max 2)<br>" +
+            "※ Cannot gain additional Stacks of this effect while it is already active",
+        ImageLink: './assets/Icons/Statuses/EntangledCurseTalisman.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Centipede Venom]': {
+        Name: 'Centipede Venom', Type: StatusTypeEnum.Debuff, Description:
+            "- Max Stack: 20<br>" +
+            "- Turn End: gain (Stack / 4) Defense Level Down next turn (rounded down)<br>" +
+            "- Turn End: take Gluttony damage equal to Stack, and halve the Stack (rounded down)<br>" +
+            "Upon death, transfers to this unit's ally(for Focused Encounters, a different Part) with none or the least Centipede Venom Stacks.",
+        ImageLink: './assets/Icons/Statuses/CentipedePoison.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
     '[Fairy Lure]': {
         Name: 'Fairy Lure', Type: StatusTypeEnum.Debuff, Description:
@@ -1590,6 +1632,7 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
     '[Before Getting Hit]': { Name: '[Before Getting Hit]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[Combat Start]': { Name: '[Combat Start]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[On Hit]': { Name: '[On Hit]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
+    '[On Hit without Cracking]': { Name: '[On Hit without Cracking]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[On Crit]': { Name: '[On Crit]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[On Crit Kill]': { Name: '[On Crit Kill]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[Hit after Clash Win]': { Name: '[Hit after Clash Win]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },

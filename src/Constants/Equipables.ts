@@ -229,6 +229,10 @@ import { HeishouPackMaoBranchOutis } from './Sinners/Outis/Identities/HeishouPac
 import { FirefistOfficeSurvivorGregor } from './Sinners/Gregor/Identities/FirefistOfficeSurvivorGregor';
 import { HeishouPackSiBranchGregor } from './Sinners/Gregor/Identities/HeishouPackSiBranchGregor';
 import { TheThumbEastCapoIIIIMeursault } from './Sinners/Meursault/Identities/TheThumbEastCapoIIIIMeursault';
+import { TearsOfTheTarnishedBloodSinclair } from './Sinners/Sinclair/EGO/TearsOfTheTarnishedBloodSinclair';
+import { IndicantsTrialRodion } from './Sinners/Rodion/EGO/IndicantsTrialRodion';
+import { HundredFootedDeathMaggotIshmael } from './Sinners/Ishmael/EGO/HundredFootedDeathMaggotIshmael';
+import { RedSheetDonQuixote } from './Sinners/DonQuixote/EGO/RedSheetDonQuixote';
 
 export const Identities: ReadonlyArray<Identity> = [
     //Yi Sang
@@ -421,6 +425,7 @@ export const Egos: ReadonlyArray<Ego> = [
     FluidSacDonQuixote,
     LaSangreDeSanchoDonQuixote,
     LifetimeStewDonQuixote,
+    RedSheetDonQuixote,
     TelepoleDonQuixote,
     YearningMircallaDonQuixote,
     WishingCairnDonQuixote,
@@ -469,6 +474,7 @@ export const Egos: ReadonlyArray<Ego> = [
     BygoneDaysIshmael,
     CapoteIshmael,
     ChristmasNightmareIshmael,
+    HundredFootedDeathMaggotIshmael,
     RoseateDesireIshmael,
     SnagharpoonIshmael,
     WingbeatIshmael,
@@ -477,6 +483,7 @@ export const Egos: ReadonlyArray<Ego> = [
     FourthMatchFlameRodion,
     EffervescentCorrosionRodion,
     HexNailRodion,
+    IndicantsTrialRodion,
     PursuanceRodion,
     RimeShankRodion,
     SanguineDesireRodion,
@@ -490,6 +497,7 @@ export const Egos: ReadonlyArray<Ego> = [
     ImpendingDaySinclair,
     LanternSinclair,
     LifetimeStewSinclair,
+    TearsOfTheTarnishedBloodSinclair,
 
     //Outis
     BindsOutis,
