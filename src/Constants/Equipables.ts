@@ -233,6 +233,7 @@ import { TearsOfTheTarnishedBloodSinclair } from './Sinners/Sinclair/EGO/TearsOf
 import { IndicantsTrialRodion } from './Sinners/Rodion/EGO/IndicantsTrialRodion';
 import { HundredFootedDeathMaggotIshmael } from './Sinners/Ishmael/EGO/HundredFootedDeathMaggotIshmael';
 import { RedSheetDonQuixote } from './Sinners/DonQuixote/EGO/RedSheetDonQuixote';
+import { NCorpEGOFellBulletYiSang } from './Sinners/YiSang/Identities/NCorpEGOFellBulletYiSang';
 
 export const Identities: ReadonlyArray<Identity> = [
     //Yi Sang
@@ -244,6 +245,7 @@ export const Identities: ReadonlyArray<Identity> = [
     LiuAssocSouthSection3YiSang,
     LobotomyEGOSolemnLamentYiSang,
     MolarOfficeFixerYiSang,
+    NCorpEGOFellBulletYiSang,
     SevenAssocSouthSection6YiSang,
     ThePequodFirstMateYiSang,
     TheRingPointillistStudentYiSang,
