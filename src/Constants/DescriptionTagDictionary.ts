@@ -595,6 +595,29 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "Expires upon death, Retreat, or Turn End",
         ImageLink: './assets/Icons/Statuses/Denial.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Denial"); }
     },
+    '[Flower-burying Wedge]': {
+        Name: 'Flower-burying Wedge [埋花櫼]', Type: StatusTypeEnum.Buff, Description:
+            "Base Stack: 0<br>" +
+            "Max Stack: 3<br>" +
+            "- All Coins on this unit's leftmost Base Attack Skill on the Dashboard become Unbreakable Coins<br>" +
+            "- Turn Start: gain 2 Offense Level Up and 2 Defense Level Down<br>" +
+            "- Turn Start: at 3+ Stack, gain 1 Tarnished Blood (once per Encounter)<br>" +
+            "- Turn End: gain 1 Stack<br>" +
+            "※ Cannot raise the effect's Stack by any other means than the ones above<br>" +
+            "- Expires upon defeat or Retreat<br><br>" +
+
+            "- When this unit takes damage that brings their HP down to 0: instead of letting this unit's HP drop below 1, or becoming Staggered or Defeated, use the 'Tears of the Tarnished Blood - The End' Skill at the very end of that turn. Remove the Flower-burying Wedge when the Skill ends.<br>" +
+            "When this unit takes damage that brings their HP down to 1 at Turn End, use 'Tears of the Tarnished Blood - The End' Skill based on this unit's Speed next turn",
+        ImageLink: './assets/Icons/Statuses/FlowerBuryingWedge.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, "Flower-burying Wedge"); }
+    },
+    '[Tarnished Blood]': {
+        Name: 'Tarnished Blood', Type: StatusTypeEnum.Buff, Description:
+            "Max Stack: 5<br>" +
+            "- Turn End: take 20% HP damage per Stack (cannot be Staggered by this effect)<br>" +
+            "- Gain 1 Stack at Turn End<br>" +
+            "- Expires upon death or Retreat",
+        ImageLink: './assets/Icons/Statuses/TarnishedBlood.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
     '[Strider - Mao]': {
         Name: 'Strider【Mao】', Type: StatusTypeEnum.Buff, Description:
             "- Max Stack: 3<br>" +

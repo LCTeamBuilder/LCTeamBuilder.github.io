@@ -234,6 +234,7 @@ import { IndicantsTrialRodion } from './Sinners/Rodion/EGO/IndicantsTrialRodion'
 import { HundredFootedDeathMaggotIshmael } from './Sinners/Ishmael/EGO/HundredFootedDeathMaggotIshmael';
 import { RedSheetDonQuixote } from './Sinners/DonQuixote/EGO/RedSheetDonQuixote';
 import { NCorpEGOFellBulletYiSang } from './Sinners/YiSang/Identities/NCorpEGOFellBulletYiSang';
+import { TearsOfTheTarnishedBloodHongLu } from './Sinners/HongLu/EGO/TearsOfTheTarnishedBloodHongLu';
 
 export const Identities: ReadonlyArray<Identity> = [
     //Yi Sang
@@ -459,6 +460,7 @@ export const Egos: ReadonlyArray<Ego> = [
     LassoHongLu,
     RoseateDesireHongLu,
     SodaHongLu,
+    TearsOfTheTarnishedBloodHongLu,
 
     //Heathcliff
     AEDDHeathcliff,
