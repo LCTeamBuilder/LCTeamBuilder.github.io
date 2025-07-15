@@ -12,7 +12,7 @@ import {
     SinEnum,
     SkillTypeEnum
 } from '../Enums/Index';
-import { Ego, Identity, Passive } from '../Models/Index';
+import { Ego, ExtraSkillsEgo, Identity, Passive } from '../Models/Index';
 import { EquipEgo, EquipIdentity } from './EquipHandler';
 import { UpdateLink } from './URLHandler';
 
@@ -705,6 +705,91 @@ function LoadEgoDetailsModal(ego: Ego) {
             })
 
             $('<div id="skill-2-container" class="skill-container"></div>').append(template).appendTo($('#equipable-details-skills'));
+        }
+
+        if ('ExtraAwakeningSkills' in ego) {
+            const extraSkillsEgo = ego as ExtraSkillsEgo;
+            extraSkillsEgo.ExtraAwakeningSkills.forEach((skill) => {
+                let template = $.parseHTML(data)!;
+                $(template).attr('id', 'skill1');
+
+                $(template).find('.skill-coin-power-panel').attr('src', './assets/Icons/Skills/' + SinEnum[skill.Affinity] + 'CoinPowerPanel.png');
+                $(template).find('.skill-icon-frame').attr('src', './assets/Icons/Skills/' + SinEnum[skill.Affinity] + 'Skill' + skill.SkillTier + '.png');
+                $(template).find('.skill-icon').attr('src', skill.SkillImageDir);
+                $(template).find('.skill-damage-type-icon').attr('src', './assets/Icons/Skills/SkillDamageTypeBadge/' + SinEnum[skill.Affinity] + DamageTypeEnum[skill.DamageType!] + '.png');
+                $(template).find('.skill-name-ribbon-start').attr('src', './assets/Icons/Skills/SkillNameRibbon/' + SinEnum[skill.Affinity] + 'RibbonStart.png');
+                $(template).find('.skill-name-ribbon-middle').css('background-image', 'URL("./assets/Icons/Skills/SkillNameRibbon/' + SinEnum[skill.Affinity] + 'RibbonMiddle.png")');
+                $(template).find('.skill-name-ribbon-end').css('background-image', 'URL("./assets/Icons/Skills/SkillNameRibbon/' + SinEnum[skill.Affinity] + 'RibbonEnd.png")');
+
+
+                $(template).find('.skill-base-power-value').text(skill.BaseValue);
+                $(template).find('.skill-coin-power-value').text((skill.CoinValue >= 0 ? '+' : '') + skill.CoinValue);
+                $(template).find('.skill-name-value').text(skill.Name);
+                $(template).find('.skill-level-value').text((MaxLevel + skill.SkillLevel));
+
+                for (let i = 0; i < skill.Coins; i++) {
+                    $(template).find('.skill-coins').append($('<img src="./assets/Icons/Skills/Coin.png">'));
+                }
+
+                for (let i = 0; i < skill.AttackWeight; i++) {
+                    $(template).find('.skill-attack-weight-value').append('⯀');
+                }
+
+                $(template).find('.skill-name-ribbon-end .multiply-icon').hide();
+                $(template).find('.skill-name-ribbon-end span').hide();
+
+                skill.SkillDescription.forEach((descriptionPart) => {
+                    var div = $('<div class="description-part"></div>')
+                    if (descriptionPart.Coin > 0) {
+                        div.append('<div class="description-coin">' + RomanNumerals[descriptionPart.Coin] + '</div>');
+                    }
+                    div.append('<div class="description-text">' + AddTooltipsToTags(descriptionPart.Text) + '</div><br>');
+                    $(template).find('.skill-description').append(div);
+                });
+
+                $('#skill-1-container').append('<br>').append(template);
+            });
+
+            extraSkillsEgo.ExtraCorrosionSkills.forEach((skill) => {
+                let template = $.parseHTML(data)!;
+                $(template).attr('id', 'skill1');
+
+                $(template).find('.skill-coin-power-panel').attr('src', './assets/Icons/Skills/' + SinEnum[skill.Affinity] + 'CoinPowerPanel.png');
+                $(template).find('.skill-icon-frame').attr('src', './assets/Icons/Skills/' + SinEnum[skill.Affinity] + 'Skill' + skill.SkillTier + '.png');
+                $(template).find('.skill-icon').attr('src', skill.SkillImageDir);
+                $(template).find('.skill-damage-type-icon').attr('src', './assets/Icons/Skills/SkillDamageTypeBadge/' + SinEnum[skill.Affinity] + DamageTypeEnum[skill.DamageType!] + '.png');
+                $(template).find('.skill-name-ribbon-start').attr('src', './assets/Icons/Skills/SkillNameRibbon/' + SinEnum[skill.Affinity] + 'RibbonStart.png');
+                $(template).find('.skill-name-ribbon-middle').css('background-image', 'URL("./assets/Icons/Skills/SkillNameRibbon/' + SinEnum[skill.Affinity] + 'RibbonMiddle.png")');
+                $(template).find('.skill-name-ribbon-end').css('background-image', 'URL("./assets/Icons/Skills/SkillNameRibbon/' + SinEnum[skill.Affinity] + 'RibbonEnd.png")');
+
+
+                $(template).find('.skill-base-power-value').text(skill.BaseValue);
+                $(template).find('.skill-coin-power-value').text((skill.CoinValue >= 0 ? '+' : '') + skill.CoinValue);
+                $(template).find('.skill-name-value').text(skill.Name);
+                $(template).find('.skill-level-value').text((MaxLevel + skill.SkillLevel));
+
+                for (let i = 0; i < skill.Coins; i++) {
+                    $(template).find('.skill-coins').append($('<img src="./assets/Icons/Skills/Coin.png">'));
+                }
+
+                for (let i = 0; i < skill.AttackWeight; i++) {
+                    $(template).find('.skill-attack-weight-value').append('⯀');
+                }
+
+                $(template).find('.skill-name-ribbon-end .multiply-icon').hide();
+                $(template).find('.skill-name-ribbon-end span').hide();
+
+                skill.SkillDescription.forEach((descriptionPart) => {
+                    var div = $('<div class="description-part"></div>')
+                    if (descriptionPart.Coin > 0) {
+                        div.append('<div class="description-coin">' + RomanNumerals[descriptionPart.Coin] + '</div>');
+                    }
+                    div.append('<div class="description-text">' + AddTooltipsToTags(descriptionPart.Text) + '</div><br>');
+                    $(template).find('.skill-description').append(div);
+                });
+
+                $('#skill-2-container').append('<br>').append(template);
+            });
         }
 
         var tab3 = $('<button>Passive</button>');
