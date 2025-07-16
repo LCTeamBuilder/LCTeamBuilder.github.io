@@ -115,9 +115,9 @@ export const LobotomyEgoRedSheetSinclair: Identity = {
 
         new Passive("Wishing Talisman",
             PassiveTypeEnum.Support,
-            "At the start of the combat phase, give (Highest Reson. * 2) [Talisman] to the ally with the most HP.",
+            "1 ally with the highest current HP inflicts +1 more [Rupture] Potency with Attack and Counter Skills",
             [{ sin: SinEnum.Gluttony, amount: 4 }],
-            PassiveCostTypeEnum.Resonance)
+            PassiveCostTypeEnum.Owned)
     ],
     Keywords: new Array<KeywordEnum>,
     Factions: new Array<FactionEnum>,

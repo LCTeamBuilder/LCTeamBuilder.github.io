@@ -1153,8 +1153,10 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
     },
     '[Talisman]': {
         Name: 'Talisman', Type: StatusTypeEnum.Debuff, Description:
-            "On hit, inflict Rupture by the Count; When hit, gain Rupture by the Count.<br>" +
-            "Turn End: At 6+ Count, remove all Talisman and take fixed damage by its Count.",
+            "Max Stack: 6<br>" +
+            "On Hit, consume 1 Rupture Count on target to inflict (Stack / 2) Rupture (inflicts at least 1 Rupture if Rupture Count was consumed; rounded down)<br>" +
+            "When hit, gain (Stack / 2) Rupture and lose 1 Stack (gain at least 1; rounded down)<br>" +
+            "Turn End: at 6+ Stack, remove all Talisman on self and take fixed damage by Stack",
         ImageLink: './assets/Icons/Statuses/Talisman.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
     '[Twisted Curse Talisman]': {
