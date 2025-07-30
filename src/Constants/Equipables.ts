@@ -235,6 +235,9 @@ import { HundredFootedDeathMaggotIshmael } from './Sinners/Ishmael/EGO/HundredFo
 import { RedSheetDonQuixote } from './Sinners/DonQuixote/EGO/RedSheetDonQuixote';
 import { NCorpEGOFellBulletYiSang } from './Sinners/YiSang/Identities/NCorpEGOFellBulletYiSang';
 import { TearsOfTheTarnishedBloodHongLu } from './Sinners/HongLu/EGO/TearsOfTheTarnishedBloodHongLu';
+import { LobotomyEGOInTheNameOfLoveAndHateDonQuixote } from './Sinners/DonQuixote/Identities/LobotomyEGOInTheNameOfLoveAndHateDonQuixote';
+import { LobotomyEGOTheSwordSharpenedWithTearsRodion } from './Sinners/Rodion/Identities/LobotomyEGOTheSwordSharpenedWithTearsRodion';
+import { InTheNameOfLoveAndHateDonQuixote } from './Sinners/DonQuixote/EGO/InTheNameOfLoveAndHateDonQuixote';
 
 export const Identities: ReadonlyArray<Identity> = [
     //Yi Sang
@@ -269,6 +272,7 @@ export const Identities: ReadonlyArray<Identity> = [
     BladeLineageSalsuDonQuixote,
     CinqAssocSouthSection5DirectorDonQuixote,
     LCBSinnerDonQuixote,
+    LobotomyEGOInTheNameOfLoveAndHateDonQuixote,
     LobotomyEgoLanternDonQuixote,
     NCorpMittelhammerDonQuixote,
     ShiAssocSouthSection5DirectorDonQuixote,
@@ -354,6 +358,7 @@ export const Identities: ReadonlyArray<Identity> = [
     LCBSinnerRodion,
     LccbAssistantManagerRodion,
     LiuAssocSouthSection4DirectorRodion,
+    LobotomyEGOTheSwordSharpenedWithTearsRodion,
     NCorpMittelhammerRodion,
     RosespannerWorkshopRepRodion,
     TCorpClass2CollectionStaffRodion,
@@ -426,6 +431,7 @@ export const Egos: ReadonlyArray<Ego> = [
     //Don Quixote
     ElectricScreamingDonQuixote,
     FluidSacDonQuixote,
+    InTheNameOfLoveAndHateDonQuixote,
     LaSangreDeSanchoDonQuixote,
     LifetimeStewDonQuixote,
     RedSheetDonQuixote,
