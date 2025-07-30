@@ -291,6 +291,14 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- Turn End: this effect expires",
         ImageLink: './assets/Icons/Statuses/Load.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    "[Magical Girls Chant]": {
+        Name: "Magical Girl's Chant", Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 2<br>" +
+            "- When this unit gains this effect, gain 1 Attack Power Up and 1 Damage Up<br>" +
+            "- This unit's Attack Skills that gain or consume Charge Count gain Final Power +1 and deal +10% damage<br>" +
+            "- Reduced by 1 at Turn End",
+        ImageLink: './assets/Icons/Statuses/MagicalGirlsChant.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, 'Magical Girls Chant'); }
+    },
     '[Photoelectricity]': {
         Name: 'Photoelectricity', Type: StatusTypeEnum.Debuff, Description:
             "Max Value: 3<br>" +
@@ -325,6 +333,38 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "· Stage 3 (16~20): Penitence - Confession<br>" +
             "- The amount of SP healed by the first line of this buff is based on the enhancement Stage (enhancement Stage x 2)",
         ImageLink: './assets/Icons/Statuses/Penitence.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[LoveHate]': {
+        Name: 'Love/Hate', Type: StatusTypeEnum.Buff, Description:
+            "- Max Count: 20<br>" +
+            "- Unique Charge<br>" +
+            "- Resouce used by certain Skills for additional effects. Its Count can go up to 20. Count lowers by 1 at the end of each turn.<br>" +
+            "(Interacts the same way as normal Charge does to effects that raise or reduce Charge Potency/Count)",
+        ImageLink: './assets/Icons/Statuses/LoveHate.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, 'LoveHate'); }
+    },
+    '[Here Comes Magical Girl]': {
+        Name: 'Here Comes Magical Girl!', Type: StatusTypeEnum.Buff, Description:
+            "- For this turn, this unit uses Plus Coin Attack Skills<br>" +
+            "- Base Attack Skills deal +3% damage for every Love/Hate on self (max 15%)",
+        ImageLink: './assets/Icons/Statuses/HereComesMagicalGirl.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, 'Here Comes Magical Girl'); }
+    },
+    '[Deep Tears]': {
+        Name: 'Deep Tears', Type: StatusTypeEnum.Buff, Description:
+            "- Unique Charge (Potency Fixed)<br>" +
+            "- Resource used by certain Skills for additional effects<br>" +
+            "- Max Stack: 20",
+        ImageLink: './assets/Icons/Statuses/DeepTears.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Tear-sharpened]': {
+        Name: 'Tear-sharpened', Type: StatusTypeEnum.Buff, Description:
+            "- Turn Start: gain 5 Deep Tears<br>" +
+            " · At 3 Stack, gain additional 5 Deep Tears<br>" +
+            "- Turn End: lose (Stack x 15) SP<br>" +
+            "- Base Attack Skills deal +(Stack x 10)% damage (max 30%)<br>" +
+            "- If this unit has Blessing, gain Clash Power Up by the effect's Stack at Turn Start<br>" +
+            "- If this unit has Despair, gain Pierce Power Up by the effect's Stack at Turn Start<br>" +
+            "- Max Stack: 3",
+        ImageLink: './assets/Icons/Statuses/TearSharpened.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
     '[Defensive Stance]': {
         Name: 'Defensive Stance', Type: StatusTypeEnum.Buff, Description:
@@ -520,6 +560,47 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- Cannot gain Gaze of Contempt as long as Contempt of the Gaze is active<br>" +
             "- Turn End: this effect expires",
         ImageLink: './assets/Icons/Statuses/ContemptOfTheGaze.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Magical Arcana]': {
+        Name: 'Magical Arcana', Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 3<br>" +
+            "- Base Attack Skills deal +(Stack x 5)% damage<br>" +
+            "- Turn End: At 3 Stack and with -25 or higher SP, change SP to -25",
+        ImageLink: './assets/Icons/Statuses/MagicalArcana.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Blessing]': {
+        Name: 'Blessing', Type: StatusTypeEnum.Buff, Description:
+            "- Turn Start: gain 1 Protecting Sword for every 8 SP (max 5)<br>" +
+            "- When Clash ends, inflict 2 Sinking (once per turn)<br>" +
+            "- When hit, inflict 2 Sinking on the attacker (once per turn)<br>" +
+            "- For every 20 SP, inflict +1 more Sinking Potency with above effects (max 2)<br>" +
+            "- Replace this unit's Base Skills with Plus Coin Skills",
+        ImageLink: './assets/Icons/Statuses/Blessing.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Protecting Sword]': {
+        Name: 'Protecting Sword', Type: StatusTypeEnum.Buff, Description:
+            "- Turn Start: gain 1 Defense Level Up for every Stack (max 5)<br>" +
+            "- Turn Start: +(Stack x 3) Aggro to the leftmost Skill Slot on the Dashboard (max 15)<br>" +
+            "- Max Stack: 5<br>" +
+            "- Expires at Turn End",
+        ImageLink: './assets/Icons/Statuses/ProtectingSword.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Despair]': {
+        Name: 'Despair', Type: StatusTypeEnum.Buff, Description:
+            "- Turn Start: gain 1 Piercing Sword for every -8 SP (max 5)<br>" +
+            "- When Clash ends, inflict +1 Sinking Count (once per turn)<br>" +
+            "- On Hit with the first Coin of a Base Attack Skill, inflict +1 Sinking Count (once per turn)<br>" +
+            "- For every -20 SP, inflict +1 more Sinking Count with above effects (max 2)<br>" +
+            "- Replace this unit's Base Skills with Minus Coin Skills",
+        ImageLink: './assets/Icons/Statuses/Despair.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Piercing Sword]': {
+        Name: 'Piercing Sword', Type: StatusTypeEnum.Buff, Description:
+            "- Turn Start: gain 1 Offense Level Up for every Stack (max 5)<br>" +
+            "- Turn Start: -(Stack x 0.15) Aggro to this unit's Skill Slots on the Dashboard (max 0.75)<br>" +
+            "- Max Stack: 5<br>" +
+            "- Expires at Turn End",
+        ImageLink: './assets/Icons/Statuses/PiercingSword.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
     '[Concentration(Sniper)]': {
         Name: 'Concentration[Sniper]', Type: StatusTypeEnum.Buff, Description:
@@ -1355,6 +1436,26 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
         Name: 'Spark Discharge', Type: StatusTypeEnum.Debuff, Description:
             "When hit, the attacker gains +1 Charge Count; when hit with a Gloom attack, gain +1 Rupture Count, then reduce Count by 1",
         ImageLink: './assets/Icons/Statuses/SparkDischarge.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Regressive Transformation - Reversed]': {
+        Name: 'Regressive Transformation - Reversed', Type: StatusTypeEnum.Debuff, Description:
+            "- For this turn, this unit uses Minus Coin Attack Skills",
+        ImageLink: './assets/Icons/Statuses/RegressiveTransformationReversed.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Hysteria]': {
+        Name: 'Hysteria', Type: StatusTypeEnum.Debuff, Description:
+            "- Base Stack: 0<br>" +
+            "- Max Stack: 3<br>" +
+            "- At Turn End…<br>" +
+            " · At 0 or higher SP, lose 1 Stack<br>" +
+            " · At less than 0 SP, gain 1 Stack",
+        ImageLink: './assets/Icons/Statuses/Hysteria.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Mark of Villainy]': {
+        Name: 'Mark of Villainy', Type: StatusTypeEnum.Debuff, Description:
+            "- Take +10% damage from Don Quixote<br>" +
+            "- Applies only to the first target to receive the effect in each turn",
+        ImageLink: './assets/Icons/Statuses/MarkOfVillainy.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
 
     '[Aggro]': {
