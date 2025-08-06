@@ -1407,6 +1407,17 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "- At the start of the next turn, if a Slot inflicted with Focused Attack is no longer present, rearrange all Focused Attacks inflicted against the Slots of that Part in the order of Deployment",
         ImageLink: './assets/Icons/Statuses/FocusedAttack.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    '[Nerve Strike]': {
+        Name: 'Nerve Strike', Type: StatusTypeEnum.Debuff, Description:
+            "- Max Stack: 3<br>" +
+            "- The unit that inflicted this Nerve Strike gains the following effects based on target's(or targeted Part's) Nerve Strike Stack.<br>" +
+            " · 1x Stack: Gain Clash Power +1<br>" +
+            " · 2x Stack: Gain Base Power +1<br>" +
+            " · 3x Stack: Gain Clash Power +1 and Base Power +1<br>" +
+            "- Expires if the unit that inflicted it inflicts this effect against a different target(or a different Part)<br>" +
+            "- Replaced when another unit inflicts Nerve Strike",
+        ImageLink: './assets/Icons/Statuses/NerveStrike.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
     '[Gaze]': {
         Name: 'Gaze', Type: StatusTypeEnum.Debuff, Description:
             "Take +20% damage from Pierce and Blunt skills for one turn.<br>" +

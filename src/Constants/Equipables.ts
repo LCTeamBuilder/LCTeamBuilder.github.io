@@ -240,6 +240,7 @@ import { LobotomyEGOTheSwordSharpenedWithTearsRodion } from './Sinners/Rodion/Id
 import { InTheNameOfLoveAndHateDonQuixote } from './Sinners/DonQuixote/EGO/InTheNameOfLoveAndHateDonQuixote';
 import { TCorpClass3VDCUStaffOutis } from './Sinners/Outis/Identities/TCorpClass3VDCUStaffOutis';
 import { CrushboundPastMeursault } from './Sinners/Meursault/EGO/CrushboundPastMeursault';
+import { CinqAssocEastSection3DonQuixote } from './Sinners/DonQuixote/Identities/CinqAssocEastSection3DonQuixote';
 
 export const Identities: ReadonlyArray<Identity> = [
     //Yi Sang
@@ -272,6 +273,7 @@ export const Identities: ReadonlyArray<Identity> = [
 
     //Don Quixote
     BladeLineageSalsuDonQuixote,
+    CinqAssocEastSection3DonQuixote,
     CinqAssocSouthSection5DirectorDonQuixote,
     LCBSinnerDonQuixote,
     LobotomyEGOInTheNameOfLoveAndHateDonQuixote,
