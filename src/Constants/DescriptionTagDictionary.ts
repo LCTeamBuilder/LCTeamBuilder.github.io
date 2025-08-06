@@ -507,6 +507,18 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
             "Turn End: Gain 1 Stack, lose 1 Count",
         ImageLink: './assets/Icons/Statuses/BorrowedTime.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
     },
+    '[Violent Collections]': {
+        Name: 'Violent Collections', Type: StatusTypeEnum.Buff, Description:
+            "- When this unit has Haste, gain +1 more Tremor Count from its Base Skills<br>" + 
+            "- If this unit's Speed is faster than the target's, deal +(Speed difference x 3)% damage (max 15%)",
+        ImageLink: './assets/Icons/Statuses/ViolentCollections.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
+    '[Accumulated Past]': {
+        Name: 'Accumulated Past', Type: StatusTypeEnum.Buff, Description:
+            "- Max Stack: 12 <br>" +
+            "- Turn Start: gain 1 Clash Power Up and 1 Offense Level Up for every 3 Stack",
+        ImageLink: './assets/Icons/Statuses/AccumulatedPast.png', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); }
+    },
     '[Dullahan]': {
         Name: 'Dullahan', Type: StatusTypeEnum.Buff, Description:
             "- Max Value: 3<br>" +
@@ -1757,6 +1769,7 @@ export const DescriptionTagDictionary: Record<string, TagInfo> = {
     '[Before Attack]': { Name: '[Before Attack]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[Before Getting Hit]': { Name: '[Before Getting Hit]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[Combat Start]': { Name: '[Combat Start]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
+    '[Coin Start]': { Name: '[Coin Start]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[On Hit]': { Name: '[On Hit]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[On Hit without Cracking]': { Name: '[On Hit without Cracking]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },
     '[On Crit]': { Name: '[On Crit]', Type: StatusTypeEnum.ActivationKeyword, Description: '', ImageLink: 'RGB(146, 239, 61)', get HtmlString() { return CreateHtmlString(this.Name, this.Type, this.ImageLink, this.Name); } },

@@ -238,6 +238,8 @@ import { TearsOfTheTarnishedBloodHongLu } from './Sinners/HongLu/EGO/TearsOfTheT
 import { LobotomyEGOInTheNameOfLoveAndHateDonQuixote } from './Sinners/DonQuixote/Identities/LobotomyEGOInTheNameOfLoveAndHateDonQuixote';
 import { LobotomyEGOTheSwordSharpenedWithTearsRodion } from './Sinners/Rodion/Identities/LobotomyEGOTheSwordSharpenedWithTearsRodion';
 import { InTheNameOfLoveAndHateDonQuixote } from './Sinners/DonQuixote/EGO/InTheNameOfLoveAndHateDonQuixote';
+import { TCorpClass3VDCUStaffOutis } from './Sinners/Outis/Identities/TCorpClass3VDCUStaffOutis';
+import { CrushboundPastMeursault } from './Sinners/Meursault/EGO/CrushboundPastMeursault';
 
 export const Identities: ReadonlyArray<Identity> = [
     //Yi Sang
@@ -389,6 +391,7 @@ export const Identities: ReadonlyArray<Identity> = [
     LobotomyEgoMagicBulletOutis,
     MolarOfficeFixerOutis,
     SevenAssocSouthSection6DirectorOutis,
+    TCorpClass3VDCUStaffOutis,
     TheBarberOfLaManchalandOutis,
     TheRingPointillistStudentOutis,
     WCorpL3CleanupCaptainOutis,
@@ -452,6 +455,7 @@ export const Egos: ReadonlyArray<Ego> = [
     //Meursault
     CapoteMeursault,
     ChainsOfOthersMeursault,
+    CrushboundPastMeursault,
     ElectricScreamingMeursault,
     PursuanceMeursault,
     RegretMeursault,
